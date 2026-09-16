@@ -1,0 +1,46 @@
+# Search matrix: segment x city x language. Consumed by scripts/01_build_apify_inputs.py.
+# Keyword lists are a Day 1 hypothesis too: after the sample run, keywords
+# with low relevance are removed HERE with a comment, not silently.
+
+cities:
+  riyadh: "Riyadh, Saudi Arabia"
+  jeddah: "Jeddah, Saudi Arabia"
+  dammam_khobar: "Khobar, Saudi Arabia"
+
+google_maps:
+  actor: compass/crawler-google-places
+  sample:                    # validation run: 1 keyword x 1 city x 20 places per segment
+    city: riyadh
+    max_places: 20
+  full:
+    max_places: 100          # Maps UI caps results per search; split by district if saturated
+  actor_defaults:
+    language: en
+    skipClosedPlaces: false          # keep closed places, measure closed_rate
+    scrapeContacts: false            # EXPERIMENT Day 1: rerun sample with true, compare instagram fill vs cost
+    scrapeReviewsPersonalData: false # never collect reviewer personal data
+    maximumLeadsEnrichmentRecords: 0
+    maxReviews: 0
+    maxImages: 0
+  segments:
+    A_aesthetic_clinics:
+      ar: ["عيادة تقويم أسنان", "ابتسامة هوليود", "عيادة تجميل أسنان", "عيادة جلدية وتجميل", "مركز ليزر"]
+      en: ["orthodontic clinic", "cosmetic dentist", "dermatology clinic"]
+    B_custom_furniture:
+      ar: ["تفصيل مجالس", "تفصيل كنب", "محل ستائر", "مفروشات تفصيل"]
+      en: ["custom majlis furniture", "curtains shop"]
+
+instagram:
+  actor: apify/instagram-profile-scraper
+  seed_strategy: handles_from_google_maps   # website/instagram fields of ingested Maps rows
+  optional_hashtags: ["عيادة_أسنان_الرياض", "تفصيل_مجالس", "عطور_سعودية"]
+
+dork:                        # run manually in Google (or a SERP actor), paste results into url_list CSV
+  note: Verify the store URL pattern on the first 10 results before scaling.
+  segments:
+    C_salla_zid_d2c:
+      - 'site:salla.sa عطور'
+      - 'site:salla.sa عود'
+      - 'site:salla.sa عبايات'
+      - 'site:zid.store عطور'
+      - 'site:zid.store عبايات'

@@ -1,0 +1,15 @@
+[project]
+name = "ksa-sme-pipeline"
+version = "0.1.0"
+description = "SME merchant sourcing, validation and scoring pipeline for KSA (BNPL outbound)"
+requires-python = ">=3.12"
+dependencies = [
+    "pyyaml>=6.0",   # Day 1 needs nothing else. httpx (BNPL fingerprint) is added on Day 2 when that code exists.
+]
+
+[dependency-groups]
+dev = ["pytest>=8.3", "pre-commit>=4.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

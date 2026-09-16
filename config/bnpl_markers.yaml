@@ -1,0 +1,32 @@
+# BNPL fingerprints for Day 2 detection (website HTML + Instagram text).
+# verified: false = marker taken from public knowledge, not yet confirmed
+# against a known-positive merchant. Day 2 step 0: confirm each on one live store.
+# ambiguous: true = the word has a common non-BNPL meaning; count only with context.
+
+providers:
+  tabby:
+    html: ["tabby.ai", "checkout.tabby.ai"]
+    text_ar: ["تابي"]
+    text_en: ["tabby"]
+    ambiguous_en: true          # "tabby" = cat colour; use html markers on sites
+    verified: false
+  tamara:
+    html: ["tamara.co"]
+    text_ar: ["تمارا"]
+    verified: false
+  madfu:
+    html: ["madfu"]
+    text_ar: ["مدفوع"]
+    ambiguous_ar: true          # "مدفوع" = "paid"
+    verified: false
+  mispay:
+    html: ["mispay"]
+    text_ar: ["ميس باي"]
+    verified: false
+  emkan:
+    html: ["emkan"]
+    text_ar: ["إمكان"]
+    ambiguous_ar: true
+    verified: false
+generic_installment:            # installment offered, provider unknown -> discovery question
+  text_ar: ["تقسيط", "قسطها", "على دفعات"]

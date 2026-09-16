@@ -1,0 +1,14 @@
+{
+  "language": "en",
+  "skipClosedPlaces": false,
+  "scrapeContacts": false,
+  "scrapeReviewsPersonalData": false,
+  "maximumLeadsEnrichmentRecords": 0,
+  "maxReviews": 0,
+  "maxImages": 0,
+  "searchStringsArray": [
+    "عيادة تقويم أسنان"
+  ],
+  "locationQuery": "Riyadh, Saudi Arabia",
+  "maxCrawledPlacesPerSearch": 20
+}

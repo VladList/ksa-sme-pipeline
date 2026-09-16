@@ -1,0 +1,32 @@
+# Secrets
+.env
+.env.*
+!.env.example
+secrets/
+
+# Claude Code
+.claude/settings.local.json
+
+# Data: raw vendor exports, interim tables and contacts stay local
+data/raw/*
+!data/raw/README.md
+data/interim/*
+!data/interim/README.md
+data/private/*
+!data/private/README.md
+data/cache/
+
+# Committed on purpose: data/sources.yaml, data/runs.csv, data/changelog.csv,
+# data/apify_inputs/, data/samples/ (masked), output/public/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

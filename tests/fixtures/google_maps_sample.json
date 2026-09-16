@@ -1,0 +1,15 @@
+[
+  {"title": "عيادة ابتسامة الريم لطب الأسنان", "categoryName": "Dental clinic", "address": "Al Malqa, Riyadh", "city": "Riyadh",
+   "phone": "+966 55 000 0001", "phoneUnformatted": "+966550000001", "website": "https://www.instagram.com/alreem.smile/",
+   "totalScore": 4.8, "reviewsCount": 312, "placeId": "ChIJ_fake_1", "url": "https://www.google.com/maps/place/?q=place_id:ChIJ_fake_1",
+   "location": {"lat": 24.80, "lng": 46.61}, "permanentlyClosed": false, "searchString": "عيادة تقويم أسنان"},
+  {"title": "Smile Dental Center - Olaya Branch", "categoryName": "Dental clinic", "city": "Riyadh",
+   "phone": "011 000 0002", "website": "smiledental.example.sa", "totalScore": 4.2, "reviewsCount": 85,
+   "placeId": "ChIJ_fake_2", "url": "https://maps.example/2", "location": {"lat": 24.69, "lng": 46.68},
+   "permanentlyClosed": false, "searchString": "ابتسامة هوليود"},
+  {"title": "Smile Dental Center", "categoryName": "Dental clinic", "city": "Riyadh", "phone": "920000003",
+   "website": "https://wa.me/966550000004", "placeId": "ChIJ_fake_3", "url": "https://maps.example/3",
+   "permanentlyClosed": true, "searchString": "ابتسامة هوليود"},
+  {"title": "عيادة ابتسامة الريم لطب الأسنان", "placeId": "ChIJ_fake_1", "url": "https://www.google.com/maps/place/?q=place_id:ChIJ_fake_1",
+   "searchString": "ابتسامة هوليود"}
+]

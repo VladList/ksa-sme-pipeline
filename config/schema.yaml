@@ -1,0 +1,54 @@
+# Data contract for one canonical record (one row = one record from one source).
+# A merchant can appear as several records (Maps + Instagram + store); Day 2
+# entity resolution links them via shared identifiers into merchant_id.
+#
+# Why not domain as the primary key (as in the Higgsfield project):
+# most target SMEs here have no own website — a clinic or majlis workshop is a
+# Maps listing + Instagram + a WhatsApp number. Identity = any of
+# phone_e164 | website_domain | instagram_handle | store_key | google_place_id.
+#
+# stage:  ingest (Day 1) | resolve / enrich / score (Day 2)
+# pii:    true -> never committed unmasked (data/private or masked in samples)
+# origin: llm -> column name MUST end with _inferred (enforced by tests)
+
+columns:
+  # --- lineage ---
+  - {name: record_id,         stage: ingest, type: str,   pii: false, desc: "source_id:native_id"}
+  - {name: source_id,         stage: ingest, type: str,   pii: false, desc: "id in data/sources.yaml"}
+  - {name: run_id,            stage: ingest, type: str,   pii: false, desc: "raw file stem; row in data/runs.csv"}
+  - {name: segment,           stage: ingest, type: str,   pii: false, desc: "segment key from config/icp.yaml"}
+  - {name: query,             stage: ingest, type: str,   pii: false, desc: "search string that produced the record"}
+  - {name: evidence_url,      stage: ingest, type: str,   pii: false, desc: "no evidence_url, no row"}
+  # --- business ---
+  - {name: name,              stage: ingest, type: str,   pii: false}
+  - {name: name_key,          stage: ingest, type: str,   pii: false, desc: "Arabic/Latin-normalised name for chain + dedupe"}
+  - {name: name_location_count, stage: ingest, type: int, pii: false, desc: "records sharing name_key within the run"}
+  - {name: category_raw,      stage: ingest, type: str,   pii: false}
+  - {name: city,              stage: ingest, type: str,   pii: false}
+  - {name: address,           stage: ingest, type: str,   pii: false}
+  - {name: lat,               stage: ingest, type: float, pii: false}
+  - {name: lng,               stage: ingest, type: float, pii: false}
+  - {name: rating,            stage: ingest, type: float, pii: false}
+  - {name: reviews_count,     stage: ingest, type: int,   pii: false}
+  - {name: followers_count,   stage: ingest, type: int,   pii: false}
+  - {name: is_closed,         stage: ingest, type: bool,  pii: false}
+  # --- identifiers / contact ---
+  - {name: google_place_id,   stage: ingest, type: str,   pii: false}
+  - {name: phone_e164,        stage: ingest, type: str,   pii: true,  desc: "a sole-trader mobile is personal data"}
+  - {name: phone_type,        stage: ingest, type: str,   pii: false, desc: "mobile|landline|unified|tollfree|foreign|invalid|none"}
+  - {name: website_domain,    stage: ingest, type: str,   pii: false}
+  - {name: website_platform,  stage: ingest, type: str,   pii: false, desc: "own_site|salla|zid|instagram|whatsapp|linktree|social|none"}
+  - {name: store_key,         stage: ingest, type: str,   pii: false}
+  - {name: instagram_handle,  stage: ingest, type: str,   pii: false}
+  - {name: has_whatsapp_link, stage: ingest, type: bool,  pii: false}
+  - {name: text_blob,         stage: ingest, type: str,   pii: true,  desc: "bio + captions, input for Day 2 BNPL/LLM; may contain names"}
+  # --- Day 2 (contract declared now, filled later) ---
+  - {name: merchant_id,       stage: resolve, type: str,  pii: false}
+  - {name: exclusion_reason,  stage: resolve, type: str,  pii: false}
+  - {name: bnpl_status,       stage: enrich, type: str,   pii: false, origin: rule, desc: "none|tabby|competitor_only|generic_installment|unknown"}
+  - {name: bnpl_providers,    stage: enrich, type: str,   pii: false, origin: rule}
+  - {name: owner_name_inferred, stage: enrich, type: str, pii: true,  origin: llm}
+  - {name: ticket_sar_inferred, stage: enrich, type: str, pii: false, origin: llm}
+  - {name: hook_ar_inferred,  stage: enrich, type: str,   pii: false, origin: llm}
+  - {name: score,             stage: score,  type: int,   pii: false}
+  - {name: tier,              stage: score,  type: str,   pii: false, desc: "A|B|C"}

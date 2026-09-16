@@ -1,0 +1,92 @@
+# Source registry — every source considered, including rejected ones.
+# A source is validated PER SEGMENT: Google Maps can pass for clinics and fail
+# for D2C brands. Metrics are written by scripts/03_source_report.py into
+# data/samples/<source>__<segment>__report.md; status changes here are manual,
+# with a reason and a date.
+#
+# role:   primary | enrichment | exclusion_list | competitor_signal
+# status: pending_validation | accepted | rejected | not_attempted
+# rejection_reason: low_sme_coverage | wrong_population | deprecated |
+#                   access_cost | tos_risk | stale | by_design
+
+validation_protocol:
+  set_on: 2026-09-16
+  set_before_data: true          # thresholds chosen before seeing any sample
+  sample_size: 20
+  random_seed: 42
+  thresholds:
+    icp_relevance_min: 0.60      # fit / labeled, unclear counts as not fit
+    contactable_min: 0.50        # mobile | instagram | whatsapp link
+
+sources:
+  # ---------- primary, to validate on Day 1 ----------
+  - id: google_maps
+    role: primary
+    tool: Apify compass/crawler-google-places
+    segments: [A_aesthetic_clinics, B_custom_furniture]
+    status: pending_validation
+    validation: {}
+
+  - id: instagram
+    role: primary
+    tool: Apify apify/instagram-profile-scraper
+    segments: [A_aesthetic_clinics, B_custom_furniture, C_salla_zid_d2c]
+    status: pending_validation
+    note: Seeded from Maps handles, so it is also an enrichment step; validated on its own fill rates.
+    validation: {}
+
+  - id: salla_zid_dork
+    role: primary
+    tool: Google search operators -> manual url_list CSV
+    segments: [C_salla_zid_d2c]
+    status: pending_validation
+    validation: {}
+
+  # ---------- roles other than primary ----------
+  - id: tabby_merchant_directory
+    role: exclusion_list
+    status: pending_validation
+    note: Merchants already live on Tabby are removed, not targeted.
+
+  - id: tamara_merchant_directory
+    role: competitor_signal
+    status: pending_validation
+    note: Presence sets bnpl_status=competitor_only (switch / dual-BNPL pitch), not a sourcing channel.
+
+  - id: apollo
+    role: enrichment
+    status: not_attempted
+    note: Day 2 email waterfall for segment C founders with a LinkedIn footprint only.
+
+  # ---------- rejected before collection ----------
+  - id: linkedin_sales_navigator
+    role: primary
+    status: rejected
+    rejection_reason: low_sme_coverage
+    note: >
+      KSA SME owners in target verticals sell through WhatsApp/Instagram/Snapchat;
+      LinkedIn scraping also carries ToS risk. Not scraped in this project.
+
+  - id: crunchbase_magnitt
+    role: primary
+    status: rejected
+    rejection_reason: wrong_population
+    note: VC-backed startups, not SME merchants.
+
+  - id: maroof
+    role: primary
+    status: rejected
+    rejection_reason: deprecated
+    note: Ministry of Commerce moved e-store registration to business.sa (Mar 2023).
+
+  - id: wathq_cr_api
+    role: enrichment
+    status: rejected
+    rejection_reason: access_cost
+    note: Paid, slow access; disproportionate for a 3-day artifact.
+
+  - id: snapchat
+    role: primary
+    status: rejected
+    rejection_reason: tos_risk
+    note: High KSA relevance as an outreach channel, not as a scraped source.

@@ -1,0 +1,85 @@
+# ICP hypotheses — v1, written 2026-09-16 (Day 1), BEFORE any data was collected.
+#
+# Every segment is a falsifiable hypothesis, not a fact. Each carries
+# `kill_criteria`: the Day 1 measurement that would reject it. If a segment
+# is rejected, it stays in this file with status: rejected and a reason —
+# it is not deleted (same rule as data/sources.yaml).
+#
+# Product context (public information, not internal Tabby data):
+#   - SAMA consumer-finance licence (Jun 2026): 12-month plans, SAR 2,000-50,000
+#   - SAMA SME-finance licence (Jun 2026): working capital for businesses
+#   - Pay-in-4 remains the flagship BNPL product
+# product_fit uses these three labels: bnpl_pay_in_4 | ltf_12m | sme_financing
+
+version: 1
+written: 2026-09-16
+geo:
+  country: SA
+  cities: [riyadh, jeddah, dammam_khobar]   # priority order; see queries.yaml
+
+targets:            # raw-record targets for Day 1, not final list size
+  A_aesthetic_clinics: 800
+  B_custom_furniture: 600
+  C_salla_zid_d2c: 300
+  final_a_tier: 50  # Day 2 deliverable: scored, contactable, decision-maker named
+
+segments:
+  A_aesthetic_clinics:
+    status: hypothesis
+    definition: >
+      Independent dental-aesthetic / orthodontic / dermatology-laser clinics,
+      1-5 branches, patient pays out of pocket (elective, not insurance-driven).
+    why_bnpl: >
+      Ticket SAR 3k-25k sits inside the 12-month LTF range. Pain: consultation
+      does not convert to treatment because of one upfront payment.
+    product_fit: [ltf_12m, bnpl_pay_in_4]
+    expected_ticket_sar: [3000, 25000]
+    decision_maker: [owner_doctor, medical_director, clinic_manager]
+    risk_flag: medical_category_needs_risk_review   # flag, not an auto-drop
+    kill_criteria:
+      - "icp_relevance < 0.60 on 20-record Google Maps sample"
+      - "contactable_rate (mobile | instagram | whatsapp) < 0.50"
+      - "chain_rate > 0.40 (Maps returns mostly hospital groups / chains)"
+
+  B_custom_furniture:
+    status: hypothesis
+    definition: >
+      Made-to-order majlis / sofa / curtain workshops with a showroom and an
+      Instagram/WhatsApp sales channel. Offline-first.
+    why_bnpl: >
+      Ticket SAR 5k-40k, typical 50% prepayment, seasonal peaks (Ramadan, Eid,
+      wedding season). Second hook: materials bought upfront -> working capital.
+    product_fit: [ltf_12m, sme_financing]
+    expected_ticket_sar: [5000, 40000]
+    decision_maker: [owner]
+    kill_criteria:
+      - "icp_relevance < 0.60 (sample dominated by fabric wholesalers / mass retailers)"
+      - "mobile_fill < 0.50 (owner not reachable directly)"
+
+  C_salla_zid_d2c:
+    status: hypothesis
+    definition: >
+      D2C brands on Salla or Zid in oud/perfume and abaya/modest fashion,
+      AOV SAR 250-1,500, founder is the public face of the brand.
+    why_bnpl: >
+      Pay-in-4 on checkout; BNPL presence is machine-detectable, so white
+      space is measurable. Platform integration -> short time-to-live.
+    product_fit: [bnpl_pay_in_4]
+    expected_ticket_sar: [250, 1500]
+    decision_maker: [founder]
+    kill_criteria:
+      - "< 30 unique stores from the first 10 dork queries (source too thin)"
+      - "icp_relevance < 0.60 (dropshipping / reseller noise)"
+      - "Day 2 only: > 0.60 of stores already show a BNPL provider (no white space)"
+
+  D_wildcard_academies:
+    status: not_attempted
+    definition: Padel / sports academies and training centres with annual packages.
+    note: Collected only if Day 1 finishes early. Kept here so the choice is visible.
+
+disqualifiers:            # applied in Day 2 cleaning, recorded per row as exclusion_reason
+  chain_location_threshold: 5      # same name_key at > 5 locations -> enterprise/chain
+  permanently_closed: true
+  outside_target_cities: true
+  existing_tabby_merchant: true    # exclusion list, see data/sources.yaml: tabby_merchant_directory
+  name_contains_ar: ["مستشفى", "مجمع طبي"]   # hospital / medical complex -> not SME clinic

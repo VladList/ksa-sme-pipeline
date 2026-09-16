@@ -1,0 +1,19 @@
+repos:
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.0
+    hooks:
+      - id: gitleaks
+
+  - repo: local
+    hooks:
+      - id: no-unmasked-ksa-mobiles
+        name: no unmasked KSA mobile numbers in committed data/docs
+        entry: uv run python scripts/check_no_pii.py
+        language: system
+        files: ^(data/(samples|apify_inputs)/|data/[^/]+\.(csv|yaml)$|output/|notebooks/|README\.md$)
+      - id: pytest
+        name: tests (normalisation + data contract)
+        entry: uv run pytest -q
+        language: system
+        pass_filenames: false
+        files: ^(src/|config/schema\.yaml|tests/)
