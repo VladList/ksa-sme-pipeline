@@ -16,4 +16,4 @@ repos:
         entry: uv run pytest -q
         language: system
         pass_filenames: false
-        files: ^(src/|config/schema\.yaml|tests/)
+        files: ^(src/|scripts/|config/|tests/)
