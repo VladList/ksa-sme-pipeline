@@ -28,17 +28,37 @@ def write(path: Path, payload: dict) -> None:
 
 def google_maps(q: dict, mode: str) -> None:
     gm = q["google_maps"]
-    for segment, langs in gm["segments"].items():
-        if mode == "sample":
-            city = gm["sample"]["city"]
+    if mode == "sample":
+        city = gm["sample"]["city"]
+        for segment, langs in gm["segments"].items():
             payload = {**gm["actor_defaults"], "searchStringsArray": [langs["ar"][0]],
                        "locationQuery": q["cities"][city], "maxCrawledPlacesPerSearch": gm["sample"]["max_places"]}
             write(APIFY_INPUTS / "sample" / f"google_maps__{segment}__{city}.json", payload)
-        else:
-            for city, location in q["cities"].items():
-                payload = {**gm["actor_defaults"], "searchStringsArray": langs.get("ar", []) + langs.get("en", []),
-                           "locationQuery": location, "maxCrawledPlacesPerSearch": gm["full"]["max_places"]}
-                write(APIFY_INPUTS / "full" / f"google_maps__{segment}__{city}.json", payload)
+        return
+
+    # Stale full inputs (dropped cities, old caps) are removed first so they cannot be run by mistake.
+    for stale in (APIFY_INPUTS / "full").glob("google_maps__*.json"):
+        stale.unlink()
+
+    plan, places = [], 0
+    for segment, langs in gm["segments"].items():
+        keywords = langs.get("ar", []) + langs.get("en", [])
+        cap = gm["full"]["max_places"][segment]
+        for city in gm["full"]["cities"]:
+            plan.append((segment, city, keywords, cap))
+            places += len(keywords) * cap
+            print(f"  {segment:22} {city:14} {len(keywords)} keywords x {cap} = {len(keywords) * cap}")
+
+    cost = places * gm["price_per_1k_places_usd"] / 1000
+    ceiling = gm["budget_usd"] - gm["reserve_usd"]
+    print(f"full plan: up to {places} places, up to ${cost:.2f} (ceiling ${ceiling:.2f}; upper bound, real runs stop earlier)")
+    if cost > ceiling:
+        sys.exit("OVER BUDGET - no inputs written. Cut keywords in config/queries.yaml (step 1.1) or lower max_places.")
+
+    for segment, city, keywords, cap in plan:
+        payload = {**gm["actor_defaults"], "searchStringsArray": keywords,
+                   "locationQuery": q["cities"][city], "maxCrawledPlacesPerSearch": cap}
+        write(APIFY_INPUTS / "full" / f"google_maps__{segment}__{city}.json", payload)
 
 
 def instagram(segment: str) -> None:

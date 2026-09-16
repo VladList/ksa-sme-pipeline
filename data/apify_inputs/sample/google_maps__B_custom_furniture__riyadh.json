@@ -1,7 +1,15 @@
 {
   "language": "en",
   "skipClosedPlaces": false,
+  "scrapePlaceDetailPage": false,
   "scrapeContacts": false,
+  "scrapeSocialMediaProfiles": {
+    "facebooks": false,
+    "instagrams": false,
+    "youtubes": false,
+    "tiktoks": false,
+    "twitters": false
+  },
   "scrapeReviewsPersonalData": false,
   "maximumLeadsEnrichmentRecords": 0,
   "maxReviews": 0,

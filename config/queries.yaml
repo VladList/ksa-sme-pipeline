@@ -1,6 +1,6 @@
 # Search matrix: segment x city x language. Consumed by scripts/01_build_apify_inputs.py.
-# Keyword lists are a Day 1 hypothesis too: after the sample run, keywords
-# with low relevance are removed HERE with a comment, not silently.
+# Keyword lists are a Day 1 hypothesis too: after the manual check (step 1.1),
+# keywords with low relevance are removed HERE with a comment, not silently.
 
 cities:
   riyadh: "Riyadh, Saudi Arabia"
@@ -9,17 +9,31 @@ cities:
 
 google_maps:
   actor: compass/crawler-google-places
-  sample:                    # validation run: 1 keyword x 1 city x 20 places per segment
+  pricing_checked: 2026-09-16
+  price_per_1k_places_usd: 4.00      # Free plan, base price per scraped place
+  budget_usd: 5.00                   # Apify free monthly credit. Decision 2026-09-16: no paid plan
+  reserve_usd: 1.00                  # samples, contacts experiment (1.4), reruns
+  sample:                            # validation run: 1 keyword x 1 city x 20 places per segment
     city: riyadh
     max_places: 20
   full:
-    max_places: 100          # Maps UI caps results per search; split by district if saturated
+    cities: [riyadh, jeddah]         # dammam_khobar dropped 2026-09-16: 1K-place budget ceiling
+    max_places:                      # per search string. Overlapping keywords are paid twice, dedupe is free
+      A_aesthetic_clinics: 80
+      B_custom_furniture: 70
   actor_defaults:
     language: en
-    skipClosedPlaces: false          # keep closed places, measure closed_rate
-    scrapeContacts: false            # EXPERIMENT Day 1: rerun sample with true, compare instagram fill vs cost
+    skipClosedPlaces: false          # a filter costs +$1/1K; closed places are excluded on Day 2 instead
+    scrapePlaceDetailPage: false     # add-on +$2/1K
+    scrapeContacts: false            # add-on +$2/1K; EXPERIMENT 1.4 only: sample A with true
+    scrapeSocialMediaProfiles:       # add-on +$100/1K — must stay off explicitly
+      facebooks: false
+      instagrams: false
+      youtubes: false
+      tiktoks: false
+      twitters: false
     scrapeReviewsPersonalData: false # never collect reviewer personal data
-    maximumLeadsEnrichmentRecords: 0
+    maximumLeadsEnrichmentRecords: 0 # add-on +$100/1K
     maxReviews: 0
     maxImages: 0
   segments:
@@ -35,7 +49,7 @@ instagram:
   seed_strategy: handles_from_google_maps   # website/instagram fields of ingested Maps rows
   optional_hashtags: ["عيادة_أسنان_الرياض", "تفصيل_مجالس", "عطور_سعودية"]
 
-dork:                        # run manually in Google (or a SERP actor), paste results into url_list CSV
+dork:                        # run manually in Google, paste results into url_list CSV
   note: Verify the store URL pattern on the first 10 results before scaling.
   segments:
     C_salla_zid_d2c:
