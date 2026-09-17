@@ -66,3 +66,17 @@ Source: `data/raw/salla_zid_dork/2026-09-17__dork.csv` (not committed), `data/sa
 17. **Salla is not KSA-only:** 2 of 43 stores signal Bahrain or the Emirates in the name. Country must be checked.
 18. **Contactability cannot be measured from search results.** The validation script prints contactable 0.0 and
     recommends reject; that is missing data, not a measured absence. Provisional accept, conditional on Day 2.
+
+## 2026-09-17 — entity resolution and exclusion rules
+
+Source: `data/samples/resolve_summary.md`, `data/samples/rules_check.md`, rules in `config/rules.yaml`.
+
+19. **821 records -> 765 merchants;** 39 merchants are built from 2+ records (branches or the same place found twice).
+    No identifier was shared widely enough to be treated as noise. 5 merchants span both Riyadh and Jeddah: first to QA.
+20. **Exclusions:** A 73 (71 without a specialty signal, 4 hospital or enterprise group), B 107 without a made-to-order
+    signal, C 3 (2 outside KSA, 1 wholesale). No merchant crossed the chain threshold of 5 locations.
+21. **The B rule held out of sample.** On 50 labelled records from the first probe (labelled before the rule existed) it
+    kept all 45 fit and dropped 4 of 5 not_fit. Limitation: that probe was 95% Riyadh, so it does not test Jeddah,
+    where the rule matters most. A and C rule checks are in-sample (0.93-1.0 precision) and optimistic.
+22. **Gate G2 passed:** eligible A 250 (203 contactable), B 292 (279), C 40 (contactability pending). Raw volume is below
+    the Day 1 targets because of the budget ceiling, but eligible merchants exceed the Top-50 need more than tenfold.

@@ -86,3 +86,11 @@ business leads enrichment, place details, reviews, images and filters stay off.
 - B exclusion rule: keep only records with a made-to-order signal in name or category. Fitted on the same
   validation sample, so its accuracy must be re-checked on other records before it is reported.
 - Tabby and Tamara presence: per-lead lookup of their merchant pages plus website BNPL fingerprint.
+
+### Entity resolution and exclusions (added 2026-09-17, stage 4)
+- A merchant is one sales conversation. Records are linked (union-find) when they share a Google place id, phone,
+  own website domain, Instagram handle or store key. Hosting and directory domains never link; an identifier shared by
+  more than 12 records is treated as noise. `n_locations` = distinct Google places in the merchant.
+- Exclusion rules live in `config/rules.yaml`; every excluded merchant keeps its row with all matching reasons.
+- Each rule set is checked against existing labels (`data/samples/rules_check.md`) and marked in-sample when the rule
+  was written after those labels were seen.

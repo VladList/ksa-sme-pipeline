@@ -1,0 +1,45 @@
+# Day 2 rules: how records become merchants and which merchants are excluded.
+# Written 2026-09-17 after source validation. Every rule is evaluated against the hand/LLM labels
+# already in data/samples/ by scripts/04_resolve.py (data/samples/rules_check.md), and the report
+# says whether that check is in-sample (rule designed after seeing those labels) or out-of-sample.
+# Excluded merchants keep their row with exclusion_reason; nothing is deleted.
+
+version: 1
+written: 2026-09-17
+
+inputs:                       # source_id: glob on run_id; probes are not merchants
+  google_maps: "2026-09-17__full_*"
+  salla_zid_dork: "2026-09-17__dork"
+
+link:
+  # Records sharing any of these identifiers are the same merchant (union-find).
+  identifiers: [google_place_id, phone_e164, website_domain, instagram_handle, store_key]
+  # An identifier shared by more records than this is noise (agency template, shared booking line), not a link.
+  hub_max_records: 12
+  # Hosting, directory and link-hub domains that many unrelated businesses use as "website".
+  ignore_domains: [sites.google.com, google.com, docs.google.com, forms.gle, about.me, webteb.com, mayoclinic.org,
+                   moh.gov.sa, reach.link, wa.link, bit.ly, taplink.cc, beacons.ai, goo.gl, maps.app.goo.gl,
+                   linkin.bio, bio.link, vezeeta.com, okadoc.com]
+
+common:
+  exclude_closed: true
+  # a merchant with more distinct Google places than icp.yaml chain_location_threshold is a chain
+
+segments:
+  A_aesthetic_clinics:
+    keep_if_signal:           # a specialty signal is required (same rule as the labels)
+      name_regex: "أسنان|اسنان|تقويم|جلدي|تجميل|ليزر|بشرة|ابتسام|dental|dentist|dent|ortho|derm|skin|laser|cosmetic|beauty|smile|aesthetic"
+      categories: [Cosmetic dentist, Dentist, Dental clinic, Orthodontist, Endodontist, Periodontist, Prosthodontist,
+                   Pediatric dentist, Dermatologist, Skin care clinic, Laser hair removal service, Medical spa,
+                   Plastic surgeon, Plastic surgery clinic]
+    exclude_if:
+      categories: [Hospital, Private hospital, General hospital, Government hospital]
+      name_regex: "مستشفى|hospital|سليمان الحبيب|sulaiman al habib|al habib|الفارابي|farabi|المهيدب|muhaidib"
+  B_custom_furniture:
+    keep_if_signal:
+      name_regex: "تفصيل|تنجيد|ستائر|ستاير|ستاىر|ويفي"
+      categories: [Curtain supplier and maker, Curtain store, Blinds shop, Upholstery shop, Furniture maker]
+  C_salla_zid_d2c:
+    exclude_if:              # checked on name and store key
+      outside_ksa_regex: "البحرين|bahrain|الامارات|الإمارات|emarat|emirates|dubai|دبي|الكويت|kuwait|qatar|قطر"
+      wholesale_regex: "الجمله|الجملة|wholesale"
