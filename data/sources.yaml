@@ -58,10 +58,28 @@ sources:
 
   - id: salla_zid_dork
     role: primary
-    tool: Google search operators -> manual url_list CSV
+    tool: Google search operators -> url_list CSV (links collected from the results page in the browser)
     segments: [C_salla_zid_d2c]
-    status: pending_validation
-    validation: {}
+    status: provisionally_accepted
+    decided_on: 2026-09-17
+    validation:
+      runs: "2026-09-17__dork"
+      report: data/samples/salla_zid_dork__C_salla_zid_d2c__report.md
+      C_salla_zid_d2c:
+        queries_run: 5                 # of 10 allowed by the kill criterion
+        unique_stores: 43              # kill criterion: < 30 from 10 queries -> passed with 5
+        store_url_pattern: confirmed   # salla.sa/<store>/..., <store>.zid.store/...; 43/43 parsed
+        icp_relevance: 0.65            # 13 fit / 20 (2 not_fit: reseller or wholesale; 5 unclear from title alone)
+        contactable_rate: not_measured # the script prints 0.0 and recommends reject: search results carry no phone or
+                                       # Instagram, so empty means not checked (methodology), not absent
+        verdict: provisional accept
+        condition: >
+          Measure contactability on Day 2 from the store pages (the same fetch as the BNPL fingerprint).
+          If contactable_rate < 0.50 the source is rejected.
+        caveats: >
+          Labels come from search-result titles only. 2 of 43 stores show a non-KSA signal in the name
+          (Bahrain, Emirates); country is checked on Day 2. Resellers of global perfume brands are labelled
+          not_fit because the hypothesis is D2C brands, although they are valid BNPL merchants.
 
   # ---------- roles other than primary ----------
   - id: tabby_merchant_directory

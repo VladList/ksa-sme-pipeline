@@ -59,7 +59,8 @@ segments:
       - "mobile_fill < 0.50 (owner not reachable directly)"
 
   C_salla_zid_d2c:
-    status: hypothesis
+    status: provisionally_validated   # 2026-09-17: 43 stores from 5 queries, relevance 0.65; contactability pending Day 2
+    evidence: data/samples/salla_zid_dork__C_salla_zid_d2c__report.md
     definition: >
       D2C brands on Salla or Zid in oud/perfume and abaya/modest fashion,
       AOV SAR 250-1,500, founder is the public face of the brand.

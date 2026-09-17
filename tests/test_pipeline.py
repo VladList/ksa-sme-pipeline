@@ -43,3 +43,17 @@ def test_pii_guard():
     assert find_mobiles("drop,fit 4 < 5\n2026-09-17,A,riyadh_circle") == []
     assert find_mobiles("fit 5 2026-09-17") == []
     assert find_mobiles("call 055-000-0001") == ["0550000001"]
+
+
+def test_url_list_ingest_keeps_title_and_merges_pages_of_one_store(tmp_path):
+    raw = tmp_path / "2026-09-17__dork.csv"
+    raw.write_text(
+        "url,query,title,segment,found_on\n"
+        '"https://tharwa.zid.store/","site:zid.store x","Tharwa perfumes",C_salla_zid_d2c,2026-09-17\n'
+        '"https://tharwa.zid.store/products/abc","site:zid.store x","Tharwa product",C_salla_zid_d2c,2026-09-17\n'
+        '"https://salla.sa/nife.3od","site:salla.sa x","Nife oud",C_salla_zid_d2c,2026-09-17\n',
+        encoding="utf-8")
+    rows = {r["record_id"]: r for r in ingest("salla_zid_dork", raw)}
+    assert set(rows) == {"salla_zid_dork:tharwa.zid.store", "salla_zid_dork:salla.sa/nife.3od"}
+    assert rows["salla_zid_dork:tharwa.zid.store"]["name"] == "Tharwa perfumes"
+    assert rows["salla_zid_dork:salla.sa/nife.3od"]["phone_type"] == "none"

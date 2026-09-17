@@ -105,6 +105,8 @@ def url_list(item: dict, run_id: str, segment_hint: str | None, kw_map: dict) ->
     row.update(
         record_id=f"salla_zid_dork:{key}", source_id="salla_zid_dork", run_id=run_id,
         segment=item.get("segment") or segment_hint, query=item.get("query"), evidence_url=item.get("url"),
+        name=(item.get("title") or "").strip() or None,   # search-result title: the only name a dork gives us
+        phone_type="none",                                # no contact data in a search result; fetched on Day 2
         website_domain=web["website_domain"], website_platform=web["website_platform"],
         store_key=web["store_key"], instagram_handle=web["instagram_handle"],
     )

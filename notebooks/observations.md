@@ -54,3 +54,15 @@ Source: `data/runs.csv`, `data/samples/google_maps__*__report.md`.
 14. **No free bulk list for either provider.** Both publish browsable store directories with per-merchant pages;
     full lists are sold by StoreLeads, which reports 2,377 KSA e-commerce stores with Tabby and 4,940 with Tamara
     (third-party tracker, e-commerce only, not market share). Decision: per-lead lookup for the shortlist.
+
+## 2026-09-17 — segment C, Salla/Zid via search operators
+
+Source: `data/raw/salla_zid_dork/2026-09-17__dork.csv` (not committed), `data/samples/salla_zid_dork__C_salla_zid_d2c__sample.csv`.
+
+15. **Volume is not the constraint:** 5 queries, 45 result links, 43 unique stores (Salla 27, Zid 16). The store URL
+    pattern holds for both platforms; many Zid stores use random subdomains, so the result title is the only brand name.
+16. **Relevance 0.65 on 20 stores**, labelled from titles only: 13 fit, 2 not_fit (wholesale / reseller of global
+    brands), 5 unclear (title without a niche). Store pages on Day 2 will turn most `unclear` into fit or not_fit.
+17. **Salla is not KSA-only:** 2 of 43 stores signal Bahrain or the Emirates in the name. Country must be checked.
+18. **Contactability cannot be measured from search results.** The validation script prints contactable 0.0 and
+    recommends reject; that is missing data, not a measured absence. Provisional accept, conditional on Day 2.
