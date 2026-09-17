@@ -43,3 +43,14 @@ Source: `data/runs.csv`, `data/samples/google_maps__*__report.md`.
     on Riyadh data return furniture showrooms in Jeddah. Share of B records with a custom-work signal in name or
     category: Jeddah 110/208, Riyadh 194/210. Consequence of skipping a Jeddah probe; caught by stratifying the
     validation sample by city.
+12. **The contacts add-on is charged only for places with a website.** A Riyadh cost $0.99 and A Jeddah $0.97
+    against an upper bound of $1.08 each; B runs matched the base price exactly ($0.84, $0.83).
+13. **Two metrics are not trustworthy as-is:** `closed_rate` is 0.0 in all runs (the actor appears not to return
+    closed places for these searches; treat as not measured), and name-based `chain_rate` in B (0.053) is inflated
+    by identical SEO names (one name shared by 16 different workshops).
+
+## 2026-09-17 — Tabby / Tamara merchant directories
+
+14. **No free bulk list for either provider.** Both publish browsable store directories with per-merchant pages;
+    full lists are sold by StoreLeads, which reports 2,377 KSA e-commerce stores with Tabby and 4,940 with Tamara
+    (third-party tracker, e-commerce only, not market share). Decision: per-lead lookup for the shortlist.

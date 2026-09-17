@@ -15,17 +15,18 @@ version: 1
 written: 2026-09-16
 geo:
   country: SA
-  cities: [riyadh, jeddah, dammam_khobar]   # priority order; see queries.yaml
+  cities: [riyadh, jeddah]   # dammam_khobar dropped 2026-09-16: $5 budget ceiling; see queries.yaml
 
 targets:            # raw-record targets for Day 1, not final list size
-  A_aesthetic_clinics: 800
-  B_custom_furniture: 600
+  A_aesthetic_clinics: 800   # actual 360: budget ceiling set after targets were written (2026-09-16)
+  B_custom_furniture: 600    # actual 418
   C_salla_zid_d2c: 300
   final_a_tier: 50  # Day 2 deliverable: scored, contactable, decision-maker named
 
 segments:
   A_aesthetic_clinics:
-    status: hypothesis
+    status: validated          # 2026-09-17, Google Maps: relevance 0.80, contactable 0.79; no kill criterion hit
+    evidence: data/samples/google_maps__A_aesthetic_clinics__report.md
     definition: >
       Independent dental-aesthetic / orthodontic / dermatology-laser clinics,
       1-5 branches, patient pays out of pocket (elective, not insurance-driven).
@@ -42,7 +43,8 @@ segments:
       - "chain_rate > 0.40 (Maps returns mostly hospital groups / chains)"
 
   B_custom_furniture:
-    status: hypothesis
+    status: validated_with_limitation   # 2026-09-17: relevance 0.65 overall, Riyadh 0.90, Jeddah 0.40; contactable 0.88
+    evidence: data/samples/google_maps__B_custom_furniture__report.md
     definition: >
       Made-to-order majlis / sofa / curtain workshops with a showroom and an
       Instagram/WhatsApp sales channel. Offline-first.

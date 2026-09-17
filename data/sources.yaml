@@ -66,13 +66,22 @@ sources:
   # ---------- roles other than primary ----------
   - id: tabby_merchant_directory
     role: exclusion_list
-    status: pending_validation
-    note: Merchants already live on Tabby are removed, not targeted.
+    status: accepted
+    decided_on: 2026-09-17
+    method: per-lead lookup, not a bulk list
+    note: >
+      Public store directory and per-merchant pages exist (tabby.ai/en-SA/shop/stores, tabby.ai/en-SA/merchant/<slug>);
+      no free bulk export. Checked for each shortlisted lead on Day 2, together with the website BNPL fingerprint.
+      Context only: StoreLeads reports 2,377 KSA e-commerce stores with Tabby (paid list, July 2026).
 
   - id: tamara_merchant_directory
     role: competitor_signal
-    status: pending_validation
-    note: Presence sets bnpl_status=competitor_only (switch / dual-BNPL pitch), not a sourcing channel.
+    status: accepted
+    decided_on: 2026-09-17
+    method: per-lead lookup, not a bulk list
+    note: >
+      Store pages at tamara.co/en-sa/stores/<slug>; no free bulk export. Presence sets bnpl_status=competitor_only
+      (switch / dual-BNPL pitch). Context only: StoreLeads reports 4,940 KSA e-commerce stores with Tamara.
 
   - id: apollo
     role: enrichment

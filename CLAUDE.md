@@ -26,10 +26,10 @@
 
 ## Команды (существуют)
 - uv run pytest -q
-- uv run python scripts/01_build_apify_inputs.py google_maps --mode sample|full
-- uv run python scripts/01_build_apify_inputs.py instagram --segment <segment>
+- uv run python scripts/01_build_apify_inputs.py google_maps --mode full|sample   (проверка бюджета от spent_usd)
 - uv run python scripts/02_ingest.py <source_id> <raw_file> [--segment <segment>]
-- uv run python scripts/03_source_report.py sample|report <source_id> <segment>
+- uv run python scripts/03_source_report.py sample|report <source_id> <segment> --runs "<glob run_id>"   (пробы исключать)
+- uv run python scripts/check_no_pii.py <files>
 
 ## Окружение
 .env не читается агентом (.claude/settings.json). data/private/ тоже.

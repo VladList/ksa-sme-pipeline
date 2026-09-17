@@ -1,7 +1,7 @@
 # KSA SME Merchant Pipeline
 
-> **Status: Day 1 of 3 — collection and source validation.** The numbers below are
-> placeholders until `notebooks/state.md` says a stage is closed. Nothing in this
+> **Status: Day 2 of 3 — collection and source validation closed; enrichment and scoring next.**
+> Numbers below are filled only for closed stages (see `notebooks/state.md`). Nothing in this
 > README describes work that has not been run.
 
 An outbound pipeline for BNPL merchant acquisition in Saudi Arabia: find SME
@@ -19,20 +19,20 @@ _Filled on Day 3 from `data/runs.csv`, `data/sources.yaml` and `output/public/`.
 
 | | value |
 |---|---|
-| raw records collected | — |
+| raw records collected (Google Maps, Riyadh + Jeddah) | 778 (A 360, B 418) |
 | unique merchants after entity resolution | — |
-| sources validated / accepted / rejected | — / — / — |
+| sources validated / accepted / rejected | Google Maps accepted for A and B (B with a Jeddah limitation); Salla/Zid pending |
 | A-tier leads (scored, contactable, decision-maker named) | — |
 | share of scored merchants with no BNPL provider | — |
-| total tool cost, USD | — |
+| total tool cost, USD | 4.64 (Apify free credit; probes 1.01, full run 3.63) |
 
 ## Pipeline
 
 | stage | command | reads | writes | status |
 |---|---|---|---|---|
-| 1. Build search inputs | `scripts/01_build_apify_inputs.py` | `config/queries.yaml` | `data/apify_inputs/` | ready |
-| 2. Ingest raw exports | `scripts/02_ingest.py` | `data/raw/<source>/` | `data/interim/<source>/`, `data/runs.csv` | ready |
-| 3. Validate source × segment | `scripts/03_source_report.py` | interim + labelled sample | `data/samples/*__report.md` | ready |
+| 1. Build search inputs | `scripts/01_build_apify_inputs.py` | `config/queries.yaml` | `data/apify_inputs/` | done |
+| 2. Ingest raw exports | `scripts/02_ingest.py` | `data/raw/<source>/` | `data/interim/<source>/`, `data/runs.csv` | done |
+| 3. Validate source × segment | `scripts/03_source_report.py` | interim + labelled sample | `data/samples/*__report.md` | done for Google Maps |
 | 4. Entity resolution + exclusions | — | | | Day 2 |
 | 5. BNPL fingerprint + LLM enrichment | — | `config/bnpl_markers.yaml` | | Day 2 |
 | 6. Scoring + tiers | — | `config/scoring.yaml` | | Day 2 |
@@ -58,12 +58,12 @@ the stage runs, not in advance.
 ```bash
 uv sync
 uv run pytest -q
-uv run python scripts/01_build_apify_inputs.py google_maps --mode sample
-# run the actor in Apify, export JSON to data/raw/google_maps/2026-09-16__sample_A.json
-uv run python scripts/02_ingest.py google_maps data/raw/google_maps/2026-09-16__sample_A.json
-uv run python scripts/03_source_report.py sample google_maps A_aesthetic_clinics
+uv run python scripts/01_build_apify_inputs.py google_maps --mode full   # refuses to write inputs over budget
+# run each input in Apify, export JSON (All fields) to data/raw/google_maps/<date>__<label>.json
+uv run python scripts/02_ingest.py google_maps data/raw/google_maps/2026-09-17__full_A_aesthetic_clinics__riyadh.json
+uv run python scripts/03_source_report.py sample google_maps A_aesthetic_clinics --runs "2026-09-17__full_*"
 # label icp_label in the sample CSV, then:
-uv run python scripts/03_source_report.py report google_maps A_aesthetic_clinics
+uv run python scripts/03_source_report.py report google_maps A_aesthetic_clinics --runs "2026-09-17__full_*"
 ```
 
 ## What changed from the previous pipeline

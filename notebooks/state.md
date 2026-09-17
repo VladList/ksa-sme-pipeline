@@ -13,6 +13,8 @@ Top-50 A-tier SME-мерчантов в KSA (скоринг, контакт, Л�
 - [x] Эксперимент contacts: включён для A
 - [x] Full-сбор Google Maps: 778 мест (A 360, B 418), Riyadh + Jeddah
 - [x] Валидация Google Maps: accepted (A 0.80; B 0.65 с ограничением по Jeddah)
+- [x] Каталоги Tabby/Tamara: массовой бесплатной выгрузки нет → точечная проверка лидов на Day 2
+- [x] Документы синхронизированы: methodology (дополнения 2026-09-17), icp.yaml (статусы сегментов), README, CLAUDE.md
 
 ## Отменено / отложено (с причиной)
 - Instagram-актор: хэндлы уже есть из contacts (A 53%); профили — только для A-tier на Day 2, если останется бюджет
@@ -21,7 +23,6 @@ Top-50 A-tier SME-мерчантов в KSA (скоринг, контакт, Л�
 
 ## Дальше
 1. Сегмент C (Salla/Zid): 5 dork-запросов вручную, проверка паттерна URL; accept или reject
-2. Каталоги Tabby/Tamara: есть ли публичный список (exclusion list / competitor signal)
 3. Day 2: entity resolution (phone/domain/handle/place_id), исключения (закрытые, сети, B без признака заказа), BNPL-fingerprint, LLM-обогащение, скоринг
 
 ## Известные ограничения
