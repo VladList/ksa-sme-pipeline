@@ -24,16 +24,37 @@ sources:
     role: primary
     tool: Apify compass/crawler-google-places
     segments: [A_aesthetic_clinics, B_custom_furniture]
-    status: pending_validation
-    validation: {}
+    status: accepted
+    decided_on: 2026-09-17
+    validation:
+      runs: "2026-09-17__full_*"   # probes excluded: their location leaked into Riyadh Province
+      reports: [data/samples/google_maps__A_aesthetic_clinics__report.md, data/samples/google_maps__B_custom_furniture__report.md]
+      A_aesthetic_clinics:
+        verdict: accept
+        n_records: 360
+        icp_relevance: 0.80          # 16 fit / 20; Jeddah 0.70, Riyadh 0.90
+        contactable_rate: 0.789      # mobile 0.503, instagram 0.528 (from scrapeContacts)
+      B_custom_furniture:
+        verdict: accept_with_limitation
+        n_records: 418
+        icp_relevance: 0.65          # 13 fit / 20; Jeddah 0.40, Riyadh 0.90
+        contactable_rate: 0.880      # almost all via mobile
+        limitation: >
+          Jeddah below threshold on a 10-record sample (keywords chosen on Riyadh return furniture
+          showrooms there). Thresholds were set per source x segment, not per city, so the verdict
+          stands; mitigation is a Day 2 rule keeping only records with a custom-work signal in name or
+          category (110/208 Jeddah, 194/210 Riyadh). Rule was fitted on the same sample: re-check on
+          other records.
 
   - id: instagram
-    role: primary
+    role: enrichment
     tool: Apify apify/instagram-profile-scraper
     segments: [A_aesthetic_clinics, B_custom_furniture, C_salla_zid_d2c]
-    status: pending_validation
-    note: Seeded from Maps handles, so it is also an enrichment step; validated on its own fill rates.
-    validation: {}
+    status: not_attempted
+    decided_on: 2026-09-17
+    note: >
+      Handles already come from Google Maps scrapeContacts (A: 52.8% of records). Profile scraping
+      postponed to Day 2 for A-tier leads only (BNPL mentions in bio/captions), budget permitting.
 
   - id: salla_zid_dork
     role: primary
