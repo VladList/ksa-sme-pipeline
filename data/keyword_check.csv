@@ -1,15 +1,23 @@
-checked_on,segment,city,keyword,lang,fit,unclear,not_fit,skipped_by_dedupe,labeled_by,decision,reason
-2026-09-16,A,riyadh,عيادة تقويم أسنان,ar,8,0,2,6,llm_name_category_web,,
-2026-09-16,A,riyadh,عيادة جلدية وتجميل,ar,7,1,2,10,llm_name_category_web,,
-2026-09-16,A,riyadh,cosmetic dentist,en,6,2,2,7,llm_name_category_web,,
-2026-09-16,A,riyadh,orthodontic clinic,en,8,0,2,1,llm_name_category_web + manual_maps_check (6 doctor listings),,
-2026-09-16,A,riyadh,ابتسامة هوليود,ar,4,3,3,9,llm_name_category_web,,
-2026-09-16,A,riyadh,dermatology clinic,en,2,1,7,5,llm_name_category_web,,
-2026-09-16,A,riyadh,مركز ليزر,ar,1,1,8,10,llm_name_category_web,,
-2026-09-16,A,riyadh,عيادة تجميل أسنان,ar,1,2,7,14,llm_name_category_web,,
-2026-09-16,B,riyadh,تفصيل كنب,ar,10,0,0,3,llm_name_category_web,,
-2026-09-16,B,riyadh,تفصيل مجالس,ar,8,2,0,2,llm_name_category_web,,
-2026-09-16,B,riyadh,محل ستائر,ar,8,1,1,5,llm_name_category_web,,
-2026-09-16,B,riyadh,مفروشات تفصيل,ar,8,1,1,9,llm_name_category_web,,
-2026-09-16,B,riyadh,curtains shop,en,7,2,1,9,llm_name_category_web,,
-2026-09-16,B,riyadh,custom majlis furniture,en,4,4,2,3,llm_name_category_web,,
+checked_on,segment,city,keyword,lang,fit,unclear,not_fit,fit_unique_brands,skipped_by_dedupe,labeled_by,decision,reason
+2026-09-16,A,riyadh,عيادة تقويم أسنان,ar,8,0,2,,6,llm_name_category_web,superseded,measured with locationQuery that leaked into Riyadh Province (35/80 A places outside the city); re-measured in riyadh_circle
+2026-09-16,A,riyadh,عيادة جلدية وتجميل,ar,7,1,2,,10,llm_name_category_web,superseded,measured with locationQuery that leaked into Riyadh Province (35/80 A places outside the city); re-measured in riyadh_circle
+2026-09-16,A,riyadh,cosmetic dentist,en,6,2,2,,7,llm_name_category_web,superseded,measured with locationQuery that leaked into Riyadh Province (35/80 A places outside the city); re-measured in riyadh_circle
+2026-09-16,A,riyadh,orthodontic clinic,en,8,0,2,,1,llm_name_category_web + manual_maps_check (6 doctor listings),superseded,measured with locationQuery that leaked into Riyadh Province (35/80 A places outside the city); re-measured in riyadh_circle
+2026-09-16,A,riyadh,ابتسامة هوليود,ar,4,3,3,,9,llm_name_category_web,superseded,measured with locationQuery that leaked into Riyadh Province (35/80 A places outside the city); re-measured in riyadh_circle
+2026-09-16,A,riyadh,dermatology clinic,en,2,1,7,,5,llm_name_category_web,superseded,measured with locationQuery that leaked into Riyadh Province (35/80 A places outside the city); re-measured in riyadh_circle
+2026-09-16,A,riyadh,مركز ليزر,ar,1,1,8,,10,llm_name_category_web,superseded,measured with locationQuery that leaked into Riyadh Province (35/80 A places outside the city); re-measured in riyadh_circle
+2026-09-16,A,riyadh,عيادة تجميل أسنان,ar,1,2,7,,14,llm_name_category_web,superseded,measured with locationQuery that leaked into Riyadh Province (35/80 A places outside the city); re-measured in riyadh_circle
+2026-09-16,B,riyadh,تفصيل كنب,ar,10,0,0,,3,llm_name_category_web,keep,"fit 10, highest in B"
+2026-09-16,B,riyadh,تفصيل مجالس,ar,8,2,0,,2,llm_name_category_web,keep,"fit 8, three-way tie broken by lowest overlap (skipped 2)"
+2026-09-16,B,riyadh,محل ستائر,ar,8,1,1,,5,llm_name_category_web,keep,"fit 8, tie broken by overlap (skipped 5 vs 9)"
+2026-09-16,B,riyadh,مفروشات تفصيل,ar,8,1,1,,9,llm_name_category_web,drop,"fit 8, lost tie on overlap (skipped 9)"
+2026-09-16,B,riyadh,curtains shop,en,7,2,1,,9,llm_name_category_web,drop,"fit 7, below top 3"
+2026-09-16,B,riyadh,custom majlis furniture,en,4,4,2,,3,llm_name_category_web,drop,fit 4 < 5
+2026-09-17,A,riyadh_circle,cosmetic dentist,en,9,1,0,9,9,llm_name_category_web + manual_maps_check (doctor listings),keep,"fit 9, four-way tie; only dental keyword among ties (diversity)"
+2026-09-17,A,riyadh_circle,dermatology clinic,en,9,0,1,9,6,llm_name_category_web + manual_maps_check (doctor listings),drop,"fit 9, lost tie on overlap (skipped 6 vs 4) although it had more unique brands (9 vs 6); brand count added after the rule was fixed, not used"
+2026-09-17,A,riyadh_circle,orthodontic clinic,en,7,0,3,7,1,llm_name_category_web + manual_maps_check (doctor listings),drop,"fit 7, below top 3"
+2026-09-17,A,riyadh_circle,ابتسامة هوليود,ar,6,4,0,6,11,llm_name_category_web + manual_maps_check (doctor listings),drop,"fit 6, below top 3"
+2026-09-17,A,riyadh_circle,عيادة تجميل أسنان,ar,8,2,0,8,1,llm_name_category_web + manual_maps_check (doctor listings),drop,"fit 8, below top 3 (was fit 1 in the leaking probe: location, not keyword, caused the noise)"
+2026-09-17,A,riyadh_circle,عيادة تقويم أسنان,ar,8,1,1,8,12,llm_name_category_web + manual_maps_check (doctor listings),drop,"fit 8, below top 3"
+2026-09-17,A,riyadh_circle,عيادة جلدية وتجميل,ar,9,0,1,6,4,llm_name_category_web + manual_maps_check (doctor listings),keep,"fit 9, tie with dermatology clinic broken by overlap (skipped 4 vs 6); caveat: 4/10 are JosephDerm branches, 6 unique brands"
+2026-09-17,A,riyadh_circle,مركز ليزر,ar,9,0,1,8,1,llm_name_category_web + manual_maps_check (doctor listings),keep,"fit 9, four-way tie; only laser keyword among ties (diversity)"

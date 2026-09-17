@@ -6,12 +6,16 @@ from pathlib import Path
 
 from .normalize import to_ascii_digits
 
-_JOIN_SEPARATORS = re.compile(r"(?<=\d)[\s\-.()]+(?=\d)")
+# Separators inside one phone number: spaces, tabs, dashes, dots, brackets — never a line break,
+# otherwise a digit at the end of one CSV row glues onto the date that starts the next row.
+_JOIN_SEPARATORS = re.compile(r"(?<=\d)[ \t\-.()]+(?=\d)")
+_ISO_DATE = re.compile(r"(?<!\d)\d{4}-\d{2}-\d{2}(?!\d)")
 _KSA_MOBILE = re.compile(r"(?<!\d)(?:\+?966|00966|0)?5\d{8}(?!\d)")
 
 
 def find_mobiles(text: str) -> list[str]:
-    return _KSA_MOBILE.findall(_JOIN_SEPARATORS.sub("", to_ascii_digits(text)))
+    text = _ISO_DATE.sub(" DATE ", to_ascii_digits(text))
+    return _KSA_MOBILE.findall(_JOIN_SEPARATORS.sub("", text))
 
 
 def scan(paths: list[Path]) -> dict[str, int]:

@@ -39,3 +39,7 @@ def test_google_maps_ingest():
 def test_pii_guard():
     assert find_mobiles("call +966 55 000 0001") == ["+966550000001"]
     assert find_mobiles("masked +9665•••••001, landline 0110000002") == []
+    # regression 2026-09-17: a row ending in "5" glued onto the next row's date "2026-09-17"
+    assert find_mobiles("drop,fit 4 < 5\n2026-09-17,A,riyadh_circle") == []
+    assert find_mobiles("fit 5 2026-09-17") == []
+    assert find_mobiles("call 055-000-0001") == ["0550000001"]

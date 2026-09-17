@@ -1,3 +1,3 @@
 run_id,source_id,actor,input_file,raw_file,n_records,cost_usd,ran_on,notes
-2026-09-16__keyword_probe,google_maps,,,data/raw/google_maps/2026-09-16__keyword_probe.json,140,,,
-2026-09-17__keyword_probe_A_circle,google_maps,,,data/raw/google_maps/2026-09-17__keyword_probe_A_circle.json,80,,,
+2026-09-16__keyword_probe,google_maps,compass/crawler-google-places,data/apify_inputs/probe/google_maps__keyword_probe__riyadh.json,data/raw/google_maps/2026-09-16__keyword_probe.json,140,0.56,2026-09-16,"14 keywords x 10; locationQuery Riyadh (leaked into province); cost split estimated from price list, account total for both probes $1.01"
+2026-09-17__keyword_probe_A_circle,google_maps,compass/crawler-google-places,data/apify_inputs/probe/google_maps__keyword_probe_A__riyadh_circle.json,data/raw/google_maps/2026-09-17__keyword_probe_A_circle.json,80,0.45,2026-09-17,"8 A keywords x 10; customGeolocation circle 25km; scrapeContacts=true; cost split estimated, account total $1.01"
