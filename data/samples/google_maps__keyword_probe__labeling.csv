@@ -1,0 +1,141 @@
+segment,keyword,rank,name,category,web,reviews,rating,fit,labeled_by
+A,cosmetic dentist,3,عيادات الزلفي الطبي,Medical clinic,instagram,170,3.6,not_fit,llm_name_category_web
+A,cosmetic dentist,5,مركز ابتسامتك,Cosmetic dentist,ebtsamatac.med.sa,1458,4.2,fit,llm_name_category_web
+A,cosmetic dentist,8,Saudi tecmar polyclinic,Cosmetic dentist,sauditecmar.com,22,4.9,fit,llm_name_category_web
+A,cosmetic dentist,10,Dr. Bassem Abukanon  Cosmetic Dentistry Expert,Dentist,about.me,158,4.9,unclear,llm_name_category_web
+A,cosmetic dentist,11,بريفيا دنت privea dent,Cosmetic dentist,priveadent.sa,176,4.9,fit,llm_name_category_web
+A,cosmetic dentist,12,زراعة الاسنان ابتسامة تجميل فينير تبييض الاسنان دكتور محمد الاحمد Dental implants | Veneer | Hollywood smile | Cosmetic,Cosmetic dentist,mayoclinic.org,71,4.9,unclear,llm_name_category_web
+A,cosmetic dentist,13,Lasting Smile Dental Clinics مجمع البسمة الدائمة لطب الأسنان,Dental clinic,lastingsmile.com,559,4.4,fit,llm_name_category_web
+A,cosmetic dentist,14,Designer's clinic,Cosmetic dentist,ddclinic.sa,1282,4.6,fit,llm_name_category_web
+A,cosmetic dentist,16,عيادات دنتكس لطب الأسنان,Cosmetic dentist,dentex.sa,709,4.6,fit,llm_name_category_web
+A,cosmetic dentist,17,عيادات محمد بن مبارك المسن,Private hospital,almasnmed.com.sa,171,3.3,not_fit,llm_name_category_web
+A,dermatology clinic,1,عيادات بانوراما كلينك,Dermatologist,none,73,3.5,fit,llm_name_category_web
+A,dermatology clinic,2,مجمع عيادات سيرين,Medical clinic,cyrineclinics.com,464,3.9,not_fit,llm_name_category_web
+A,dermatology clinic,3,AlMajmaah Medical clinics complex,Medical Center,instagram,449,3.4,not_fit,llm_name_category_web
+A,dermatology clinic,4,مجمع درة النخبة الطبي - أسنان ، جلدية,Skin care clinic,none,651,4.6,fit,llm_name_category_web
+A,dermatology clinic,4,مجمع الصفوة السعودية الطبي,Hospital,alsafwah.co,122,3.3,not_fit,llm_name_category_web
+A,dermatology clinic,6,عيادات المسواك الطبية,Medical clinic,almeswakclinics.com,564,3.8,unclear,llm_name_category_web
+A,dermatology clinic,7,مجمع صحة اباس الطبي,Medical Center,linktree,184,4.5,not_fit,llm_name_category_web
+A,dermatology clinic,11,مجمع درر الأرطاوية الطبي,Medical Center,none,44,2.7,not_fit,llm_name_category_web
+A,dermatology clinic,14,مجمع عيادات علاج سدير الطبي,Medical Center,elajsudair.com,979,3.8,not_fit,llm_name_category_web
+A,dermatology clinic,15,Dr. Sulaiman AL-Habib Dermatology  Plastic Surgery and Ophthalmology Centers,Hospital,none,7,3.1,not_fit,llm_name_category_web
+A,orthodontic clinic,1,تقويم اسنان - انفزلاين التقويم الشفاف د. براء مصطفى,Dental clinic,webteb.com,125,4.9,unclear,llm_name_category_web
+A,orthodontic clinic,2,Rawdah Dental Care with Ortho - Riyadh,Dental clinic,instagram,43,4.8,fit,llm_name_category_web
+A,orthodontic clinic,3,د. محمد وسيم تقويم اسنان,Dental clinic,none,2,5,unclear,llm_name_category_web
+A,orthodontic clinic,4,Dr. Rajat Sharma Orthodontist,Dental clinic,none,26,4.6,unclear,llm_name_category_web
+A,orthodontic clinic,5,Dr. Ahmad Hamdan Orthodontics,Orthodontist,instagram,15,5,unclear,llm_name_category_web
+A,orthodontic clinic,7,Dispensary glamor smile teeth,Dental clinic,instagram,417,4.2,fit,llm_name_category_web
+A,orthodontic clinic,8,Kharsa Clinics عيادات الخرسا,Dental clinic,kharsaclinics.com,587,4.6,fit,llm_name_category_web
+A,orthodontic clinic,9,Dr Praveen BS (Consultant Orthodontist  Senior registrar) Riyadh دكتور برافين (اخصائي اول تقويم الاسنان) بالرياض,Dental clinic,none,8,5,unclear,llm_name_category_web
+A,orthodontic clinic,10,الدكتور باسل الميداني - تقويم اسنان - تقويم شفاف Invisalign,Orthodontist,orthodontist-basel.com,33,4.8,unclear,llm_name_category_web
+A,orthodontic clinic,11,Sama Dental and Orthodontic Dental Center,Dental clinic,none,228,4.5,fit,llm_name_category_web
+A,ابتسامة هوليود,1,Dr. Mostafa Kamel Lets Design Your Perfect Smileالدكتور مصطفى كامل - تجميل الاسنان و ابتسامه هوليود ...,Dental clinic,drmostafakamel.com,58,4.9,unclear,llm_name_category_web
+A,ابتسامة هوليود,4,عيادة QB لطب وتجميل الأسنان ابتسامة هوليود 3D,Dental clinic,qahwajiclinic.com,54,4.9,fit,llm_name_category_web
+A,ابتسامة هوليود,4,مجمع نمو الطبي - فرع الافلاج,Dental clinic,none,143,4.3,not_fit,llm_name_category_web
+A,ابتسامة هوليود,5,مجمع عيادات فيولا الطبي - فرع المجمعة,Beautician,none,785,4.6,not_fit,llm_name_category_web
+A,ابتسامة هوليود,6,مجمع عيادات الصافي,Dental clinic,instagram,87,3.7,fit,llm_name_category_web
+A,ابتسامة هوليود,9,صفوة المهيدب لطب الأسنان وادي الدواسر,Dental clinic,safwatalmuhaideb.com,344,3.7,not_fit,llm_name_category_web
+A,ابتسامة هوليود,12,عيادة د بلال الدالي ابتسامة هوليودية تركيبات اسنان وعلاج خراجات الاسنان,Dental clinic,drbelalaldali.com,75,4.7,fit,llm_name_category_web
+A,ابتسامة هوليود,13,Happy Smile,Medical clinic,none,543,4.1,unclear,llm_name_category_web
+A,ابتسامة هوليود,19,عيادات المسواك الطبية,Medical clinic,almeswak.com,635,3.3,unclear,llm_name_category_web
+A,ابتسامة هوليود,19,Horizon Dental Clinic,Dental clinic,horizondent.com,1084,4.6,fit,llm_name_category_web
+A,عيادة تجميل أسنان,2,مركز جنا لطب الاسنان,Medical clinic,janaclinics.com,73,3.8,fit,llm_name_category_web
+A,عيادة تجميل أسنان,3,مجمع عيادات المعاودة الطبي,Walk-in clinic,instagram,199,3.8,not_fit,llm_name_category_web
+A,عيادة تجميل أسنان,4,عيادات درر الرعاية الطبية,Medical clinic,none,94,4.5,not_fit,llm_name_category_web
+A,عيادة تجميل أسنان,5,المهيدب لطب الاسنان السليل,Dental clinic,almuhaidibclinics.com,132,4.2,not_fit,llm_name_category_web
+A,عيادة تجميل أسنان,6,المهيدب لطب الاسنان وادي الدواسر,Dental clinic,almuhaidibclinics.com,170,4.5,not_fit,llm_name_category_web
+A,عيادة تجميل أسنان,7,عيادات الصافي لطب الأسنان,Hospital,none,51,3.1,unclear,llm_name_category_web
+A,عيادة تجميل أسنان,9,مجمع روز الطبي,Walk-in clinic,none,83,4.2,not_fit,llm_name_category_web
+A,عيادة تجميل أسنان,10,Gana Medical Center,Medical clinic,none,,,unclear,llm_name_category_web
+A,عيادة تجميل أسنان,23,مجمع رعاية صحة آنجل الطبي,Hospital,none,99,4.5,not_fit,llm_name_category_web
+A,عيادة تجميل أسنان,24,مجمع الشويمي الطبي,Private hospital,none,46,4.2,not_fit,llm_name_category_web
+A,عيادة تقويم أسنان,2,مجمع عيادات المدارالطبي لطب وتقويم الاسنان,Medical clinic,madarr.com.sa,345,4.7,fit,llm_name_category_web
+A,عيادة تقويم أسنان,4,مجمع عيادات الأندلس لطب الأسنان,Dental clinic,farabiclinics.com,925,4.6,not_fit,llm_name_category_web
+A,عيادة تقويم أسنان,5,عيادات زيان لطب الأسنان,Dental clinic,zayanclinic.com,1701,4.8,fit,llm_name_category_web
+A,عيادة تقويم أسنان,7,عيادات السن الأبيض,Medical clinic,none,57,3.5,fit,llm_name_category_web
+A,عيادة تقويم أسنان,7,عيادة د. حسن الجعيدي | أخصائي تقويم الأسنان والفكين (تقويم شفاف ومعدني),Specialized clinic,instagram,14,5,fit,llm_name_category_web
+A,عيادة تقويم أسنان,9,Molar dental clinics,Dental clinic,none,999,4.7,fit,llm_name_category_web
+A,عيادة تقويم أسنان,11,عيادات الفارابي لطب الأسنان فرع الدار البيضاء,Dental clinic,farabiclinics.com,1182,4.2,not_fit,llm_name_category_web
+A,عيادة تقويم أسنان,14,Loran Dental Clinics | عيادات لوران لطب الأسنان,Dental clinic,loranclinics.com,770,4.5,fit,llm_name_category_web
+A,عيادة تقويم أسنان,15,Smile Design Dental Clinics,Dental clinic,smiledesign.sa,211,4.7,fit,llm_name_category_web
+A,عيادة تقويم أسنان,16,Masan clinic,Orthodontist,masanclinic.com,2040,4.6,fit,llm_name_category_web
+A,عيادة جلدية وتجميل,1,مجمع عيادات الكمال الطبي ALKAMAL MEDICAL CLINICS,Medical Center,none,241,3.7,not_fit,llm_name_category_web
+A,عيادة جلدية وتجميل,2,Lavera Clinic,Medical clinic,reach.link,648,4.9,fit,llm_name_category_web
+A,عيادة جلدية وتجميل,3,Cosmo Prof,Dermatologist,cosmoprof.com.sa,1918,4.7,fit,llm_name_category_web
+A,عيادة جلدية وتجميل,4,عيادات تجميل كوزمو بروف بلس | جلدية وليزر وبشرة وجراحة تجميل,Medical Center,cosmoprof.com.sa,57,4.8,fit,llm_name_category_web
+A,عيادة جلدية وتجميل,5,عيادات جوزيف ديرم JosephDerm - جلدية وتجميل وليزر - فرع اليرموك,Specialized clinic,josephderm.com,810,4.2,fit,llm_name_category_web
+A,عيادة جلدية وتجميل,6,الدكتورة دعاء البدري طبيبة جلدية و تجميل,Dermatologist,whatsapp,20,4.9,unclear,llm_name_category_web
+A,عيادة جلدية وتجميل,7,أفيلين الياسمين AVELINE Clinic derma   Laser Skin,Dermatologist,linktree,614,4.2,fit,llm_name_category_web
+A,عيادة جلدية وتجميل,8,كوين كلينك عيادات تجميل جلدية وليزر وبشرة,Laser hair removal service,queenclinics.com,240,4.7,fit,llm_name_category_web
+A,عيادة جلدية وتجميل,9,كوزمو دكتور,Skin care clinic,cosmodoctor.com.sa,4186,4,fit,llm_name_category_web
+A,عيادة جلدية وتجميل,20,Nafi general Hospital,Hospital,moh.gov.sa,76,2.8,not_fit,llm_name_category_web
+A,مركز ليزر,4,الليزر لزينة السيارات,Used auto parts store,none,9,4,not_fit,llm_name_category_web
+A,مركز ليزر,6,مجمع شمس التعافي الطبي,Medical Center,shamsat.com,23,3.8,not_fit,llm_name_category_web
+A,مركز ليزر,7,عيادات سوفت,Hospital,none,,,unclear,llm_name_category_web
+A,مركز ليزر,8,مستوصف النويعمة الطبي الاهلي,Medical Center,almasnmed.com.sa,172,3.1,not_fit,llm_name_category_web
+A,مركز ليزر,10,مركز عناية المركبة لصيانة السيارات _ مساعدات مقصات اقمشة هوبات دفرنسات مخرطة,Auto repair shop,none,6,4.7,not_fit,llm_name_category_web
+A,مركز ليزر,11,عيادات لافيرا حي الرمال للجلدية والتجميل والليزر,Medical Center,none,39,4.3,fit,llm_name_category_web
+A,مركز ليزر,12,Chernobyl Lasertag,Laser tag center,chernobylarena.com,2412,4.9,not_fit,llm_name_category_web
+A,مركز ليزر,18,مجمع رواد انجل الطبي,Hospital,instagram,113,4.2,not_fit,llm_name_category_web
+A,مركز ليزر,19,مجمع ابا الخيل الطبي فرع ساجر,Hospital,none,69,3.6,not_fit,llm_name_category_web
+A,مركز ليزر,20,مركز ابا الخيل,Hospital,none,27,3.5,not_fit,llm_name_category_web
+B,curtains shop,1,ستاير ويفي حراج بن قاسم,Curtain supplier and maker,whatsapp,8,4.9,fit,llm_name_category_web
+B,curtains shop,4,Bin Ateeq Curtains and Roller Blinds Riyadh -بن عتيق للستائر,Curtain supplier and maker,binateeqcurtain.com,65,4.9,fit,llm_name_category_web
+B,curtains shop,6,ستائر المجلس,Curtain supplier and maker,curtainsmajlis.com,18,4.8,fit,llm_name_category_web
+B,curtains shop,8,Aldawood Furniture مفروشات الداؤد,Furniture store,instagram,9,2.7,unclear,llm_name_category_web
+B,curtains shop,12,ستائر و رول في الرياض | Visitara,Curtain supplier and maker,visitaracurtains.com,250,5,fit,llm_name_category_web
+B,curtains shop,13,اساس نجمه سيدار للستائر,Curtain store,asasnjmhsydar.com,36,5,fit,llm_name_category_web
+B,curtains shop,16,Bahamid fabrics for curtains and upholstery,Fabric store,none,90,3.7,not_fit,llm_name_category_web
+B,curtains shop,17,مؤسسة ابراهيم الخراشي للتجارة - فرع الظهيرة 2,Curtain store,none,21,4.1,unclear,llm_name_category_web
+B,curtains shop,18,Arabian Curtains & Sofa,Curtain supplier and maker,none,17,4.8,fit,llm_name_category_web
+B,curtains shop,19,مفروشات للستائر,Curtain supplier and maker,ahmedcurtains.com,17,5,fit,llm_name_category_web
+B,custom majlis furniture,3,بيت التحف والزهور للطاولات,Furniture store,none,24,4.7,not_fit,llm_name_category_web
+B,custom majlis furniture,5,مُدرن الإبداع للأثاث,Furniture store,none,1390,4.7,unclear,llm_name_category_web
+B,custom majlis furniture,6,بلاد الأفكار للستائر والمجالس,Curtain supplier and maker,none,149,4.8,fit,llm_name_category_web
+B,custom majlis furniture,7,تفصيل ستائر ومجالس,Curtain store,riyadhcurtainsshani.com,30,4.8,fit,llm_name_category_web
+B,custom majlis furniture,8,مؤسسة المبارك ستائر لتنجيد الأثاث,Furniture store,salla,55,3.5,fit,llm_name_category_web
+B,custom majlis furniture,9,Modern Furniture & Events مودرن أثاث و الفعاليات,Furniture rental service,themodernfurnitures.com,31,5,not_fit,llm_name_category_web
+B,custom majlis furniture,10,Hawl Al-Jazeera Furniture,Furniture store,linktree,228,4.9,unclear,llm_name_category_web
+B,custom majlis furniture,12,السهلي للأثاث,Furniture store,none,39,4.8,unclear,llm_name_category_web
+B,custom majlis furniture,13,Mille,Sofa store,mille.sa,8,4.5,unclear,llm_name_category_web
+B,custom majlis furniture,13,مجموعة الربيع تفصيل كراسي ملكية,Furniture maker,none,18,4.6,fit,llm_name_category_web
+B,تفصيل كنب,1,تفصيل كنب,Sofa store,sites.google.com,25,4.4,fit,llm_name_category_web
+B,تفصيل كنب,2,تفصيل ستائر العويس تفصيل كنب العويس تنجيد كنب العويس,Furniture store,instagram,18,4.9,fit,llm_name_category_web
+B,تفصيل كنب,3,تفصيل كنب وتنجد وتفصيل ستائر,Furniture maker,alslttanyeat-llmfrwshat.com,10,4.6,fit,llm_name_category_web
+B,تفصيل كنب,5,تفصيل كنب,Sofa store,curtainsofa.com,44,4.6,fit,llm_name_category_web
+B,تفصيل كنب,7,تنجيد كنب تفصيل كنب تفصيل ستاير,Outlet mall,none,30,4.9,fit,llm_name_category_web
+B,تفصيل كنب,8,تفصيل كنب في الرياض,Curtain supplier and maker,whatsapp,13,4.5,fit,llm_name_category_web
+B,تفصيل كنب,9,مؤسسة قصر الأرائك للأثاث و تفصيل الكنبات,Furniture store,instagram,200,4.5,fit,llm_name_category_web
+B,تفصيل كنب,11,تفصيل كنب,Furniture store,tafsilkenab.com,17,4.4,fit,llm_name_category_web
+B,تفصيل كنب,12,ورشه تصنيع 🧑‍🏭 تنجيد كنب 🛋️تفصيل حسب الطلب تجديد تنجيد كنب اكيا,Furniture manufacturer,taqaseem-carpentry-workshop.com,15,5,fit,llm_name_category_web
+B,تفصيل كنب,13,المالكي لتنجيد وتفصيل الكنب والمجالس العربيه والستائر,Furniture store,whatsapp,214,4.8,fit,llm_name_category_web
+B,تفصيل مجالس,1,تفصيل ستائر مجالس كنب,Furniture maker,none,9,5,fit,llm_name_category_web
+B,تفصيل مجالس,2,تفصيل ستاير و مجالس,Furniture maker,sofacurtainmajlis.com,48,4.8,fit,llm_name_category_web
+B,تفصيل مجالس,3,تفصيل وتركيب ستاىرتفصيل كنب عربي مجلس,Certification agency,none,4,5,fit,llm_name_category_web
+B,تفصيل مجالس,4,تفصيل المجالس والستائر,Furniture maker,none,5,5,fit,llm_name_category_web
+B,تفصيل مجالس,5,نظم المجالس تفصيل كنب ستائر وتنجيد,Furniture store,nazamalmajalis.com,12,4.6,fit,llm_name_category_web
+B,تفصيل مجالس,6,تفصيل ستائر و مجالس عربية,Furniture store,none,40,4.7,fit,llm_name_category_web
+B,تفصيل مجالس,7,تفصيل ستائر و مجالس,Curtain supplier and maker,alidecorstudio.com,23,4.5,fit,llm_name_category_web
+B,تفصيل مجالس,8,اثاث المجالس,Furniture store,none,52,4,unclear,llm_name_category_web
+B,تفصيل مجالس,10,A تفصيل ستائر مجالس كنب,Curtain supplier and maker,bestcurtainsinstallationriyadh.com,21,5,fit,llm_name_category_web
+B,تفصيل مجالس,12,مجالس شعبية والستائر والكراسي,Furniture store,none,26,4,unclear,llm_name_category_web
+B,محل ستائر,1,ستافوكليما السعودية ستائر هوائية أوروبية (Stavoklima Saudi European Air Curtains),Air conditioning system supplier,stavoklima.com.sa,131,4.9,not_fit,llm_name_category_web
+B,محل ستائر,3,شركة صن رول للستائر,Curtain supplier and maker,sunroll.com.sa,1486,4.8,fit,llm_name_category_web
+B,محل ستائر,5,تفصيل ستائر مجالس,Curtain supplier and maker,none,20,4.8,fit,llm_name_category_web
+B,محل ستائر,6,ابوقمزه للستائر,Curtain store,alsurayyi.com,91,4.5,fit,llm_name_category_web
+B,محل ستائر,10,تفصیل ستائر کنب مجلس تنجید,Curtain supplier and maker,curtainsstore.in,70,4.9,unclear,llm_name_category_web
+B,محل ستائر,11,Maknon Alsharq,Curtain store,maknonalsharq.net,459,4.8,fit,llm_name_category_web
+B,محل ستائر,12,تفصيل ستائر منى,Blinds shop,sites.google.com,187,4.6,fit,llm_name_category_web
+B,محل ستائر,13,تنجيد كنب وتفصيل ستائر تركيب,Curtain store,curtainsstores.com,145,4.8,fit,llm_name_category_web
+B,محل ستائر,14,تفصيل ستائر و مجالس,Curtain supplier and maker,none,90,4.9,fit,llm_name_category_web
+B,محل ستائر,15,تفصیل ستائر و مجالس بالریاض,Curtain supplier and maker,baytulstayrinteriors.com,27,5,fit,llm_name_category_web
+B,مفروشات تفصيل,1,مفروشات تفصيل وتنجيد الكنب,Furniture store,whatsapp,8,4.4,fit,llm_name_category_web
+B,مفروشات تفصيل,3,مفروشات تفصيل ستائر كنب تنجيد,Mattress store,none,48,4.8,fit,llm_name_category_web
+B,مفروشات تفصيل,4,Best Arabic Majlis-Sofas-Curtains / مفروشات تفصيل وتنجيد الكنب,Sofa store,riyadhsofa.store,50,5,fit,llm_name_category_web
+B,مفروشات تفصيل,7,مفروشات للكنب ستائر تفصيل وتنجيد,Sofa store,none,1,5,fit,llm_name_category_web
+B,مفروشات تفصيل,11,مفروشات اثاث مستعمل,Furniture store,none,94,4,not_fit,llm_name_category_web
+B,مفروشات تفصيل,12,شركة المنزل الجديد للأثاث و المفروشات (المركز الرئيسي) مفروشات واثاث,Furniture store,instagram,152,4.5,unclear,llm_name_category_web
+B,مفروشات تفصيل,16,مفروشات السلوم تفصيل المجالس وستائر,Curtain supplier and maker,curtainfurnitureriyadh.com,14,5,fit,llm_name_category_web
+B,مفروشات تفصيل,17,تفصيل ستايروكنب مفروشات بحرالبيان 1,Curtain supplier and maker,none,19,5,fit,llm_name_category_web
+B,مفروشات تفصيل,18,تفصيل ستائر والمجالس تنجيد كنبات,Furniture maker,royalcurtaindecor.com,4,4.8,fit,llm_name_category_web
+B,مفروشات تفصيل,19,مفروشات ابراج الخلیج النسیم تفصيل مجالس محل ستائر,Furniture store,google.com,4,5,fit,llm_name_category_web

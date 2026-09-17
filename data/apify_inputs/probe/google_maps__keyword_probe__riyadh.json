@@ -1,0 +1,19 @@
+{
+  "language": "en",
+  "skipClosedPlaces": false,
+  "scrapePlaceDetailPage": false,
+  "scrapeContacts": false,
+  "scrapeSocialMediaProfiles": {"facebooks": false, "instagrams": false, "youtubes": false, "tiktoks": false, "twitters": false},
+  "scrapeReviewsPersonalData": false,
+  "maximumLeadsEnrichmentRecords": 0,
+  "maxReviews": 0,
+  "maxImages": 0,
+  "searchStringsArray": [
+    "عيادة تقويم أسنان", "ابتسامة هوليود", "عيادة تجميل أسنان", "عيادة جلدية وتجميل", "مركز ليزر",
+    "orthodontic clinic", "cosmetic dentist", "dermatology clinic",
+    "تفصيل مجالس", "تفصيل كنب", "محل ستائر", "مفروشات تفصيل",
+    "custom majlis furniture", "curtains shop"
+  ],
+  "locationQuery": "Riyadh, Saudi Arabia",
+  "maxCrawledPlacesPerSearch": 10
+}
