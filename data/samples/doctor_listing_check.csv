@@ -1,0 +1,7 @@
+checked_on,keyword,rank,name,result,evidence,note
+2026-09-17,orthodontic clinic,1,تقويم اسنان - انفزلاين التقويم الشفاف د. براء مصطفى,located_in,address names Loro clinic,
+2026-09-17,orthodontic clinic,3,د. محمد وسيم تقويم اسنان,own_address,street address only; plus code differs from Rawdah Dental (PQX7 vs PQH9),very small: 2 reviews
+2026-09-17,orthodontic clinic,4,Dr. Rajat Sharma Orthodontist,own_address,street address only,
+2026-09-17,orthodontic clinic,5,Dr. Ahmad Hamdan Orthodontics,located_in,address starts 'At Sadig Dental Clinic',
+2026-09-17,orthodontic clinic,9,Dr Praveen BS (Consultant Orthodontist  Senior registrar) Riyadh دكتور برافين (اخصائي اول تقويم الاسنان) بالرياض,own_address,street address only,title 'Senior registrar' suggests employed specialist
+2026-09-17,orthodontic clinic,10,الدكتور باسل الميداني - تقويم اسنان - تقويم شفاف Invisalign,own_address,street address only; own website,

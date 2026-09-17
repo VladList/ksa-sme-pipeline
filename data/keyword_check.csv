@@ -2,7 +2,7 @@ checked_on,segment,city,keyword,lang,fit,unclear,not_fit,skipped_by_dedupe,label
 2026-09-16,A,riyadh,عيادة تقويم أسنان,ar,8,0,2,6,llm_name_category_web,,
 2026-09-16,A,riyadh,عيادة جلدية وتجميل,ar,7,1,2,10,llm_name_category_web,,
 2026-09-16,A,riyadh,cosmetic dentist,en,6,2,2,7,llm_name_category_web,,
-2026-09-16,A,riyadh,orthodontic clinic,en,4,6,0,1,llm_name_category_web,,
+2026-09-16,A,riyadh,orthodontic clinic,en,8,0,2,1,llm_name_category_web + manual_maps_check (6 doctor listings),,
 2026-09-16,A,riyadh,ابتسامة هوليود,ar,4,3,3,9,llm_name_category_web,,
 2026-09-16,A,riyadh,dermatology clinic,en,2,1,7,5,llm_name_category_web,,
 2026-09-16,A,riyadh,مركز ليزر,ar,1,1,8,10,llm_name_category_web,,

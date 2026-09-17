@@ -19,15 +19,15 @@ A,dermatology clinic,7,مجمع صحة اباس الطبي,Medical Center,linktr
 A,dermatology clinic,11,مجمع درر الأرطاوية الطبي,Medical Center,none,44,2.7,not_fit,llm_name_category_web
 A,dermatology clinic,14,مجمع عيادات علاج سدير الطبي,Medical Center,elajsudair.com,979,3.8,not_fit,llm_name_category_web
 A,dermatology clinic,15,Dr. Sulaiman AL-Habib Dermatology  Plastic Surgery and Ophthalmology Centers,Hospital,none,7,3.1,not_fit,llm_name_category_web
-A,orthodontic clinic,1,تقويم اسنان - انفزلاين التقويم الشفاف د. براء مصطفى,Dental clinic,webteb.com,125,4.9,unclear,llm_name_category_web
+A,orthodontic clinic,1,تقويم اسنان - انفزلاين التقويم الشفاف د. براء مصطفى,Dental clinic,webteb.com,125,4.9,not_fit,manual_maps_check
 A,orthodontic clinic,2,Rawdah Dental Care with Ortho - Riyadh,Dental clinic,instagram,43,4.8,fit,llm_name_category_web
-A,orthodontic clinic,3,د. محمد وسيم تقويم اسنان,Dental clinic,none,2,5,unclear,llm_name_category_web
-A,orthodontic clinic,4,Dr. Rajat Sharma Orthodontist,Dental clinic,none,26,4.6,unclear,llm_name_category_web
-A,orthodontic clinic,5,Dr. Ahmad Hamdan Orthodontics,Orthodontist,instagram,15,5,unclear,llm_name_category_web
+A,orthodontic clinic,3,د. محمد وسيم تقويم اسنان,Dental clinic,none,2,5,fit,manual_maps_check
+A,orthodontic clinic,4,Dr. Rajat Sharma Orthodontist,Dental clinic,none,26,4.6,fit,manual_maps_check
+A,orthodontic clinic,5,Dr. Ahmad Hamdan Orthodontics,Orthodontist,instagram,15,5,not_fit,manual_maps_check
 A,orthodontic clinic,7,Dispensary glamor smile teeth,Dental clinic,instagram,417,4.2,fit,llm_name_category_web
 A,orthodontic clinic,8,Kharsa Clinics عيادات الخرسا,Dental clinic,kharsaclinics.com,587,4.6,fit,llm_name_category_web
-A,orthodontic clinic,9,Dr Praveen BS (Consultant Orthodontist  Senior registrar) Riyadh دكتور برافين (اخصائي اول تقويم الاسنان) بالرياض,Dental clinic,none,8,5,unclear,llm_name_category_web
-A,orthodontic clinic,10,الدكتور باسل الميداني - تقويم اسنان - تقويم شفاف Invisalign,Orthodontist,orthodontist-basel.com,33,4.8,unclear,llm_name_category_web
+A,orthodontic clinic,9,Dr Praveen BS (Consultant Orthodontist  Senior registrar) Riyadh دكتور برافين (اخصائي اول تقويم الاسنان) بالرياض,Dental clinic,none,8,5,fit,manual_maps_check
+A,orthodontic clinic,10,الدكتور باسل الميداني - تقويم اسنان - تقويم شفاف Invisalign,Orthodontist,orthodontist-basel.com,33,4.8,fit,manual_maps_check
 A,orthodontic clinic,11,Sama Dental and Orthodontic Dental Center,Dental clinic,none,228,4.5,fit,llm_name_category_web
 A,ابتسامة هوليود,1,Dr. Mostafa Kamel Lets Design Your Perfect Smileالدكتور مصطفى كامل - تجميل الاسنان و ابتسامه هوليود ...,Dental clinic,drmostafakamel.com,58,4.9,unclear,llm_name_category_web
 A,ابتسامة هوليود,4,عيادة QB لطب وتجميل الأسنان ابتسامة هوليود 3D,Dental clinic,qahwajiclinic.com,54,4.9,fit,llm_name_category_web
