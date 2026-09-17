@@ -33,8 +33,8 @@ def read_records(path: Path) -> list[dict]:
 def keyword_to_segment() -> dict[str, str]:
     q = yaml.safe_load((CONFIG / "queries.yaml").read_text(encoding="utf-8"))
     mapping = {}
-    for segment, langs in q["google_maps"]["segments"].items():
-        for kw in langs.get("ar", []) + langs.get("en", []):
+    for segment, lists in q["google_maps"]["segments"].items():
+        for kw in lists.get("keywords", []) + lists.get("dropped", []):
             mapping[kw.strip().lower()] = segment
     return mapping
 

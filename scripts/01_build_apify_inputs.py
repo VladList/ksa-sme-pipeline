@@ -1,15 +1,14 @@
 """Stage 1 — build Apify actor inputs from config/queries.yaml (inputs are committed for reproducibility).
 
-  uv run python scripts/01_build_apify_inputs.py google_maps --mode sample
   uv run python scripts/01_build_apify_inputs.py google_maps --mode full
-  uv run python scripts/01_build_apify_inputs.py instagram --segment A_aesthetic_clinics   # handles from ingested Maps rows
+  uv run python scripts/01_build_apify_inputs.py google_maps --mode sample
 
-Paste a file into the actor's JSON input in Apify Console (or call the API),
-export the dataset as JSON to data/raw/<source_id>/<YYYY-MM-DD>__<label>.json,
-and add a row to data/runs.csv (cost from the Apify run page).
+Full mode refuses to write inputs if the upper-bound cost exceeds the remaining budget
+(budget_usd - spent_usd). Paste a file into the actor's JSON input in Apify Console,
+export the dataset (All fields, JSON) to data/raw/google_maps/<YYYY-MM-DD>__<label>.json,
+ingest it, and fill cost in data/runs.csv.
 """
 import argparse
-import csv
 import json
 import sys
 from pathlib import Path
@@ -17,7 +16,7 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-from ksa_pipeline.paths import APIFY_INPUTS, CONFIG, INTERIM  # noqa: E402
+from ksa_pipeline.paths import APIFY_INPUTS, CONFIG  # noqa: E402
 
 
 def write(path: Path, payload: dict) -> None:
@@ -26,61 +25,53 @@ def write(path: Path, payload: dict) -> None:
     print(f"wrote {path.relative_to(APIFY_INPUTS.parents[1])}")
 
 
+def circle(city: dict) -> dict:
+    # GeoJSON order is [longitude, latitude] — the opposite of what Google Maps displays
+    return {"type": "Point", "coordinates": [city["lng"], city["lat"]], "radiusKm": city["radius_km"]}
+
+
+def payload(gm: dict, keywords: list[str], city: dict, max_places: int, contacts: bool) -> dict:
+    return {**gm["actor_defaults"], "scrapeContacts": contacts, "searchStringsArray": keywords,
+            "customGeolocation": circle(city), "maxCrawledPlacesPerSearch": max_places}
+
+
 def google_maps(q: dict, mode: str) -> None:
     gm = q["google_maps"]
     if mode == "sample":
         city = gm["sample"]["city"]
-        for segment, langs in gm["segments"].items():
-            payload = {**gm["actor_defaults"], "searchStringsArray": [langs["ar"][0]],
-                       "locationQuery": q["cities"][city], "maxCrawledPlacesPerSearch": gm["sample"]["max_places"]}
-            write(APIFY_INPUTS / "sample" / f"google_maps__{segment}__{city}.json", payload)
+        for segment, lists in gm["segments"].items():
+            write(APIFY_INPUTS / "sample" / f"google_maps__{segment}__{city}.json",
+                  payload(gm, lists["keywords"][:1], q["cities"][city], gm["sample"]["max_places"], False))
         return
 
-    # Stale full inputs (dropped cities, old caps) are removed first so they cannot be run by mistake.
     for stale in (APIFY_INPUTS / "full").glob("google_maps__*.json"):
-        stale.unlink()
+        stale.unlink()   # inputs from an older plan must not be run by mistake
 
-    plan, places = [], 0
-    for segment, langs in gm["segments"].items():
-        keywords = langs.get("ar", []) + langs.get("en", [])
-        cap = gm["full"]["max_places"][segment]
+    plan, total_places, total_cost = [], 0, 0.0
+    for segment, cfg in gm["full"]["segments"].items():
+        keywords = gm["segments"][segment]["keywords"]
+        price_1k = gm["price_per_1k_places_usd"] + (gm["contacts_per_1k_usd"] if cfg["scrapeContacts"] else 0)
         for city in gm["full"]["cities"]:
-            plan.append((segment, city, keywords, cap))
-            places += len(keywords) * cap
-            print(f"  {segment:22} {city:14} {len(keywords)} keywords x {cap} = {len(keywords) * cap}")
+            places = len(keywords) * cfg["max_places"]
+            cost = places * price_1k / 1000
+            total_places += places
+            total_cost += cost
+            plan.append((segment, city, keywords, cfg))
+            print(f"  {segment:20} {city:8} {len(keywords)} kw x {cfg['max_places']} = {places:>3} places x ${price_1k:.2f}/1K = ${cost:.2f}")
 
-    cost = places * gm["price_per_1k_places_usd"] / 1000
-    ceiling = gm["budget_usd"] - gm["reserve_usd"]
-    print(f"full plan: up to {places} places, up to ${cost:.2f} (ceiling ${ceiling:.2f}; upper bound, real runs stop earlier)")
-    if cost > ceiling:
-        sys.exit("OVER BUDGET - no inputs written. Cut keywords in config/queries.yaml (step 1.1) or lower max_places.")
+    remaining = gm["budget_usd"] - gm["spent_usd"]
+    print(f"full plan: up to {total_places} places, up to ${total_cost:.2f} (remaining budget ${remaining:.2f}; upper bound)")
+    if total_cost > remaining:
+        sys.exit("OVER BUDGET - no inputs written. Lower max_places or cut keywords in config/queries.yaml.")
 
-    for segment, city, keywords, cap in plan:
-        payload = {**gm["actor_defaults"], "searchStringsArray": keywords,
-                   "locationQuery": q["cities"][city], "maxCrawledPlacesPerSearch": cap}
-        write(APIFY_INPUTS / "full" / f"google_maps__{segment}__{city}.json", payload)
-
-
-def instagram(segment: str) -> None:
-    handles = set()
-    for path in sorted((INTERIM / "google_maps").glob("*.csv")):
-        with path.open(encoding="utf-8") as f:
-            handles |= {r["instagram_handle"] for r in csv.DictReader(f) if r["segment"] == segment and r["instagram_handle"]}
-    if not handles:
-        sys.exit(f"no instagram handles for {segment} in data/interim/google_maps/ — ingest Maps first")
-    write(APIFY_INPUTS / "full" / f"instagram_profiles__{segment}.json", {"usernames": sorted(handles)})
+    for segment, city, keywords, cfg in plan:
+        write(APIFY_INPUTS / "full" / f"google_maps__{segment}__{city}.json",
+              payload(gm, keywords, q["cities"][city], cfg["max_places"], cfg["scrapeContacts"]))
 
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("source", choices=["google_maps", "instagram"])
-    ap.add_argument("--mode", choices=["sample", "full"], default="sample")
-    ap.add_argument("--segment")
+    ap.add_argument("source", choices=["google_maps"])
+    ap.add_argument("--mode", choices=["sample", "full"], default="full")
     args = ap.parse_args()
-    queries = yaml.safe_load((CONFIG / "queries.yaml").read_text(encoding="utf-8"))
-    if args.source == "google_maps":
-        google_maps(queries, args.mode)
-    else:
-        if not args.segment:
-            sys.exit("--segment is required for instagram")
-        instagram(args.segment)
+    google_maps(yaml.safe_load((CONFIG / "queries.yaml").read_text(encoding="utf-8")), args.mode)

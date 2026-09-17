@@ -1,0 +1,31 @@
+{
+  "language": "en",
+  "skipClosedPlaces": false,
+  "scrapePlaceDetailPage": false,
+  "scrapeContacts": false,
+  "scrapeSocialMediaProfiles": {
+    "facebooks": false,
+    "instagrams": false,
+    "youtubes": false,
+    "tiktoks": false,
+    "twitters": false
+  },
+  "scrapeReviewsPersonalData": false,
+  "maximumLeadsEnrichmentRecords": 0,
+  "maxReviews": 0,
+  "maxImages": 0,
+  "searchStringsArray": [
+    "تفصيل كنب",
+    "تفصيل مجالس",
+    "محل ستائر"
+  ],
+  "customGeolocation": {
+    "type": "Point",
+    "coordinates": [
+      39.1728,
+      21.5433
+    ],
+    "radiusKm": 25
+  },
+  "maxCrawledPlacesPerSearch": 70
+}
