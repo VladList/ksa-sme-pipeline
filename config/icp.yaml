@@ -38,7 +38,7 @@ segments:
     product_fit: [ltf_12m, bnpl_pay_in_4]
     expected_ticket_sar: [3000, 25000]
     decision_maker: [owner_doctor, medical_director, clinic_manager]
-    risk_flag: medical_category_needs_risk_review   # flag, not an auto-drop
+    risk_flag: medical_category_needs_risk_review   # flag, not an auto-drop; 34 of the Top-50 (scoring 2026-09-17)
     kill_criteria:
       - "icp_relevance < 0.60 on 20-record Google Maps sample"
       - "contactable_rate (mobile | instagram | whatsapp) < 0.50"

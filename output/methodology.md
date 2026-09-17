@@ -161,3 +161,18 @@ business leads enrichment, place details, reviews, images and filters stay off.
 - Question: how many candidates have a verified decision-maker name and a direct channel; is Top-50 realistic.
 - Result: 47 with both, 461 with a direct channel. Decision: Top-50 = scored A-tier with a direct channel; the decision-maker
   name is a Reachability input and an output column, not a filter. Recorded in `config/icp.yaml`.
+
+### Scoring (added 2026-09-17, phase 5)
+- Weights, levels, tier cuts, the Top-list rule and the sensitivity test are fixed in `config/scoring.yaml` before the first
+  calculation; data distributions (not scores) were known at that point and are stated in the file.
+- Ticket fit uses the segment ticket range for every merchant (homepage prices are promotional "from" prices). Reviews score
+  by quartile within the segment. A WhatsApp link counts as the mobile; contacts found on the homepage count.
+- Tier cuts are shares of the maximum (A 82.5%, B 65%), so a sensitivity variant that rescales one component rescales the
+  cuts as well. This was set after a test on synthetic data showed that fixed cuts turn a constant component into a false
+  instability; no real score had been computed.
+- Top-50 = A-tier with a direct channel, ordered by score, then review count, then merchant id; no segment quotas. The
+  list is stable if every variant keeps at least 80% of its members. Merchants tied with the last member are flagged as
+  reserve (flag only; added after the first run).
+- Excluded merchants keep their row with the exclusion reason. Flags (medical Risk review, B Jeddah source relevance,
+  BNPL unchecked) never change the score.
+- Decision-maker names derived from a business name are not treated as confirmed owners; confirming the role needs a call.

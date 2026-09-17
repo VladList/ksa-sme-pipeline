@@ -181,3 +181,24 @@ Source: `data/samples/enrich_summary.md`, `data/samples/enrich_trial_summary.md`
     direct channel, the name becoming a Reachability input. For B the owner's mobile usually is the decision-maker line.
 51. **Process note:** the usage rules for LLM fields were decided after the trial and before the full run, but reached
     config/llm.yaml only after the full run had started (a heredoc error in the terminal). The prompt did not change.
+
+## 2026-09-17 — Scoring and Top-50 (phase 5)
+
+Source: `data/samples/scoring_summary.md`, `config/scoring.yaml` v1.
+
+52. **Scored 519 (A 233, B 286); A-tier 167 (A 75, B 92), all with a direct channel.** The median score (81-82) sits just
+    below the A cut (82.5), so the tier is broad and the ranking inside it does the selection.
+53. **Top-50 is stable:** every weight at x0.8 / x1.2 and unchecked BNPL at 15 / 21 keeps at least 84% of the list
+    (threshold 80%, fixed before the run). Composition: A 34 / B 16, Riyadh 27 / Jeddah 23.
+54. **Every Top-50 lead has a working website with no BNPL provider found**, and a page-based Arabic opener. The best
+    score for a merchant whose BNPL status is unchecked is 88, one point below the cutoff (89): the 7-point gap between
+    not_detected and unchecked decides membership at the top. Good for outreach (verified white space plus an opener),
+    weak as a test of segment B, where 205 of 286 merchants have no website. Weights are not changed after the fact; the
+    53 segment-B merchants in tier A without a checked site are a separate call list for phase 6.
+55. **Ties at the cutoff:** 38 leads score above 89; the other 12 places come from 26 merchants tied at 89, ordered by
+    review count as fixed in scoring.yaml. The 14 left out are flagged "reserve" in scored.csv (flag added after the run,
+    selection unchanged).
+56. **34 of the Top-50 are medical (segment A).** The open question whether Risk accepts medical categories for BNPL/LTF
+    now concerns two thirds of the list.
+57. **A decision-maker name is known for 9 of the Top-50**, and it comes from the clinic name, which is not a confirmed
+    owner. The manual part of step 4.4 cannot confirm a role without a call, so it is recorded as a limitation instead.

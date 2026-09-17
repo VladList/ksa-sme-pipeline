@@ -123,3 +123,29 @@ enrich_columns:
   - {name: cached,                  type: bool, pii: false}
   - {name: error,                   type: str,  pii: false}
   - {name: enriched_on,             type: str,  pii: false}
+
+# One row = one merchant from merchants.csv (data/interim/scored.csv, phase 5). Built by scripts/07_score.py.
+# Excluded merchants keep their row with score_exclusion and empty points. No phone numbers and no owner names.
+scored_columns:
+  - {name: merchant_id,          type: str,   pii: false}
+  - {name: segment,              type: str,   pii: false}
+  - {name: cities,               type: str,   pii: false}
+  - {name: name,                 type: str,   pii: false, desc: "business name"}
+  - {name: score_exclusion,      type: str,   pii: false, desc: "stage 4 exclusion_reason | segment rejected | already Tabby merchant; empty = scored"}
+  - {name: ticket_points,        type: int,   pii: false}
+  - {name: bnpl_status_final,    type: str,   pii: false, desc: "bnpl.csv status after QA; unchecked = no site or page not loaded"}
+  - {name: bnpl_points,          type: int,   pii: false}
+  - {name: reviews_count,        type: int,   pii: false}
+  - {name: reviews_quartile,     type: int,   pii: false, desc: "1 bottom .. 4 top, within segment"}
+  - {name: rating,               type: float, pii: false}
+  - {name: n_locations,          type: int,   pii: false}
+  - {name: traction_points,      type: int,   pii: false}
+  - {name: channel,              type: str,   pii: false, desc: "mobile_or_whatsapp_and_name|mobile_or_whatsapp|instagram|other_phone|none"}
+  - {name: reachability_points,  type: int,   pii: false}
+  - {name: score,                type: float, pii: false}
+  - {name: tier,                 type: str,   pii: false, desc: "A|B|C"}
+  - {name: direct_channel,       type: bool,  pii: false}
+  - {name: owner_name_verified,  type: bool,  pii: false}
+  - {name: hook_from_page,       type: bool,  pii: false}
+  - {name: flags,                type: str,   pii: false}
+  - {name: top_rank,             type: int,   pii: false, desc: "1..50 inside Top-50, empty otherwise"}

@@ -1,0 +1,51 @@
+# Lead scoring (phase 5), read by src/ksa_pipeline/scoring.py. Fixed 2026-09-17 BEFORE the first calculation.
+# Known at this point (data distributions, not scores): prices are almost never on homepages (12 of 519 candidates),
+# the web BNPL status is unknown for most of B (no website), review counts differ by segment, the verified owner name
+# exists for 48 candidates. Four changes to the plan's draft follow from that, each with its reason below.
+version: 1
+written: 2026-09-17
+max_points: 100
+
+tiers_share_of_max:         # plan: A >= 75, B 50-74 on 100 points. Ticket fit is 30 for every candidate (see below), so only
+  A: 0.825                  # 70 points vary; the same shares of the varying part: 30 + 0.75*70 = 82.5 and 30 + 0.50*70 = 65.
+  B: 0.65                   # Kept as shares of the maximum, so a sensitivity variant that rescales a weight rescales the cut too
+
+components:
+  ticket_fit:               # max 30. Change: homepage prices (12) are not used, they are "from" promo prices (a 250 SAR
+    source: icp.yaml        # cleaning next to 15,000 SAR implants); every candidate uses its segment expected_ticket_sar
+    ltf_min_sar: 2000       # 12-month plans SAR 2,000-50,000 (icp.yaml product context)
+    pay_in_4_min_sar: 500
+    points: {ltf: 30, pay_in_4: 20, low: 5}
+  bnpl:                     # max 25. tabby is excluded (QA-confirmed), not scored
+    points: {not_detected: 25, unchecked: 18, competitor_only: 15, generic_installment: 12}
+    # unchecked = no website or the homepage did not load; below a confirmed not_detected, tested in sensitivity (15 / 21)
+  traction:                 # max 25
+    reviews_quartile_points: [1, 4, 7, 10]   # Change: quartiles within the segment (bottom..top), not shared thresholds:
+                                             # clinics collect far more reviews than curtain workshops
+    rating: {high_min: 4.3, high: 8, mid_min: 4.0, mid: 5, low: 2}   # low includes a missing rating
+    locations: {multi_min: 2, multi_max: 5, multi: 7, single: 4}      # chains above 5 are already excluded in stage 4
+  reachability:             # max 20. Change: a WhatsApp link counts as the mobile (in KSA it is the business mobile and the
+    points:                 # first-touch channel); contacts found on the homepage in step 4.2 count as well
+      mobile_or_whatsapp_and_name: 20     # name = owner_name_in_source (config/llm.yaml usage rules)
+      mobile_or_whatsapp: 15
+      instagram: 10
+      other_phone: 5                      # landline, 9200 unified, toll-free
+      none: 0
+
+top_list:                   # gate G3 (icp.yaml): scored A-tier with a direct channel; no segment quotas
+  size: 50
+  require_tier: A
+  direct_channels: [mobile_or_whatsapp_and_name, mobile_or_whatsapp, instagram]
+  order: score desc, reviews_count desc, merchant_id   # if fewer than 50 qualify, the list is shorter, not filled from B-tier
+  # Added after the first run (selection unchanged): merchants tied with the last member get the flag "reserve: tied at the
+  # Top-list cutoff score", because the first run had 26 merchants at the cutoff score and review count chose 12 of them.
+
+sensitivity:
+  weight_factors: [0.8, 1.2]              # each component's points scaled in turn; tier cuts follow the new maximum
+  bnpl_unchecked_points: [15, 21]
+  stable_if_top_overlap_at_least: 0.80    # Top-50 is called stable if every variant keeps at least 80% of its members
+
+flags:                      # shown next to the lead, no points
+  - "A: medical category, needs Risk review before a BNPL/LTF offer"
+  - "B in Jeddah: source relevance 0.40 in validation"
+  - "BNPL status unchecked (no website or homepage did not load)"
