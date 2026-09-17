@@ -1,1 +1,23 @@
 date,record_id,field,old_value,new_value,reason,evidence_url
+2026-09-17,m_be9c582165,bnpl_status,tabby,not_detected,manual QA: no Tabby visible on the homepage (script evidence: text_ar),https://ddclinic.sa
+2026-09-17,m_b5d207c839,bnpl_status,tabby,not_detected,manual QA: no Tabby visible on the homepage (script evidence: text_ar),https://www.orielclinics.com/
+2026-09-17,m_189c69d34f,bnpl_status,tabby,not_detected,manual QA: no Tabby visible on the homepage (script evidence: icon),https://ramclinics.net
+2026-09-17,m_d24ef9a959,bnpl_status,tabby,not_detected,manual QA: no Tabby visible on the homepage (script evidence: icon),https://smileclinic.sa
+2026-09-17,m_e18786274d,bnpl_status,tabby,not_detected,manual QA: no Tabby visible on the homepage (script evidence: text_ar),https://www.starssmile.com/
+2026-09-17,m_60888ea9be,bnpl_status,tabby,not_detected,manual QA: no Tabby visible on the homepage (script evidence: text_ar),https://aldur-almanthour.com
+2026-09-17,m_c6b6723ff7,bnpl_status,tabby,not_detected,manual QA: no Tabby visible on the homepage (script evidence: html|text_ar),https://rosemedicalclinics.com
+2026-09-17,m_5e0dea77ac,bnpl_status,tabby,not_detected,manual QA: no Tabby visible on the homepage (script evidence: html|text_ar),https://violaclinics.com
+2026-09-17,m_b90f833652,bnpl_status,tabby,not_detected,manual QA: no Tabby visible on the homepage (script evidence: text_ar),https://jodclinic.sa
+2026-09-17,m_114b82e4a5,bnpl_status,tabby,not_detected,manual QA: no Tabby visible on the homepage (script evidence: html|text_ar),https://eternalbeauty.sa
+2026-09-17,m_0e1ea2f339,bnpl_status,tabby,not_detected,manual QA: no Tabby visible on the homepage (script evidence: text_ar),https://ghoym.com
+2026-09-17,m_be9c582165,bnpl_status,not_detected,tabby,"adjudication of manual QA (LLM reading of page source, step 4.2 QA): a patient review shown on the page thanks the clinic for paying through Tabby",https://ddclinic.sa
+2026-09-17,m_b5d207c839,bnpl_status,not_detected,tabby,"adjudication of manual QA (LLM reading of page source, step 4.2 QA): Tabby is an option in the booking form lead-source list; same option ids on another clinic site (shared booking system): weak, kept by the ambiguity rule",https://www.orielclinics.com/
+2026-09-17,m_189c69d34f,bnpl_status,not_detected,tabby,"adjudication of manual QA (LLM reading of page source, step 4.2 QA): lazy-loaded Tabby logo (img alt=Tabby) in a page carousel",https://ramclinics.net
+2026-09-17,m_d24ef9a959,bnpl_status,not_detected,tabby,"adjudication of manual QA (LLM reading of page source, step 4.2 QA): Tabby logo in the footer partner row (img alt=Tabby, next to an insurer logo)",https://smileclinic.sa
+2026-09-17,m_e18786274d,bnpl_status,not_detected,tabby,"adjudication of manual QA (LLM reading of page source, step 4.2 QA): Tabby is an option in the booking form lead-source list, same shared booking system as orielclinics.com: weak, kept by the ambiguity rule",https://www.starssmile.com/
+2026-09-17,m_60888ea9be,bnpl_status,not_detected,tabby,"adjudication of manual QA (LLM reading of page source, step 4.2 QA): offers banner: braces in installments with Tabby and Tamara",https://aldur-almanthour.com
+2026-09-17,m_c6b6723ff7,bnpl_status,not_detected,tabby,"adjudication of manual QA (LLM reading of page source, step 4.2 QA): a patient review shown on the page says the clinic has Tabby and Tamara",https://rosemedicalclinics.com
+2026-09-17,m_5e0dea77ac,bnpl_status,not_detected,tabby,"adjudication of manual QA (LLM reading of page source, step 4.2 QA): checkout.tabby.ai script loaded on the homepage (integration)",https://violaclinics.com
+2026-09-17,m_b90f833652,bnpl_status,not_detected,tabby,"adjudication of manual QA (LLM reading of page source, step 4.2 QA): page heading: pay later, split it with Tabby and Tamara",https://jodclinic.sa
+2026-09-17,m_114b82e4a5,bnpl_status,not_detected,tabby,"adjudication of manual QA (LLM reading of page source, step 4.2 QA): page text: every service can be bought on the site in installments through Tabby and Tamara",https://eternalbeauty.sa
+2026-09-17,m_0e1ea2f339,bnpl_status,not_detected,tabby,"adjudication of manual QA (LLM reading of page source, step 4.2 QA): slider image named Tabby banner",https://ghoym.com

@@ -34,6 +34,7 @@
 - uv run python scripts/05_web_fingerprint.py --probe <url> [<url> ...] [--refresh]   (BNPL-маркеры на живых страницах; кэш data/cache/web/, не коммитится)
 - uv run python scripts/05_web_fingerprint.py --run [--limit N]   (главные страницы eligible → data/interim/bnpl.csv, сводка data/samples/bnpl_summary.md)
 - uv run python scripts/05_web_fingerprint.py --manual-c   (ручная проверка выборки C, которую скрипт не загрузил; ответы y/n/?, сохраняются по магазину)
+- uv run python scripts/05_web_fingerprint.py --qa-tabby   (QA всех детекций Tabby в A и B: глазом, затем `no` разбираются по коду страницы через adjudicate_tabby; переопределения — в data/changelog.csv)
 - uv run python scripts/check_no_pii.py <files>
 
 ## Окружение

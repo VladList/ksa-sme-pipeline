@@ -14,9 +14,10 @@ providers:
     text_ar: ["تابي"]
     text_en: ["tabby"]
     ambiguous_en: true
-    verified: [html, text_ar]
+    verified: [html, icon, text_ar]
     evidence:
       - "2026-09-17 fashion.sa (Tabby merchant, has a Tabby page): text_ar in the payment-methods list on the homepage; html tabby.ai links on /en/pages/tabby"
+      - "2026-09-17 step 4.2 QA: icon confirmed on 7 of 7 icon-only Tabby detections in segments A and B (data/samples/bnpl_tabby_qa.md)"
   tamara:
     html: ["tamara.co"]           # substring also covers tamara.com
     icon: ["tamara"]
@@ -42,8 +43,8 @@ providers:
     ambiguous_ar: true
     verified: []
 
-# icon kind is NOT verified: seen on ramclinics.net (/web/assets/images/Tabby.svg, tamara.svg) and
-# alamirah-sa.zid.store (media.zid.store/static/tabby2.svg, tamara2.svg), but their BNPL status is unknown.
+# icon kind: verified for Tabby by the step 4.2 QA (see tabby evidence); not verified for other providers.
+# First seen in step 4.1 on ramclinics.net (/web/assets/images/Tabby.svg, tamara.svg) and alamirah-sa.zid.store.
 # Rule fixed 2026-09-17 before step 4.2: an icon or html marker found on >= 90% of fetched stores of one platform
 # (salla or zid) is a platform template, not merchant evidence, and is not counted for that platform.
 platform_template_share: 0.90

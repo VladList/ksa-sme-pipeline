@@ -130,3 +130,16 @@ business leads enrichment, place details, reviews, images and filters stay off.
   contactability: script where the page loads, by hand where it does not. Amended 2026-09-17 before the Salla BNPL check;
   the step 4.1 amendment had covered contactability only, which was an oversight.
 - A rejected segment keeps its merchants; scoring excludes them with the segment's rejection reason.
+
+### QA of Tabby detections (added 2026-09-17, step 4.2)
+- Every `tabby` detection in scored segments is checked, not sampled: first by eye on the homepage
+  (`scripts/05_web_fingerprint.py --qa-tabby`), then every eye-check `no` is read in the page source (LLM reading of the
+  markup around the marker, recorded as such in `data/samples/bnpl_tabby_qa.csv`).
+- Source-reading criteria, fixed before the snippets were read: a Tabby script or link, or rendered content (logo, banner,
+  text, review, including lazy-loaded or collapsed elements) keeps the detection; a marker that is not a Tabby signal (for
+  example a translation string inside a theme script) is a false positive; an ambiguous case keeps the detection, because
+  pitching an existing merchant costs more than losing one lead.
+- Why two steps: "is Tabby visible on the homepage" does not test what the script detects. This was noticed only after
+  the eye-check answers and is recorded as a method change, not hidden.
+- An eye-check `no` writes an override to `data/changelog.csv`; a detection kept by the source reading writes a reversing
+  row. `data/interim/bnpl.csv` is never edited: the effective status is bnpl.csv plus the QA file.

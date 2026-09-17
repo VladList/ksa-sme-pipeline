@@ -1,0 +1,21 @@
+merchant_id,segment,url,evidence_kinds,manual_answer,checked_on,adjudication,adjudication_note
+m_d23c667b19,A_aesthetic_clinics,https://biolifeclinic.sa,icon,yes,2026-09-17,,
+m_be9c582165,A_aesthetic_clinics,https://ddclinic.sa,text_ar,no,2026-09-17,tabby_kept,"a patient review shown on the page thanks the clinic for paying through Tabby [LLM reading of page source, step 4.2 QA, 2026-09-17]"
+m_4e67be84ed,A_aesthetic_clinics,https://www.mahadahlan.com/,text_ar,yes,2026-09-17,,
+m_7656b92e16,A_aesthetic_clinics,https://nostalgia.clinic,icon,yes,2026-09-17,,
+m_b5d207c839,A_aesthetic_clinics,https://www.orielclinics.com/,text_ar,no,2026-09-17,tabby_kept,"Tabby is an option in the booking form lead-source list; same option ids on another clinic site (shared booking system): weak, kept by the ambiguity rule [LLM reading of page source, step 4.2 QA, 2026-09-17]"
+m_189c69d34f,A_aesthetic_clinics,https://ramclinics.net,icon,no,2026-09-17,tabby_kept,"lazy-loaded Tabby logo (img alt=Tabby) in a page carousel [LLM reading of page source, step 4.2 QA, 2026-09-17]"
+m_d24ef9a959,A_aesthetic_clinics,https://smileclinic.sa,icon,no,2026-09-17,tabby_kept,"Tabby logo in the footer partner row (img alt=Tabby, next to an insurer logo) [LLM reading of page source, step 4.2 QA, 2026-09-17]"
+m_e18786274d,A_aesthetic_clinics,https://www.starssmile.com/,text_ar,no,2026-09-17,tabby_kept,"Tabby is an option in the booking form lead-source list, same shared booking system as orielclinics.com: weak, kept by the ambiguity rule [LLM reading of page source, step 4.2 QA, 2026-09-17]"
+m_ea7f1589dc,A_aesthetic_clinics,https://tamdental.sa/en/,icon,yes,2026-09-17,,
+m_3362bf2c7e,A_aesthetic_clinics,https://bataldental.com,text_ar,yes,2026-09-17,,
+m_60888ea9be,A_aesthetic_clinics,https://aldur-almanthour.com,text_ar,no,2026-09-17,tabby_kept,"offers banner: braces in installments with Tabby and Tamara [LLM reading of page source, step 4.2 QA, 2026-09-17]"
+m_05b694ef29,A_aesthetic_clinics,https://www.josephderm.com/,text_ar,yes,2026-09-17,,
+m_c6b6723ff7,A_aesthetic_clinics,https://rosemedicalclinics.com,text_ar,no,2026-09-17,tabby_kept,"a patient review shown on the page says the clinic has Tabby and Tamara [LLM reading of page source, step 4.2 QA, 2026-09-17]"
+m_5e0dea77ac,A_aesthetic_clinics,https://violaclinics.com,html,no,2026-09-17,tabby_kept,"checkout.tabby.ai script loaded on the homepage (integration) [LLM reading of page source, step 4.2 QA, 2026-09-17]"
+m_b90f833652,A_aesthetic_clinics,https://jodclinic.sa,text_ar,no,2026-09-17,tabby_kept,"page heading: pay later, split it with Tabby and Tamara [LLM reading of page source, step 4.2 QA, 2026-09-17]"
+m_c9273c676b,A_aesthetic_clinics,https://joeleclinics.com,icon,yes,2026-09-17,,
+m_114b82e4a5,A_aesthetic_clinics,https://eternalbeauty.sa,text_ar,no,2026-09-17,tabby_kept,"page text: every service can be bought on the site in installments through Tabby and Tamara [LLM reading of page source, step 4.2 QA, 2026-09-17]"
+m_a76b5c9756,B_custom_furniture,https://texturahome.sa,icon|text_ar,yes,2026-09-17,,
+m_0e1ea2f339,B_custom_furniture,https://ghoym.com,text_ar,no,2026-09-17,tabby_kept,"slider image named Tabby banner [LLM reading of page source, step 4.2 QA, 2026-09-17]"
+m_2e1f84564a,B_custom_furniture,https://zahradecor.net/ar/,icon,yes,2026-09-17,,

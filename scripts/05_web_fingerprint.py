@@ -9,6 +9,7 @@
 Rows of C_contact_check.csv with checked_by=manual_browser are kept on re-runs.
 
   uv run python scripts/05_web_fingerprint.py --manual-c    # opens each blocked C sample store, asks y/n, saves per store
+  uv run python scripts/05_web_fingerprint.py --qa-tabby    # every tabby detection in A and B checked by eye; no -> changelog
 """
 import argparse
 import sys
@@ -46,6 +47,7 @@ if __name__ == "__main__":
     mode.add_argument("--probe", nargs="+", metavar="URL")
     mode.add_argument("--run", action="store_true", help="all eligible merchants from data/interim/merchants.csv")
     mode.add_argument("--manual-c", action="store_true", help="check by hand the C sample stores the script could not load")
+    mode.add_argument("--qa-tabby", action="store_true", help="check by eye every tabby detection in segments A and B")
     ap.add_argument("--limit", type=int, help="with --run: fetch only the first N pages (trial, not a result)")
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--refresh", action="store_true", help="ignore the cache and fetch again")
@@ -55,6 +57,9 @@ if __name__ == "__main__":
     elif args.manual_c:
         from ksa_pipeline.fingerprint import manual_c_check  # noqa: E402
         manual_c_check()
+    elif args.qa_tabby:
+        from ksa_pipeline.fingerprint import qa_tabby  # noqa: E402
+        qa_tabby()
     else:
         from ksa_pipeline.fingerprint import run  # noqa: E402
         started = time.time()

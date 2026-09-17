@@ -318,6 +318,117 @@ def manual_c_check(ask=input, open_url=None) -> dict:
     return result
 
 
+QA_TABBY = "bnpl_tabby_qa.csv"
+QA_TABBY_COLUMNS = ["merchant_id", "segment", "url", "evidence_kinds", "manual_answer", "checked_on",
+                    "adjudication", "adjudication_note"]
+QA_SEGMENTS = ("A_aesthetic_clinics", "B_custom_furniture")      # C is rejected: its merchants are not scored
+CHANGELOG_COLUMNS = ["date", "record_id", "field", "old_value", "new_value", "reason", "evidence_url"]
+
+
+def tabby_kinds(bnpl_evidence: str) -> str:
+    """Evidence kinds behind the Tabby detection only (evidence_kinds in bnpl.csv also covers other providers)."""
+    return "|".join(sorted({e.split(":")[1] for e in (bnpl_evidence or "").split(" ; ") if e.startswith("tabby:")}))
+
+
+def final_tabby(row: dict) -> bool:
+    """A detection stays unless the eye check said no and reading the page source did not keep it."""
+    return row.get("manual_answer") != "no" or row.get("adjudication") == "tabby_kept"
+
+
+def qa_tabby(ask=input, open_url=None) -> dict:
+    """Check by eye every `tabby` detection of scored segments: is Tabby visible on the homepage?
+    A `no` writes an override to not_detected in data/changelog.csv (bnpl.csv stays as the script wrote it). A `no` is then
+    adjudicated from the page source (adjudication column): if the marker is an integration, rendered content or an
+    ambiguous case, the detection is kept and the override is reversed in the changelog. `?` keeps the detection.
+    Answers are saved per merchant; re-runs ask only new or unanswered detections."""
+    import webbrowser
+    open_url = open_url or webbrowser.open
+    qa_path, log_path = paths.SAMPLES / QA_TABBY, paths.DATA / "changelog.csv"
+    detections = [r for r in read_csv(paths.INTERIM / "bnpl.csv") if r["bnpl_status"] == "tabby" and r["segment"] in QA_SEGMENTS]
+    done = {r["merchant_id"]: r for r in read_csv(qa_path)} if qa_path.exists() else {}
+    rows = []
+    for d in detections:
+        row = {c: "" for c in QA_TABBY_COLUMNS}
+        row.update(done.get(d["merchant_id"], {}))
+        row.update(merchant_id=d["merchant_id"], segment=d["segment"], url=row["url"] or d["final_url"] or d["target_url"],
+                   evidence_kinds=tabby_kinds(d["bnpl_evidence"]))
+        rows.append(row)
+    todo = [r for r in rows if not r["manual_answer"]]
+    print(f"{len(todo)} of {len(rows)} detections to check. Look at the homepage only: Tabby logo, or find (Cmd+F) "
+          "the word tabby or تابي. y = visible, n = not visible, ? = cannot tell, q = stop")
+    for i, r in enumerate(todo, 1):
+        print(f"\n[{i}/{len(todo)}] {r['url']}   (script evidence: {r['evidence_kinds']})")
+        open_url(r["url"])
+        a = ""
+        while a not in ("y", "n", "?", "q"):
+            a = ask("   Tabby visible on the homepage? [y/n/?/q] ").strip().lower()
+        if a == "q":
+            print("stopped; this merchant stays unchecked")
+            break
+        r["manual_answer"], r["checked_on"] = {"y": "yes", "n": "no", "?": "unclear"}[a], date.today().isoformat()
+        write_csv(qa_path, rows, QA_TABBY_COLUMNS)
+        if a == "n":
+            log = read_csv(log_path)
+            if not any(x["record_id"] == r["merchant_id"] and x["field"] == "bnpl_status" for x in log):
+                log.append({"date": r["checked_on"], "record_id": r["merchant_id"], "field": "bnpl_status",
+                            "old_value": "tabby", "new_value": "not_detected",
+                            "reason": f"manual QA: no Tabby visible on the homepage (script evidence: {r['evidence_kinds']})",
+                            "evidence_url": r["url"]})
+                write_csv(log_path, log, CHANGELOG_COLUMNS)
+    write_csv(qa_path, rows, QA_TABBY_COLUMNS)
+    return write_qa_report(rows)
+
+
+def adjudicate_tabby(decisions: dict[str, tuple[str, str]], by: str) -> dict:
+    """Record the source reading of eye-check `no` answers. decisions: url -> (tabby_kept | false_positive, note).
+    A kept detection gets a reversing changelog row, so the history of the override stays visible."""
+    qa_path, log_path = paths.SAMPLES / QA_TABBY, paths.DATA / "changelog.csv"
+    rows, log = read_csv(qa_path), read_csv(log_path)
+    by_url = {r["url"]: r for r in rows}
+    missing = [u for u in decisions if u not in by_url or by_url[u]["manual_answer"] != "no"]
+    assert not missing, f"not an eye-check 'no' in {QA_TABBY}: {missing}"
+    today = date.today().isoformat()
+    for url, (verdict, note) in decisions.items():
+        assert verdict in ("tabby_kept", "false_positive"), verdict
+        r = by_url[url]
+        r["adjudication"], r["adjudication_note"] = verdict, f"{note} [{by}, {today}]"
+        reversed_already = any(x["record_id"] == r["merchant_id"] and x["new_value"] == "tabby" for x in log)
+        if verdict == "tabby_kept" and not reversed_already:
+            log.append({"date": today, "record_id": r["merchant_id"], "field": "bnpl_status", "old_value": "not_detected",
+                        "new_value": "tabby", "reason": f"adjudication of manual QA ({by}): {note}", "evidence_url": url})
+    write_csv(qa_path, [{c: r.get(c, "") for c in QA_TABBY_COLUMNS} for r in rows], QA_TABBY_COLUMNS)
+    write_csv(log_path, log, CHANGELOG_COLUMNS)
+    return write_qa_report(rows)
+
+
+def write_qa_report(rows: list[dict]) -> dict:
+    groups = Counter()
+    for r in rows:
+        kind = "icon only" if r["evidence_kinds"] == "icon" else "html or text"
+        groups[(r["segment"], kind, r["manual_answer"] or "pending", r.get("adjudication") or "—")] += 1
+    checked = [r for r in rows if r["manual_answer"]]
+    confirmed = sum(r["manual_answer"] == "yes" for r in checked)
+    kept = sum(final_tabby(r) for r in checked)
+    pending_adj = sum(r["manual_answer"] == "no" and not r.get("adjudication") for r in rows)
+    lines = ["# QA of `tabby` detections (segments A and B)", "",
+             "Every detection is checked by eye on the homepage (census, not a sample). An eye-check `no` is then read in "
+             "the page source: an integration script, rendered content (lazy logo, banner, text, review) or an ambiguous "
+             "case keeps the detection; only a marker that is not a Tabby signal is a false positive. Criteria fixed "
+             "before the source was read. `unclear` keeps the detection.", ""]
+    lines += _table(["segment", "tabby evidence", "eye check", "source reading", "merchants"],
+                    [[*k, n] for k, n in sorted(groups.items())])
+    lines += ["", f"Eye check: {len(checked)} of {len(rows)} checked, {confirmed} confirmed"
+                  + (f" ({confirmed / len(checked):.2f})." if checked else ".")]
+    if pending_adj:
+        lines += [f"**{pending_adj} eye-check `no` answers wait for source reading.**"]
+    else:
+        lines += [f"**Final: {kept} of {len(checked)} detections kept, {len(checked) - kept} false positives.**"]
+    (paths.SAMPLES / "bnpl_tabby_qa.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print("\n" + "\n".join(lines))
+    return {"total": len(rows), "checked": len(checked), "confirmed": confirmed, "kept": kept,
+            "false_positive": len(checked) - kept if not pending_adj else None, "pending_adjudication": pending_adj}
+
+
 def _table(header: list[str], rows: list[list]) -> list[str]:
     return ["| " + " | ".join(header) + " |", "|" + "---|" * len(header)] + ["| " + " | ".join(map(str, r)) + " |" for r in rows]
 
@@ -338,7 +449,9 @@ def write_summary(rows: list[dict], merchants: list[dict], template_table: list[
     lines += ["", "## BNPL status (merchants with a site or store)", ""]
     lines += _table(["segment", *statuses], [[s, *[sum(r["segment"] == s and r["bnpl_status"] == st for r in rows) for st in statuses]] for s in segs])
     lines += ["", "## Evidence kind behind provider detections", "",
-              "A merchant counts once per provider and kind (it can have several kinds). `icon` is not verified.", ""]
+              "A merchant counts once per provider and kind (it can have several kinds). Marker kinds verified for Tabby: "
+              f"{', '.join(markers()['providers']['tabby']['verified'])} (`config/bnpl_markers.yaml`); every Tabby detection "
+              "in A and B is checked in `data/samples/bnpl_tabby_qa.md`.", ""]
     kind_counts = Counter(
         (r["segment"], provider, kind)
         for r in rows
@@ -347,7 +460,7 @@ def write_summary(rows: list[dict], merchants: list[dict], template_table: list[
     lines += _table(["segment", "provider", "kind", "merchants"], [[*k, n] for k, n in sorted(kind_counts.items())]) if kind_counts else ["none"]
     only_icon = Counter(r["segment"] for r in rows if r.get("bnpl_status") == "tabby"
                         and {e.split(":")[1] for e in r["bnpl_evidence"].split(" ; ") if e.startswith("tabby:")} == {"icon"})
-    lines += ["", f"`tabby` detected by icon only (unverified kind): {dict(only_icon) or 'none'}", "",
+    lines += ["", f"`tabby` detected by icon only: {dict(only_icon) or 'none'}", "",
               "## Platform templates", "",
               "Evidence on at least half of one platform's loaded pages; `dropped` = html/icon on >= "
               f"{markers()['platform_template_share']:.0%} (rule fixed before this run).", ""]

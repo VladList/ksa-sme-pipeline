@@ -144,3 +144,20 @@ Source: `data/samples/bnpl_summary.md`, `data/samples/C_contact_check.csv`, run 
     provider name, the same signal the script uses.
 41. **Data quality:** one A clinic lists an unrelated domain as its website in Google Maps; one Salla store redirects to
     its own domain, which failed on the first load and worked on reload.
+
+## 2026-09-17 — QA of Tabby detections (step 4.2)
+
+Source: `data/samples/bnpl_tabby_qa.md`, `data/changelog.csv`.
+
+42. **All 20 Tabby detections in A and B hold.** The eye check on the homepage confirmed 9 of 20. The 11 `no` answers were
+    read in the page source and every one carries a Tabby signal: an integration script (1), the merchant's own text or
+    banner (4), a logo in a lazy carousel or the footer (2), patient reviews that mention paying with Tabby (2), and 2
+    weak cases (finding 44). The 20 exclusions "already Tabby merchant" stand: A 17, B 3.
+43. **For a reviewer who does not read Arabic, the eye check was the weaker instrument:** it missed lazy-loaded logos,
+    image file names, reviews and text inside page sections; the markup around the marker was decisive. The two-step
+    method was adopted after the eye-check answers came in; the criteria for reading the source were fixed before the
+    snippets were read, and every override and its reversal stays in the changelog.
+44. **Two clinics carry Tabby only as a lead-source option in a booking form** with identical option ids on both sites (a
+    shared booking system). Weak evidence, kept by the ambiguity rule; the first merchants to revisit if the pool runs short.
+45. **The `icon` marker kind is now verified for Tabby:** 7 of 7 icon-only detections show a Tabby logo (5 by eye, 2 in
+    the page source). Finding 35 stands: at least 16% of A clinics with a loaded homepage are already Tabby merchants.

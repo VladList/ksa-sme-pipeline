@@ -99,6 +99,8 @@ sources:
       Page loaded: A 109, B 46, Zid 16 of 16, Salla 0 of 24 (Cloudflare challenge). Most failures are bot protection
       (HTTP 403); the rest are sites broken for any visitor (DNS, TLS, 404, 5xx). BNPL status stays unknown for
       merchants without a site (A 86, B 205) and for pages that did not load.
+      QA 2026-09-17: all 20 Tabby detections in A and B confirmed (eye check 9 of 20, page source 20 of 20;
+      data/samples/bnpl_tabby_qa.md).
 
   - id: tabby_merchant_directory
     role: exclusion_list

@@ -22,7 +22,7 @@ _Filled on Day 3 from `data/runs.csv`, `data/sources.yaml` and `output/public/`.
 | raw records collected (Google Maps, Riyadh + Jeddah) | 778 (A 360, B 418) |
 | unique merchants after entity resolution | 765; eligible after exclusions 579 (A 250, B 289, C 40) |
 | sources validated / accepted / rejected | Google Maps accepted for A and B (B with a Jeddah limitation); Salla/Zid worked (contactable 1.00) but segment C rejected by its kill criterion (BNPL on 14 of 20 sampled stores) |
-| BNPL on merchant homepages (pages that loaded) | A: Tabby 17 of 109, competitor only 4; B: Tabby 3 of 46 (homepage only, lower bound) |
+| BNPL on merchant homepages (pages that loaded) | A: Tabby 17 of 109, competitor only 4; B: Tabby 3 of 46 (homepage only, lower bound; all 20 Tabby detections confirmed in QA) |
 | A-tier leads (scored, contactable, decision-maker named) | — |
 | share of scored merchants with no BNPL provider | — |
 | total tool cost, USD | 4.64 (Apify free credit; probes 1.01, full run 3.63) |
@@ -35,7 +35,7 @@ _Filled on Day 3 from `data/runs.csv`, `data/sources.yaml` and `output/public/`.
 | 2. Ingest raw exports | `scripts/02_ingest.py` | `data/raw/<source>/` | `data/interim/<source>/`, `data/runs.csv` | done |
 | 3. Validate source × segment | `scripts/03_source_report.py` | interim + labelled sample | `data/samples/*__report.md` | done for Google Maps |
 | 4. Entity resolution + exclusions | `scripts/04_resolve.py` | interim + `config/rules.yaml` | `data/interim/merchants.csv`, `data/samples/resolve_summary.md`, `rules_check.md` | done (merge QA: `merge_qa.md`) |
-| 5. BNPL fingerprint + LLM enrichment | `scripts/05_web_fingerprint.py --probe <urls>` / `--run` / `--manual-c` | `config/bnpl_markers.yaml`, `data/interim/merchants.csv` | `data/interim/bnpl.csv`, `data/samples/bnpl_summary.md`, `data/samples/C_contact_check.csv` | fingerprint done; LLM enrichment next |
+| 5. BNPL fingerprint + LLM enrichment | `scripts/05_web_fingerprint.py --probe <urls>` / `--run` / `--manual-c` / `--qa-tabby` | `config/bnpl_markers.yaml`, `data/interim/merchants.csv` | `data/interim/bnpl.csv`, `data/samples/bnpl_summary.md`, `data/samples/C_contact_check.csv`, `data/samples/bnpl_tabby_qa.md` | fingerprint and QA done; LLM enrichment next |
 | 6. Scoring + tiers | — | `config/scoring.yaml` | | Day 2 |
 | 7. Insights, outreach kit, public export | — | | `output/public/` | Day 3 |
 
@@ -69,6 +69,7 @@ uv run python scripts/04_resolve.py          # records -> merchants, exclusions,
 uv run python scripts/05_web_fingerprint.py --probe https://fashion.sa   # BNPL markers on a known page
 uv run python scripts/05_web_fingerprint.py --run        # homepages of eligible merchants: BNPL + contact flags
 uv run python scripts/05_web_fingerprint.py --manual-c   # pages blocked for scripts in the C sample, checked by hand
+uv run python scripts/05_web_fingerprint.py --qa-tabby   # every Tabby detection in A and B checked by eye
 ```
 
 ## What changed from the previous pipeline

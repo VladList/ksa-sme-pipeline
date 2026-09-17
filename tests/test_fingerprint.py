@@ -124,3 +124,40 @@ def test_contacts_in_embedded_json():
     html = '<script>{"social":{"wa":"https:\\/\\/wa.me\\/966550000001","ig":"https:\\/\\/instagram.com\\/oud.house"},"phone":"0550000002"}</script>'
     c = fingerprint.page_contacts(html, "https://s.zid.store")
     assert c["whatsapp"] == {"+966550000001"} and c["instagram"] == {"oud.house"} and c["mobile"] == {"+966550000002"}
+
+
+def test_qa_tabby_logs_false_positives_and_resumes(tmp_path, monkeypatch):
+    for d in ("interim", "samples"):
+        (tmp_path / d).mkdir()
+    monkeypatch.setattr(paths, "DATA", tmp_path)
+    monkeypatch.setattr(paths, "INTERIM", tmp_path / "interim")
+    monkeypatch.setattr(paths, "SAMPLES", tmp_path / "samples")
+    (tmp_path / "changelog.csv").write_text("date,record_id,field,old_value,new_value,reason,evidence_url\n", encoding="utf-8")
+    rows = [{c: "" for c in fingerprint.WEB_COLUMNS} for _ in range(4)]
+    for i, (seg, evidence) in enumerate([("A_aesthetic_clinics", "tabby:icon:/t.svg ; tamara:html:tamara.co"),
+                                         ("A_aesthetic_clinics", "tabby:text_ar:تابي"),
+                                         ("B_custom_furniture", "tabby:icon:/t.svg ; tabby:text_ar:تابي"),
+                                         ("C_salla_zid_d2c", "tabby:icon:/t.svg")]):
+        rows[i].update(merchant_id=f"m{i}", segment=seg, bnpl_status="tabby", bnpl_evidence=evidence, final_url=f"https://s{i}.sa")
+    write(tmp_path / "interim" / "bnpl.csv", rows, fingerprint.WEB_COLUMNS)
+
+    answers = iter(["n", "n", "q"])
+    out = fingerprint.qa_tabby(ask=lambda _: next(answers), open_url=lambda u: None)
+    assert out["checked"] == 2 and out["confirmed"] == 0 and out["pending_adjudication"] == 2   # C row is not asked
+    qa = {r["merchant_id"]: r for r in csv.DictReader((tmp_path / "samples" / fingerprint.QA_TABBY).open(encoding="utf-8"))}
+    assert qa["m0"]["evidence_kinds"] == "icon"                                                # tamara html not mixed in
+    assert len(list(csv.DictReader((tmp_path / "changelog.csv").open(encoding="utf-8")))) == 2
+
+    fingerprint.qa_tabby(ask=lambda _: "y", open_url=lambda u: None)                            # only m2 is left
+    out = fingerprint.adjudicate_tabby({"https://s0.sa": ("tabby_kept", "lazy logo"),
+                                        "https://s1.sa": ("false_positive", "word inside a theme dictionary")}, by="test")
+    assert out["kept"] == 2 and out["false_positive"] == 1 and out["pending_adjudication"] == 0
+    log = list(csv.DictReader((tmp_path / "changelog.csv").open(encoding="utf-8")))
+    assert [(x["record_id"], x["new_value"]) for x in log] == [("m0", "not_detected"), ("m1", "not_detected"), ("m0", "tabby")]
+    fingerprint.adjudicate_tabby({"https://s0.sa": ("tabby_kept", "lazy logo")}, by="test")      # idempotent
+    assert len(list(csv.DictReader((tmp_path / "changelog.csv").open(encoding="utf-8")))) == 3
+    assert "Final: 2 of 3 detections kept, 1 false positives" in (tmp_path / "samples" / "bnpl_tabby_qa.md").read_text(encoding="utf-8")
+    fingerprint.qa_tabby(ask=lambda _: "y", open_url=lambda u: None)                            # re-run keeps adjudication
+    qa = {r["merchant_id"]: r for r in csv.DictReader((tmp_path / "samples" / fingerprint.QA_TABBY).open(encoding="utf-8"))}
+    assert qa["m0"]["adjudication"] == "tabby_kept" and fingerprint.final_tabby(qa["m0"]) and not fingerprint.final_tabby(qa["m1"])
+

@@ -20,7 +20,7 @@ Run 2026-09-17. Homepage only: `not_detected` does not mean no BNPL. Markers: `c
 
 ## Evidence kind behind provider detections
 
-A merchant counts once per provider and kind (it can have several kinds). `icon` is not verified.
+A merchant counts once per provider and kind (it can have several kinds). Marker kinds verified for Tabby: html, icon, text_ar (`config/bnpl_markers.yaml`); every Tabby detection in A and B is checked in `data/samples/bnpl_tabby_qa.md`.
 
 | segment | provider | kind | merchants |
 |---|---|---|---|
@@ -39,7 +39,7 @@ A merchant counts once per provider and kind (it can have several kinds). `icon`
 | C_salla_zid_d2c | tabby | icon | 2 |
 | C_salla_zid_d2c | tamara | icon | 3 |
 
-`tabby` detected by icon only (unverified kind): {'A_aesthetic_clinics': 6, 'B_custom_furniture': 1, 'C_salla_zid_d2c': 2}
+`tabby` detected by icon only: {'A_aesthetic_clinics': 6, 'B_custom_furniture': 1, 'C_salla_zid_d2c': 2}
 
 ## Platform templates
 
