@@ -88,6 +88,18 @@ sources:
           not_fit because the hypothesis is D2C brands, although they are valid BNPL merchants.
 
   # ---------- roles other than primary ----------
+  - id: openai_llm_enrichment
+    role: enrichment
+    tool: scripts/06_enrich.py, model gpt-5.6-luna (structured outputs, strict JSON schema), config/llm.yaml
+    status: accepted_with_limitation
+    decided_on: 2026-09-17
+    report: data/samples/enrich_summary.md
+    note: >
+      519 candidates (eligible A and B minus 20 Tabby merchants), 0 errors, $0.24. Input: name, Maps categories, city and
+      homepage text from the step 4.2 cache (phones masked). Verified owner names 48 (42 from the business name), prices on
+      the page 12, page-grounded Arabic openers 133. Limitation: SME homepages rarely name the owner, and the model's
+      category ticket ranges are not a measurement, so Ticket fit uses the icp.yaml segment range.
+
   - id: merchant_websites
     role: enrichment
     tool: scripts/05_web_fingerprint.py (httpx, homepage only, honest User-Agent, bot challenges not bypassed)

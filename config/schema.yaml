@@ -43,6 +43,7 @@ columns:
   - {name: has_whatsapp_link, stage: ingest, type: bool,  pii: false}
   - {name: text_blob,         stage: ingest, type: str,   pii: true,  desc: "bio + captions, input for Day 2 BNPL/LLM; may contain names"}
   # --- Day 2 (contract declared now, filled later) ---
+  # LLM fields are filled per merchant in enrich_columns below (step 4.3); the record-level *_inferred columns here stay unused.
   - {name: merchant_id,       stage: resolve, type: str,  pii: false}
   - {name: exclusion_reason,  stage: resolve, type: str,  pii: false}
   - {name: bnpl_status,       stage: enrich, type: str,   pii: false, origin: rule, desc: "tabby|competitor_only|generic_installment|not_detected|fetch_failed (homepage only; not_detected is not none)"}
@@ -97,3 +98,28 @@ web_columns:
   - {name: currency_sar,     type: bool, pii: false, desc: "SAR / ر.س in page text"}
   - {name: currency_foreign, type: bool, pii: false, desc: "AED, BHD, KWD, QAR, OMR in page text"}
   - {name: fetched_on,       type: str,  pii: false}
+
+# One row = one enriched merchant (data/interim/enrich.csv, step 4.3). Built by scripts/06_enrich.py.
+# origin llm -> name ends with _inferred (tests). Owner names and evidence are personal data: interim only.
+enrich_columns:
+  - {name: merchant_id,             type: str,  pii: false}
+  - {name: segment,                 type: str,  pii: false}
+  - {name: input_kind,              type: str,  pii: false, desc: "page_text|name_only"}
+  - {name: input_chars,             type: int,  pii: false, desc: "homepage characters sent (after phone masking and cut)"}
+  - {name: owner_name_inferred,     type: str,  pii: true,  origin: llm}
+  - {name: owner_role_inferred,     type: str,  pii: false, origin: llm, desc: "owner|founder|medical_director|doctor_or_person_in_business_name|manager|unknown"}
+  - {name: owner_evidence_inferred, type: str,  pii: true,  origin: llm, desc: "phrase from the input that contains the name"}
+  - {name: ticket_sar_min_inferred, type: int,  pii: false, origin: llm}
+  - {name: ticket_sar_max_inferred, type: int,  pii: false, origin: llm}
+  - {name: ticket_basis_inferred,   type: str,  pii: false, origin: llm, desc: "prices_on_page|category_typical|unknown"}
+  - {name: hook_ar_inferred,        type: str,  pii: false, origin: llm, desc: "AI-drafted Arabic opener, not native-reviewed"}
+  - {name: hook_fact_inferred,      type: str,  pii: false, origin: llm}
+  - {name: owner_name_in_source,    type: bool, pii: false, origin: rule, desc: "name found verbatim (Arabic-normalised) in the input"}
+  - {name: model,                   type: str,  pii: false}
+  - {name: prompt_version,          type: str,  pii: false}
+  - {name: input_tokens,            type: int,  pii: false}
+  - {name: output_tokens,           type: int,  pii: false}
+  - {name: cost_usd,                type: float, pii: false}
+  - {name: cached,                  type: bool, pii: false}
+  - {name: error,                   type: str,  pii: false}
+  - {name: enriched_on,             type: str,  pii: false}

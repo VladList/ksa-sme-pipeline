@@ -21,7 +21,9 @@ targets:            # raw-record targets for Day 1, not final list size
   A_aesthetic_clinics: 800   # actual 360: budget ceiling set after targets were written (2026-09-16)
   B_custom_furniture: 600    # actual 418
   C_salla_zid_d2c: 300
-  final_a_tier: 50  # Day 2 deliverable: scored, contactable, decision-maker named
+  final_a_tier: 50  # scored A-tier with a direct channel (mobile, WhatsApp or Instagram); decision-maker name where verified
+  # Gate G3, 2026-09-17: the original definition "decision-maker named" is dropped. Verified owner names exist for 48 of 519
+  # candidates (47 with a direct channel), a direct channel for 461. The name is a Reachability input and a column, not a filter.
 
 segments:
   A_aesthetic_clinics:

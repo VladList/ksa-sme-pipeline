@@ -143,3 +143,21 @@ business leads enrichment, place details, reviews, images and filters stay off.
   the eye-check answers and is recorded as a method change, not hidden.
 - An eye-check `no` writes an override to `data/changelog.csv`; a detection kept by the source reading writes a reversing
   row. `data/interim/bnpl.csv` is never edited: the effective status is bnpl.csv plus the QA file.
+
+### LLM enrichment (added 2026-09-17, step 4.3)
+- Model, prices, budget stop and prompt live in `config/llm.yaml`; prices are copied from the provider's pricing page with
+  the date checked. Spend is computed from token usage and recorded in `data/runs.csv`.
+- Input per merchant: business name, Maps categories, city and the homepage text already fetched in step 4.2 (phone numbers
+  masked before sending; nothing is fetched again). Output follows a strict JSON schema; every model field ends with
+  `_inferred`. Answers are cached per merchant and prompt version; errors are not cached.
+- A 20-merchant trial precedes the full run, stratified by input kind (with homepage text / name only) so that cost per
+  merchant and quality are measured for both groups.
+- Usage rules: an owner name counts only if it appears verbatim (Arabic-normalised) in the input; an Arabic opener is used
+  only when it rests on homepage text; a ticket is used only when prices appear on the page, otherwise Ticket fit uses the
+  segment range in `config/icp.yaml`. Owner names stay in `data/interim/`; committed files carry counts only.
+- Arabic text written by the model is labelled AI-drafted and is not presented as native-speaker work.
+
+### Gate G3 (added 2026-09-17)
+- Question: how many candidates have a verified decision-maker name and a direct channel; is Top-50 realistic.
+- Result: 47 with both, 461 with a direct channel. Decision: Top-50 = scored A-tier with a direct channel; the decision-maker
+  name is a Reachability input and an output column, not a filter. Recorded in `config/icp.yaml`.

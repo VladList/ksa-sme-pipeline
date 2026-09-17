@@ -1,0 +1,45 @@
+# LLM enrichment (step 4.3), read by src/ksa_pipeline/enrich.py. Fixed 2026-09-17 before the first call.
+# Every column the model fills ends with _inferred (config/schema.yaml, enforced by tests).
+provider: openai
+endpoint: https://api.openai.com/v1/chat/completions
+model: gpt-5.6-luna
+price_usd_per_1m_tokens:            # developers.openai.com/api/docs/pricing, standard tier, checked 2026-09-17
+  input: 0.20
+  output: 1.20
+reasoning_effort: null              # null = model default; set only if the trial shows it is needed
+max_output_tokens: 2000             # includes reasoning tokens on reasoning models
+max_input_chars: 6000               # homepage text is cut after this many characters
+budget_usd: 2.00                    # hard stop for step 4.3 (account credit $5, auto-recharge off, monthly limit $5)
+prompt_version: v1                  # changing the prompt means a new version; cached answers are keyed by it
+trial:
+  size: 20                          # merchants for the cost and quality trial, stratified before the first call:
+                                    # half with homepage text, half name only (a random 20 would give ~5 with text)
+  seed: 42
+segments: [A_aesthetic_clinics, B_custom_furniture]   # C rejected; merchants with a confirmed Tabby detection are skipped
+segment_description:
+  A_aesthetic_clinics: independent dental, dermatology or laser clinic in Saudi Arabia
+  B_custom_furniture: made-to-order majlis, sofa or curtain workshop in Saudi Arabia
+# Rules applied to the answers (fixed before the trial):
+#   owner name counts only if it appears verbatim (after Arabic normalisation) in the input text -> owner_name_in_source
+#   ticket with basis category_typical is a model prior, not a measurement; scoring must treat it as weaker
+#   hook_ar is AI-drafted Arabic, not native-reviewed; it is a draft for a native speaker, not a script to send
+# Usage rules for scoring and outreach, decided 2026-09-17 after the 20-merchant trial and before the full run (written
+# into this file only after the full run had started: the first edit failed in the terminal; the prompt did not change):
+#   owner name is used only when owner_name_in_source is true
+#   hook_ar is used only when input_kind is page_text (name-only hooks restate the segment description, not a fact)
+#   ticket is used only when ticket_basis is prices_on_page; otherwise Ticket fit uses the segment range in icp.yaml
+#   (trial: 0 of 20 prices on page; category_typical ranges were inconsistent across similar merchants)
+system_prompt: |
+  You extract facts for B2B sales research about one Saudi small business. Use only the text you are given; never guess
+  facts that are not in it. Answer in the JSON schema.
+  owner_name_inferred: full name of the owner, founder or medical director, copied exactly as written in the input (keep
+  the original script). If the business name itself is a person's name with a title (Dr., د., أبو), return that name with
+  role doctor_or_person_in_business_name. Staff doctors without an ownership or director role do not count. If no such
+  person is named, return null and role unknown.
+  owner_evidence_inferred: the exact phrase from the input (at most 120 characters) that contains the name; empty string
+  when the name is null.
+  ticket: the typical price of one purchase in SAR. Basis prices_on_page if the text shows prices; category_typical if not,
+  with a range typical for this kind of business in Saudi Arabia; unknown with nulls if you cannot tell.
+  hook_ar_inferred: one short, polite WhatsApp opening line in Saudi Arabic (at most 200 characters) that refers to one
+  specific fact from the input (a service, an offer, a branch) and asks whether splitting payments for customers would
+  help. Do not claim any partnership, rates or approval terms. hook_fact_inferred: that fact, in English.

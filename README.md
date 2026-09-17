@@ -1,6 +1,6 @@
 # KSA SME Merchant Pipeline
 
-> **Status: Day 2 of 3 — collection, source validation, entity resolution and BNPL fingerprint closed; segment C rejected; LLM enrichment and scoring next.**
+> **Status: Day 2 of 3 — collection, source validation, entity resolution and BNPL fingerprint and LLM enrichment closed; segment C rejected; scoring next.**
 > Numbers below are filled only for closed stages (see `notebooks/state.md`). Nothing in this
 > README describes work that has not been run.
 
@@ -23,9 +23,10 @@ _Filled on Day 3 from `data/runs.csv`, `data/sources.yaml` and `output/public/`.
 | unique merchants after entity resolution | 765; eligible after exclusions 579 (A 250, B 289, C 40) |
 | sources validated / accepted / rejected | Google Maps accepted for A and B (B with a Jeddah limitation); Salla/Zid worked (contactable 1.00) but segment C rejected by its kill criterion (BNPL on 14 of 20 sampled stores) |
 | BNPL on merchant homepages (pages that loaded) | A: Tabby 17 of 109, competitor only 4; B: Tabby 3 of 46 (homepage only, lower bound; all 20 Tabby detections confirmed in QA) |
-| A-tier leads (scored, contactable, decision-maker named) | — |
+| A-tier leads (scored, direct channel; decision-maker name where verified) | — |
+| decision-maker name verified (LLM, found verbatim in the source) | 48 of 519 candidates (A 43, B 5); direct channel for 461 |
 | share of scored merchants with no BNPL provider | — |
-| total tool cost, USD | 4.64 (Apify free credit; probes 1.01, full run 3.63) |
+| total tool cost, USD | 4.88: Apify 4.64 (free credit; probes 1.01, full run 3.63) + OpenAI 0.24 (enrichment of 519 merchants) |
 
 ## Pipeline
 
@@ -35,7 +36,7 @@ _Filled on Day 3 from `data/runs.csv`, `data/sources.yaml` and `output/public/`.
 | 2. Ingest raw exports | `scripts/02_ingest.py` | `data/raw/<source>/` | `data/interim/<source>/`, `data/runs.csv` | done |
 | 3. Validate source × segment | `scripts/03_source_report.py` | interim + labelled sample | `data/samples/*__report.md` | done for Google Maps |
 | 4. Entity resolution + exclusions | `scripts/04_resolve.py` | interim + `config/rules.yaml` | `data/interim/merchants.csv`, `data/samples/resolve_summary.md`, `rules_check.md` | done (merge QA: `merge_qa.md`) |
-| 5. BNPL fingerprint + LLM enrichment | `scripts/05_web_fingerprint.py --probe <urls>` / `--run` / `--manual-c` / `--qa-tabby` | `config/bnpl_markers.yaml`, `data/interim/merchants.csv` | `data/interim/bnpl.csv`, `data/samples/bnpl_summary.md`, `data/samples/C_contact_check.csv`, `data/samples/bnpl_tabby_qa.md` | fingerprint and QA done; LLM enrichment next |
+| 5. BNPL fingerprint + LLM enrichment | `scripts/05_web_fingerprint.py --probe <urls>` / `--run` / `--manual-c` / `--qa-tabby` | `config/bnpl_markers.yaml`, `data/interim/merchants.csv` | `data/interim/bnpl.csv`, `data/samples/bnpl_summary.md`, `data/samples/C_contact_check.csv`, `data/samples/bnpl_tabby_qa.md` | fingerprint, QA and LLM enrichment done (`scripts/06_enrich.py`, `config/llm.yaml` → `data/interim/enrich.csv`, `data/samples/enrich_summary.md`); scoring next |
 | 6. Scoring + tiers | — | `config/scoring.yaml` | | Day 2 |
 | 7. Insights, outreach kit, public export | — | | `output/public/` | Day 3 |
 
@@ -48,6 +49,7 @@ the stage runs, not in advance.
 - `data/sources.yaml` — every source considered, including rejected ones, and the validation protocol (thresholds fixed before data).
 - `data/samples/` — 20-record samples per source × segment, hand-labelled, phones masked, plus the metric report for each.
 - `config/schema.yaml` — the data contract: column order, PII flag per column, `_inferred` suffix for LLM output.
+- `config/llm.yaml` — LLM enrichment: model, prices with the date checked, budget stop, prompt and the rules for using its answers.
 - `data/runs.csv` — every scraping run: actor, input, record count, cost.
 - `data/changelog.csv` — every manual change to a record, with a reason.
 - `notebooks/observations.md` — findings as they were found, with the numbers.
@@ -70,6 +72,7 @@ uv run python scripts/05_web_fingerprint.py --probe https://fashion.sa   # BNPL 
 uv run python scripts/05_web_fingerprint.py --run        # homepages of eligible merchants: BNPL + contact flags
 uv run python scripts/05_web_fingerprint.py --manual-c   # pages blocked for scripts in the C sample, checked by hand
 uv run python scripts/05_web_fingerprint.py --qa-tabby   # every Tabby detection in A and B checked by eye
+uv run python scripts/06_enrich.py --dry-run             # free: candidates and input size; --trial / --run call the OpenAI API
 ```
 
 ## What changed from the previous pipeline

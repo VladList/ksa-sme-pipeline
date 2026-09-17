@@ -25,6 +25,10 @@ def web_columns() -> list[dict]:
     return yaml.safe_load((CONFIG / "schema.yaml").read_text(encoding="utf-8"))["web_columns"]
 
 
+def enrich_columns() -> list[dict]:
+    return yaml.safe_load((CONFIG / "schema.yaml").read_text(encoding="utf-8"))["enrich_columns"]
+
+
 def pii_columns() -> set[str]:
     return {c["name"] for c in load_schema() if c.get("pii")}
 
@@ -35,7 +39,7 @@ def contract_violations() -> list[str]:
     names = [c["name"] for c in load_schema()]
     if len(names) != len(set(names)):
         problems.append("duplicate column names")
-    for c in load_schema():
+    for c in load_schema() + enrich_columns():
         if c.get("origin") == "llm" and not c["name"].endswith("_inferred"):
             problems.append(f"{c['name']}: LLM-derived column must end with _inferred")
     return problems

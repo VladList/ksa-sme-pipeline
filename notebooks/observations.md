@@ -161,3 +161,23 @@ Source: `data/samples/bnpl_tabby_qa.md`, `data/changelog.csv`.
     shared booking system). Weak evidence, kept by the ambiguity rule; the first merchants to revisit if the pool runs short.
 45. **The `icon` marker kind is now verified for Tabby:** 7 of 7 icon-only detections show a Tabby logo (5 by eye, 2 in
     the page source). Finding 35 stands: at least 16% of A clinics with a loaded homepage are already Tabby merchants.
+
+## 2026-09-17 — LLM enrichment and gate G3 (step 4.3)
+
+Source: `data/samples/enrich_summary.md`, `data/samples/enrich_trial_summary.md`, runs `2026-09-17__llm_trial` and `__llm_full`.
+
+46. **LLM enrichment is cheap:** 519 candidates for $0.24 (trial $0.011 + full $0.230), 0 errors. A merchant with homepage
+    text costs $0.00064, a name-only merchant $0.0004.
+47. **Decision-maker names are rare on SME homepages:** 48 of 519 (9%), all found verbatim in the input. 42 come from the
+    business name (a clinic named after its doctor), 6 from homepage text (5 founders, 1 owner). A 43 of 233, B 5 of 286.
+48. **Prices are almost never on the homepage:** 12 of 519. The model's category-based ticket ranges were inconsistent for
+    similar merchants in the trial (laser clinics 150-500 vs 300-1500 SAR) and below the icp.yaml hypothesis, so they are not
+    used; Ticket fit uses the segment range.
+49. **Arabic openers are only as good as their input:** the 133 with homepage text cite a real fact (same-day repair, free
+    home measurement, a named treatment). Name-only openers restated the segment description from the prompt and claimed
+    "I saw that you..." without having seen anything; they are not used. All openers are AI-drafted, not native-reviewed.
+50. **Gate G3:** a verified name and a direct channel exist for 47 candidates (A 42, B 5); a direct channel alone for 461
+    (A 186 of 233, B 275 of 286). Top-50 "decision-maker named" is not reachable; it is redefined as scored A-tier with a
+    direct channel, the name becoming a Reachability input. For B the owner's mobile usually is the decision-maker line.
+51. **Process note:** the usage rules for LLM fields were decided after the trial and before the full run, but reached
+    config/llm.yaml only after the full run had started (a heredoc error in the terminal). The prompt did not change.
