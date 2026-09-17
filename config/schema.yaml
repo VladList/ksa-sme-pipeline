@@ -74,3 +74,26 @@ merchant_columns:
   - {name: contactable,      type: bool, pii: false, desc: "mobile, Instagram or WhatsApp link"}
   - {name: exclusion_reason, type: str,  pii: false, desc: "all matching rules joined by '; '; empty = eligible"}
   - {name: record_ids,       type: str,  pii: false}
+
+# One row = one eligible merchant (data/interim/bnpl.csv, stage 5, step 4.2). Built by scripts/05_web_fingerprint.py --run.
+# No phone values: contacts found on the page are yes/no flags. Empty bnpl_status = no site or store, not checked.
+web_columns:
+  - {name: merchant_id,      type: str,  pii: false}
+  - {name: segment,          type: str,  pii: false}
+  - {name: platform,         type: str,  pii: false, desc: "own_site|salla|zid|no_site"}
+  - {name: target_url,       type: str,  pii: false, desc: "first URL tried; own site also tried with www."}
+  - {name: final_url,        type: str,  pii: false}
+  - {name: http_status,      type: int,  pii: false, desc: "0 = connection error"}
+  - {name: fetch_error,      type: str,  pii: false}
+  - {name: bnpl_status,      type: str,  pii: false, origin: rule, desc: "tabby|competitor_only|generic_installment|not_detected|fetch_failed; empty = not checked"}
+  - {name: bnpl_providers,   type: str,  pii: false, origin: rule, desc: "providers joined by |"}
+  - {name: evidence_kinds,   type: str,  pii: false, desc: "html|icon|text_ar|text_en behind the providers"}
+  - {name: bnpl_evidence,    type: str,  pii: false, desc: "provider:kind:marker joined by ' ; '"}
+  - {name: template_dropped, type: str,  pii: false, desc: "evidence ignored as a platform template"}
+  - {name: page_phone,       type: bool, pii: false, desc: "KSA phone (text with prefix, or tel: link)"}
+  - {name: page_mobile,      type: bool, pii: false}
+  - {name: page_whatsapp,    type: bool, pii: false}
+  - {name: page_instagram,   type: bool, pii: false}
+  - {name: currency_sar,     type: bool, pii: false, desc: "SAR / ر.س in page text"}
+  - {name: currency_foreign, type: bool, pii: false, desc: "AED, BHD, KWD, QAR, OMR in page text"}
+  - {name: fetched_on,       type: str,  pii: false}

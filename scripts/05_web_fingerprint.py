@@ -1,13 +1,18 @@
-"""Stage 5 — fetch merchant websites and detect BNPL providers.
+"""Stage 5 — fetch merchant homepages, detect BNPL providers and contacts.
 
-Step 4.1 (verify markers on known pages before trusting them):
-  uv run python scripts/05_web_fingerprint.py --probe https://example.sa https://salla.sa/store
+  uv run python scripts/05_web_fingerprint.py --probe https://example.sa [...]   # step 4.1: markers on known pages
+  uv run python scripts/05_web_fingerprint.py --run --limit 20                  # step 4.2: trial on 20 pages
+  uv run python scripts/05_web_fingerprint.py --run                             # step 4.2: all eligible merchants
 
-Prints, per URL: fetch status, detected providers with the text around each marker, and every attribute value on the
-page that mentions a provider (to spot markers the config does not know yet). Pages are cached in data/cache/web/.
+--refresh ignores the cache (data/cache/web/, not committed); --workers sets parallel fetches (default 8).
+--run writes data/interim/bnpl.csv (not committed), data/samples/bnpl_summary.md and data/samples/C_contact_check.csv.
+Rows of C_contact_check.csv with checked_by=manual_browser are kept on re-runs.
+
+  uv run python scripts/05_web_fingerprint.py --manual-c    # opens each blocked C sample store, asks y/n, saves per store
 """
 import argparse
 import sys
+import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
@@ -37,7 +42,23 @@ def probe(urls: list[str], refresh: bool) -> None:
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--probe", nargs="+", metavar="URL", required=True)
+    mode = ap.add_mutually_exclusive_group(required=True)
+    mode.add_argument("--probe", nargs="+", metavar="URL")
+    mode.add_argument("--run", action="store_true", help="all eligible merchants from data/interim/merchants.csv")
+    mode.add_argument("--manual-c", action="store_true", help="check by hand the C sample stores the script could not load")
+    ap.add_argument("--limit", type=int, help="with --run: fetch only the first N pages (trial, not a result)")
+    ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--refresh", action="store_true", help="ignore the cache and fetch again")
     args = ap.parse_args()
-    probe(args.probe, args.refresh)
+    if args.probe:
+        probe(args.probe, args.refresh)
+    elif args.manual_c:
+        from ksa_pipeline.fingerprint import manual_c_check  # noqa: E402
+        manual_c_check()
+    else:
+        from ksa_pipeline.fingerprint import run  # noqa: E402
+        started = time.time()
+        out = run(workers=args.workers, refresh=args.refresh, limit=args.limit)
+        print(out["summary"])
+        print(f"{len(out['rows'])} merchants in {time.time() - started:.0f}s -> data/interim/bnpl.csv, "
+              "data/samples/bnpl_summary.md" + ("" if args.limit is not None else ", data/samples/C_contact_check.csv"))

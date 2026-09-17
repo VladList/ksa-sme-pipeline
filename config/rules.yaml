@@ -52,3 +52,9 @@ segments:
     exclude_if:              # checked on name and store key
       outside_ksa_regex: "البحرين|bahrain|الامارات|الإمارات|emarat|emirates|dubai|دبي|الكويت|kuwait|qatar|قطر"
       wholesale_regex: "الجمله|الجملة|wholesale"
+
+# Stage 5 (added 2026-09-17, step 4.2, before the run): contacts read from fetched homepages.
+web:
+  # A phone, WhatsApp number or Instagram handle found on more fetched pages than this is a platform, agency or
+  # support contact, not the merchant's own, and is ignored.
+  contact_hub_max_pages: 2

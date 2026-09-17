@@ -32,6 +32,8 @@
 - uv run python scripts/03_source_report.py sample|report <source_id> <segment> --runs "<glob run_id>"   (пробы исключать)
 - uv run python scripts/04_resolve.py   (записи → мерчанты; правила только в config/rules.yaml, изменения — с версией и причиной)
 - uv run python scripts/05_web_fingerprint.py --probe <url> [<url> ...] [--refresh]   (BNPL-маркеры на живых страницах; кэш data/cache/web/, не коммитится)
+- uv run python scripts/05_web_fingerprint.py --run [--limit N]   (главные страницы eligible → data/interim/bnpl.csv, сводка data/samples/bnpl_summary.md)
+- uv run python scripts/05_web_fingerprint.py --manual-c   (ручная проверка выборки C, которую скрипт не загрузил; ответы y/n/?, сохраняются по магазину)
 - uv run python scripts/check_no_pii.py <files>
 
 ## Окружение

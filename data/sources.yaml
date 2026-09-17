@@ -61,7 +61,8 @@ sources:
     role: primary
     tool: Google search operators -> url_list CSV (links collected from the results page in the browser)
     segments: [C_salla_zid_d2c]
-    status: provisionally_accepted
+    status: rejected
+    rejection_reason: segment_rejected_bnpl_saturation   # the source itself passed relevance (0.65) and contactability (1.00)
     decided_on: 2026-09-17
     validation:
       runs: "2026-09-17__dork"
@@ -71,9 +72,10 @@ sources:
         unique_stores: 43              # kill criterion: < 30 from 10 queries -> passed with 5
         store_url_pattern: confirmed   # salla.sa/<store>/..., <store>.zid.store/...; 43/43 parsed
         icp_relevance: 0.65            # 13 fit / 20 (2 not_fit: reseller or wholesale; 5 unclear from title alone)
-        contactable_rate: not_measured # the script prints 0.0 and recommends reject: search results carry no phone or
-                                       # Instagram, so empty means not checked (methodology), not absent
-        verdict: provisional accept
+        contactable_rate: 1.00         # 20/20 on the validation sample, 2026-09-17: 8 Zid by script, 12 Salla by hand
+                                       # (data/samples/C_contact_check.csv); the dork report's 0.0 was missing data
+        bnpl_provider_share: 0.70      # 14/20 sampled stores show a provider (Tabby 11, other 3): Salla 11/12, Zid 3/8
+        verdict: reject                # icp.yaml kill criterion "> 0.60 of stores already show a BNPL provider" hit
         condition: >
           Measure contactability on Day 2 from the store pages (the same fetch as the BNPL fingerprint).
           If contactable_rate < 0.50 the source is rejected.
@@ -86,6 +88,18 @@ sources:
           not_fit because the hypothesis is D2C brands, although they are valid BNPL merchants.
 
   # ---------- roles other than primary ----------
+  - id: merchant_websites
+    role: enrichment
+    tool: scripts/05_web_fingerprint.py (httpx, homepage only, honest User-Agent, bot challenges not bypassed)
+    status: accepted
+    decided_on: 2026-09-17
+    report: data/samples/bnpl_summary.md
+    note: >
+      BNPL provider and contact flags for eligible merchants with an own site or store (A 164, B 84, C 40).
+      Page loaded: A 109, B 46, Zid 16 of 16, Salla 0 of 24 (Cloudflare challenge). Most failures are bot protection
+      (HTTP 403); the rest are sites broken for any visitor (DNS, TLS, 404, 5xx). BNPL status stays unknown for
+      merchants without a site (A 86, B 205) and for pages that did not load.
+
   - id: tabby_merchant_directory
     role: exclusion_list
     status: accepted

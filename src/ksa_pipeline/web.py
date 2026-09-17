@@ -23,6 +23,16 @@ def transient(status: int) -> bool:
     return status == 0 or status == 429 or status >= 500
 
 
+def error_label(e: Exception) -> str:
+    """Exception type plus the cause a reader needs: an expired certificate or a dead domain is a broken site."""
+    detail = str(e).lower()
+    if "certificate" in detail or "ssl" in detail:
+        return f"{type(e).__name__}:tls"
+    if any(s in detail for s in ("nodename nor servname", "name or service not known", "name resolution", "getaddrinfo")):
+        return f"{type(e).__name__}:dns"
+    return type(e).__name__
+
+
 def fetch(url: str, client: httpx.Client | None = None, use_cache: bool = True) -> dict:
     """Return {url, final_url, status, ok, html, error}. Failures are data, not exceptions."""
     key = hashlib.sha1(url.encode("utf-8")).hexdigest()
@@ -38,7 +48,7 @@ def fetch(url: str, client: httpx.Client | None = None, use_cache: bool = True) 
         meta = {"url": url, "final_url": str(r.url), "status": r.status_code, "ok": r.status_code < 400, "error": ""}
         html = r.text if meta["ok"] else ""
     except httpx.HTTPError as e:
-        meta = {"url": url, "final_url": "", "status": 0, "ok": False, "error": type(e).__name__}
+        meta = {"url": url, "final_url": "", "status": 0, "ok": False, "error": error_label(e)}
         html = ""
     finally:
         if own:

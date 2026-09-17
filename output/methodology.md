@@ -113,3 +113,20 @@ business leads enrichment, place details, reviews, images and filters stay off.
   the 20-store validation sample: by script where the page loads, by hand in a browser where it does not, same
   definition. Threshold 0.50 unchanged. Amended before measuring, because Salla blocks scripted fetches.
 - Network errors, rate limits and 5xx responses are not cached and are retried on the next run; 403 and 404 are cached.
+
+### Page fetch, contacts and manual checks (added 2026-09-17, step 4.2)
+- Target per eligible merchant: own website, else Salla/Zid store page; without either the merchant is `no_site` and its
+  BNPL status stays empty (not checked). Own sites are tried as `https://domain`, then `https://www.domain` on a connection
+  error. Plain http is not tried: on the 10 failures of the trial run no http variant served a page.
+- A failed fetch is a row, grouped as blocked for scripts (401/403/429, never bypassed), page not found, site broken for
+  any visitor (DNS, TLS, 5xx) or connection error.
+- Contacts on the page are stored as yes/no flags only. A phone needs a national or international prefix. A phone,
+  WhatsApp number or Instagram handle found on more than 2 fetched pages is a platform or agency contact and is ignored
+  (`config/rules.yaml` web.contact_hub_max_pages, fixed before the run).
+- Manual checks (`scripts/05_web_fingerprint.py --manual-c`) open each page the script could not load and record
+  y / n / ? per question; `?` counts against the source; answers are saved per store and kept on re-runs. An icon the
+  reviewer does not recognise is identified by the provider name in its image URL.
+- Segment C kill criterion "stores already show a BNPL provider" is measured on the same 20-store sample and split as
+  contactability: script where the page loads, by hand where it does not. Amended 2026-09-17 before the Salla BNPL check;
+  the step 4.1 amendment had covered contactability only, which was an oversight.
+- A rejected segment keeps its merchants; scoring excludes them with the segment's rejection reason.

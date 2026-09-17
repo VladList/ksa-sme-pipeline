@@ -59,7 +59,9 @@ segments:
       - "mobile_fill < 0.50 (owner not reachable directly)"
 
   C_salla_zid_d2c:
-    status: provisionally_validated   # 2026-09-17: 43 stores from 5 queries, relevance 0.65; contactability pending Day 2
+    status: rejected   # 2026-09-17 (step 4.2): kill criterion hit, 14/20 sampled stores already show a BNPL provider (0.70 > 0.60)
+    rejection_reason: bnpl_saturation   # contactable 1.00 and relevance 0.65 passed; merchants kept, excluded at scoring
+    evidence_bnpl: data/samples/bnpl_summary.md   # sample: data/samples/C_contact_check.csv
     evidence: data/samples/salla_zid_dork__C_salla_zid_d2c__report.md
     definition: >
       D2C brands on Salla or Zid in oud/perfume and abaya/modest fashion,

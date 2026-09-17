@@ -1,0 +1,21 @@
+record_id,store_url,platform,icp_label,checked_by,http_status,phone_visible,whatsapp_visible,instagram_visible,contactable,bnpl_status,note
+salla_zid_dork:aayuaq.zid.store,https://aayuaq.zid.store,zid,unclear,script,200,yes,no,yes,yes,not_detected,
+salla_zid_dork:salla.sa/guardian-,https://salla.sa/guardian-,salla,fit,manual_browser,403,yes,yes,yes,yes,tabby,checked by hand in a browser 2026-09-17
+salla_zid_dork:salla.sa/myeks-byewtye-2023,https://salla.sa/myeks-byewtye-2023,salla,not_fit,manual_browser,403,yes,yes,yes,yes,tabby,checked by hand in a browser 2026-09-17
+salla_zid_dork:salla.sa/tarkibataloud,https://salla.sa/tarkibataloud,salla,fit,manual_browser,403,yes,yes,yes,yes,tabby,checked by hand in a browser 2026-09-17
+salla_zid_dork:salla.sa/trf-llawd-,https://salla.sa/trf-llawd-,salla,fit,manual_browser,403,yes,yes,yes,yes,tabby,checked by hand in a browser 2026-09-17
+salla_zid_dork:salla.sa/cupud.com,https://salla.sa/cupud.com,salla,fit,manual_browser,403,yes,yes,yes,yes,competitor_only,checked by hand in a browser 2026-09-17
+salla_zid_dork:salla.sa/alamarye-llattwr,https://salla.sa/alamarye-llattwr,salla,not_fit,manual_browser,403,yes,yes,yes,yes,tabby,checked by hand in a browser 2026-09-17
+salla_zid_dork:salla.sa/solitair,https://salla.sa/solitair,salla,unclear,manual_browser,403,yes,yes,yes,yes,tabby,checked by hand in a browser 2026-09-17
+salla_zid_dork:mkyajy5.zid.store,https://mkyajy5.zid.store,zid,unclear,script,200,yes,no,no,yes,not_detected,
+salla_zid_dork:salla.sa/basenotesa,https://salla.sa/basenotesa,salla,fit,manual_browser,403,yes,no,yes,yes,not_detected,checked by hand in a browser 2026-09-17
+salla_zid_dork:tmymllatwr.zid.store,https://tmymllatwr.zid.store,zid,fit,script,200,yes,no,no,yes,competitor_only,
+salla_zid_dork:salla.sa/daralamirat1,https://salla.sa/daralamirat1,salla,fit,manual_browser,403,yes,yes,yes,yes,tabby,checked by hand in a browser 2026-09-17
+salla_zid_dork:salla.sa/nife.3od,https://salla.sa/nife.3od,salla,fit,manual_browser,403,yes,yes,yes,yes,tabby,checked by hand in a browser 2026-09-17
+salla_zid_dork:ksrh8.zid.store,https://ksrh8.zid.store,zid,unclear,script,200,yes,no,no,yes,not_detected,
+salla_zid_dork:alamirah-sa.zid.store,https://alamirah-sa.zid.store,zid,fit,script,200,yes,no,yes,yes,tabby,
+salla_zid_dork:emanabaya11.zid.store,https://emanabaya11.zid.store,zid,fit,script,200,yes,yes,yes,yes,not_detected,
+salla_zid_dork:salla.sa/ouda,https://salla.sa/ouda,salla,fit,manual_browser,403,yes,yes,yes,yes,tabby,checked by hand in a browser 2026-09-17
+salla_zid_dork:salla.sa/alexandraboutique,https://salla.sa/alexandraboutique,salla,fit,manual_browser,403,yes,yes,yes,yes,tabby,checked by hand in a browser 2026-09-17
+salla_zid_dork:tharwa.zid.store,https://tharwa.zid.store,zid,fit,script,200,no,yes,yes,yes,competitor_only,
+salla_zid_dork:uxghcw.zid.store,https://uxghcw.zid.store,zid,unclear,script,200,yes,no,yes,yes,not_detected,

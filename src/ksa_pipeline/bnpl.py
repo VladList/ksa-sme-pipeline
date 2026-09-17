@@ -56,15 +56,20 @@ def detect(html: str) -> dict:
             evidence += [f"{name}:{h}" for h in hits]
     generic = [t for t in cfg["generic_installment"]["text_ar"] if t in html]
     evidence += [f"generic_installment:text_ar:{t}" for t in generic]
-    if "tabby" in found:
-        status = "tabby"
-    elif found:
-        status = "competitor_only"
-    elif generic:
-        status = "generic_installment"
-    else:
-        status = "not_detected"
+    status, _ = status_from_evidence(evidence)
     return {"providers": found, "generic_installment": bool(generic), "evidence": evidence, "bnpl_status": status}
+
+
+def status_from_evidence(evidence: list[str]) -> tuple[str, list[str]]:
+    """Status and providers from `provider:kind:marker` entries (used again after platform-template evidence is dropped)."""
+    providers = list(dict.fromkeys(e.split(":", 1)[0] for e in evidence if not e.startswith("generic_installment:")))
+    if "tabby" in providers:
+        return "tabby", providers
+    if providers:
+        return "competitor_only", providers
+    if any(e.startswith("generic_installment:") for e in evidence):
+        return "generic_installment", providers
+    return "not_detected", providers
 
 
 def discover(html: str, limit: int = 12) -> list[str]:

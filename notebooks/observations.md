@@ -116,3 +116,31 @@ Source: `scripts/05_web_fingerprint.py --probe` on 6 URLs; markers in `config/bn
     expect a visible share of segment A to be excluded as already on Tabby.
 32. **Ram Clinics has branches in many cities outside Riyadh and Jeddah** (its branches page), while the chain threshold
     counts only locations inside our two search circles. Not a rule change: the size penalty in scoring handles it.
+
+## 2026-09-17 — BNPL fingerprint, page contacts and the verdict on segment C (step 4.2)
+
+Source: `data/samples/bnpl_summary.md`, `data/samples/C_contact_check.csv`, run `2026-09-17__web_fingerprint`.
+
+33. **Web coverage is partial.** Eligible merchants with an own site or store: A 164 of 250, B 84 of 289. Homepage loaded:
+    A 109, B 46. BNPL status is unknown for most of B (205 have no website): for B it has to come from the call.
+34. **About a quarter of own sites block scripts** (HTTP 403, mostly Cloudflare; A 37 of 164 in the first full run) and
+    they were not bypassed. A further group is broken for any visitor (DNS, expired TLS, 404, 5xx; A 16). A dead site
+    is itself a signal: the working channel for that clinic is Maps or Instagram.
+35. **At least 16% of A clinics with a loaded homepage already show Tabby** (17 of 109; 4 more show only a competitor,
+    7 mention installments without a provider). A lower bound: homepage only. 6 of the 17 rest on the unverified icon
+    kind alone and are checked by eye before scoring. B: 3 of 46.
+36. **Payment logos are not a platform template on Zid:** no marker appeared on half or more of Zid store pages, so a
+    logo reflects the store's own payment settings.
+37. **Segment C contactability is 1.00** (20/20 sampled stores: 8 Zid by script, 12 Salla by hand). The 0.0 in the dork
+    report was missing data, as recorded on Day 1.
+38. **Segment C is rejected by its own kill criterion:** 14 of 20 sampled stores already show a BNPL provider (0.70 >
+    0.60; Tabby 11, other providers 3). Salla 11 of 12 (Tabby on 10), Zid 3 of 8. Robust to the one uncertain answer
+    (store 1, a terminal redraw during the manual check): 13/20 = 0.65 still hits. Wilson 95% interval 0.48-0.86.
+    Business reading: D2C stores on Salla are already covered by BNPL; the open space is offline services (A, B).
+39. **Found after the data, not used in the decision:** the Salla vs Zid gap (11/12 vs 3/8) can be platform or method
+    (eye vs script on the homepage). A Zid-only D2C segment would be a new hypothesis for fresh data, not a rescue of C.
+40. **The manual check needed a method fix mid-way:** Tamara's new logo is a symbol without the word, unknown to a
+    reviewer who does not know the brand. Unknown icons were resolved by opening the image URL and looking for the
+    provider name, the same signal the script uses.
+41. **Data quality:** one A clinic lists an unrelated domain as its website in Google Maps; one Salla store redirects to
+    its own domain, which failed on the first load and worked on reload.

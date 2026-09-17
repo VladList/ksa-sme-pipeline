@@ -52,6 +52,7 @@ google_maps:
       dropped: ["مفروشات تفصيل", "curtains shop", "custom majlis furniture"]
 
 dork:                        # segment C: run manually in Google, paste results into a url_list CSV
+  # Segment C rejected 2026-09-17 (step 4.2, BNPL on 14/20 sampled stores): queries kept as the record of what was run.
   note: Verify the store URL pattern on the first 10 results before scaling.
   segments:
     C_salla_zid_d2c:
