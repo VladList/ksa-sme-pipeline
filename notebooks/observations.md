@@ -80,3 +80,18 @@ Source: `data/samples/resolve_summary.md`, `data/samples/rules_check.md`, rules 
     where the rule matters most. A and C rule checks are in-sample (0.93-1.0 precision) and optimistic.
 22. **Gate G2 passed:** eligible A 250 (203 contactable), B 292 (279), C 40 (contactability pending). Raw volume is below
     the Day 1 targets because of the budget ceiling, but eligible merchants exceed the Top-50 need more than tenfold.
+
+## 2026-09-17 — merge QA and rules v2
+
+Source: `data/samples/merge_qa.md`, `data/samples/resolve_summary.md`.
+
+23. **Merge precision 0.97** (36 of 37 verified merges correct; 2 unverified). The one false merge came from a classifieds
+    site used as a "website"; classifieds domains are now ignored.
+24. **Phone-based merges attach doctor listings to their host clinic** (2 cases): part of the manual "Located in" check
+    from the probe now happens automatically.
+25. **Segment B has SEO operators:** 4 merchants are one phone or site behind 2-3 generically named listings. After
+    resolution they are one call, not three.
+26. **Multi-city furniture companies contradict the workshop hypothesis** (Sedar, Alguthmi textile, Ayat curtains, Zerabi):
+    rule v2 excludes B merchants present in both cities, B eligible 292 -> 289. Segment A keeps multi-city merchants by
+    definition (up to 5 branches); the Meras group (6+ branches, confirmed on the web) is excluded.
+    Final eligible: A 250 (203 contactable), B 289 (278), C 40 (contactability pending).

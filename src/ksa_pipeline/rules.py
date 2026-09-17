@@ -24,7 +24,7 @@ def _rx(pattern: str) -> re.Pattern:
 
 
 def exclusion_reasons(segment: str, name: str, categories: set[str], store_key: str = "",
-                      n_locations: int = 1, is_closed: bool = False) -> list[str]:
+                      n_locations: int = 1, is_closed: bool = False, n_cities: int = 1) -> list[str]:
     """All reasons that exclude a merchant; empty list = eligible."""
     rules = load_rules()
     seg = rules["segments"].get(segment, {})
@@ -40,6 +40,8 @@ def exclusion_reasons(segment: str, name: str, categories: set[str], store_key: 
     exc = seg.get("exclude_if", {})
     if categories & set(exc.get("categories", [])) or ("name_regex" in exc and _rx(exc["name_regex"]).search(name)):
         reasons.append(f"{segment[0]}: hospital or enterprise group")
+    if exc.get("multi_city") and n_cities > 1:
+        reasons.append(f"{segment[0]}: multi-city company, not a local workshop")
     text = f"{name} {store_key or ''}"
     if "outside_ksa_regex" in exc and _rx(exc["outside_ksa_regex"]).search(text):
         reasons.append("C: outside KSA signal")

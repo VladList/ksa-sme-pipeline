@@ -12,13 +12,10 @@ from collections import Counter, defaultdict
 
 from . import paths
 from .rules import exclusion_reasons, load_rules
+from .schema import merchant_columns
 
-MERCHANT_COLUMNS = [
-    "merchant_id", "segment", "cities", "name", "n_records", "n_locations", "sources", "categories",
-    "phone_e164", "phone_type", "website_domain", "instagram_handle", "store_key", "evidence_url",
-    "rating", "reviews_count", "contactable", "exclusion_reason", "record_ids",
-]
-PII_MERCHANT_COLUMNS = {"phone_e164"}
+MERCHANT_COLUMNS = [c["name"] for c in merchant_columns()]          # contract: config/schema.yaml
+PII_MERCHANT_COLUMNS = {c["name"] for c in merchant_columns() if c.get("pii")}
 
 
 def load_records() -> list[dict]:
@@ -75,6 +72,9 @@ def resolve(records: list[dict]) -> tuple[list[dict], dict]:
             continue
         for j in idx[1:]:
             uf.union(idx[0], j)
+    for a, b in cfg.get("same_as", []):          # curated links with evidence in rules.yaml
+        if by_value.get(a) and by_value.get(b):
+            uf.union(by_value[a][0], by_value[b][0])
 
     groups = defaultdict(list)
     for i in range(len(records)):
@@ -102,13 +102,15 @@ def _merchant(members: list[dict]) -> dict:
     categories = {m["category_raw"] for m in members if m.get("category_raw")}
     store_key = _pick(members, "store_key")
     instagram = _pick(members, "instagram_handle")
+    cities = {m["run_id"].split("__")[-1] for m in members if m["source_id"] == "google_maps"}
     reasons = exclusion_reasons(segment, best.get("name") or "", categories, store_key,
-                                n_locations=max(len(places), 1), is_closed=all(m.get("is_closed") == "True" for m in members))
+                                n_locations=max(len(places), 1), is_closed=all(m.get("is_closed") == "True" for m in members),
+                                n_cities=len(cities))
     record_ids = sorted(m["record_id"] for m in members)
     return {
         "merchant_id": "m_" + hashlib.sha1(record_ids[0].encode("utf-8")).hexdigest()[:10],
         "segment": segment,
-        "cities": "|".join(sorted({m["run_id"].split("__")[-1] for m in members if m["source_id"] == "google_maps"})),
+        "cities": "|".join(sorted(cities)),
         "name": best.get("name") or "",
         "n_records": len(members),
         "n_locations": len(places),

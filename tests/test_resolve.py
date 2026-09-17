@@ -48,3 +48,22 @@ def test_segment_rules():
     assert exclusion_reasons("C_salla_zid_d2c", "رند البحرين", set(), "salla.sa/rend-bahrain.com") == ["C: outside KSA signal"]
     assert exclusion_reasons("C_salla_zid_d2c", "اكبر متجر عطور باسعار الجمله", set()) == ["C: wholesale"]
     assert exclusion_reasons("C_salla_zid_d2c", "تميم للعطور", set(), "tmymllatwr.zid.store") == []
+
+
+def test_qa_rules_v2_classifieds_domain_and_multi_city_b():
+    haraj = [rec(1, website_domain="haraj.com.sa", segment="B_custom_furniture", name="تنجيد كنب جميل"),
+             rec(2, website_domain="haraj.com.sa", segment="B_custom_furniture", name="محل كنب زهرة الجنوب")]
+    merchants, stats = resolve(haraj)
+    assert stats["merchants"] == 2
+    sedar = [rec(3, website_domain="sedarglobal.com", segment="B_custom_furniture", name="Sedar Riyadh", category_raw="Curtain supplier and maker"),
+             rec(4, website_domain="sedarglobal.com", segment="B_custom_furniture", name="Sedar Jeddah", category_raw="Curtain supplier and maker",
+                 run_id="2026-09-17__full_B_custom_furniture__jeddah")]
+    merchants, _ = resolve(sedar)
+    assert merchants[0]["cities"] == "jeddah|riyadh"
+    assert "B: multi-city company, not a local workshop" in merchants[0]["exclusion_reason"]
+    ram = [rec(5, website_domain="ramclinics.net"), rec(6, website_domain="ramclinics.net", run_id="2026-09-17__full_A_aesthetic_clinics__jeddah")]
+    merchants, _ = resolve(ram)
+    assert merchants[0]["exclusion_reason"] == ""          # A allows up to 5 branches by definition
+    meras = [rec(7, website_domain="merasclinic.net", name="MERAS CLINIC"), rec(8, website_domain="mozdanhclinic.net", name="Mozdanh Medical Center")]
+    merchants, _ = resolve(meras)
+    assert len(merchants) == 1 and "A: hospital or enterprise group" in merchants[0]["exclusion_reason"]

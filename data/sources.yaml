@@ -43,8 +43,9 @@ sources:
           Jeddah below threshold on a 10-record sample (keywords chosen on Riyadh return furniture
           showrooms there). Thresholds were set per source x segment, not per city, so the verdict
           stands; mitigation is a Day 2 rule keeping only records with a custom-work signal in name or
-          category (110/208 Jeddah, 194/210 Riyadh). Rule was fitted on the same sample: re-check on
-          other records.
+          category (110/208 Jeddah, 194/210 Riyadh). Rule was fitted on the same sample; re-checked
+          2026-09-17 on 50 probe records labelled before the rule existed: all 45 fit kept, 4 of 5 not_fit dropped
+          (data/samples/rules_check.md). That probe was 95% Riyadh, so Jeddah remains untested.
 
   - id: instagram
     role: enrichment

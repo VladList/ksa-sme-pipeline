@@ -1,6 +1,6 @@
 # KSA SME Merchant Pipeline
 
-> **Status: Day 2 of 3 — collection and source validation closed; enrichment and scoring next.**
+> **Status: Day 2 of 3 — collection, source validation and entity resolution closed; enrichment and scoring next.**
 > Numbers below are filled only for closed stages (see `notebooks/state.md`). Nothing in this
 > README describes work that has not been run.
 
@@ -20,8 +20,8 @@ _Filled on Day 3 from `data/runs.csv`, `data/sources.yaml` and `output/public/`.
 | | value |
 |---|---|
 | raw records collected (Google Maps, Riyadh + Jeddah) | 778 (A 360, B 418) |
-| unique merchants after entity resolution | — |
-| sources validated / accepted / rejected | Google Maps accepted for A and B (B with a Jeddah limitation); Salla/Zid pending |
+| unique merchants after entity resolution | 765; eligible after exclusions 579 (A 250, B 289, C 40) |
+| sources validated / accepted / rejected | Google Maps accepted for A and B (B with a Jeddah limitation); Salla/Zid provisionally accepted for C |
 | A-tier leads (scored, contactable, decision-maker named) | — |
 | share of scored merchants with no BNPL provider | — |
 | total tool cost, USD | 4.64 (Apify free credit; probes 1.01, full run 3.63) |
@@ -33,7 +33,7 @@ _Filled on Day 3 from `data/runs.csv`, `data/sources.yaml` and `output/public/`.
 | 1. Build search inputs | `scripts/01_build_apify_inputs.py` | `config/queries.yaml` | `data/apify_inputs/` | done |
 | 2. Ingest raw exports | `scripts/02_ingest.py` | `data/raw/<source>/` | `data/interim/<source>/`, `data/runs.csv` | done |
 | 3. Validate source × segment | `scripts/03_source_report.py` | interim + labelled sample | `data/samples/*__report.md` | done for Google Maps |
-| 4. Entity resolution + exclusions | — | | | Day 2 |
+| 4. Entity resolution + exclusions | `scripts/04_resolve.py` | interim + `config/rules.yaml` | `data/interim/merchants.csv`, `data/samples/resolve_summary.md`, `rules_check.md` | done (merge QA: `merge_qa.md`) |
 | 5. BNPL fingerprint + LLM enrichment | — | `config/bnpl_markers.yaml` | | Day 2 |
 | 6. Scoring + tiers | — | `config/scoring.yaml` | | Day 2 |
 | 7. Insights, outreach kit, public export | — | | `output/public/` | Day 3 |
@@ -64,6 +64,7 @@ uv run python scripts/02_ingest.py google_maps data/raw/google_maps/2026-09-17__
 uv run python scripts/03_source_report.py sample google_maps A_aesthetic_clinics --runs "2026-09-17__full_*"
 # label icp_label in the sample CSV, then:
 uv run python scripts/03_source_report.py report google_maps A_aesthetic_clinics --runs "2026-09-17__full_*"
+uv run python scripts/04_resolve.py          # records -> merchants, exclusions, rules checked against labels
 ```
 
 ## What changed from the previous pipeline

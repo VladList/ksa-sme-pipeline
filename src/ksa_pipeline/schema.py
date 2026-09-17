@@ -17,6 +17,10 @@ def columns(stage: str = "ingest") -> list[str]:
     return [c["name"] for c in load_schema() if c["stage"] == stage]
 
 
+def merchant_columns() -> list[dict]:
+    return yaml.safe_load((CONFIG / "schema.yaml").read_text(encoding="utf-8"))["merchant_columns"]
+
+
 def pii_columns() -> set[str]:
     return {c["name"] for c in load_schema() if c.get("pii")}
 

@@ -29,6 +29,7 @@
 - uv run python scripts/01_build_apify_inputs.py google_maps --mode full|sample   (проверка бюджета от spent_usd)
 - uv run python scripts/02_ingest.py <source_id> <raw_file> [--segment <segment>]
 - uv run python scripts/03_source_report.py sample|report <source_id> <segment> --runs "<glob run_id>"   (пробы исключать)
+- uv run python scripts/04_resolve.py   (записи → мерчанты; правила только в config/rules.yaml, изменения — с версией и причиной)
 - uv run python scripts/check_no_pii.py <files>
 
 ## Окружение

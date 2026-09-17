@@ -4,8 +4,12 @@
 # says whether that check is in-sample (rule designed after seeing those labels) or out-of-sample.
 # Excluded merchants keep their row with exclusion_reason; nothing is deleted.
 
-version: 1
+version: 2
 written: 2026-09-17
+# v2 (2026-09-17, after QA of 39 merged merchants, data/samples/merge_qa.md):
+#   - classifieds sites never link businesses (haraj.com.sa glued two unrelated upholstery shops)
+#   - B excludes merchants present in both cities: the hypothesis is a local workshop, not a multi-city company
+#   - curated same_as link: Mozdanh clinics belong to the Meras group (group site lists Mozdanh branches)
 
 inputs:                       # source_id: glob on run_id; probes are not merchants
   google_maps: "2026-09-17__full_*"
@@ -19,7 +23,10 @@ link:
   # Hosting, directory and link-hub domains that many unrelated businesses use as "website".
   ignore_domains: [sites.google.com, google.com, docs.google.com, forms.gle, about.me, webteb.com, mayoclinic.org,
                    moh.gov.sa, reach.link, wa.link, bit.ly, taplink.cc, beacons.ai, goo.gl, maps.app.goo.gl,
-                   linkin.bio, bio.link, vezeeta.com, okadoc.com]
+                   linkin.bio, bio.link, vezeeta.com, okadoc.com, haraj.com.sa, opensooq.com, mstaml.com]
+  # Curated links the data cannot show, each with evidence. Pairs of identifier values.
+  same_as:
+    - ["website_domain:merasclinic.net", "website_domain:mozdanhclinic.net"]   # merasmed.com find-clinic lists Mozdanh branches
 
 common:
   exclude_closed: true
@@ -34,11 +41,13 @@ segments:
                    Plastic surgeon, Plastic surgery clinic]
     exclude_if:
       categories: [Hospital, Private hospital, General hospital, Government hospital]
-      name_regex: "مستشفى|hospital|سليمان الحبيب|sulaiman al habib|al habib|الفارابي|farabi|المهيدب|muhaidib"
+      name_regex: "مستشفى|hospital|سليمان الحبيب|sulaiman al habib|al habib|الفارابي|farabi|المهيدب|muhaidib|مراس|meras|مزدانه|mozdanh"   # Meras group: 6+ branches incl. Mozdanh
   B_custom_furniture:
     keep_if_signal:
       name_regex: "تفصيل|تنجيد|ستائر|ستاير|ستاىر|ويفي"
       categories: [Curtain supplier and maker, Curtain store, Blinds shop, Upholstery shop, Furniture maker]
+    exclude_if:
+      multi_city: true        # e.g. Sedar, Alguthmi textile, Ayat curtains: companies with showrooms in both cities
   C_salla_zid_d2c:
     exclude_if:              # checked on name and store key
       outside_ksa_regex: "البحرين|bahrain|الامارات|الإمارات|emarat|emirates|dubai|دبي|الكويت|kuwait|qatar|قطر"

@@ -94,3 +94,6 @@ business leads enrichment, place details, reviews, images and filters stay off.
 - Exclusion rules live in `config/rules.yaml`; every excluded merchant keeps its row with all matching reasons.
 - Each rule set is checked against existing labels (`data/samples/rules_check.md`) and marked in-sample when the rule
   was written after those labels were seen.
+- Rules v2 after merge QA (2026-09-17): classifieds domains never link; B excludes merchants present in both cities
+  (derived from the segment definition, not from a brand list); curated `same_as` links are allowed only with evidence
+  noted next to them in `config/rules.yaml`.

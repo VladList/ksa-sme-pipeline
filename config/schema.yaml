@@ -52,3 +52,25 @@ columns:
   - {name: hook_ar_inferred,  stage: enrich, type: str,   pii: false, origin: llm}
   - {name: score,             stage: score,  type: int,   pii: false}
   - {name: tier,              stage: score,  type: str,   pii: false, desc: "A|B|C"}
+
+# One row = one merchant (data/interim/merchants.csv, stage 4). Built from records above by scripts/04_resolve.py.
+merchant_columns:
+  - {name: merchant_id,      type: str,  pii: false, desc: "m_ + hash of the smallest record_id in the group"}
+  - {name: segment,          type: str,  pii: false}
+  - {name: cities,           type: str,  pii: false, desc: "riyadh|jeddah; empty for store-only merchants"}
+  - {name: name,             type: str,  pii: false, desc: "name of the member record with most reviews"}
+  - {name: n_records,        type: int,  pii: false}
+  - {name: n_locations,      type: int,  pii: false, desc: "distinct Google places"}
+  - {name: sources,          type: str,  pii: false}
+  - {name: categories,       type: str,  pii: false}
+  - {name: phone_e164,       type: str,  pii: true,  desc: "mobile preferred"}
+  - {name: phone_type,       type: str,  pii: false}
+  - {name: website_domain,   type: str,  pii: false}
+  - {name: instagram_handle, type: str,  pii: false}
+  - {name: store_key,        type: str,  pii: false}
+  - {name: evidence_url,     type: str,  pii: false}
+  - {name: rating,           type: float, pii: false}
+  - {name: reviews_count,    type: int,  pii: false, desc: "sum over member records"}
+  - {name: contactable,      type: bool, pii: false, desc: "mobile, Instagram or WhatsApp link"}
+  - {name: exclusion_reason, type: str,  pii: false, desc: "all matching rules joined by '; '; empty = eligible"}
+  - {name: record_ids,       type: str,  pii: false}
