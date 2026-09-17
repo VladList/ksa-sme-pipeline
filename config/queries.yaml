@@ -15,7 +15,7 @@ google_maps:
   price_per_1k_places_usd: 4.00      # Free plan, base price per scraped place
   contacts_per_1k_usd: 2.00          # scrapeContacts add-on
   budget_usd: 5.00                   # Apify free monthly credit. Decision 2026-09-16: no paid plan
-  spent_usd: 1.01                    # both probes, account usage 2026-09-17
+  spent_usd: 4.64                    # probes + full run, confirmed on Apify run pages 2026-09-17
   sample:
     city: riyadh
     max_places: 20
