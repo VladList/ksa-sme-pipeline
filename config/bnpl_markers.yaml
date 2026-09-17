@@ -1,32 +1,52 @@
-# BNPL fingerprints for Day 2 detection (website HTML + Instagram text).
-# verified: false = marker taken from public knowledge, not yet confirmed
-# against a known-positive merchant. Day 2 step 0: confirm each on one live store.
-# ambiguous: true = the word has a common non-BNPL meaning; count only with context.
+# BNPL fingerprints for stage 5, read by src/ksa_pipeline/bnpl.py.
+# Marker kinds:
+#   html     provider domain anywhere in the page (script src, link href): strongest
+#   icon     provider name in an image file name (payment-method logo): /images/Tabby.svg, /static/tabby2.svg
+#   text_ar  whole word in the page (Arabic prefixes و ب ل allowed; كتابي does not match تابي)
+#   text_en  whole word; skipped when ambiguous_en (tabby = cat colour)
+# verified: marker kinds confirmed on a known page (see evidence). A kind not listed is used but not yet confirmed.
+# Calibrated 2026-09-17 on 6 probe URLs (step 4.1), BEFORE the full run (step 4.2). Not changed after 4.2 data.
 
 providers:
   tabby:
-    html: ["tabby.ai", "checkout.tabby.ai"]
+    html: ["tabby.ai"]
+    icon: ["tabby"]
     text_ar: ["تابي"]
     text_en: ["tabby"]
-    ambiguous_en: true          # "tabby" = cat colour; use html markers on sites
-    verified: false
+    ambiguous_en: true
+    verified: [html, text_ar]
+    evidence:
+      - "2026-09-17 fashion.sa (Tabby merchant, has a Tabby page): text_ar in the payment-methods list on the homepage; html tabby.ai links on /en/pages/tabby"
   tamara:
-    html: ["tamara.co"]
+    html: ["tamara.co"]           # substring also covers tamara.com
+    icon: ["tamara"]
     text_ar: ["تمارا"]
-    verified: false
+    verified: [text_ar]
+    evidence:
+      - "2026-09-17 fashion.sa: text_ar next to تابي in the same payment-methods list"
   madfu:
     html: ["madfu"]
+    icon: ["madfu"]
     text_ar: ["مدفوع"]
-    ambiguous_ar: true          # "مدفوع" = "paid"
-    verified: false
+    ambiguous_ar: true            # "مدفوع" = "paid"
+    verified: []
   mispay:
     html: ["mispay"]
+    icon: ["mispay"]
     text_ar: ["ميس باي"]
-    verified: false
+    verified: []
   emkan:
     html: ["emkan"]
+    icon: ["emkan"]
     text_ar: ["إمكان"]
     ambiguous_ar: true
-    verified: false
+    verified: []
+
+# icon kind is NOT verified: seen on ramclinics.net (/web/assets/images/Tabby.svg, tamara.svg) and
+# alamirah-sa.zid.store (media.zid.store/static/tabby2.svg, tamara2.svg), but their BNPL status is unknown.
+# Rule fixed 2026-09-17 before step 4.2: an icon or html marker found on >= 90% of fetched stores of one platform
+# (salla or zid) is a platform template, not merchant evidence, and is not counted for that platform.
+platform_template_share: 0.90
+
 generic_installment:            # installment offered, provider unknown -> discovery question
   text_ar: ["تقسيط", "قسطها", "على دفعات"]

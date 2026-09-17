@@ -77,6 +77,9 @@ sources:
         condition: >
           Measure contactability on Day 2 from the store pages (the same fetch as the BNPL fingerprint).
           If contactable_rate < 0.50 the source is rejected.
+          Amended 2026-09-17 (step 4.1, before measuring): Salla pages return a Cloudflare bot challenge to scripts and
+          it is not bypassed, so contactability is measured on the 20-store validation sample: Zid stores by script,
+          Salla stores by hand in a browser, same definition (phone, wa.me or tel link, or Instagram on the homepage).
         caveats: >
           Labels come from search-result titles only. 2 of 43 stores show a non-KSA signal in the name
           (Bahrain, Emirates); country is checked on Day 2. Resellers of global perfume brands are labelled

@@ -22,6 +22,7 @@
 ## Правила сбора
 - Только публичные бизнес-листинги и публичные бизнес-профили.
 - LinkedIn не скрейпить. Персональные данные авторов отзывов не собирать.
+- Bot-challenge (Cloudflare и т.п.) не обходить, User-Agent браузера не подменять: такая страница = fetch_failed.
 - Сначала sample-прогон (20 записей на source × segment), потом full.
 
 ## Команды (существуют)
@@ -30,6 +31,7 @@
 - uv run python scripts/02_ingest.py <source_id> <raw_file> [--segment <segment>]
 - uv run python scripts/03_source_report.py sample|report <source_id> <segment> --runs "<glob run_id>"   (пробы исключать)
 - uv run python scripts/04_resolve.py   (записи → мерчанты; правила только в config/rules.yaml, изменения — с версией и причиной)
+- uv run python scripts/05_web_fingerprint.py --probe <url> [<url> ...] [--refresh]   (BNPL-маркеры на живых страницах; кэш data/cache/web/, не коммитится)
 - uv run python scripts/check_no_pii.py <files>
 
 ## Окружение

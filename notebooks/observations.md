@@ -95,3 +95,24 @@ Source: `data/samples/merge_qa.md`, `data/samples/resolve_summary.md`.
     rule v2 excludes B merchants present in both cities, B eligible 292 -> 289. Segment A keeps multi-city merchants by
     definition (up to 5 branches); the Meras group (6+ branches, confirmed on the web) is excluded.
     Final eligible: A 250 (203 contactable), B 289 (278), C 40 (contactability pending).
+
+## 2026-09-17 — BNPL markers on live pages (step 4.1)
+
+Source: `scripts/05_web_fingerprint.py --probe` on 6 URLs; markers in `config/bnpl_markers.yaml`.
+
+27. **The known Tabby merchant is not found by the provider domain on its homepage.** fashion.sa shows Tabby as a word in
+    its payment-methods list, next to Tamara; tabby.ai links appear only on its dedicated Tabby page. Domain-only
+    detection would have missed it.
+28. **Payment logos are a common signal and markers v1 missed them.** ramclinics.net (segment A) and a Zid store show Tabby
+    and Tamara logos as image files; v1 returned `generic_installment` and `not_detected`. Added the `icon` marker kind,
+    not verified: neither merchant's status is confirmed by Tabby. On Zid the logos sit in a footer payment block and may
+    be a theme template, so a rule was fixed before step 4.2: a marker on >= 90% of one platform's stores is not counted.
+29. **Arabic substring matching is unsafe:** the provider name "تابي" is contained in the common word "كتابي". Arabic
+    markers now match whole words, allowing the prefixes و/ب/ل.
+30. **Salla store pages answer a scripted client with a Cloudflare bot challenge** (HTTP 403, `cf-mitigated: challenge`);
+    Zid stores and own websites load. The challenge is not bypassed. 12 of the 20 sampled C stores are on Salla, so C
+    contactability is measured on the sample: Zid by script, Salla by hand in a browser, with the same definition.
+31. **Clinics are live Tabby merchants** (Tabby merchant pages for Mac.clinics and Velvet Care Clinics, found by search):
+    expect a visible share of segment A to be excluded as already on Tabby.
+32. **Ram Clinics has branches in many cities outside Riyadh and Jeddah** (its branches page), while the chain threshold
+    counts only locations inside our two search circles. Not a rule change: the size penalty in scoring handles it.

@@ -34,7 +34,7 @@ _Filled on Day 3 from `data/runs.csv`, `data/sources.yaml` and `output/public/`.
 | 2. Ingest raw exports | `scripts/02_ingest.py` | `data/raw/<source>/` | `data/interim/<source>/`, `data/runs.csv` | done |
 | 3. Validate source × segment | `scripts/03_source_report.py` | interim + labelled sample | `data/samples/*__report.md` | done for Google Maps |
 | 4. Entity resolution + exclusions | `scripts/04_resolve.py` | interim + `config/rules.yaml` | `data/interim/merchants.csv`, `data/samples/resolve_summary.md`, `rules_check.md` | done (merge QA: `merge_qa.md`) |
-| 5. BNPL fingerprint + LLM enrichment | — | `config/bnpl_markers.yaml` | | Day 2 |
+| 5. BNPL fingerprint + LLM enrichment | `scripts/05_web_fingerprint.py --probe <urls>` | `config/bnpl_markers.yaml` | `data/cache/web/` (not committed) | markers calibrated on live pages; full fingerprint next |
 | 6. Scoring + tiers | — | `config/scoring.yaml` | | Day 2 |
 | 7. Insights, outreach kit, public export | — | | `output/public/` | Day 3 |
 
@@ -65,6 +65,7 @@ uv run python scripts/03_source_report.py sample google_maps A_aesthetic_clinics
 # label icp_label in the sample CSV, then:
 uv run python scripts/03_source_report.py report google_maps A_aesthetic_clinics --runs "2026-09-17__full_*"
 uv run python scripts/04_resolve.py          # records -> merchants, exclusions, rules checked against labels
+uv run python scripts/05_web_fingerprint.py --probe https://fashion.sa   # BNPL markers on a known page
 ```
 
 ## What changed from the previous pipeline

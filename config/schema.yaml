@@ -45,7 +45,7 @@ columns:
   # --- Day 2 (contract declared now, filled later) ---
   - {name: merchant_id,       stage: resolve, type: str,  pii: false}
   - {name: exclusion_reason,  stage: resolve, type: str,  pii: false}
-  - {name: bnpl_status,       stage: enrich, type: str,   pii: false, origin: rule, desc: "none|tabby|competitor_only|generic_installment|unknown"}
+  - {name: bnpl_status,       stage: enrich, type: str,   pii: false, origin: rule, desc: "tabby|competitor_only|generic_installment|not_detected|fetch_failed (homepage only; not_detected is not none)"}
   - {name: bnpl_providers,    stage: enrich, type: str,   pii: false, origin: rule}
   - {name: owner_name_inferred, stage: enrich, type: str, pii: true,  origin: llm}
   - {name: ticket_sar_inferred, stage: enrich, type: str, pii: false, origin: llm}

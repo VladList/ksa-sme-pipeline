@@ -97,3 +97,19 @@ business leads enrichment, place details, reviews, images and filters stay off.
 - Rules v2 after merge QA (2026-09-17): classifieds domains never link; B excludes merchants present in both cities
   (derived from the segment definition, not from a brand list); curated `same_as` links are allowed only with evidence
   noted next to them in `config/rules.yaml`.
+
+### BNPL detection (added 2026-09-17, step 4.1)
+- Markers are calibrated on known pages before the full run and not changed after it (`config/bnpl_markers.yaml`,
+  dated evidence per verified marker kind).
+- Marker kinds: provider domain in the page (`html`), provider name in a payment-logo file name (`icon`), provider name
+  as a whole Arabic word (`text_ar`). Every detection records its kinds, so results can be reported by evidence kind.
+- `bnpl_status` precedence: `tabby` > `competitor_only` > `generic_installment` (installment wording, no provider) >
+  `not_detected`; `fetch_failed` when the page did not load. Only the homepage is checked, so `not_detected` does not
+  mean the merchant has no BNPL.
+- A marker found on >= 90% of fetched stores of one platform (Salla or Zid) is a platform template and is not counted
+  for that platform.
+- Bot challenges are not bypassed (no browser User-Agent spoofing); such pages are `fetch_failed`.
+- Segment C contactability (phone, `wa.me` or `tel:` link, or Instagram visible on the store homepage) is measured on
+  the 20-store validation sample: by script where the page loads, by hand in a browser where it does not, same
+  definition. Threshold 0.50 unchanged. Amended before measuring, because Salla blocks scripted fetches.
+- Network errors, rate limits and 5xx responses are not cached and are retried on the next run; 403 and 404 are cached.
