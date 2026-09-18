@@ -116,6 +116,7 @@ dropped. Full breakdown: `data/samples/scoring_summary.md`.
 - Segment B was validated weakly in Jeddah (relevance 0.40) and is under-represented in the Top-50 because most of its merchants have no website.
 - Decision-maker names mostly come from business names and are not confirmed owners; confirming a role needs a call.
 - Arabic openers are AI-drafted and were not reviewed by a native speaker.
+- Tabby and Tamara merchant directories were not queried lead by lead: BNPL status comes from markers on the merchant's own site, so a merchant who uses Tabby without showing it on the homepage can still be in the list.
 - Two clinics were kept as Tabby merchants on weak evidence (a shared booking form), which costs two leads rather than risking a pitch to an existing merchant.
 
 ## Quick start

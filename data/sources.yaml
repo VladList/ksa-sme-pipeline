@@ -56,6 +56,8 @@ sources:
     note: >
       Handles already come from Google Maps scrapeContacts (A: 52.8% of records). Profile scraping
       postponed to Day 2 for A-tier leads only (BNPL mentions in bio/captions), budget permitting.
+      Closed 2026-09-17 without running: the Apify budget ended at $4.64 of $5 and BNPL presence was read from
+      merchant websites instead. Instagram handles are still used as a contact channel in scoring.
 
   - id: salla_zid_dork
     role: primary
@@ -121,7 +123,9 @@ sources:
     method: per-lead lookup, not a bulk list
     note: >
       Public store directory and per-merchant pages exist (tabby.ai/en-SA/shop/stores, tabby.ai/en-SA/merchant/<slug>);
-      no free bulk export. Checked for each shortlisted lead on Day 2, together with the website BNPL fingerprint.
+      no free bulk export. NOT queried per lead in this project: the 20 exclusions "already Tabby merchant" come from
+      markers on the merchant's own site plus the QA of every detection (data/samples/bnpl_tabby_qa.md). A per-lead
+      directory lookup before first contact stays on the to-do list (notebooks/state.md).
       Context only: StoreLeads reports 2,377 KSA e-commerce stores with Tabby (paid list, July 2026).
 
   - id: tamara_merchant_directory
@@ -130,13 +134,16 @@ sources:
     decided_on: 2026-09-17
     method: per-lead lookup, not a bulk list
     note: >
-      Store pages at tamara.co/en-sa/stores/<slug>; no free bulk export. Presence sets bnpl_status=competitor_only
-      (switch / dual-BNPL pitch). Context only: StoreLeads reports 4,940 KSA e-commerce stores with Tamara.
+      Store pages at tamara.co/en-sa/stores/<slug>; no free bulk export. NOT queried per lead either: the
+      competitor_only status comes from Tamara markers on the merchant's own site (switch / dual-BNPL pitch).
+      Context only: StoreLeads reports 4,940 KSA e-commerce stores with Tamara.
 
   - id: apollo
     role: enrichment
     status: not_attempted
-    note: Day 2 email waterfall for segment C founders with a LinkedIn footprint only.
+    note: >
+      Day 2 email waterfall for segment C founders with a LinkedIn footprint only.
+      Closed 2026-09-17 without running: segment C was rejected, so the population it targeted no longer exists.
 
   # ---------- rejected before collection ----------
   - id: linkedin_sales_navigator

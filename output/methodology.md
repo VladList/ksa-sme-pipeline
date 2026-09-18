@@ -184,3 +184,14 @@ business leads enrichment, place details, reviews, images and filters stay off.
   workbook cannot smuggle a number past it. Owner names are never exported; `owner_name_verified` is a yes/no column.
 - `contact_note` records where the channel is (Google Maps mobile, WhatsApp link, a number on the merchant's website that
   the pipeline does not store, or Instagram), so an empty phone column is never read as "no contact".
+
+### Closing notes (added 2026-09-17, end of the project)
+- The example in "Evidence and inference" above says `bnpl_status=unknown`; the column shipped with the values
+  `tabby | competitor_only | generic_installment | not_detected | fetch_failed`, and "not checked" is an empty field
+  (`config/schema.yaml`). The rule is unchanged, only the example name is out of date.
+- "Planned for Day 2" above: the segment B made-to-order rule was re-checked out-of-sample (`data/samples/rules_check.md`),
+  but the per-lead lookup of Tabby and Tamara merchant pages was **not** carried out. BNPL status comes from the
+  merchant's own website plus the QA of every Tabby detection; the directory lookup before first contact is listed as
+  the next step in `notebooks/state.md`.
+- Segments D (padel academies) and the Instagram and Apollo enrichment sources were never attempted; each keeps its row
+  with the reason in `config/icp.yaml` and `data/sources.yaml`.
