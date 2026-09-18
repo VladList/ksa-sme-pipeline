@@ -33,6 +33,10 @@ def scored_columns() -> list[dict]:
     return yaml.safe_load((CONFIG / "schema.yaml").read_text(encoding="utf-8"))["scored_columns"]
 
 
+def export_columns() -> list[dict]:
+    return yaml.safe_load((CONFIG / "schema.yaml").read_text(encoding="utf-8"))["export_columns"]
+
+
 def pii_columns() -> set[str]:
     return {c["name"] for c in load_schema() if c.get("pii")}
 

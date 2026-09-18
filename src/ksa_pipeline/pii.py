@@ -18,9 +18,31 @@ def find_mobiles(text: str) -> list[str]:
     return _KSA_MOBILE.findall(_JOIN_SEPARATORS.sub("", text))
 
 
+def mask_mobile(number: str) -> str:
+    """+966550000123 -> +9665•••••123 (keeps the country code and the last three digits)."""
+    digits = re.sub(r"\D", "", to_ascii_digits(number or ""))
+    if not digits:
+        return ""
+    if len(digits) <= 7:
+        return "\u2022" * len(digits)
+    prefix = "+" if digits.startswith("966") else ""
+    return prefix + digits[:4] + "\u2022" * (len(digits) - 7) + digits[-3:]
+
+
+def _xlsx_text(path: Path) -> str:
+    from openpyxl import load_workbook
+    wb = load_workbook(path, read_only=True, data_only=True)
+    return "\n".join(str(c.value) for ws in wb.worksheets for row in ws.iter_rows() for c in row if c.value is not None)
+
+
 def scan(paths: list[Path]) -> dict[str, int]:
     hits = {}
     for p in paths:
+        if p.suffix.lower() == ".xlsx":                      # committed exports are workbooks too
+            n = len(find_mobiles(_xlsx_text(p)))
+            if n:
+                hits[str(p)] = n
+            continue
         if p.suffix.lower() not in {".csv", ".md", ".yaml", ".yml", ".json", ".txt"}:
             continue
         n = len(find_mobiles(p.read_text(encoding="utf-8", errors="ignore")))

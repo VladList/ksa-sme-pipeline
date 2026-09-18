@@ -37,9 +37,10 @@ _Filled on Day 3 from `data/runs.csv`, `data/sources.yaml` and `output/public/`.
 | 2. Ingest raw exports | `scripts/02_ingest.py` | `data/raw/<source>/` | `data/interim/<source>/`, `data/runs.csv` | done |
 | 3. Validate source × segment | `scripts/03_source_report.py` | interim + labelled sample | `data/samples/*__report.md` | done for Google Maps |
 | 4. Entity resolution + exclusions | `scripts/04_resolve.py` | interim + `config/rules.yaml` | `data/interim/merchants.csv`, `data/samples/resolve_summary.md`, `rules_check.md` | done (merge QA: `merge_qa.md`) |
-| 5. BNPL fingerprint + LLM enrichment | `scripts/05_web_fingerprint.py --probe <urls>` / `--run` / `--manual-c` / `--qa-tabby` | `config/bnpl_markers.yaml`, `data/interim/merchants.csv` | `data/interim/bnpl.csv`, `data/samples/bnpl_summary.md`, `data/samples/C_contact_check.csv`, `data/samples/bnpl_tabby_qa.md` | fingerprint, QA and LLM enrichment done (`scripts/06_enrich.py`, `config/llm.yaml` → `data/interim/enrich.csv`, `data/samples/enrich_summary.md`); scoring next |
-| 6. Scoring + tiers | `scripts/07_score.py` | `config/scoring.yaml`, interim merchants/bnpl/enrich | `data/interim/scored.csv`, `data/samples/scoring_summary.md` | done; export and insights next |
-| 7. Insights, outreach kit, public export | — | | `output/public/` | Day 3 |
+| 5. BNPL fingerprint + LLM enrichment | `scripts/05_web_fingerprint.py --probe <urls>` / `--run` / `--manual-c` / `--qa-tabby` | `config/bnpl_markers.yaml`, `data/interim/merchants.csv` | `data/interim/bnpl.csv`, `data/samples/bnpl_summary.md`, `data/samples/C_contact_check.csv`, `data/samples/bnpl_tabby_qa.md` | fingerprint, QA and LLM enrichment done (`scripts/06_enrich.py`, `config/llm.yaml` → `data/interim/enrich.csv`, `data/samples/enrich_summary.md`) |
+| 6. Scoring + tiers | `scripts/07_score.py` | `config/scoring.yaml`, interim merchants/bnpl/enrich | `data/interim/scored.csv`, `data/samples/scoring_summary.md` | done |
+| 7. Export | `scripts/08_export.py` | `data/interim/scored.csv`, merchants, enrich | `output/public/ksa_sme_pipeline.xlsx`, `top50_masked.csv`, `scored_masked.csv` | done; numbers masked, private file on demand |
+| 8. README and publication | — | all of the above | `README.md`, public repository | next: findings with numbers, a short week-1 note, limitations; dashboard, outreach kit and week-1 plan dropped by decision |
 
 Stages without a command have no code yet, on purpose: files are created when
 the stage runs, not in advance.
@@ -76,6 +77,7 @@ uv run python scripts/05_web_fingerprint.py --manual-c   # pages blocked for scr
 uv run python scripts/05_web_fingerprint.py --qa-tabby   # every Tabby detection in A and B checked by eye
 uv run python scripts/06_enrich.py --dry-run             # free: candidates and input size; --trial / --run call the OpenAI API
 uv run python scripts/07_score.py                         # scores, tiers, Top-50 and sensitivity (config/scoring.yaml)
+uv run python scripts/08_export.py                        # masked export to output/public/ (--private adds real numbers)
 ```
 
 ## What changed from the previous pipeline

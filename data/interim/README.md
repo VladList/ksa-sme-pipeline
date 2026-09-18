@@ -1,2 +1,3 @@
-Canonical per-run tables produced by `scripts/02_ingest.py` (columns: `config/schema.yaml`, stage `ingest`).
-Not committed: contains phone numbers and bio text. Rebuildable from `data/raw/` in one command per run.
+Local working tables, never committed: per-run ingest tables (`scripts/02_ingest.py`), `merchants.csv` (entity resolution),
+`bnpl.csv` (web fingerprint), `enrich.csv` (LLM fields) and `scored.csv` (scoring). Columns: `config/schema.yaml`.
+They hold phone numbers, bio text and owner names, and are rebuildable from `data/raw/` and the caches in one command each.

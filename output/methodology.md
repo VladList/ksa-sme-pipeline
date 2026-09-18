@@ -176,3 +176,11 @@ business leads enrichment, place details, reviews, images and filters stay off.
 - Excluded merchants keep their row with the exclusion reason. Flags (medical Risk review, B Jeddah source relevance,
   BNPL unchecked) never change the score.
 - Decision-maker names derived from a business name are not treated as confirmed owners; confirming the role needs a call.
+
+### Export (added 2026-09-17, step 5.3)
+- Two artefacts from one script: a masked export that is committed (`output/public/`, workbook plus CSV) and a private
+  file with real numbers written only on request into `data/private/` (git-ignored).
+- The masked export is checked value by value before anything is written; the pre-commit guard also scans `.xlsx`, so a
+  workbook cannot smuggle a number past it. Owner names are never exported; `owner_name_verified` is a yes/no column.
+- `contact_note` records where the channel is (Google Maps mobile, WhatsApp link, a number on the merchant's website that
+  the pipeline does not store, or Instagram), so an empty phone column is never read as "no contact".

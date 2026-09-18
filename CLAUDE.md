@@ -37,6 +37,7 @@
 - uv run python scripts/05_web_fingerprint.py --qa-tabby   (QA всех детекций Tabby в A и B: глазом, затем `no` разбираются по коду страницы через adjudicate_tabby; переопределения — в data/changelog.csv)
 - uv run python scripts/06_enrich.py --dry-run | --check | --trial | --run   (LLM-обогащение A и B по config/llm.yaml; ключ OPENAI_API_KEY в .env; ответы кэшируются в data/cache/llm/)
 - uv run python scripts/07_score.py   (скоринг, тиры, Top-50, sensitivity по config/scoring.yaml → data/interim/scored.csv, data/samples/scoring_summary.md)
+- uv run python scripts/08_export.py [--private]   (маскированный экспорт в output/public/; --private пишет полные номера в data/private/, не коммитится)
 - uv run python scripts/check_no_pii.py <files>
 
 ## Окружение

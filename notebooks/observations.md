@@ -202,3 +202,12 @@ Source: `data/samples/scoring_summary.md`, `config/scoring.yaml` v1.
     now concerns two thirds of the list.
 57. **A decision-maker name is known for 9 of the Top-50**, and it comes from the clinic name, which is not a confirmed
     owner. The manual part of step 4.4 cannot confirm a role without a call, so it is recorded as a limitation instead.
+
+## 2026-09-17 — Export (step 5.3)
+
+58. **Masked export, private on demand:** `output/public/` carries the workbook and two CSV files with masked numbers and
+    no owner names; real numbers are written only by `--private` into `data/private/` (not committed). The export refuses
+    to write if any value still matches a KSA mobile, and the pre-commit PII guard now reads `.xlsx` as well.
+59. **A direct channel is not always a number in Google Maps.** Some Top-50 leads are reachable through a number or
+    WhatsApp link found on their own website in step 4.2, which the pipeline deliberately does not store. The export
+    carries a `contact_note` column so the caller knows where to look instead of finding an empty phone field.

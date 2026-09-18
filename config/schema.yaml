@@ -149,3 +149,29 @@ scored_columns:
   - {name: hook_from_page,       type: bool,  pii: false}
   - {name: flags,                type: str,   pii: false}
   - {name: top_rank,             type: int,   pii: false, desc: "1..50 inside Top-50, empty otherwise"}
+
+# Columns of the committed masked export (output/public/scored_masked.csv and top50_masked.csv, step 5.3).
+# Built by scripts/08_export.py. No phone values and no owner names; hook_ar_ai_drafted is in the Top-50 file only.
+# The private file (data/private/top50_contacts.csv, never committed) carries phone_e164 and owner_name_inferred.
+export_columns:
+  - {name: merchant_id,          type: str,   pii: false}
+  - {name: segment,              type: str,   pii: false}
+  - {name: cities,               type: str,   pii: false}
+  - {name: name,                 type: str,   pii: false}
+  - {name: tier,                 type: str,   pii: false}
+  - {name: score,                type: float, pii: false}
+  - {name: top_rank,             type: int,   pii: false}
+  - {name: channel,              type: str,   pii: false}
+  - {name: phone_masked,         type: str,   pii: false, desc: "+9665.....123; empty when the number is not in Google Maps"}
+  - {name: contact_note,         type: str,   pii: false, desc: "where the channel is (Maps mobile, WhatsApp link, merchant website, Instagram)"}
+  - {name: instagram_handle,     type: str,   pii: false}
+  - {name: website_domain,       type: str,   pii: false}
+  - {name: bnpl_status_final,    type: str,   pii: false}
+  - {name: reviews_count,        type: int,   pii: false}
+  - {name: rating,               type: float, pii: false}
+  - {name: n_locations,          type: int,   pii: false}
+  - {name: owner_name_verified,  type: bool,  pii: false}
+  - {name: hook_from_page,       type: bool,  pii: false}
+  - {name: flags,                type: str,   pii: false}
+  - {name: score_exclusion,      type: str,   pii: false}
+  - {name: hook_ar_ai_drafted,   type: str,   pii: false, origin: llm, desc: "Top-50 file only; AI-drafted Arabic, not native-reviewed"}

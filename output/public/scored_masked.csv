@@ -1,0 +1,766 @@
+merchant_id,segment,cities,name,tier,score,top_rank,channel,phone_masked,contact_note,instagram_handle,website_domain,bnpl_status_final,reviews_count,rating,n_locations,owner_name_verified,hook_from_page,flags,score_exclusion
+m_071b47be66,A_aesthetic_clinics,riyadh,عيادات البروفيسور - Professor Clinics,A,100,1,mobile_or_whatsapp_and_name,,number on the merchant website (not stored),professorclinic,professorsa.com,not_detected,1652,4.8,2,True,True,medical: Risk review,
+m_76f4696f10,A_aesthetic_clinics,jeddah,دكتورة أسماء حجازي,A,97,2,mobile_or_whatsapp_and_name,+9665•••••080,mobile in Google Maps,asmaahigazy2004,dr-asmaahigazy.com,not_detected,2224,4.7,1,True,True,medical: Risk review,
+m_2bd43329f1,A_aesthetic_clinics,jeddah,Safa Diamond Clinics,A,95,3,mobile_or_whatsapp,+9665•••••994,mobile in Google Maps,safadiamondclinics,safaalmassiclinic.com,not_detected,4117,4.7,2,False,True,medical: Risk review,
+m_545586ec5b,A_aesthetic_clinics,jeddah,عيادات الموج فرع الصفا,A,95,4,mobile_or_whatsapp,,number on the merchant website (not stored),almawjclinics,almawj.net,not_detected,3009,4.3,2,False,True,medical: Risk review,
+m_f2dc02152c,A_aesthetic_clinics,riyadh,Cosmo Prof,A,95,5,mobile_or_whatsapp,,number on the merchant website (not stored),cosmoprofclinic,cosmoprof.com.sa,not_detected,1974,4.7,2,False,True,medical: Risk review,
+m_b5f3ff2b13,B_custom_furniture,riyadh,تفصيل ستائر ومجالس كنب,A,95,6,mobile_or_whatsapp,+9665•••••187,mobile in Google Maps,,elitesofacurtain.com,not_detected,168,4.8,3,False,True,,
+m_d598d6402d,A_aesthetic_clinics,jeddah,Cosmohub Clinic - Basaffar Center | عيادات كوزموهب - مركز باصفار,A,94,7,mobile_or_whatsapp_and_name,,number on the merchant website (not stored),basaffarcenter,aesthetics.basaffar-gp.com,not_detected,490,4.7,1,True,True,medical: Risk review,
+m_43c74ba73d,B_custom_furniture,jeddah,تنجيد كنب بجدة مؤسسة عبدالله دهلوي للمفروشات,A,94,8,mobile_or_whatsapp_and_name,+9665•••••108,mobile in Google Maps,,albarakatanged.com,not_detected,7,5,2,True,True,B Jeddah: source relevance 0.40,
+m_9074c48b86,A_aesthetic_clinics,jeddah,عيادات الشاكرين - فرع السامر | جلدية - تجميل - اسنان,A,92,9,mobile_or_whatsapp,+9661•••••350,number on the merchant website (not stored),alshakreenc,alshakreen.net,not_detected,8993,4.1,4,False,True,medical: Risk review,
+m_1641d3afcf,A_aesthetic_clinics,jeddah,Amanda Medical Center - مركز أماندا الطبي,A,92,10,mobile_or_whatsapp,,number on the merchant website (not stored),amandamedcen,lnk.bio,not_detected,2917,4.3,1,False,True,medical: Risk review,
+m_280db82466,A_aesthetic_clinics,jeddah,عيادات أندلسية - فرع الأمير سلطان,A,92,11,mobile_or_whatsapp,+9661•••••647,number on the merchant website (not stored),andalusia_hj,andalusiaksa.com,not_detected,2443,4.4,1,False,True,medical: Risk review,
+m_2e6c42a437,B_custom_furniture,riyadh,"SkiptonWall Wallpaper, Curtains & Blinds",A,92,12,mobile_or_whatsapp,+9665•••••649,mobile in Google Maps,,ksa.skiptonwallcurtains.com,not_detected,2024,4.8,1,False,True,,
+m_c11de03f7a,A_aesthetic_clinics,jeddah,مركز الطبابة,A,92,13,mobile_or_whatsapp,+9661•••••000,number on the merchant website (not stored),altababahcenter,altababah.com,not_detected,1588,4.6,1,False,True,medical: Risk review,
+m_77dd12b777,A_aesthetic_clinics,riyadh,مجمع عالم الطب – التعاون | Medical world clinics complex,A,92,14,mobile_or_whatsapp,,number on the merchant website (not stored),medicalworldpo2,medicalworld.com.sa,not_detected,1530,4.6,1,False,True,medical: Risk review,
+m_bfe6f8d54a,A_aesthetic_clinics,jeddah,Pearl dental & Derma clinic,A,92,15,mobile_or_whatsapp,,number on the merchant website (not stored),pearldclinic,pearlclinic.net,not_detected,1371,4.5,1,False,True,medical: Risk review,
+m_88364901ff,A_aesthetic_clinics,jeddah,skin life عيادات سكين لايف,A,92,16,mobile_or_whatsapp,+9665•••••581,mobile in Google Maps,skinlifeclinicksa,skinlifeksa.com,not_detected,1345,4.8,1,False,True,medical: Risk review,
+m_baaa2ba4ec,A_aesthetic_clinics,riyadh,Moustashark Dentist,A,92,17,mobile_or_whatsapp,+9661•••••911,number on the merchant website (not stored),,moustashark.com,not_detected,1231,4.5,1,False,True,medical: Risk review,
+m_9f1b1c99de,A_aesthetic_clinics,jeddah,Bare Beauty Clinic & Center - بيير بيوتي كلينك و سنتر,A,92,18,mobile_or_whatsapp,,number on the merchant website (not stored),bbclinicofficial,barebeauty.sa,not_detected,1214,4.4,1,False,True,medical: Risk review,
+m_f596d7d4f0,A_aesthetic_clinics,riyadh,عيادات بانثيرا جلدية تجميل ليزر panthera clinics,A,92,19,mobile_or_whatsapp,+9665•••••977,mobile in Google Maps,pantheraclinics,pantheraclinics.com,not_detected,1166,4.7,1,False,True,medical: Risk review,
+m_54a9bf8b88,A_aesthetic_clinics,jeddah,عيادات لي ساج الطبية ( فرع النهضة ),A,92,20,mobile_or_whatsapp,+9665•••••528,mobile in Google Maps,,lesageclinic.com,not_detected,1110,4,2,False,True,medical: Risk review,
+m_c789dad467,B_custom_furniture,jeddah,Modern Curtain الستارة المعاصرة,A,92,21,mobile_or_whatsapp,+9665•••••008,mobile in Google Maps,,moderncurtain.net,not_detected,272,4.8,1,False,True,B Jeddah: source relevance 0.40,
+m_c09ba291e9,B_custom_furniture,jeddah,شركة المواد المتطورة للتجارة - المعرض,A,92,22,mobile_or_whatsapp,+9665•••••058,mobile in Google Maps,,karzah.com,not_detected,167,4.6,1,False,True,B Jeddah: source relevance 0.40,
+m_0587ab2c28,B_custom_furniture,riyadh,تنجيد كنب وتفصيل ستائر تركيب,A,92,23,mobile_or_whatsapp,+9665•••••512,mobile in Google Maps,,curtainsstores.com,not_detected,145,4.8,1,False,True,,
+m_f7e35ee0ee,B_custom_furniture,riyadh,مؤسسه تعتيم للستائر,A,92,24,mobile_or_whatsapp,+9665•••••991,mobile in Google Maps,,taatimksa.com,not_detected,122,4.9,1,False,True,,
+m_beb72ed397,B_custom_furniture,riyadh,مؤسسة ستارة رول للستائر,A,92,25,mobile_or_whatsapp,+9665•••••378,mobile in Google Maps,,staracurtains.com,not_detected,117,4.7,1,False,True,,
+m_2c91bffb0a,B_custom_furniture,riyadh,DECO NEST Curtain تفصيل ستائر,A,92,26,mobile_or_whatsapp,+9665•••••136,mobile in Google Maps,,deconestcurtain.com,not_detected,73,4.9,1,False,True,,
+m_1188753298,B_custom_furniture,riyadh,تفصیل ستائر کنب مجلس تنجید,A,92,27,mobile_or_whatsapp,+9665•••••912,mobile in Google Maps,,curtainsstore.in,not_detected,70,4.9,1,False,True,,
+m_16f1115768,B_custom_furniture,riyadh,Bin Ateeq Curtains and Roller Blinds Riyadh -بن عتيق للستائر,A,92,28,mobile_or_whatsapp,+9665•••••192,mobile in Google Maps,,binateeqcurtain.com,not_detected,64,4.9,1,False,True,,
+m_165817df6e,B_custom_furniture,riyadh,تفصيل ستائر و تنجيد كنب منى,A,92,29,mobile_or_whatsapp,+9665•••••394,mobile in Google Maps,,curtainriyadh.com,not_detected,59,4.7,1,False,True,,
+m_5dd1075640,B_custom_furniture,riyadh,تفصیل وتركيب ستائر وامجالس حي العارض,A,92,30,mobile_or_whatsapp,+9665•••••328,mobile in Google Maps,,sofastore.site,not_detected,44,4.6,1,False,True,,
+m_8767894238,B_custom_furniture,jeddah,تنجيد كنب تفصيل كنب وستائر الفخامه للديكور,A,92,31,mobile_or_whatsapp,+9665•••••480,mobile in Google Maps,,kanabalfakhamih.art.blog,not_detected,43,4.5,1,False,True,B Jeddah: source relevance 0.40,
+m_1b05ea4544,B_custom_furniture,riyadh,شركة زنبق الياقوت للستائر والاثاث,A,92,32,mobile_or_whatsapp,+9665•••••043,mobile in Google Maps,,zan-baq.com,not_detected,41,4.9,1,False,True,,
+m_db04a8d7de,B_custom_furniture,riyadh,تفصيل ستائر مجالس كتب,A,92,33,mobile_or_whatsapp,+9665•••••602,mobile in Google Maps,,royaltouchcurtains.com,not_detected,41,4.9,1,False,True,,
+m_cf22b63f72,A_aesthetic_clinics,riyadh,عاجي لطب الأسنان,A,91,34,mobile_or_whatsapp_and_name,+9665•••••984,mobile in Google Maps,aaji_group,aaji.sa,not_detected,884,4.2,1,True,True,medical: Risk review,
+m_80974ff440,A_aesthetic_clinics,jeddah,د. سامي سهيل صوان - استشاري جلدية وتجميل,A,91,35,mobile_or_whatsapp_and_name,+9665•••••363,mobile in Google Maps,drsamisawan,drsamisawan.com,not_detected,475,4.7,1,True,True,medical: Risk review,
+m_b85356f16c,A_aesthetic_clinics,jeddah,عيادات الدكتور اسامة الوسية Dr.Osama Alwasiah Clinics,A,91,36,mobile_or_whatsapp_and_name,,number on the merchant website (not stored),osamaclinic,alwasiah.med.sa,not_detected,296,4.5,1,True,True,medical: Risk review,
+m_31848685f8,A_aesthetic_clinics,riyadh,عيادة د ياسر حامد لطب وتجميل الأسنان,A,91,37,mobile_or_whatsapp_and_name,+9665•••••015,mobile in Google Maps,yaser_m_hamed,dryasser.ksa7.vip,not_detected,271,4.7,1,True,True,medical: Risk review,
+m_414422d77f,A_aesthetic_clinics,jeddah,الدكتورة شيماء منصور | جلدية وتجميل وليزر بجدة,A,91,38,mobile_or_whatsapp_and_name,+9665•••••842,mobile in Google Maps,drshiymaa,drshiymaa.com,not_detected,207,4.8,1,True,True,medical: Risk review,
+m_5a09d872c2,A_aesthetic_clinics,riyadh,diamond medical clinics 2,A,89,39,mobile_or_whatsapp,+9661•••••001,number on the merchant website (not stored),diamondsclinics,diamondsclinic.com,not_detected,3870,3.9,2,False,True,medical: Risk review,
+m_8c468637db,A_aesthetic_clinics,riyadh,Symphony clinic,A,89,40,mobile_or_whatsapp,+9661•••••222,number on the merchant website (not stored),symphony_clinic,symphony.sa,not_detected,1870,4.2,1,False,True,medical: Risk review,
+m_08157f9afe,A_aesthetic_clinics,riyadh,عيادات بيست كلينك | جلدية - تجميل - ليزر,A,89,41,mobile_or_whatsapp,+9665•••••887,mobile in Google Maps,,bestclinicriyadh.com,not_detected,1492,4,1,False,True,medical: Risk review,
+m_ab02523201,A_aesthetic_clinics,riyadh,2Care Medical Center,A,89,42,mobile_or_whatsapp,+9665•••••751,mobile in Google Maps,2care_sa,2care.sa,not_detected,1107,4.6,1,False,True,medical: Risk review,
+m_d0bc350a1f,A_aesthetic_clinics,riyadh,Elyzee Medical Center | مركز إليزيه الطبي,A,89,43,mobile_or_whatsapp,,number on the merchant website (not stored),elyzeemcenter,elyzee.com.sa,not_detected,872,4.3,1,False,True,medical: Risk review,
+m_d8e9c2b056,A_aesthetic_clinics,jeddah,Vaya clinics,A,89,44,mobile_or_whatsapp,+9665•••••375,mobile in Google Maps,,nahda.beautiviaclinic.com,not_detected,843,4.6,1,False,True,medical: Risk review,
+m_76a377b0cb,A_aesthetic_clinics,riyadh,Loro Clinics,A,89,45,mobile_or_whatsapp,+9665•••••613,mobile in Google Maps,loro_clinic,loroclinic.com,not_detected,705,4.7,1,False,True,medical: Risk review,
+m_e5cd84ad99,A_aesthetic_clinics,jeddah,UniDents Clinic مجمع إتحاد أطباء الأسنان,A,89,46,mobile_or_whatsapp,,number on the merchant website (not stored),unidents_clinic,unidents.com,not_detected,639,4.4,1,False,True,medical: Risk review,
+m_18e3946522,A_aesthetic_clinics,riyadh,عيادات تجميل ديرمو برايت | DermoBright Cosmetic clinic,A,89,47,mobile_or_whatsapp,+9665•••••000,mobile in Google Maps,,dermoobright.com,not_detected,597,4.6,1,False,True,medical: Risk review,
+m_26a4aaf0f7,A_aesthetic_clinics,riyadh,Divinia Clinic At Taawun - عيادة ديڤينيا التعاون,A,89,48,mobile_or_whatsapp,+9661•••••266,number on the merchant website (not stored),divinia.clinic,divinia.sa,not_detected,552,4.4,1,False,True,medical: Risk review,
+m_e4a1a6d399,A_aesthetic_clinics,jeddah,Newderma1,A,89,49,mobile_or_whatsapp,+9665•••••999,mobile in Google Maps,newderma1,newderma1.com,not_detected,493,4.4,1,False,True,medical: Risk review,
+m_2bed7f8c21,A_aesthetic_clinics,jeddah,Ideal Clinics,A,89,50,mobile_or_whatsapp,+9661•••••999,number on the merchant website (not stored),drmohammedbakkar,idealclinicsa.com,not_detected,492,4,2,False,True,medical: Risk review,
+m_0039130b58,A_aesthetic_clinics,riyadh,مركز الجلدية والتجميل,B,70,,mobile_or_whatsapp,+9665•••••865,mobile in Google Maps,,,unchecked,0,,1,False,False,medical: Risk review; BNPL unchecked,
+m_00a729f8b5,A_aesthetic_clinics,riyadh,LEEN Clinic,B,70,,none,,,,leenclinic.com,unchecked,2036,4.5,1,False,False,medical: Risk review; BNPL unchecked,
+m_00f7583a78,C_salla_zid_d2c,,SET ABAYA,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_00fde80c71,A_aesthetic_clinics,riyadh,Profile medical center - مركز بروفايل الطبي,B,79,,mobile_or_whatsapp,+9665•••••771,mobile in Google Maps,,profileclinic.sa,unchecked,479,4.7,1,False,False,medical: Risk review; BNPL unchecked,
+m_0112c3a7b4,A_aesthetic_clinics,jeddah,مجمع محترفو العناية الطبية (أسنان - جلدية - ليزر -تجميل ),B,76,,mobile_or_whatsapp,+9665•••••887,mobile in Google Maps,,,unchecked,432,4.2,1,False,False,medical: Risk review; BNPL unchecked,
+m_017245f778,B_custom_furniture,jeddah,شركة أواني ألاسطورة التجارية,,,,mobile_or_whatsapp,+9665•••••679,mobile in Google Maps,,,unchecked,30,4.7,1,False,False,,B: no segment signal in name or category
+m_017641522b,A_aesthetic_clinics,riyadh,Artista Clinic,,,,instagram,,Instagram,artistaclinics,artistaclinics-sa.com,unchecked,455,4.6,1,False,False,,A: no segment signal in name or category
+m_01a39f245e,B_custom_furniture,riyadh,ستائر تفصيل رول كنب مجالس,A,85,,mobile_or_whatsapp,+9665•••••976,mobile in Google Maps,,jamaldecor.com,unchecked,84,4.9,1,False,False,BNPL unchecked,
+m_0244e0525d,B_custom_furniture,riyadh,تفصيل ستائر مودرن و تنجيد كنب,B,70,,mobile_or_whatsapp,+9665•••••911,mobile in Google Maps,,,unchecked,0,,1,False,False,BNPL unchecked,
+m_02b6d5ba92,B_custom_furniture,jeddah,مفروشات اللمسة,,,,mobile_or_whatsapp,+9665•••••562,mobile in Google Maps,,allamsafurniture.com,unchecked,68,4.3,1,False,False,,B: no segment signal in name or category
+m_02c6592583,B_custom_furniture,jeddah,ستائر نيو جدة,C,58,,none,,,,,unchecked,5,2.6,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_03b59d94a8,A_aesthetic_clinics,riyadh,Amldan Clinics,,,,other_phone,+9661•••••166,landline in Google Maps,,amldan.com,unchecked,713,4.6,1,False,False,,A: no segment signal in name or category
+m_03ed693251,B_custom_furniture,jeddah,مفروشات الاوركيد,,,,none,,,,,unchecked,33,1.2,1,False,False,,B: no segment signal in name or category
+m_0403ba3050,B_custom_furniture,riyadh,Sun Cloud Curtain,,,,mobile_or_whatsapp,+9665•••••894,mobile in Google Maps,,suncloud.com.sa,unchecked,75,4.9,1,False,False,,B: no segment signal in name or category
+m_045ecd7835,A_aesthetic_clinics,jeddah,Arab Doctors Clinics,B,65,,instagram,+9661•••••570,Instagram,tajmeelicom,tajmeeli.com,unchecked,75,1.6,1,False,False,medical: Risk review; BNPL unchecked,
+m_0462870e7b,B_custom_furniture,riyadh,جناح الاسطورة للستائر الرول والقماش,A,85,,mobile_or_whatsapp,+9665•••••149,mobile in Google Maps,,,unchecked,79,4.9,1,False,False,BNPL unchecked,
+m_04743801be,A_aesthetic_clinics,riyadh,عيادة كوين ازالة الشعر بالليزر للرجال,B,76,,mobile_or_whatsapp,+9665•••••984,mobile in Google Maps,,queenclinics.com,unchecked,1,5,1,False,False,medical: Risk review; BNPL unchecked,
+m_05283873ab,A_aesthetic_clinics,jeddah,Lilia Clinic - ليليا كلينيك,B,82,,mobile_or_whatsapp,+9665•••••455,mobile in Google Maps,,lilia-clinic.com,unchecked,822,4.6,1,False,False,medical: Risk review; BNPL unchecked,
+m_055b60d7b1,B_custom_furniture,riyadh,سلام الابداع ستائر - رول,A,85,,mobile_or_whatsapp,+9665•••••100,mobile in Google Maps,,,unchecked,71,4.9,1,False,False,BNPL unchecked,
+m_0585b7e68d,B_custom_furniture,jeddah,Omreen furniture market,,,,other_phone,+9661•••••955,landline in Google Maps,,amrain.sa,unchecked,4839,3.8,1,False,False,,B: no segment signal in name or category
+m_059bbd0c6f,A_aesthetic_clinics,riyadh,عيادة أجوان AJWAN CLINIC,B,79,,mobile_or_whatsapp,+9665•••••020,mobile in Google Maps,,,unchecked,210,4.7,1,False,False,medical: Risk review; BNPL unchecked,
+m_05a7857815,A_aesthetic_clinics,jeddah,Dentalia Clinics عيادات دنتاليا للأسنان جدة,B,79,,mobile_or_whatsapp,,number on the merchant website (not stored),dentaliaclinics,dentaliaclinics.com.sa,generic_installment,937,4.3,2,False,True,medical: Risk review,
+m_05ad9235bb,A_aesthetic_clinics,riyadh,ماي سكن MY SKIN - عيادات الدكتور إبراهيم العبد | جراحة تجميل| جلدية| ليزر,B,77,,instagram,+9661•••••219,Instagram,myskinclinicsa,myskinclinicsa.com,unchecked,511,4.4,1,True,False,medical: Risk review; BNPL unchecked,
+m_05b694ef29,A_aesthetic_clinics,riyadh,عيادات جوزيف ديرم JosephDerm - جلدية وتجميل وليزر - فرع الازدهار,,,,mobile_or_whatsapp,+9665•••••500,mobile in Google Maps,dr.nabil.mahallawi,josephderm.com,tabby,2065,4.1,2,False,False,,already Tabby merchant
+m_05e919be29,A_aesthetic_clinics,jeddah,عيادات إيفال بيوتي - eval beauty clinic,B,82,,mobile_or_whatsapp,+9665•••••218,mobile in Google Maps,,,unchecked,1772,4,1,False,False,medical: Risk review; BNPL unchecked,
+m_06348dd204,A_aesthetic_clinics,jeddah,V Clinics | عيادة في كلينك لزراعة وتقويم الأسنان,B,77,,instagram,+9661•••••030,Instagram,vdentisa,vdenti.com,unchecked,649,4.8,1,False,False,medical: Risk review; BNPL unchecked,
+m_06b41255db,C_salla_zid_d2c,,باقة العود الأزرق,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_071b55f427,B_custom_furniture,riyadh,تفصيل ستائر مجالس منى,B,76,,mobile_or_whatsapp,+9665•••••314,mobile in Google Maps,,,unchecked,1,5,1,False,False,BNPL unchecked,
+m_079405cd65,A_aesthetic_clinics,jeddah,LOTUS Clinics | عيادات لوتس الطبية,,,,mobile_or_whatsapp,+9665•••••520,mobile in Google Maps,lotus.clinics,lotusclinics.sa,unchecked,9,4.9,1,False,False,,A: no segment signal in name or category
+m_081cab7ccb,B_custom_furniture,jeddah,Midas Jeddah | ميداس للأثاث جدة,,,,none,,,,midasfurniture.com,unchecked,3149,3.9,1,False,False,,B: no segment signal in name or category
+m_084a94f22b,A_aesthetic_clinics,riyadh,عيادات رفا لطب الاسنان والجلدية,B,79,,mobile_or_whatsapp,+9665•••••345,mobile in Google Maps,,,unchecked,412,4.3,1,False,False,medical: Risk review; BNPL unchecked,
+m_093964e479,A_aesthetic_clinics,jeddah,EMC المركز الأوروبي الطبي AlManar,,,,instagram,,Instagram,emc_med,almanarclinics.com,unchecked,853,3.6,1,False,False,,A: no segment signal in name or category
+m_09ab7aa59e,A_aesthetic_clinics,riyadh,عيادات غوج لجراحة التجميل والجلدية والليزر,A,86,,mobile_or_whatsapp,+9661•••••433,number on the merchant website (not stored),rougeclinic,rougeclinic.com,not_detected,190,4.6,1,False,True,medical: Risk review,
+m_09ecbf5930,B_custom_furniture,jeddah,عالم الستائر,B,73,,mobile_or_whatsapp,+9665•••••247,mobile in Google Maps,,,unchecked,8,3,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_0a0261c248,B_custom_furniture,riyadh,دايمواند للستائر,A,83,,mobile_or_whatsapp,+9665•••••935,mobile in Google Maps,,diamondcurtains.netlify.app,not_detected,2,5,1,False,True,,
+m_0aa71a2d04,B_custom_furniture,jeddah,Haya Furniture,,,,mobile_or_whatsapp,+9665•••••012,mobile in Google Maps,khayal.furniture,,unchecked,27,4.4,1,False,False,,B: no segment signal in name or category
+m_0abecaeecb,A_aesthetic_clinics,jeddah,مركز الجلدية والتجميل,C,55,,none,,,,,unchecked,3,3.7,1,False,False,medical: Risk review; BNPL unchecked,
+m_0ad98d4abc,A_aesthetic_clinics,jeddah,عيادات ماسترز فرع الشاطئ,B,82,,mobile_or_whatsapp,+9665•••••698,mobile in Google Maps,masters.clinics,masters.clinic,unchecked,860,4.1,2,False,False,medical: Risk review; BNPL unchecked,
+m_0b200b7bcc,B_custom_furniture,jeddah,مفروشات نارين,,,,mobile_or_whatsapp,+9665•••••308,mobile in Google Maps,mafrusat_narin,,unchecked,8,4.1,1,False,False,,B: no segment signal in name or category
+m_0b86a6752d,B_custom_furniture,riyadh,تفصيل ستائر و تنجيد كنب الصحافه,A,89,,mobile_or_whatsapp,+9665•••••570,mobile in Google Maps,,tanjeedknab.com,not_detected,36,4.7,1,False,True,reserve: tied at the Top-list cutoff score,
+m_0be5c9672e,B_custom_furniture,riyadh,مفروشات للكنب ستائر تفصيل وتنجيد,B,76,,mobile_or_whatsapp,+9665•••••157,mobile in Google Maps,,,unchecked,1,5,1,False,False,BNPL unchecked,
+m_0c00374f0f,B_custom_furniture,jeddah,الوان للديكور تفصيل وتنجيد كنب وستائر,B,82,,mobile_or_whatsapp,+9665•••••668,mobile in Google Maps,,,unchecked,28,4.7,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_0c3e89098e,B_custom_furniture,jeddah,موسسة,B,70,,mobile_or_whatsapp,+9665•••••357,mobile in Google Maps,,,unchecked,0,,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_0cb4141bfc,B_custom_furniture,riyadh,تفصيل ستائر ومجالس کرسی کنب,B,82,,mobile_or_whatsapp,+9665•••••576,mobile in Google Maps,,,unchecked,20,4.8,1,False,False,BNPL unchecked,
+m_0d2c4daf11,C_salla_zid_d2c,,عبايات دار امتنان,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_0d8c7673b3,A_aesthetic_clinics,riyadh,MERAS CLINIC AS SAHAFAH BRANCH,,,,mobile_or_whatsapp,+9665•••••931,mobile in Google Maps,,merasclinic.net,unchecked,9299,4,5,False,False,,A: no segment signal in name or category; A: hospital or enterprise group
+m_0e1ea2f339,B_custom_furniture,riyadh,غيوم للستائر,,,,mobile_or_whatsapp,+9665•••••476,mobile in Google Maps,,ghoym.com,tabby,275,4.9,1,False,False,,already Tabby merchant
+m_0e28989b8e,A_aesthetic_clinics,jeddah,Tabashir Medical Clinics (مجمع عيادات تباشير الطبية),,,,mobile_or_whatsapp,+9665•••••509,mobile in Google Maps,tabashir.clinics,tabashirclinics.com,unchecked,987,4.8,1,False,False,,A: no segment signal in name or category
+m_0e81860e69,B_custom_furniture,riyadh,تفصيل ستاير تفصيل كنب تفصيل كرسي تنجيد,B,76,,mobile_or_whatsapp,+9665•••••827,mobile in Google Maps,,,unchecked,3,5,1,False,False,BNPL unchecked,
+m_0eb29a02dc,A_aesthetic_clinics,riyadh,عيادة دكتورة شادن الزعبي,B,81,,mobile_or_whatsapp_and_name,+9665•••••904,mobile in Google Maps,,sites.google.com,unchecked,19,5,1,True,False,medical: Risk review; BNPL unchecked,
+m_0ed7ab1893,B_custom_furniture,jeddah,س,B,79,,mobile_or_whatsapp,+9665•••••381,mobile in Google Maps,,,unchecked,61,2.8,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_0edb0a917c,B_custom_furniture,riyadh,للمجالس العربية والستائر والمفروشات المميزة,B,66,,other_phone,+9661•••••477,landline in Google Maps,,,unchecked,2,5,1,False,False,BNPL unchecked,
+m_0f6a17eb05,B_custom_furniture,riyadh,تفصيل ستاير كنب,B,70,,mobile_or_whatsapp,+9665•••••623,mobile in Google Maps,,,unchecked,3,2,1,False,False,BNPL unchecked,
+m_0fc9f769f0,B_custom_furniture,riyadh,نايف مفروشاتتركيب ستائر تفصيل ستائر. تفصيل كنب امريكي ستاير تنجيد مجالس اربيه,B,82,,mobile_or_whatsapp,+9665•••••163,mobile in Google Maps,,,unchecked,37,4.4,1,False,False,BNPL unchecked,
+m_110aaee413,C_salla_zid_d2c,,متجر جارديان للعطور,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_114b82e4a5,A_aesthetic_clinics,jeddah,مجمع عيادات الجمال الأبدي Eternal Beauty clinic,,,,mobile_or_whatsapp,+9665•••••971,mobile in Google Maps,eternalbeautysa,eternalbeauty.sa,tabby,1932,4.4,2,False,False,,already Tabby merchant
+m_1156038a11,C_salla_zid_d2c,,عود شيراز,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_11df7ae8ed,B_custom_furniture,riyadh,مؤسسة الاثاث الشرقي تفصيل الستائر والمجالس,B,79,,mobile_or_whatsapp,+9665•••••204,mobile in Google Maps,,,unchecked,6,5,1,False,False,BNPL unchecked,
+m_12053e3a6e,A_aesthetic_clinics,riyadh,الدكتور مهند الحاج - تجميل وزراعة الاسنان,B,78,,mobile_or_whatsapp_and_name,+9665•••••333,mobile in Google Maps,,lesourireclinicsa.com,unchecked,85,4.2,1,True,False,medical: Risk review; BNPL unchecked,
+m_121cb18301,B_custom_furniture,riyadh,حراج تفصيل كنب,A,83,,mobile_or_whatsapp,+9665•••••485,mobile in Google Maps,,tfsyl-staer-hraj.localo.site,not_detected,1,5,1,False,True,,
+m_121edca2e1,A_aesthetic_clinics,jeddah,عيادات الهجن - حي البساتين,B,79,,mobile_or_whatsapp,+9665•••••300,mobile in Google Maps,,alhejinclinic.com,unchecked,515,4,1,False,False,medical: Risk review; BNPL unchecked,
+m_126ca416c7,A_aesthetic_clinics,jeddah,Reviva Clinics,B,67,,none,,,,reviva.cc,unchecked,769,4.7,1,False,False,medical: Risk review; BNPL unchecked,
+m_135c555e2d,C_salla_zid_d2c,,متجر لجى,,,,mobile_or_whatsapp,,number on the merchant website (not stored),,,not_detected,0,,0,False,False,,segment rejected: bnpl_saturation
+m_13c7d932c8,B_custom_furniture,riyadh,تفصيل ستائر رول امريكى ويوي مجالس و كنب,A,89,,mobile_or_whatsapp,+9665•••••159,mobile in Google Maps,,sofaandcurtains.wordpress.com,not_detected,13,5,1,False,True,reserve: tied at the Top-list cutoff score,
+m_1401700b14,B_custom_furniture,jeddah,شركة الحدبة التجارية,,,,mobile_or_whatsapp,+9665•••••211,mobile in Google Maps,alhidba_co,,unchecked,66,4.9,1,False,False,,B: no segment signal in name or category
+m_14a5c70caa,C_salla_zid_d2c,,Sing Abaya,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_18972ef194,B_custom_furniture,jeddah,كنب رِواق جدة,,,,mobile_or_whatsapp,+9665•••••092,mobile in Google Maps,,,unchecked,25,4.8,1,False,False,,B: no segment signal in name or category
+m_189c69d34f,A_aesthetic_clinics,jeddah|riyadh,Ram Clinics | عيادات رام,,,,mobile_or_whatsapp,+9661•••••550,number on the merchant website (not stored),ramclinics,ramclinics.net,tabby,4981,4.1,5,False,False,,already Tabby merchant
+m_1950b644e8,B_custom_furniture,riyadh,تركيب ستائر وتفصيل ستاير تنجيد كنب تفصيل كنب عربي مجلس,B,76,,mobile_or_whatsapp,+9665•••••732,mobile in Google Maps,,,unchecked,4,5,1,False,False,BNPL unchecked,
+m_1a1f230b94,B_custom_furniture,riyadh,Twinkle Lights Curtains,B,76,,mobile_or_whatsapp,+9665•••••164,mobile in Google Maps,,,unchecked,2,5,1,False,False,BNPL unchecked,
+m_1a6ebf5d6f,B_custom_furniture,jeddah,متجر ستائر ام القرى لتفصيل الكنبات والستائر,B,82,,mobile_or_whatsapp,+9665•••••072,mobile in Google Maps,,,unchecked,23,4.4,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_1ab97f7529,B_custom_furniture,jeddah,محل تنجيد كنبات,B,70,,mobile_or_whatsapp,+9665•••••385,mobile in Google Maps,,,unchecked,1,1,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_1ae9f07d1b,A_aesthetic_clinics,jeddah,مركز ايفلين الطبي- Eveline Medical Center,,,,none,,,,eveline-clinic.com,unchecked,934,4.4,1,False,False,,A: no segment signal in name or category
+m_1b114a8c68,B_custom_furniture,jeddah,المرجان الستائر والكنب والباطرمة,B,73,,mobile_or_whatsapp,+9665•••••612,mobile in Google Maps,,,unchecked,8,3.3,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_1b1c041f91,B_custom_furniture,jeddah,معرض حراء للستائر والديكور,A,85,,mobile_or_whatsapp,+9665•••••164,mobile in Google Maps,,,unchecked,141,4.9,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_1c4c000e01,B_custom_furniture,jeddah,مفروشات .،م,,,,mobile_or_whatsapp,+9665•••••802,mobile in Google Maps,,,unchecked,68,3.8,1,False,False,,B: no segment signal in name or category
+m_1c88014ca0,B_custom_furniture,jeddah,ديكور أفنان,B,79,,mobile_or_whatsapp,+9665•••••112,mobile in Google Maps,,,unchecked,10,4.6,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_1d9d49c52c,B_custom_furniture,riyadh,تفصيل ستائر منى,A,85,,mobile_or_whatsapp,+9665•••••431,mobile in Google Maps,,sites.google.com,unchecked,187,4.6,1,False,False,BNPL unchecked,
+m_1de9a59056,B_custom_furniture,jeddah,مؤسسة جميل تفصيل كنب وتنجيد كنب وستائر,A,85,,mobile_or_whatsapp,+9665•••••856,mobile in Google Maps,,haraj.com.sa,unchecked,94,4.7,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_1e388a7105,A_aesthetic_clinics,riyadh,مركز رفال المميز لطب الأسنان و الجلدية Reval Premium Derma & Dental Medical Center,B,79,,mobile_or_whatsapp,,number on the merchant website (not stored),revalprem,revalpremium.sa,generic_installment,1463,4.4,1,False,True,medical: Risk review,
+m_1e8976c6b6,A_aesthetic_clinics,riyadh,زراعة الاسنان ابتسامة تجميل فينير تبييض الاسنان دكتور محمد الاحمد Dental implants | Veneer | Hollywood smile | Cosmetic,B,81,,mobile_or_whatsapp_and_name,+9665•••••359,mobile in Google Maps,,mayoclinic.org,unchecked,72,4.9,1,True,False,medical: Risk review; BNPL unchecked,
+m_1f15066af6,B_custom_furniture,jeddah,عالم هبتي لتنجيد الكنب والستائر,A,85,,mobile_or_whatsapp,+9665•••••096,mobile in Google Maps,,,unchecked,52,4.3,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_1fa5b5eaf1,B_custom_furniture,jeddah,Saif Al siteam Furniture Eat.,,,,mobile_or_whatsapp,+9665•••••590,mobile in Google Maps,,,unchecked,14,3.8,1,False,False,,B: no segment signal in name or category
+m_2079d79f72,B_custom_furniture,riyadh,تركيب تفصيل ستائر مجالس كنب خياطه,B,82,,mobile_or_whatsapp,+9665•••••038,mobile in Google Maps,,,unchecked,21,4.8,1,False,False,BNPL unchecked,
+m_20f81d65c2,A_aesthetic_clinics,riyadh,"Kaya Skin Clinic – Al Urubah, Riyadh",A,85,,mobile_or_whatsapp,+9665•••••279,mobile in Google Maps,kayaclinicarabia,kayaskinclinic.com,unchecked,1560,4.1,2,False,False,medical: Risk review; BNPL unchecked,
+m_21e15ac82c,B_custom_furniture,jeddah,تفصيل ستائر,B,76,,mobile_or_whatsapp,+9665•••••221,mobile in Google Maps,,,unchecked,12,4,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_225b3b04dc,A_aesthetic_clinics,riyadh,Shiny Centrals,,,,instagram,,Instagram,shinycentrals,,unchecked,3052,4.2,1,False,False,,A: no segment signal in name or category
+m_22c37f48ca,B_custom_furniture,riyadh,تفصيل الستائر تفصيل و تنجيد كنب والمجالس بالرياض,A,85,,mobile_or_whatsapp,+9665•••••234,mobile in Google Maps,,,unchecked,83,4.5,1,False,False,BNPL unchecked,
+m_22cb8f9b28,A_aesthetic_clinics,jeddah,مركز الجلدية والتجميل والليزر وزراعة الشعر,C,60,,other_phone,+9661•••••077,landline in Google Maps,,,unchecked,14,2.3,1,False,False,medical: Risk review; BNPL unchecked,
+m_2351cf04b3,A_aesthetic_clinics,jeddah,Dr. Style Clinics,B,81,,instagram,,Instagram,drstyleclinic.dxb,drstyleclinic.com,not_detected,887,4.2,1,False,True,medical: Risk review,
+m_23b1981495,B_custom_furniture,jeddah,ركن زخرفة,,,,mobile_or_whatsapp,+9665•••••755,mobile in Google Maps,,,unchecked,81,4.7,1,False,False,,B: no segment signal in name or category
+m_24bf1b224d,A_aesthetic_clinics,jeddah,Golden Smile Dental Clinic,B,76,,mobile_or_whatsapp,+9665•••••505,mobile in Google Maps,,sites.google.com,unchecked,179,4,1,False,False,medical: Risk review; BNPL unchecked,
+m_252fb01d6c,A_aesthetic_clinics,jeddah,Apex Clinic,A,86,,mobile_or_whatsapp,+9665•••••011,mobile in Google Maps,apexinvisalign,apex.com.sa,not_detected,295,4.7,1,False,True,medical: Risk review,
+m_2535b98961,B_custom_furniture,jeddah,ديكورات المنزل,,,,mobile_or_whatsapp,+9665•••••484,mobile in Google Maps,,,unchecked,29,3.8,1,False,False,,B: no segment signal in name or category
+m_264738ef2c,A_aesthetic_clinics,riyadh,"مجمع كراسا الطبي ""الجمال يكمن في التفاصيل"" Krasa",B,72,,other_phone,+9661•••••020,landline in Google Maps,,krasa-sa.com,unchecked,1187,4.1,1,False,False,medical: Risk review; BNPL unchecked,
+m_265f93c461,C_salla_zid_d2c,,عبايات ألكساندرا,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_26ac9194c3,A_aesthetic_clinics,jeddah,عيادة جلديه وتجميل,B,70,,mobile_or_whatsapp,+9665•••••545,mobile in Google Maps,,,unchecked,0,,1,False,False,medical: Risk review; BNPL unchecked,
+m_26cbefb22a,B_custom_furniture,riyadh,اثاث المجالس,,,,mobile_or_whatsapp,+9665•••••181,mobile in Google Maps,,,unchecked,52,4,1,False,False,,B: no segment signal in name or category
+m_26db8b133a,B_custom_furniture,riyadh,معلم حمزه تفصيل ستاير وتلبيس كنب تركيب ستاره,B,81,,mobile_or_whatsapp_and_name,+9665•••••059,mobile in Google Maps,,,unchecked,3,5,1,True,False,BNPL unchecked,
+m_26dfd62db3,A_aesthetic_clinics,jeddah,مجمع هدى كلينك الطبي,,,,mobile_or_whatsapp,+9665•••••150,mobile in Google Maps,,,unchecked,178,3.8,1,False,False,,A: no segment signal in name or category
+m_27923b8ba6,C_salla_zid_d2c,,رند البحرين يقدم أفضل العطور ومنتجات العود والبخور,,,,none,,,,,unchecked,0,,0,False,False,,C: outside KSA signal
+m_280e219190,A_aesthetic_clinics,riyadh,عيادات مارلين | Marilyn Clinics,B,69,,other_phone,+9661•••••888,landline in Google Maps,,marilynclinics.com,unchecked,208,4.9,1,False,False,medical: Risk review; BNPL unchecked,
+m_281a42acf5,B_custom_furniture,riyadh,طارق ستائر و مجالس,B,76,,mobile_or_whatsapp,+9665•••••231,mobile in Google Maps,,,unchecked,4,4.8,1,False,False,BNPL unchecked,
+m_29352e3fb3,B_custom_furniture,riyadh,تفصيل ستائر ويفي تنجيد كنب مجلس,A,83,,mobile_or_whatsapp,+9665•••••327,mobile in Google Maps,,curtainsandmajlis.store,not_detected,8,4,1,False,True,,
+m_29932ca1db,A_aesthetic_clinics,riyadh,Shaheen World Center,B,76,,mobile_or_whatsapp,+9665•••••860,mobile in Google Maps,,sites.google.com,unchecked,198,4.2,1,False,False,medical: Risk review; BNPL unchecked,
+m_29c172621c,A_aesthetic_clinics,riyadh,"أفيلين الياسمين AVELINE Clinic derma , Laser Skin",B,79,,mobile_or_whatsapp,+9665•••••426,mobile in Google Maps,aveliveclinics,,unchecked,614,4.2,1,False,False,medical: Risk review; BNPL unchecked,
+m_2a301bb48f,A_aesthetic_clinics,jeddah,Alalamya Poly Clinic,,,,mobile_or_whatsapp,+9665•••••333,mobile in Google Maps,apc.med,apc.med.sa,unchecked,1172,4.1,1,False,False,,A: no segment signal in name or category
+m_2a57f5bccf,B_custom_furniture,riyadh,تفصيل ستائر مجالس,B,76,,mobile_or_whatsapp,+9665•••••247,mobile in Google Maps,,tafseelsatayir.com,unchecked,4,5,1,False,False,BNPL unchecked,
+m_2a7b781e0e,B_custom_furniture,riyadh,محل تنجيد كنب وتفصيل كنب,A,85,,mobile_or_whatsapp,+9665•••••967,mobile in Google Maps,,,unchecked,68,4.9,1,False,False,BNPL unchecked,
+m_2af4f9143c,B_custom_furniture,jeddah,السمو لديكور,,,,mobile_or_whatsapp,+9665•••••555,mobile in Google Maps,,,unchecked,86,4.8,1,False,False,,B: no segment signal in name or category
+m_2b09f3ace0,B_custom_furniture,jeddah,الدار العربية للديكور,,,,mobile_or_whatsapp,+9665•••••451,mobile in Google Maps,,,unchecked,3,5,1,False,False,,B: no segment signal in name or category
+m_2b5554a048,A_aesthetic_clinics,jeddah,Star Care,,,,none,,,,,unchecked,100,3,1,False,False,,A: no segment signal in name or category
+m_2c234fd3ba,A_aesthetic_clinics,jeddah,Lana Plaza,C,55,,none,,,,,unchecked,88,3.8,1,False,False,medical: Risk review; BNPL unchecked,
+m_2cacf65261,B_custom_furniture,jeddah,مركز ستائر فرح,B,70,,mobile_or_whatsapp,+9665•••••318,mobile in Google Maps,,,unchecked,2,3,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_2cc4f6598a,B_custom_furniture,jeddah,مكاني للاثاث,,,,none,,,,makanie.com,unchecked,69,3.1,1,False,False,,B: no segment signal in name or category
+m_2cf0a2b9eb,B_custom_furniture,riyadh,محل تنجيد كنب وتفصيل كنب,A,85,,mobile_or_whatsapp,+9665•••••267,mobile in Google Maps,,,unchecked,43,5,1,False,False,BNPL unchecked,
+m_2d7505de53,A_aesthetic_clinics,riyadh,عيادات رويال الطبية,,,,mobile_or_whatsapp,+9665•••••389,mobile in Google Maps,,,unchecked,618,4.3,1,False,False,,A: no segment signal in name or category
+m_2e1f84564a,B_custom_furniture,jeddah,مصنع الزهراء للستائر AL zahra Factory,,,,mobile_or_whatsapp,+9665•••••207,mobile in Google Maps,,zahradecor.net,tabby,151,4.8,1,False,False,,already Tabby merchant
+m_2e7923d947,A_aesthetic_clinics,riyadh,Smile Agents,A,83,,mobile_or_whatsapp,+9665•••••066,mobile in Google Maps,smileagents,smileagents.com,not_detected,3,5,1,False,True,medical: Risk review,
+m_2e7edc07ac,B_custom_furniture,jeddah|riyadh,شركة ايات للستائر و الاقمشة,,,,mobile_or_whatsapp,+9665•••••280,mobile in Google Maps,,ayatcurtains.com,unchecked,725,4.4,3,False,False,,"B: multi-city company, not a local workshop"
+m_2f3ce363ba,A_aesthetic_clinics,jeddah,Alzobydi Medical Center,,,,mobile_or_whatsapp,+9665•••••610,mobile in Google Maps,,,unchecked,396,3.2,1,False,False,,A: no segment signal in name or category
+m_3001de8ae1,B_custom_furniture,riyadh,تفصيل ستاير تنيجد كنب مجالس,B,77,,mobile_or_whatsapp,+9665•••••331,mobile in Google Maps,,customsofacurtains.shop,not_detected,3,3.7,1,False,True,,
+m_30870b1487,C_salla_zid_d2c,,دار عبدالعزيز السيف للعطور | جودة العطور و ندرة الروائح | تسوق الأن,,,,mobile_or_whatsapp,,number on the merchant website (not stored),,,not_detected,0,,0,False,False,,segment rejected: bnpl_saturation
+m_30b4ca1b6c,B_custom_furniture,jeddah,Tarek Khalil Trading Est.,,,,other_phone,+9661•••••904,landline in Google Maps,,,unchecked,49,4,1,False,False,,B: no segment signal in name or category
+m_30c21b370c,A_aesthetic_clinics,jeddah,Adama Clinics,B,66,,other_phone,+9661•••••000,landline in Google Maps,,,unchecked,274,4,1,False,False,medical: Risk review; BNPL unchecked,
+m_311749696f,A_aesthetic_clinics,jeddah,Veneer dental clinic,B,76,,mobile_or_whatsapp,+9661•••••393,number on the merchant website (not stored),veneer.dc,veneer.sa,generic_installment,657,4.7,1,False,True,medical: Risk review,
+m_318b08ba2c,B_custom_furniture,jeddah,Arabian Gulf Curtains ستائر الخليج العربي,A,85,,mobile_or_whatsapp,+9665•••••558,mobile in Google Maps,jed_786,,unchecked,48,4.6,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_324305ffad,B_custom_furniture,jeddah,شركة استبرق العربية للتجارة,A,85,,mobile_or_whatsapp,+9665•••••220,mobile in Google Maps,estabrak00,,unchecked,68,4.6,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_32e0058e47,C_salla_zid_d2c,,متجر عبايات سعودية أنيقة بأقمشة فاخرة و تصاميم راقية l نسق,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_32e57d26c1,A_aesthetic_clinics,riyadh,Drs Lounge clinic Yasmin | دكتورز لاونج كلينك الياسمين,A,87,,instagram,+9661•••••260,Instagram,drsloungeclinic,drsloungeclinic.sa,not_detected,3852,4,2,False,True,medical: Risk review,
+m_333c7bb3bb,B_custom_furniture,riyadh,لتفصيل ستائر و كنبات,B,79,,mobile_or_whatsapp,+9665•••••370,mobile in Google Maps,,,unchecked,9,5,1,False,False,BNPL unchecked,
+m_33572e857e,B_custom_furniture,jeddah,مفروشات الزين لكنب وستائر الحمدانية,B,82,,mobile_or_whatsapp,+9665•••••454,mobile in Google Maps,,,unchecked,29,4.3,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_3362bf2c7e,A_aesthetic_clinics,jeddah,عيادات أسنان بطل,,,,mobile_or_whatsapp,+9665•••••245,mobile in Google Maps,drbataldental,bataldental.com,tabby,697,4.9,1,False,False,,already Tabby merchant
+m_33869ba575,A_aesthetic_clinics,riyadh,عيادة زويا للجلديه و التجميل والليزر,B,79,,mobile_or_whatsapp,+9665•••••042,mobile in Google Maps,zoyaclinicksa,zoyaclinic.sa,unchecked,446,4.3,1,False,False,medical: Risk review; BNPL unchecked,
+m_33a394e7c1,B_custom_furniture,jeddah,Simple city,,,,none,,,,,unchecked,1263,4.1,1,False,False,,B: no segment signal in name or category
+m_33d1147396,B_custom_furniture,riyadh,تصميم مجالس و تفصيل ستاره,B,82,,mobile_or_whatsapp,+9665•••••452,mobile in Google Maps,,,unchecked,23,4.5,1,False,False,BNPL unchecked,
+m_34052afc0e,A_aesthetic_clinics,jeddah,عيادات بسمتي,A,84,,instagram,+9661•••••778,Instagram,basmaticlinics,basmaticlinics.com,not_detected,1060,5,1,False,True,medical: Risk review,
+m_344a4c0747,B_custom_furniture,riyadh,ستائر الرياض,A,86,,mobile_or_whatsapp,+9665•••••565,mobile in Google Maps,,babo122456txvop.com,not_detected,6,5,1,False,True,,
+m_34757c30e4,A_aesthetic_clinics,jeddah,Eed Clinic Radiology and Laboratories Center | مركز أشعة و مختبرات عيد كلينك,,,,none,,,,,unchecked,317,3.6,1,False,False,,A: no segment signal in name or category
+m_349f3836ff,B_custom_furniture,riyadh,تفصيل كنب وتنجد وتفصيل ستائر,B,79,,mobile_or_whatsapp,+9665•••••918,mobile in Google Maps,,alslttanyeat-llmfrwshat.com,unchecked,10,4.6,1,False,False,BNPL unchecked,
+m_34a62e03ff,B_custom_furniture,jeddah,ديكورات عاصم,,,,mobile_or_whatsapp,+9665•••••592,mobile in Google Maps,,,unchecked,2,4,1,False,False,,B: no segment signal in name or category
+m_34b655bbe7,B_custom_furniture,jeddah,بيت الاناقه للاثاث,,,,mobile_or_whatsapp,+9665•••••369,mobile in Google Maps,,,unchecked,33,4.6,1,False,False,,B: no segment signal in name or category
+m_34ccb1fecd,B_custom_furniture,riyadh,محل تفصيل ستائر مجالس,A,86,,mobile_or_whatsapp,+9665•••••627,mobile in Google Maps,,curtainxmajlis.com,not_detected,5,5,1,False,True,,
+m_354649d9f2,B_custom_furniture,jeddah,Al Rugaib Furniture,,,,none,,,,alrugaibfurniture.com,unchecked,3544,4,1,False,False,,B: no segment signal in name or category
+m_35686405e5,B_custom_furniture,riyadh,تنجيد كنب تفصيل مجالس وستائر,B,79,,mobile_or_whatsapp,+9665•••••351,mobile in Google Maps,,,unchecked,8,4.5,1,False,False,BNPL unchecked,
+m_35c12a0e5a,B_custom_furniture,jeddah,مركز عالم الديكور,B,82,,mobile_or_whatsapp,+9665•••••528,mobile in Google Maps,,,unchecked,20,4.7,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_35de6f6851,B_custom_furniture,jeddah,Al-Khayal Home,,,,mobile_or_whatsapp,+9665•••••654,mobile in Google Maps,,,unchecked,43,2.7,1,False,False,,B: no segment signal in name or category
+m_3647010112,B_custom_furniture,jeddah,مركز ستائر سمر,C,61,,none,,,,,unchecked,3,4.7,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_3673a13e08,A_aesthetic_clinics,jeddah,مجمع اولاس الطبي | Olas Medical Center,,,,instagram,,Instagram,deemmedical,olas.sa,unchecked,3811,3.9,1,False,False,,A: no segment signal in name or category
+m_369156738e,A_aesthetic_clinics,riyadh,عيادات وجن للجلدية والتجميل والليزر - فرع النفل,B,82,,mobile_or_whatsapp,+9665•••••444,mobile in Google Maps,,wajanclinic2.com,unchecked,622,4.5,1,False,False,medical: Risk review; BNPL unchecked,
+m_3769777070,A_aesthetic_clinics,riyadh,Ayla Medical Center - مركز ايلا الطبي,B,72,,other_phone,+9661•••••060,landline in Google Maps,,ayladerma.com,unchecked,924,4.7,1,False,False,medical: Risk review; BNPL unchecked,
+m_37a567002c,B_custom_furniture,jeddah,ستائر بابكر,A,85,,mobile_or_whatsapp,+9665•••••070,mobile in Google Maps,,,unchecked,42,4.9,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_3897fe868b,B_custom_furniture,riyadh,Janadriah Furniture Heritage,,,,mobile_or_whatsapp,+9665•••••226,mobile in Google Maps,,,unchecked,257,4.2,1,False,False,,B: no segment signal in name or category
+m_38de256f81,B_custom_furniture,riyadh,تفصيل ستاير و مجالس,B,76,,mobile_or_whatsapp,+9665•••••137,mobile in Google Maps,,,unchecked,1,5,1,False,False,BNPL unchecked,
+m_39f690fe1b,A_aesthetic_clinics,riyadh,Reflect Clinic,,,,instagram,+9661•••••555,Instagram,reflect_clinic,,unchecked,1981,4.1,1,False,False,,A: no segment signal in name or category
+m_3a3a504b5a,B_custom_furniture,jeddah,البيت الراقي للستائر والديكور,A,85,,mobile_or_whatsapp,+9665•••••271,mobile in Google Maps,,maps.app.goo.gl,unchecked,61,4.9,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_3a458b3d15,B_custom_furniture,jeddah,ستائر المدينة,B,73,,mobile_or_whatsapp,+9665•••••046,mobile in Google Maps,,,unchecked,9,3.9,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_3ae995939d,B_custom_furniture,jeddah,الراقي للسجاد,B,70,,mobile_or_whatsapp,+9665•••••373,mobile in Google Maps,,,unchecked,3,3.7,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_3b0866fd2c,B_custom_furniture,riyadh,مجالس عربية وستائر,B,73,,mobile_or_whatsapp,+9665•••••832,mobile in Google Maps,,,unchecked,4,4,1,False,False,BNPL unchecked,
+m_3cdb98957e,A_aesthetic_clinics,jeddah,مجمع صحتي المتميز الطبي,,,,none,,,,,unchecked,2729,4,1,False,False,,A: no segment signal in name or category; A: hospital or enterprise group
+m_3d03075dd6,B_custom_furniture,jeddah,معرض التاج بيتي للستائر,B,79,,mobile_or_whatsapp,+9665•••••688,mobile in Google Maps,,,unchecked,8,5,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_3d3b1c54ca,A_aesthetic_clinics,jeddah,Beauty and Care Clinics - بيوتي اند كير,C,64,,none,,,,,unchecked,393,4.3,1,False,False,medical: Risk review; BNPL unchecked,
+m_3d583903e5,B_custom_furniture,jeddah,النبراس للديكور,B,79,,mobile_or_whatsapp,+9665•••••309,mobile in Google Maps,,,unchecked,10,5,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_3d7546d0ad,B_custom_furniture,jeddah,باش هوم,,,,mobile_or_whatsapp,+9665•••••010,mobile in Google Maps,alroqif_,,unchecked,371,4.9,1,False,False,,B: no segment signal in name or category
+m_3d8d353fb9,A_aesthetic_clinics,jeddah,Aeluna Beauty Clinic,B,79,,mobile_or_whatsapp,+9665•••••119,mobile in Google Maps,aelunabeautyclinic,,unchecked,297,4.9,1,False,False,medical: Risk review; BNPL unchecked,
+m_3e03fb6c88,C_salla_zid_d2c,,متجر النايف للعطور والعود,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_3f51250caa,A_aesthetic_clinics,riyadh,Noble Smile Dental Clinic,B,79,,mobile_or_whatsapp,+9665•••••425,mobile in Google Maps,,,unchecked,195,4.6,1,False,False,medical: Risk review; BNPL unchecked,
+m_3f585d5491,B_custom_furniture,jeddah,مفروشات الاحلام ستاير,B,82,,mobile_or_whatsapp,+9665•••••726,mobile in Google Maps,,,unchecked,24,4.9,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_3f998a19d0,A_aesthetic_clinics,riyadh,عيادات اديل الملقا,B,79,,mobile_or_whatsapp,+9665•••••949,mobile in Google Maps,,,unchecked,329,4.6,1,False,False,medical: Risk review; BNPL unchecked,
+m_3fa8afc4ba,B_custom_furniture,riyadh,تفصيل ستائر ومجالس,A,89,,mobile_or_whatsapp,+9665•••••760,mobile in Google Maps,,curtainalriyadh.com,not_detected,14,5,1,False,True,reserve: tied at the Top-list cutoff score,
+m_40111323dc,C_salla_zid_d2c,,عطور انفنتي سنت,,,,mobile_or_whatsapp,,number on the merchant website (not stored),,,tabby,0,,0,False,False,,segment rejected: bnpl_saturation
+m_402368eda7,B_custom_furniture,jeddah,Furniture Midas touch,,,,mobile_or_whatsapp,+9665•••••633,mobile in Google Maps,,,unchecked,110,4.6,1,False,False,,B: no segment signal in name or category
+m_4035471b84,B_custom_furniture,riyadh,ستائر والمجالس کنب مفروشات افکار القریه,A,85,,mobile_or_whatsapp,+9665•••••627,mobile in Google Maps,,,unchecked,59,4.8,1,False,False,BNPL unchecked,
+m_4073e4c133,C_salla_zid_d2c,,عطور فرنسية,,,,mobile_or_whatsapp,,number on the merchant website (not stored),,,not_detected,0,,0,False,False,,segment rejected: bnpl_saturation
+m_40812a3240,B_custom_furniture,jeddah,معلم لتفصيل الستائر والكنب,B,76,,mobile_or_whatsapp,+9665•••••740,mobile in Google Maps,,,unchecked,2,5,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_40a11831c1,B_custom_furniture,riyadh,تفصيل ستائر ويفي و تنجيد كنب,B,70,,mobile_or_whatsapp,+9665•••••431,mobile in Google Maps,,,unchecked,0,,1,False,False,BNPL unchecked,
+m_40eecf3b84,B_custom_furniture,riyadh,تفصيل كنب ستائر و مجالس,B,73,,mobile_or_whatsapp,+9665•••••737,mobile in Google Maps,,curtainsmaker.localo.site,unchecked,10,3.4,1,False,False,BNPL unchecked,
+m_4128020e43,B_custom_furniture,jeddah,تنجيد كنب بجدة,A,89,,mobile_or_whatsapp,+9665•••••315,mobile in Google Maps,,6764a0d3da747.site123.me,not_detected,31,4.6,1,False,True,B Jeddah: source relevance 0.40; reserve: tied at the Top-list cutoff score,
+m_41a131e591,A_aesthetic_clinics,riyadh,Dermadent Clinic,B,77,,none,,,,dermadent.sa,not_detected,2369,4.3,1,False,True,medical: Risk review,
+m_41e971d439,C_salla_zid_d2c,,تميم للعطور,,,,mobile_or_whatsapp,,number on the merchant website (not stored),,,competitor_only,0,,0,False,False,,segment rejected: bnpl_saturation
+m_424b046845,B_custom_furniture,jeddah,دوزن ديزاين DOZN DESIGN,,,,mobile_or_whatsapp,+9665•••••982,mobile in Google Maps,,dozndesign.com,unchecked,34,4.9,1,False,False,,B: no segment signal in name or category
+m_42d9533883,A_aesthetic_clinics,jeddah,مجمع بسمة الأبداع لطب الاسنان,B,82,,mobile_or_whatsapp,+9665•••••448,mobile in Google Maps,,,unchecked,742,4.5,1,False,False,medical: Risk review; BNPL unchecked,
+m_434f8bcdfd,C_salla_zid_d2c,,DIVA ABAYA,,,,mobile_or_whatsapp,,number on the merchant website (not stored),,,not_detected,0,,0,False,False,,segment rejected: bnpl_saturation
+m_438bc4fdc3,B_custom_furniture,riyadh,تفصيل ستائر كنب مجلس,A,85,,mobile_or_whatsapp,+9665•••••720,mobile in Google Maps,,,unchecked,48,4.8,1,False,False,BNPL unchecked,
+m_43f900defa,A_aesthetic_clinics,riyadh,عيادات مارلي | Marley Clinic,,,,mobile_or_whatsapp,+9665•••••050,mobile in Google Maps,,,unchecked,95,4.4,1,False,False,,A: no segment signal in name or category
+m_446d66eef1,B_custom_furniture,riyadh,تفصيل ستائر مجالس,B,79,,mobile_or_whatsapp,+9665•••••104,mobile in Google Maps,,,unchecked,8,4.4,1,False,False,BNPL unchecked,
+m_44b4f8290f,B_custom_furniture,jeddah,Souq 7,,,,mobile_or_whatsapp,+9665•••••685,mobile in Google Maps,,,unchecked,904,4.3,1,False,False,,B: no segment signal in name or category
+m_453444fad6,B_custom_furniture,jeddah,ستاير دانتيل,B,76,,mobile_or_whatsapp,+9665•••••913,mobile in Google Maps,,,unchecked,20,3.5,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_454d63a0d0,B_custom_furniture,riyadh,محل تفصيل ستائر و مجالس عربية,B,82,,mobile_or_whatsapp,+9665•••••693,mobile in Google Maps,,riyadhcurtainsa.com,unchecked,38,4.8,1,False,False,BNPL unchecked,
+m_45a302111f,B_custom_furniture,jeddah,The Factory Furniture - معرض ذي فاكتوري للاثاث جده,,,,none,,,,thefactoryfurniture.com,unchecked,963,4.5,1,False,False,,B: no segment signal in name or category
+m_460fb78a52,B_custom_furniture,riyadh,تفصيل كنب,A,85,,mobile_or_whatsapp,+9665•••••817,mobile in Google Maps,,curtainsofa.com,unchecked,44,4.6,1,False,False,BNPL unchecked,
+m_46ee4b4885,B_custom_furniture,jeddah,مفروشات البيت الخليجي,,,,mobile_or_whatsapp,+9665•••••436,mobile in Google Maps,,,unchecked,11,4.2,1,False,False,,B: no segment signal in name or category
+m_47286f570b,A_aesthetic_clinics,jeddah,عيادات دي براكسس | Dpraxis Clinics,B,79,,mobile_or_whatsapp,+9665•••••657,mobile in Google Maps,dpraxisclinics.sa,,unchecked,289,4.7,1,False,False,medical: Risk review; BNPL unchecked,
+m_478385c0a6,A_aesthetic_clinics,jeddah,Rich Clinic - عيادات ريتش للجلدية والتجميل,B,76,,mobile_or_whatsapp,+9665•••••900,mobile in Google Maps,,,unchecked,154,4.8,1,False,False,medical: Risk review; BNPL unchecked,
+m_47d1f910e8,B_custom_furniture,riyadh,تفصيل ستائر مجالس,B,82,,mobile_or_whatsapp,+9665•••••710,mobile in Google Maps,,,unchecked,20,4.8,1,False,False,BNPL unchecked,
+m_48767a50eb,A_aesthetic_clinics,riyadh,Elegant Clinic,,,,other_phone,+9661•••••000,landline in Google Maps,,elegant.med.sa,unchecked,1788,4.2,1,False,False,,A: no segment signal in name or category
+m_499c6520d5,B_custom_furniture,riyadh,تفصيل ستائر و مجالس,A,85,,mobile_or_whatsapp,+9665•••••216,mobile in Google Maps,,,unchecked,90,4.9,1,False,False,BNPL unchecked,
+m_4a69ad8f3a,B_custom_furniture,riyadh,تفصيل ستائر مجالس شركة الحرفيين,B,76,,mobile_or_whatsapp,+9665•••••197,mobile in Google Maps,,,unchecked,2,5,1,False,False,BNPL unchecked,
+m_4abcdf444d,A_aesthetic_clinics,riyadh,عيادات ميسان حي الياسمين - Maysan Clinic Yasmine Branch,,,,mobile_or_whatsapp,+9665•••••674,mobile in Google Maps,maysanalyasmine,,unchecked,598,4.4,1,False,False,,A: no segment signal in name or category
+m_4ae1198ffe,A_aesthetic_clinics,riyadh,مجمع عيادات بريتي كلينك,,,,instagram,+9661•••••799,Instagram,prettyclinics,prettyclinic.store,unchecked,970,4.2,1,False,False,,A: no segment signal in name or category
+m_4c1cec742f,B_custom_furniture,jeddah,آسيا هوم | سوق الدراجة,,,,mobile_or_whatsapp,+9665•••••616,mobile in Google Maps,,,unchecked,94,4.1,1,False,False,,B: no segment signal in name or category
+m_4d544d0427,A_aesthetic_clinics,riyadh,Lavera Clinic,,,,mobile_or_whatsapp,+9665•••••643,mobile in Google Maps,laveraclinics2,reach.link,unchecked,648,4.9,1,False,False,,A: no segment signal in name or category
+m_4dde3f41c3,B_custom_furniture,jeddah,ركن التحف,,,,mobile_or_whatsapp,+9665•••••545,mobile in Google Maps,,,unchecked,19,3.9,1,False,False,,B: no segment signal in name or category
+m_4e24cd2c32,B_custom_furniture,jeddah,Alsarhi Furniture,,,,mobile_or_whatsapp,+9665•••••425,mobile in Google Maps,,alsarhi.com.sa,unchecked,148,3.9,1,False,False,,B: no segment signal in name or category
+m_4e58a6ef4a,A_aesthetic_clinics,jeddah,Ishraq Aesthetics Clinics (عيادات اشراق الجمال الطبية),A,85,,mobile_or_whatsapp,+9665•••••666,mobile in Google Maps,ishraq.aesthetics,,unchecked,3360,4.5,1,False,False,medical: Risk review; BNPL unchecked,
+m_4e5a4d0518,A_aesthetic_clinics,jeddah,Cosmoderm Clinic,B,82,,mobile_or_whatsapp,+9665•••••333,mobile in Google Maps,cosmoderm.clinics,,unchecked,939,4.8,1,False,False,medical: Risk review; BNPL unchecked,
+m_4e67be84ed,A_aesthetic_clinics,jeddah,MD Clinics (مجمع عيادات د. مها دحلان الطبي),,,,mobile_or_whatsapp,,number on the merchant website (not stored),md_clinics_,mahadahlan.com,tabby,1287,4.8,1,False,False,,already Tabby merchant
+m_4eb731360a,B_custom_furniture,riyadh,تفصيلات ستائر كنب مجلس,B,79,,mobile_or_whatsapp,+9665•••••845,mobile in Google Maps,,,unchecked,8,5,1,False,False,BNPL unchecked,
+m_4edf94f32c,A_aesthetic_clinics,jeddah,Forever Young Clinics عيادات مفهوم الجمال الطبية,B,75,,instagram,+9661•••••986,Instagram,foreveryoungclinics,foreveryoungclinics.com,not_detected,233,3.2,1,False,True,medical: Risk review,
+m_4ff102f8ce,B_custom_furniture,riyadh,مودرن هوم تنجيد كنب وتفصيل ستائر بالرياض,A,85,,mobile_or_whatsapp,+9665•••••570,mobile in Google Maps,,modornhome.com,unchecked,74,4.7,1,False,False,BNPL unchecked,
+m_509baf8ed3,A_aesthetic_clinics,jeddah,Al Nowras Clinics - عيادات النورس المتخصصة لطب الاسنان,B,74,,instagram,,Instagram,alnowrasclinic,alnowrasclinics.com,unchecked,377,4.3,1,False,False,medical: Risk review; BNPL unchecked,
+m_518b89d0e8,B_custom_furniture,jeddah,Abdullatif Furniture,,,,mobile_or_whatsapp,+9665•••••450,mobile in Google Maps,,alabdullatif.com,unchecked,1349,3.8,1,False,False,,B: no segment signal in name or category
+m_519fb48fae,A_aesthetic_clinics,jeddah,عيادات أمارا الطبية Amara Clinic,,,,mobile_or_whatsapp,+9665•••••000,mobile in Google Maps,amaraclinic1,amaraclinic.sa,unchecked,358,4.4,1,False,False,,A: no segment signal in name or category
+m_5206d7d42b,B_custom_furniture,jeddah,محل ستائر بصمة القماش,A,85,,mobile_or_whatsapp,+9665•••••059,mobile in Google Maps,,,unchecked,45,4.9,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_5231c62327,A_aesthetic_clinics,riyadh,مجمع الحقيل الطبي الرقمي - فرع الرياض,,,,instagram,+9661•••••888,Instagram,alhokail_riyadh,,unchecked,487,4.6,1,False,False,,A: no segment signal in name or category
+m_53c244b46f,B_custom_furniture,riyadh,تفصيل ستائر مجالس كنب,B,79,,mobile_or_whatsapp,+9665•••••925,mobile in Google Maps,,,unchecked,9,5,1,False,False,BNPL unchecked,
+m_53f5975455,A_aesthetic_clinics,jeddah,د هلال سنبل استشاري تجميل الاسنان,A,88,,mobile_or_whatsapp_and_name,+9665•••••595,mobile in Google Maps,dr_crescent,sonbulh.com,not_detected,72,4.9,1,True,True,medical: Risk review,
+m_551e8ee56f,A_aesthetic_clinics,riyadh,DerMore clinic,C,64,,none,,,,,unchecked,1200,3.8,1,False,False,medical: Risk review; BNPL unchecked,
+m_566569ee09,B_custom_furniture,jeddah,شركة بيتي الرائده للتجارة,,,,none,,,,petty.sa,unchecked,35,4.1,1,False,False,,B: no segment signal in name or category
+m_56c8d9ea0b,A_aesthetic_clinics,riyadh,الدكتور عدنان بازارباشي استشاري تجميل و زراعة اسنان Dr. Adnan Bazarbashi,A,88,,mobile_or_whatsapp_and_name,+9665•••••701,mobile in Google Maps,adnan_pros,adnandental.com,not_detected,32,5,1,True,True,medical: Risk review,
+m_571e500108,C_salla_zid_d2c,,عطرك سر اناقتك ختم الطيب للعطور,,,,mobile_or_whatsapp,,number on the merchant website (not stored),,,not_detected,0,,0,False,False,,segment rejected: bnpl_saturation
+m_5757c11ed2,B_custom_furniture,jeddah,Carpet Art فن الزخرفة,,,,mobile_or_whatsapp,+9665•••••024,mobile in Google Maps,,,unchecked,18,1.9,1,False,False,,B: no segment signal in name or category
+m_58e026fc01,A_aesthetic_clinics,riyadh,عيادات آســــــر لطب وتقويم الأسنان,B,79,,mobile_or_whatsapp,+9665•••••835,mobile in Google Maps,,,unchecked,296,4.4,1,False,False,medical: Risk review; BNPL unchecked,
+m_58e3fa4ab8,B_custom_furniture,jeddah,ستائر الجزيرة,B,82,,mobile_or_whatsapp,+9665•••••949,mobile in Google Maps,,livestoreplus.com,unchecked,31,4.8,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_59a8b43dc2,A_aesthetic_clinics,jeddah,مجمع عيادات الصائغ كير الطبي,B,79,,mobile_or_whatsapp,+9665•••••806,mobile in Google Maps,,,unchecked,448,4.7,1,False,False,medical: Risk review; BNPL unchecked,
+m_59f4d3bde1,B_custom_furniture,jeddah,حروف بارزة و لوحات,,,,mobile_or_whatsapp,+9665•••••121,mobile in Google Maps,,,unchecked,14,4.4,1,False,False,,B: no segment signal in name or category
+m_5bb52093ae,B_custom_furniture,jeddah,اثاثي الأنيق,,,,mobile_or_whatsapp,+9665•••••335,mobile in Google Maps,,,unchecked,11,3.9,1,False,False,,B: no segment signal in name or category
+m_5bb62c9563,B_custom_furniture,jeddah,غزالة الذهبية للاثاث,,,,none,,,,,unchecked,47,4.3,1,False,False,,B: no segment signal in name or category
+m_5d31dc4fa2,B_custom_furniture,riyadh,بيت الديباج لأقمشة المفروشات والستائر,A,85,,mobile_or_whatsapp,+9665•••••486,mobile in Google Maps,,,unchecked,66,4.7,1,False,False,BNPL unchecked,
+m_5d604264a2,C_salla_zid_d2c,,Solitair,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_5d68d970fb,B_custom_furniture,jeddah,مؤسسة كنب المنزل التجارية,,,,mobile_or_whatsapp,+9665•••••041,mobile in Google Maps,,,unchecked,1,2,1,False,False,,B: no segment signal in name or category
+m_5e0dea77ac,A_aesthetic_clinics,jeddah,عيادات فيولا للتجميل - الصفا ام القرى,,,,mobile_or_whatsapp,+9665•••••177,mobile in Google Maps,,violaclinics.com,tabby,669,4.7,1,False,False,,already Tabby merchant
+m_5e2572851c,B_custom_furniture,riyadh,تفصيل| ستائر | ويفي,B,70,,mobile_or_whatsapp,+9665•••••703,mobile in Google Maps,,,unchecked,0,,1,False,False,BNPL unchecked,
+m_5e7952e90c,B_custom_furniture,riyadh,تفصيل ستائر كنب و مجالس,B,79,,mobile_or_whatsapp,+9665•••••453,mobile in Google Maps,,,unchecked,5,5,1,False,False,BNPL unchecked,
+m_5e94251598,B_custom_furniture,riyadh,شركة نجوم المنزل للكنب والستائر والجلسات الخارجية والتراث,B,82,,mobile_or_whatsapp,+9665•••••592,mobile in Google Maps,,,unchecked,29,5,1,False,False,BNPL unchecked,
+m_5f5ff2260e,B_custom_furniture,riyadh,بيت الرياض للأثاث,,,,mobile_or_whatsapp,+9665•••••810,mobile in Google Maps,,,unchecked,535,4.1,1,False,False,,B: no segment signal in name or category
+m_5fd9030064,A_aesthetic_clinics,jeddah,Infeni Clinic عيادة انفيني,B,67,,none,,,,infeniclinic.com,unchecked,553,4.7,1,False,False,medical: Risk review; BNPL unchecked,
+m_6033ca1aa2,A_aesthetic_clinics,jeddah,Al Mada Derme Esthetique Clinique,C,58,,none,,,,renew-clinics.com,unchecked,26,4.1,1,False,False,medical: Risk review; BNPL unchecked,
+m_60888ea9be,A_aesthetic_clinics,jeddah,عيادات الدر المنثور لطب الاسنان,,,,mobile_or_whatsapp,,number on the merchant website (not stored),aldur_almanthour,aldur-almanthour.com,tabby,273,4.9,1,False,False,,already Tabby merchant
+m_60bf9a959d,A_aesthetic_clinics,jeddah,Mira Medical Center | مجمع ميرا الطبي العام,,,,mobile_or_whatsapp,+9665•••••130,mobile in Google Maps,miraelite.sa,,unchecked,460,4.3,1,False,False,,A: no segment signal in name or category
+m_617febb786,B_custom_furniture,riyadh,تفصيل ستأئروتنجيدوكنب وتركيب وستائر اسم افاق,B,76,,mobile_or_whatsapp,+9665•••••319,mobile in Google Maps,,,unchecked,10,4,1,False,False,BNPL unchecked,
+m_61c8239738,B_custom_furniture,jeddah,شغلهم تبارك الله مرررره جمييل ويعطيهم العافية😍,A,85,,mobile_or_whatsapp,+9665•••••740,mobile in Google Maps,,,unchecked,272,4.9,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_62242cefdd,B_custom_furniture,riyadh,لتفصيل الستايروالمجالس,B,82,,mobile_or_whatsapp,+9665•••••184,mobile in Google Maps,,,unchecked,11,4.5,2,False,False,BNPL unchecked,
+m_6269d74f71,B_custom_furniture,riyadh,تفصيل كنب تفصيل ستائر مؤسسة مريم زاهر ب. حسن هزازي التجارية,B,79,,mobile_or_whatsapp,+9665•••••715,mobile in Google Maps,,,unchecked,8,4.8,1,False,False,BNPL unchecked,
+m_6292faca9a,B_custom_furniture,jeddah,أقمشة مفروشات,,,,none,,,,,unchecked,8,4,1,False,False,,B: no segment signal in name or category
+m_62afa25dad,B_custom_furniture,jeddah,محل كنب مفروشات زهرة الجنوب,,,,mobile_or_whatsapp,+9665•••••937,mobile in Google Maps,,haraj.com.sa,unchecked,10,5,1,False,False,,B: no segment signal in name or category
+m_633d14a5b5,A_aesthetic_clinics,jeddah,عيادات اليزر,C,55,,none,,,,,unchecked,0,,1,False,False,medical: Risk review; BNPL unchecked,
+m_63417c239d,A_aesthetic_clinics,jeddah,1,,,,mobile_or_whatsapp,+9665•••••400,mobile in Google Maps,,,unchecked,187,2.5,1,False,False,,A: no segment signal in name or category
+m_634c93626b,B_custom_furniture,riyadh,معلم عبدالله تفصيل ستاير و مجالس محل اكتان,B,81,,mobile_or_whatsapp_and_name,+9665•••••936,mobile in Google Maps,,,unchecked,2,5,1,True,False,BNPL unchecked,
+m_63f4fe4350,B_custom_furniture,jeddah,غنى لايت للثريات,,,,mobile_or_whatsapp,+9665•••••822,mobile in Google Maps,,,unchecked,127,4.9,1,False,False,,B: no segment signal in name or category
+m_63f6cf98e4,B_custom_furniture,riyadh,‏تفصيل كنب ستائر,B,80,,mobile_or_whatsapp,+9665•••••048,mobile in Google Maps,,luxury-furniture.shop,not_detected,8,3.5,1,False,True,,
+m_64268c2733,C_salla_zid_d2c,,basenotesa,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_64f12e664a,B_custom_furniture,jeddah,Sedra Fabrics,B,76,,mobile_or_whatsapp,+9665•••••610,mobile in Google Maps,,,unchecked,8,4,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_64fa6b2874,A_aesthetic_clinics,jeddah,Elixir Medical Center,A,86,,mobile_or_whatsapp,+9665•••••268,mobile in Google Maps,elixir_jeddah,elixirclinic.com.sa,not_detected,1492,3.2,1,False,True,medical: Risk review,
+m_6501b7c571,A_aesthetic_clinics,riyadh,Bright Clinics عيادة برايت,B,67,,none,,,,brightclinics.net,unchecked,2071,4.2,1,False,False,medical: Risk review; BNPL unchecked,
+m_6533db373c,B_custom_furniture,jeddah,معرض التصاميم,,,,none,,,,,unchecked,16,3.1,1,False,False,,B: no segment signal in name or category
+m_657e6ce5d9,B_custom_furniture,jeddah,ديكورات الأمين,B,76,,mobile_or_whatsapp,+9665•••••796,mobile in Google Maps,,,unchecked,1,5,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_660fdf4001,B_custom_furniture,jeddah,Almumyez Nor Star Fabric For Curtains المميز نور ستار للأقمشة الستائر,A,85,,mobile_or_whatsapp,+9665•••••898,mobile in Google Maps,,sites.google.com,unchecked,89,4.6,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_66150693ff,B_custom_furniture,jeddah,منزل العروس لتفصيل وتنجيد الكنب والستائر,A,85,,mobile_or_whatsapp,+9665•••••643,mobile in Google Maps,,manzlalaroos.com,unchecked,126,4.9,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_66b8d53814,B_custom_furniture,jeddah,معرض ابو عمار للمفروشات والكنبات,,,,mobile_or_whatsapp,+9665•••••422,mobile in Google Maps,abu.ammar992,,unchecked,6,4.2,1,False,False,,B: no segment signal in name or category
+m_66e73487e7,B_custom_furniture,riyadh,تنجيد كنب تفصيل كنب تفصيل ستاير,B,82,,mobile_or_whatsapp,+9665•••••395,mobile in Google Maps,,,unchecked,30,4.9,1,False,False,BNPL unchecked,
+m_6721e943e0,B_custom_furniture,jeddah,ستائر الكريستال,B,79,,mobile_or_whatsapp,+9665•••••800,mobile in Google Maps,decor1crystal,,unchecked,8,4.9,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_67557638eb,B_custom_furniture,riyadh,Maknon Alsharq,B,70,,none,,,,maknonalsharq.net,unchecked,459,4.8,1,False,False,BNPL unchecked,
+m_6789fa5602,B_custom_furniture,jeddah,الوسام الذهبي للانارة/موسسه ذهبيات الوسام التجاريه,,,,mobile_or_whatsapp,+9665•••••730,mobile in Google Maps,,,unchecked,9,4.9,1,False,False,,B: no segment signal in name or category
+m_67ca9e9daa,B_custom_furniture,riyadh,مصنع الديار العالمية للديكورات والأثاث,,,,mobile_or_whatsapp,+9665•••••508,mobile in Google Maps,,aldiar.sa,unchecked,74,4,1,False,False,,B: no segment signal in name or category
+m_68288389d9,B_custom_furniture,jeddah,فومكو للأثاث والمفروشات FOAMCO‏,,,,none,,,,foamco.com.sa,unchecked,1496,4.7,1,False,False,,B: no segment signal in name or category
+m_682a0d2085,B_custom_furniture,riyadh,تفصيل كنب تنجيد كنب تفصيل الستائر تفصيل مجالس الرياص,B,79,,mobile_or_whatsapp,+9665•••••009,mobile in Google Maps,,,unchecked,10,5,1,False,False,BNPL unchecked,
+m_687634fa9e,B_custom_furniture,jeddah,1st for Decoration,A,89,,mobile_or_whatsapp,,number on the merchant website (not stored),,1stdecor.com,not_detected,81,4.2,1,False,True,B Jeddah: source relevance 0.40; reserve: tied at the Top-list cutoff score,
+m_691f4aaa88,A_aesthetic_clinics,jeddah,الدكتور مسلّم منصور. أخصائي تركيبات الأسنان,A,88,,mobile_or_whatsapp_and_name,+9665•••••025,mobile in Google Maps,drmousallam,drmousalam.com,not_detected,71,4.9,1,True,True,medical: Risk review,
+m_69e57cb7d7,A_aesthetic_clinics,jeddah,عيادة الدكتورة نعمت انطاكلي,B,81,,mobile_or_whatsapp_and_name,+9665•••••894,mobile in Google Maps,,,unchecked,7,5,1,True,False,medical: Risk review; BNPL unchecked,
+m_6aa0d4d4ef,A_aesthetic_clinics,riyadh,عيادة جلدية تجميل ليزر,B,76,,mobile_or_whatsapp,+9665•••••917,mobile in Google Maps,,webteb.com,unchecked,33,4.8,1,False,False,medical: Risk review; BNPL unchecked,
+m_6aedc5561c,A_aesthetic_clinics,jeddah,عيادات الداليا Dalia Clinic,B,82,,mobile_or_whatsapp,+9665•••••961,mobile in Google Maps,,docs.google.com,unchecked,970,4.7,1,False,False,medical: Risk review; BNPL unchecked,
+m_6b7094fcd8,A_aesthetic_clinics,riyadh,Dr.Khaled Dental Clinic,B,81,,mobile_or_whatsapp_and_name,+9665•••••985,mobile in Google Maps,,,unchecked,1,5,1,True,False,medical: Risk review; BNPL unchecked,
+m_6bbd2587d3,B_custom_furniture,riyadh,Marietta Fabrics Curtains ستائر وأقمشة ماريتا,A,89,,mobile_or_whatsapp,+9665•••••268,mobile in Google Maps,,marietta.sa,not_detected,18,4.9,1,False,True,reserve: tied at the Top-list cutoff score,
+m_6cee4f5f93,A_aesthetic_clinics,riyadh,عيادات كليوباترا للجلدية والتجميل | الصحافة,A,85,,mobile_or_whatsapp,+9665•••••322,mobile in Google Maps,cleoptra_clinic,,unchecked,1429,4.4,1,False,False,medical: Risk review; BNPL unchecked,
+m_6d232cd5b7,A_aesthetic_clinics,jeddah,Dr. Farid Jamjoom Clinics,,,,mobile_or_whatsapp,+9665•••••642,mobile in Google Maps,,,unchecked,232,4.2,1,False,False,,A: no segment signal in name or category
+m_6d65899454,B_custom_furniture,jeddah,ستائر وكنب حلا للأثاث,B,73,,mobile_or_whatsapp,+9665•••••973,mobile in Google Maps,,,unchecked,12,3.7,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_6d9514b08d,B_custom_furniture,riyadh,Furniture hearts,,,,mobile_or_whatsapp,+9665•••••572,mobile in Google Maps,qulub_furniture30,,unchecked,212,4.7,1,False,False,,B: no segment signal in name or category
+m_6dd902d4bd,A_aesthetic_clinics,riyadh,Health & Beauty Rejuvenation Clinics,B,82,,other_phone,,,,hbrclinics.com,not_detected,1194,4.3,1,False,True,medical: Risk review,
+m_6e6fb36a22,A_aesthetic_clinics,jeddah,مجمع التخصصي لطب وزراعة الأسنان,B,75,,other_phone,+9661•••••255,landline in Google Maps,,sdiccomsa.com,unchecked,1595,4.4,1,False,False,medical: Risk review; BNPL unchecked,
+m_6eaacba448,B_custom_furniture,jeddah,مفروشات العسيري,,,,mobile_or_whatsapp,+9665•••••063,mobile in Google Maps,,,unchecked,22,3.3,1,False,False,,B: no segment signal in name or category
+m_6eb5dde689,B_custom_furniture,jeddah,مفروشات خمس نجوم,,,,none,,,,,unchecked,22,3.9,1,False,False,,B: no segment signal in name or category
+m_6f3954fbb6,A_aesthetic_clinics,riyadh,عيادات حياة - فرع المروج (جلدية - اسنان - بشرة ),B,74,,instagram,,Instagram,hayatclinics,,unchecked,170,4.5,1,False,False,medical: Risk review; BNPL unchecked,
+m_6fc0761921,B_custom_furniture,jeddah,ديكور النجوم للستائر,B,76,,mobile_or_whatsapp,+9665•••••620,mobile in Google Maps,,,unchecked,14,3.4,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_6ff39c64a6,A_aesthetic_clinics,jeddah,عيادات راما للجلدية و التجميل - فرع طريق الملك,B,81,,instagram,,Instagram,ramaclinics,ramaclinics.com,not_detected,3053,3.9,1,False,True,medical: Risk review,
+m_70185781a8,B_custom_furniture,riyadh,تفصيل ستائر ومجالس,B,82,,mobile_or_whatsapp,+9665•••••937,mobile in Google Maps,,,unchecked,30,4.9,1,False,False,BNPL unchecked,
+m_7029ad6701,B_custom_furniture,jeddah,مؤسسة ستائر البيت الذكي,A,85,,mobile_or_whatsapp,+9665•••••073,mobile in Google Maps,,,unchecked,65,4.8,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_70f2df32a7,A_aesthetic_clinics,riyadh,K|E|S|A|Y,,,,instagram,,Instagram,appstore,rb.gy,unchecked,4396,4.6,1,False,False,,A: no segment signal in name or category
+m_71cbb6e5bf,B_custom_furniture,jeddah,ستائر رحمة,B,73,,mobile_or_whatsapp,+9665•••••920,mobile in Google Maps,,,unchecked,7,3.4,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_71eafca9c2,B_custom_furniture,jeddah,الرونق للمفروشات,,,,mobile_or_whatsapp,+9665•••••981,mobile in Google Maps,,,unchecked,24,3.7,1,False,False,,B: no segment signal in name or category
+m_723751dd1d,B_custom_furniture,riyadh,Daze Furniture,,,,none,,,,daze-me.com,unchecked,2254,4.3,1,False,False,,B: no segment signal in name or category
+m_725fed40eb,A_aesthetic_clinics,jeddah,مجمع حبات اللؤلؤ لطب الاسنان,B,79,,mobile_or_whatsapp,+9665•••••110,mobile in Google Maps,,pbdent.com,unchecked,237,4.8,1,False,False,medical: Risk review; BNPL unchecked,
+m_7287476eda,B_custom_furniture,riyadh,سدائل هوم,,,,mobile_or_whatsapp,+9665•••••575,mobile in Google Maps,,,unchecked,204,4.6,1,False,False,,B: no segment signal in name or category
+m_7291fc7ef0,B_custom_furniture,jeddah,إبداع الخليج لتفصيل الأثاث,B,76,,mobile_or_whatsapp,+9665•••••064,mobile in Google Maps,,,unchecked,1,5,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_733eeb43be,A_aesthetic_clinics,riyadh,Tlayes Dental and Skin Care Clinics,,,,mobile_or_whatsapp,+9665•••••546,mobile in Google Maps,tlayes_,tlayes-clinic.com,unchecked,3501,4.6,1,False,False,,A: hospital or enterprise group
+m_735b05cfac,B_custom_furniture,jeddah,فرنشة لإكسسوارات الستائر,B,76,,mobile_or_whatsapp,+9665•••••766,mobile in Google Maps,,,unchecked,27,3.9,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_736278733f,A_aesthetic_clinics,jeddah,عيادات رينيو | Renew Clinics,,,,instagram,,Instagram,renewclinics,renew-clinics.sa,unchecked,1065,4.5,1,False,False,,A: no segment signal in name or category
+m_737e04dd62,B_custom_furniture,riyadh,مفروشات ستائر ومجالس. مجلس و كنب تنجيد و تفصيل. ستائر تفصيل و تركيب,B,76,,mobile_or_whatsapp,+9665•••••470,mobile in Google Maps,,,unchecked,12,4,1,False,False,BNPL unchecked,
+m_73cf645cd6,B_custom_furniture,riyadh,مفروشات ارض المجالس النرجس فرع 2,B,76,,mobile_or_whatsapp,+9665•••••843,mobile in Google Maps,,,unchecked,9,4,1,False,False,BNPL unchecked,
+m_73e558929e,B_custom_furniture,jeddah,Mahmoud Saeed Market,,,,mobile_or_whatsapp,+9665•••••437,mobile in Google Maps,,sites.google.com,unchecked,16097,3.9,1,False,False,,B: no segment signal in name or category
+m_74fdcd83e2,A_aesthetic_clinics,riyadh,دكتور طارق كشباش- زراعة أسنان - جراحة اسنان - تركيبات الاسنان -tooth implant,B,81,,mobile_or_whatsapp_and_name,+9665•••••559,mobile in Google Maps,,webteb.com,unchecked,37,5,1,True,False,medical: Risk review; BNPL unchecked,
+m_762f14fdd4,A_aesthetic_clinics,riyadh,Shining Horizons Dental Center,C,63,,other_phone,+9661•••••000,landline in Google Maps,,,unchecked,254,3.9,1,False,False,medical: Risk review; BNPL unchecked,
+m_76439139be,A_aesthetic_clinics,riyadh,مجمع عيادات أجيال الطبي للجلدية والجراحات التجميلية والليزر,B,82,,mobile_or_whatsapp,+9665•••••316,mobile in Google Maps,,,unchecked,3021,4.1,1,False,False,medical: Risk review; BNPL unchecked,
+m_7656b92e16,A_aesthetic_clinics,jeddah,Nostalgia clinic | نوستالجيا كلينك,,,,mobile_or_whatsapp,+9665•••••699,mobile in Google Maps,nostalgia.clinic,nostalgia.clinic,tabby,702,4.7,1,False,False,,already Tabby merchant
+m_77052ec18b,B_custom_furniture,jeddah,شركة سدة الخليج للتجارة,A,85,,mobile_or_whatsapp,+9665•••••566,mobile in Google Maps,,,unchecked,71,4.4,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_77f871fb88,A_aesthetic_clinics,jeddah,عيادات بروف كلينك صاري (5) | Prof Clinic Sari,B,79,,mobile_or_whatsapp,+9665•••••018,mobile in Google Maps,,,unchecked,182,4.5,1,False,False,medical: Risk review; BNPL unchecked,
+m_78994d9e4a,B_custom_furniture,riyadh,شركة سومية ريحان تفصيل كنب و ستائر,B,76,,mobile_or_whatsapp,+9665•••••356,mobile in Google Maps,,,unchecked,1,5,1,False,False,BNPL unchecked,
+m_78a01cec55,B_custom_furniture,jeddah,Al Jamail Decor,C,58,,none,,,,,unchecked,1,4,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_78bf62ae28,B_custom_furniture,jeddah,شركة ندا الخليج للستائر Nada Al khaleej for curtains,A,83,,mobile_or_whatsapp,+9665•••••467,mobile in Google Maps,,nadaalkhaleej.com.sa,not_detected,2,5,1,False,True,B Jeddah: source relevance 0.40,
+m_79f74528ef,A_aesthetic_clinics,riyadh,عيادات بيليزا الطبية,B,70,,mobile_or_whatsapp,+9665•••••405,mobile in Google Maps,,bellezaclinics.com,generic_installment,228,4.1,1,False,True,medical: Risk review,
+m_7a41f764ba,B_custom_furniture,jeddah,الدار الراقي,C,61,,none,,,,,unchecked,10,4.1,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_7a93414f9d,A_aesthetic_clinics,jeddah,عيادة د. اميرة خليل للجلدية والتجميل,B,75,,mobile_or_whatsapp_and_name,+9665•••••103,mobile in Google Maps,,dramirakhalil.com,unchecked,11,3.5,1,True,False,medical: Risk review; BNPL unchecked,
+m_7b02e8446c,B_custom_furniture,jeddah,إبداع الخليج للأثاث,,,,mobile_or_whatsapp,+9665•••••940,mobile in Google Maps,,,unchecked,8,4.9,1,False,False,,B: no segment signal in name or category
+m_7b7a0ce132,B_custom_furniture,jeddah,الخليج لتفصيل وتنجيد الاثاث,A,85,,mobile_or_whatsapp,+9665•••••478,mobile in Google Maps,decor_alkhalij,,unchecked,63,4.9,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_7b8d266d2f,A_aesthetic_clinics,riyadh,عيادات لا بوتيه الطبية | La beauté Clinics,B,82,,mobile_or_whatsapp,+9665•••••666,mobile in Google Maps,,labeaute.sa,unchecked,1106,4.4,1,False,False,medical: Risk review; BNPL unchecked,
+m_7b8f8253ef,B_custom_furniture,riyadh,النجم التركي للاثاث,,,,mobile_or_whatsapp,+9665•••••501,mobile in Google Maps,turkish_star_ksa,,unchecked,292,4.9,1,False,False,,B: no segment signal in name or category
+m_7be7903f91,B_custom_furniture,jeddah,أسواق السلطان للأثاث,,,,mobile_or_whatsapp,+9665•••••383,mobile in Google Maps,,,unchecked,50,3.8,1,False,False,,B: no segment signal in name or category
+m_7c4542ef9d,B_custom_furniture,riyadh,تفصيل ستائر و مجالس,B,79,,mobile_or_whatsapp,+9665•••••922,mobile in Google Maps,,,unchecked,8,5,1,False,False,BNPL unchecked,
+m_7dda7e5e97,A_aesthetic_clinics,jeddah,DermElite,A,86,,mobile_or_whatsapp,+9665•••••030,mobile in Google Maps,dermelitejeddah,dermelitejeddah.com,not_detected,311,4.8,1,False,True,medical: Risk review,
+m_7df4ba648c,B_custom_furniture,riyadh,اقرب محلات للستائر والمفروشات والكنب والمجالس العربيه,B,82,,mobile_or_whatsapp,+9665•••••966,mobile in Google Maps,,,unchecked,13,4.5,1,False,False,BNPL unchecked,
+m_7e4fffff1a,A_aesthetic_clinics,riyadh,Kadoon Company,,,,other_phone,+9661•••••888,landline in Google Maps,,kadoon.com,unchecked,26,4.2,1,False,False,,A: no segment signal in name or category
+m_7e87659d2d,B_custom_furniture,jeddah,مفروشات الكرسي الذهبي للأثاث المنزلي و الفندقي,,,,mobile_or_whatsapp,+9665•••••917,mobile in Google Maps,,goldenchair.sa,unchecked,270,4.8,1,False,False,,B: no segment signal in name or category
+m_7e9bce680c,A_aesthetic_clinics,jeddah,دكتورة عبير زنداقي - عيادات دي براكسس,A,88,,mobile_or_whatsapp_and_name,+9665•••••886,mobile in Google Maps,,drameerzahrawi.com,not_detected,78,4.9,1,True,True,medical: Risk review,
+m_7eb6a6cecf,B_custom_furniture,jeddah,تفصيل غرف نوم الإبتكار للتفصيل,B,73,,mobile_or_whatsapp,+9665•••••973,mobile in Google Maps,,,unchecked,10,1.9,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_7f0199abdb,B_custom_furniture,jeddah|riyadh,Sedar - King Abdullah Road,,,,other_phone,+9661•••••050,landline in Google Maps,,sedarglobal.com,unchecked,725,4,3,False,False,,"B: multi-city company, not a local workshop"
+m_7f2f63e861,B_custom_furniture,riyadh,تفصيل الستائر,B,79,,mobile_or_whatsapp,+9665•••••601,mobile in Google Maps,,curtainshook.com,unchecked,5,5,1,False,False,BNPL unchecked,
+m_7fd23d1005,B_custom_furniture,riyadh,معلم حسن تفصيل ستاير و مجالس,A,84,,mobile_or_whatsapp_and_name,+9665•••••292,mobile in Google Maps,,,unchecked,6,5,1,True,False,BNPL unchecked,
+m_800c51cc35,A_aesthetic_clinics,jeddah,أخصائية البشرة والتجميل سهى الدسوقي,B,81,,mobile_or_whatsapp_and_name,+9665•••••141,mobile in Google Maps,soha_dassouki,,unchecked,39,4.9,1,True,False,medical: Risk review; BNPL unchecked,
+m_803d6f85b7,C_salla_zid_d2c,,عود الجميلة - منصة سلة,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_80630c595e,A_aesthetic_clinics,riyadh,Clear Clinic,,,,mobile_or_whatsapp,+9665•••••544,mobile in Google Maps,clearclinic.ksa,clearclinic-sa.com,unchecked,187,4.8,1,False,False,,A: no segment signal in name or category
+m_813b4d83c7,A_aesthetic_clinics,riyadh,مجمع روت الطبي,B,72,,other_phone,+9661•••••640,landline in Google Maps,,root-clinics.com,unchecked,1038,4.5,1,False,False,medical: Risk review; BNPL unchecked,
+m_81476243a1,A_aesthetic_clinics,riyadh,Beauty Station clinics,B,79,,mobile_or_whatsapp,+9665•••••572,mobile in Google Maps,,valeryclinics.com,unchecked,1085,4.2,1,False,False,medical: Risk review; BNPL unchecked,
+m_8166dcd774,A_aesthetic_clinics,jeddah,Elements Clinics,B,67,,none,,,,,unchecked,559,4.5,1,False,False,medical: Risk review; BNPL unchecked,
+m_819a030a77,B_custom_furniture,jeddah,الوجيه للتنجيد,B,82,,mobile_or_whatsapp,+9665•••••674,mobile in Google Maps,,,unchecked,33,4.3,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_837bebc73b,A_aesthetic_clinics,riyadh,مجمع مايا الطبي الرياض MAYA CLINIC,B,75,,other_phone,+9661•••••184,landline in Google Maps,,,unchecked,1589,4.4,1,False,False,medical: Risk review; BNPL unchecked,
+m_83fb124a3e,C_salla_zid_d2c,,عبايات دام متجر عبايات فخمة سوداء وملونة أونلاين,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_84f740e1ef,B_custom_furniture,jeddah|riyadh,Alguthmi textile co | شركة القثمي للأقمشة,,,,none,,,,guthmi.net,unchecked,1293,4.1,4,False,False,,"B: multi-city company, not a local workshop"
+m_8595400fe1,B_custom_furniture,jeddah,محل الفارس لتفصيل الكنب والمجالس العربيه,B,79,,mobile_or_whatsapp,+9665•••••462,mobile in Google Maps,,,unchecked,11,4.4,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_86140d83c8,B_custom_furniture,jeddah,سليب ركن المفروشات الراقية,,,,mobile_or_whatsapp,+9665•••••796,mobile in Google Maps,,,unchecked,17,4.8,1,False,False,,B: no segment signal in name or category
+m_86318f7471,A_aesthetic_clinics,jeddah,Sky Specialized Clinics,,,,instagram,,Instagram,skyclinicsa,skyclinic.net,unchecked,1478,4.3,1,False,False,,A: no segment signal in name or category
+m_864f05cd95,B_custom_furniture,riyadh,تفصيل ستائر و مجالس,A,89,,mobile_or_whatsapp,+9665•••••722,mobile in Google Maps,,curtainsandblindserviceriyadh.site,not_detected,17,4.8,1,False,True,reserve: tied at the Top-list cutoff score,
+m_86be94e5f8,A_aesthetic_clinics,riyadh,عيادة البروفيسور ناصر الجاسر لطب الاسنان,A,88,,mobile_or_whatsapp_and_name,+9665•••••151,mobile in Google Maps,prof_nasser_aljasser,nasserclinics.com,not_detected,128,4.6,1,True,True,medical: Risk review,
+m_870700e883,B_custom_furniture,riyadh,"Sofa upholstery, Curtain محل تفصيل ستائر ويفي و تنجيد كنب",B,82,,mobile_or_whatsapp,+9665•••••071,mobile in Google Maps,curtainsofa1,,unchecked,30,4.9,1,False,False,BNPL unchecked,
+m_871626d681,C_salla_zid_d2c,,متجر ميكس بيوتي - افضل موقع عطور اصلية باعلى جودة ...,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_876da56101,B_custom_furniture,jeddah,ستائر تفصيل ستائر تفصيل كنب مفروشات الشروق,B,79,,mobile_or_whatsapp,+9665•••••549,mobile in Google Maps,,,unchecked,18,4.2,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_876f45bb49,A_aesthetic_clinics,jeddah,عيادة اكلا بيوتي,,,,other_phone,+9661•••••302,landline in Google Maps,,eclaclinics.com,unchecked,74,4.5,1,False,False,,A: no segment signal in name or category
+m_89107f84d7,B_custom_furniture,riyadh,تفصیل ستائر وكنبات,B,82,,mobile_or_whatsapp,+9665•••••550,mobile in Google Maps,,,unchecked,36,4.8,1,False,False,BNPL unchecked,
+m_8928dd82cf,B_custom_furniture,jeddah,معرض النجاح لبيع وتفصيل جميع أنواع المجالس العربيه المغربيه,C,61,,none,,,,,unchecked,1,5,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_893d4994cc,A_aesthetic_clinics,jeddah,Dr. Khaled Shaheen,B,81,,mobile_or_whatsapp_and_name,+9665•••••164,mobile in Google Maps,,,unchecked,3,5,1,True,False,medical: Risk review; BNPL unchecked,
+m_895ac7a8c6,C_salla_zid_d2c,,Abaya - سلة,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_8b02d8f0ba,A_aesthetic_clinics,riyadh,Pro Derma,B,82,,mobile_or_whatsapp,+9665•••••411,mobile in Google Maps,,proderma-clinics.com,unchecked,1135,4.2,1,False,False,medical: Risk review; BNPL unchecked,
+m_8b4a89a8b6,A_aesthetic_clinics,riyadh,Ok Clinic,B,79,,mobile_or_whatsapp,+9661•••••000,number on the merchant website (not stored),okclinics,okclinics.sa,competitor_only,2602,4,1,False,True,medical: Risk review,
+m_8b7673b3f3,A_aesthetic_clinics,jeddah,مجمع عيادات الجمال الافضل,B,77,,instagram,,Instagram,best1clinic,,unchecked,2026,4.1,1,False,False,medical: Risk review; BNPL unchecked,
+m_8b8a836433,A_aesthetic_clinics,riyadh,Venus beauty Clinics,B,76,,mobile_or_whatsapp,+9665•••••517,mobile in Google Maps,,,unchecked,79,4.8,1,False,False,medical: Risk review; BNPL unchecked,
+m_8b9e14123e,B_custom_furniture,riyadh,تفصيل ستائر و مجالس,B,70,,mobile_or_whatsapp,+9665•••••366,mobile in Google Maps,,,unchecked,0,,1,False,False,BNPL unchecked,
+m_8bade82ca1,A_aesthetic_clinics,jeddah,عيادة الدكتور رحاب صيرفي | جلدية تجميل ليزر,B,81,,mobile_or_whatsapp_and_name,+9665•••••929,mobile in Google Maps,drserafi,drserafi.com,unchecked,132,4.8,1,True,False,medical: Risk review; BNPL unchecked,
+m_8c11995612,C_salla_zid_d2c,,عود موروكي دقة فاخر اوقية,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_8c1693468a,B_custom_furniture,riyadh,تفصيل ستائر شيخه,A,88,,mobile_or_whatsapp,+9665•••••420,mobile in Google Maps,,merkabalarz.com,unchecked,170,4.9,3,False,False,BNPL unchecked,
+m_8c2fd797a6,A_aesthetic_clinics,jeddah,مجمع غيم الطبي للأسنان و الجلدية و الليزر,B,70,,none,,,,ghaymmedical.com,unchecked,2699,4.7,1,False,False,medical: Risk review; BNPL unchecked,
+m_8c3bd4f0fb,B_custom_furniture,jeddah,Trend,,,,mobile_or_whatsapp,+9665•••••733,mobile in Google Maps,,,unchecked,371,3.9,1,False,False,,B: no segment signal in name or category
+m_8c4fb17180,B_custom_furniture,riyadh,تفصيل ستائر تركيب ستاير,A,85,,mobile_or_whatsapp,+9665•••••151,mobile in Google Maps,,,unchecked,58,4.6,1,False,False,BNPL unchecked,
+m_8d5d0ea9b4,A_aesthetic_clinics,riyadh,مزدانة للاسنان و الجلدية,C,58,,none,,,,,unchecked,254,3.5,1,False,False,medical: Risk review; BNPL unchecked,
+m_8d88675aeb,B_custom_furniture,riyadh,مؤسسة الصالح للمفروشات,,,,mobile_or_whatsapp,+9665•••••048,mobile in Google Maps,,,unchecked,9,4.4,1,False,False,,B: no segment signal in name or category
+m_8dfd0c9496,B_custom_furniture,jeddah,محل الخليج للديكور.Al khaleel Curtain Decore,B,76,,mobile_or_whatsapp,+9665•••••616,mobile in Google Maps,,,unchecked,3,5,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_8e0d0fe74f,B_custom_furniture,jeddah,الوان التميز للكنب والستائر,B,76,,mobile_or_whatsapp,+9665•••••109,mobile in Google Maps,,,unchecked,4,5,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_8e3ea61fef,A_aesthetic_clinics,jeddah,AQUA Dent Clinics,B,73,,mobile_or_whatsapp,,number on the merchant website (not stored),aquadentistry,aquadentistry.com,generic_installment,307,4.8,1,False,True,medical: Risk review,
+m_8e412e5f5d,B_custom_furniture,riyadh,Alwan Siraj curtains,B,79,,mobile_or_whatsapp,+9665•••••490,mobile in Google Maps,,,unchecked,42,3.7,1,False,False,BNPL unchecked,
+m_8e9079193f,B_custom_furniture,jeddah,مطابخ البيت العريق,,,,mobile_or_whatsapp,+9665•••••579,mobile in Google Maps,,,unchecked,176,4.7,1,False,False,,B: no segment signal in name or category
+m_8eb0991767,B_custom_furniture,riyadh,البر يکة تفصيل مجالس وستائر عربية,B,73,,mobile_or_whatsapp,+9665•••••553,mobile in Google Maps,,,unchecked,4,4,1,False,False,BNPL unchecked,
+m_8f46571563,B_custom_furniture,riyadh,تفصيل ستائر و مجالس,B,76,,mobile_or_whatsapp,+9665•••••690,mobile in Google Maps,,,unchecked,2,5,1,False,False,BNPL unchecked,
+m_8fd0018b50,B_custom_furniture,riyadh,ام دي اس انوفيشن للتأثيث,B,70,,mobile_or_whatsapp,+9665•••••625,mobile in Google Maps,mds_furnishing,,unchecked,0,,1,False,False,BNPL unchecked,
+m_90108f37d6,B_custom_furniture,jeddah,تفصيل ستائر,B,82,,mobile_or_whatsapp,+9665•••••082,mobile in Google Maps,,,unchecked,14,4.7,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_90272e0301,A_aesthetic_clinics,riyadh,Maleen Consultant Center,A,87,,instagram,,Instagram,maleenclinic,maleenclinic.com,not_detected,4004,4.5,1,False,True,medical: Risk review,
+m_90d81974f1,B_custom_furniture,jeddah,Al Nassaj Textile,,,,other_phone,+9661•••••317,landline in Google Maps,,alnassaj.com,unchecked,146,4.4,1,False,False,,B: no segment signal in name or category
+m_90db05fa2a,B_custom_furniture,jeddah,مؤسسة خيوط البيوتات الذكية,A,85,,mobile_or_whatsapp,+9665•••••958,mobile in Google Maps,,,unchecked,84,4.8,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_915c8154ba,B_custom_furniture,jeddah,بيهس الذهبية للكنب و الستائر,B,82,,mobile_or_whatsapp,+9665•••••656,mobile in Google Maps,,,unchecked,30,4.7,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_9193eb4bff,A_aesthetic_clinics,jeddah,Transparency Dental Clinics | شفافية لطب الأسنان,B,79,,mobile_or_whatsapp,+9665•••••388,mobile in Google Maps,tclinics_,,unchecked,449,4.9,1,False,False,medical: Risk review; BNPL unchecked,
+m_926fbfdf60,A_aesthetic_clinics,jeddah,اللمسة التجميلية,B,70,,mobile_or_whatsapp,+9665•••••856,mobile in Google Maps,,cosmetictouch.net,unchecked,137,3.7,1,False,False,medical: Risk review; BNPL unchecked,
+m_9380ac9bcd,B_custom_furniture,jeddah,Qasr Al Saraya Furniture Jeddah,,,,other_phone,+9661•••••080,landline in Google Maps,,qsf.sa,unchecked,1228,4.4,1,False,False,,B: no segment signal in name or category
+m_93e24ecdf1,B_custom_furniture,riyadh,مؤسسة بشر الرياض للتجارة( ستائر ),B,82,,mobile_or_whatsapp,+9665•••••380,mobile in Google Maps,,,unchecked,19,4.7,1,False,False,BNPL unchecked,
+m_943ed5fa35,A_aesthetic_clinics,riyadh,مجمع عيادات حكماء نجد الطبي ، ليزر ، جلدية ، تجميل,B,75,,instagram,+9661•••••800,Instagram,hokmaanajd,hokamaanajd.com,not_detected,188,3.6,1,False,True,medical: Risk review,
+m_94a38b7b41,A_aesthetic_clinics,jeddah,Dr Omar Ezzo | د.عمر عزو الشوبكي,B,81,,mobile_or_whatsapp_and_name,+9665•••••347,mobile in Google Maps,,dromarezzo.com,unchecked,22,4.8,1,True,False,medical: Risk review; BNPL unchecked,
+m_94c4aa3a81,A_aesthetic_clinics,riyadh,Avant Clinics,A,86,,mobile_or_whatsapp,+9661•••••050,number on the merchant website (not stored),avantclinics,avantclinic.sa,not_detected,674,4.2,1,False,True,medical: Risk review,
+m_95461ca3fa,B_custom_furniture,jeddah,Rockets Auction,,,,mobile_or_whatsapp,+9665•••••974,mobile in Google Maps,,,unchecked,9678,4.1,1,False,False,,B: no segment signal in name or category
+m_958107be06,A_aesthetic_clinics,jeddah,مركز ميدورا دي لا سانتي الطبي ، Medora de la Santé Polyclinic Jeddah,A,83,,mobile_or_whatsapp,+9665•••••238,mobile in Google Maps,mds.lh,mds-lh.com,not_detected,57,4.9,1,False,True,medical: Risk review,
+m_9583a12a7e,A_aesthetic_clinics,jeddah,Saudi Chinese Center for Chinese Acupuncture,A,85,,mobile_or_whatsapp,+9665•••••255,mobile in Google Maps,alhejinclinica,alhejinclinicsa.com,unchecked,1217,4.3,1,False,False,medical: Risk review; BNPL unchecked,
+m_9637d79541,B_custom_furniture,riyadh,محل تفصيل ستائر وويفي و تنجيد كنبه,B,82,,mobile_or_whatsapp,+9665•••••802,mobile in Google Maps,,,unchecked,37,5,1,False,False,BNPL unchecked,
+m_96e23a8a5e,A_aesthetic_clinics,jeddah,عيادات الجودة – التحلية,B,82,,mobile_or_whatsapp,,number on the merchant website (not stored),aljawdahclinics,aljawdahclinics.sa,competitor_only,1005,4.6,2,False,True,medical: Risk review,
+m_97f8eb7fcd,B_custom_furniture,riyadh,تفصيل و تركيب ستائر مجالس,B,76,,mobile_or_whatsapp,+9665•••••685,mobile in Google Maps,,,unchecked,3,5,1,False,False,BNPL unchecked,
+m_984b30306b,A_aesthetic_clinics,jeddah,د / علاء الاسعد Dr/Alaa Alassad,B,81,,mobile_or_whatsapp_and_name,+9665•••••254,mobile in Google Maps,,,unchecked,32,4.7,1,True,False,medical: Risk review; BNPL unchecked,
+m_98b304dc2f,B_custom_furniture,jeddah,معرض التاج للديكور,,,,mobile_or_whatsapp,+9665•••••939,mobile in Google Maps,,,unchecked,44,4.2,1,False,False,,B: no segment signal in name or category
+m_98de73825c,B_custom_furniture,riyadh,شركة فيكتوريا للستائر الرياض,A,85,,mobile_or_whatsapp,+9665•••••707,mobile in Google Maps,,,unchecked,131,4.9,1,False,False,BNPL unchecked,
+m_99e38df8bc,B_custom_furniture,riyadh,تفصيل ستائر مجالس كنب,B,76,,mobile_or_whatsapp,+9665•••••978,mobile in Google Maps,,,unchecked,1,5,1,False,False,BNPL unchecked,
+m_9a24c721c8,A_aesthetic_clinics,jeddah,مجمع عالية الفريد الطبي المتخصص جلدية - تجميل - ليزر - تقشير,C,55,,none,,,,,unchecked,20,1.8,1,False,False,medical: Risk review; BNPL unchecked,
+m_9a2be19b4c,B_custom_furniture,riyadh,تفصيل ستائر ويفي وكنب,B,79,,mobile_or_whatsapp,+9665•••••095,mobile in Google Maps,,,unchecked,8,5,1,False,False,BNPL unchecked,
+m_9a316ee30b,B_custom_furniture,jeddah,مفروشات اركان(لستاير و كنبات تفصيل و تنجيد),B,76,,mobile_or_whatsapp,+9665•••••645,mobile in Google Maps,,,unchecked,4,4.3,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_9b1231b26c,A_aesthetic_clinics,riyadh,Dr. Musa'ad Azallal Medical Center,B,67,,none,,,,drazallal.net,unchecked,2293,4.2,1,True,False,medical: Risk review; BNPL unchecked,
+m_9b8cc1e586,B_custom_furniture,riyadh,كنب جديد جاهز,,,,mobile_or_whatsapp,+9665•••••379,mobile in Google Maps,,,unchecked,13,4.4,1,False,False,,B: no segment signal in name or category
+m_9be3114a7c,B_custom_furniture,riyadh,جلسات كنب وستائر,B,76,,mobile_or_whatsapp,+9665•••••408,mobile in Google Maps,,,unchecked,1,5,1,False,False,BNPL unchecked,
+m_9bf765f0d5,B_custom_furniture,riyadh,خزائن الابنوس,B,79,,mobile_or_whatsapp,+9665•••••860,mobile in Google Maps,,alabanos-sa.com,unchecked,9,5,1,False,False,BNPL unchecked,
+m_9c4db1e86b,B_custom_furniture,riyadh,تفصيل ستائر و مجالس و كنب,A,89,,mobile_or_whatsapp,+9665•••••864,mobile in Google Maps,,curtainmajlissofa.com,not_detected,16,5,1,False,True,reserve: tied at the Top-list cutoff score,
+m_9c51766164,B_custom_furniture,jeddah,Al-Amodi Carpet,,,,mobile_or_whatsapp,+9665•••••324,mobile in Google Maps,,,unchecked,88,4,1,False,False,,B: no segment signal in name or category
+m_9cafbd07e4,A_aesthetic_clinics,riyadh,Chernobyl Lasertag,A,85,,mobile_or_whatsapp,+9665•••••081,mobile in Google Maps,chernobylarena,chernobylarena.com,unchecked,2423,4.9,1,False,False,medical: Risk review; BNPL unchecked,
+m_9cb5f3588c,A_aesthetic_clinics,riyadh,DEMAS,B,67,,none,,,,,unchecked,1362,4.1,1,False,False,medical: Risk review; BNPL unchecked,
+m_9d5d2b656a,A_aesthetic_clinics,riyadh,عياده دكتوره ساره علي دينار لطب وتجميل الأسنان,B,81,,mobile_or_whatsapp_and_name,+9665•••••468,mobile in Google Maps,,,unchecked,28,4.6,1,True,False,medical: Risk review; BNPL unchecked,
+m_9daa3b9431,A_aesthetic_clinics,riyadh,عيادات سكاي كير Sky Care Clinics,A,85,,mobile_or_whatsapp,+9665•••••922,mobile in Google Maps,skycarecc,,unchecked,2022,4.6,1,False,False,medical: Risk review; BNPL unchecked,
+m_9e673d46f8,B_custom_furniture,riyadh,تفصيل ستائر مجلس تنجيد كنب,A,85,,mobile_or_whatsapp,+9665•••••855,mobile in Google Maps,,,unchecked,41,4.9,1,False,False,BNPL unchecked,
+m_9e9dd02bee,B_custom_furniture,riyadh,تفصيل ستاير و تلبيس كنب تفصيل ستاير ومجالس امريكي,B,82,,mobile_or_whatsapp,+9665•••••678,mobile in Google Maps,,,unchecked,26,5,1,False,False,BNPL unchecked,
+m_9ef99551e5,B_custom_furniture,riyadh,تفصيل ستائر,A,83,,mobile_or_whatsapp,+9665•••••867,mobile in Google Maps,,mqawl-tfsyl-staer-wmjals.localo.site,not_detected,2,5,1,False,True,,
+m_9f43e7eea0,B_custom_furniture,riyadh,تفصيل ستائر مجالس بانوراما,A,89,,mobile_or_whatsapp,+9665•••••294,mobile in Google Maps,,curtainsstoreriyadh.com,not_detected,15,4.9,1,False,True,reserve: tied at the Top-list cutoff score,
+m_9f967b5185,B_custom_furniture,jeddah,مركز العرب تفصيل كنبات,B,70,,mobile_or_whatsapp,+9665•••••155,mobile in Google Maps,,,unchecked,0,,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_a043e5d7c1,B_custom_furniture,jeddah,ستائر الضيافة,B,76,,mobile_or_whatsapp,+9665•••••064,mobile in Google Maps,,,unchecked,6,4,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_a0f075f627,A_aesthetic_clinics,riyadh,عيادات سديل ( تجميل - جلدية - ليزر - بشره - اسنان ),B,79,,mobile_or_whatsapp,+9665•••••202,mobile in Google Maps,hayat.clinics,,unchecked,169,4.7,1,False,False,medical: Risk review; BNPL unchecked,
+m_a0f1238795,A_aesthetic_clinics,jeddah,عيادات جرين دنت لتجميل وزراعة الأسنان Green Dent Dental Clinic,B,82,,mobile_or_whatsapp,+9665•••••607,mobile in Google Maps,green_dent_sa,greendent.com.sa,unchecked,760,4.7,1,False,False,medical: Risk review; BNPL unchecked,
+m_a1bd9d1621,A_aesthetic_clinics,riyadh,مجمع عيادات الور الطبي حي التعاون Allure Clinics At Taawun,B,66,,other_phone,+9661•••••000,landline in Google Maps,,allureclinics.com,unchecked,1042,3.4,1,False,False,medical: Risk review; BNPL unchecked,
+m_a1cf0c21f2,B_custom_furniture,jeddah,مفروشات كلاسيك للكنب تفصيل وتنجيد,B,76,,mobile_or_whatsapp,+9665•••••000,mobile in Google Maps,,,unchecked,2,5,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_a229a314f8,B_custom_furniture,riyadh,تفصيل للستائر و المجالس,B,77,,mobile_or_whatsapp,+9665•••••654,mobile in Google Maps,,curtain-sofa-riyadh.com,not_detected,0,,1,False,True,,
+m_a2f4c50619,C_salla_zid_d2c,,جرام للعود والدهن الطبيعي,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_a3533f8230,B_custom_furniture,riyadh,مفروشات السلوم تفصيل المجالس وستائر,B,82,,mobile_or_whatsapp,+9665•••••692,mobile in Google Maps,,curtainfurnitureriyadh.com,unchecked,14,5,1,False,False,BNPL unchecked,
+m_a383e4595b,A_aesthetic_clinics,jeddah,عيادة الدكتورة رحاب الحربي | جلدية، تجميل، ليزر,B,81,,mobile_or_whatsapp_and_name,+9665•••••929,mobile in Google Maps,dr.rehabalharbi,drrehabalharbi.com,unchecked,14,4.4,1,True,False,medical: Risk review; BNPL unchecked,
+m_a389a2d493,B_custom_furniture,riyadh,تفصیل ستائر و تنجید کنب مجالس عربیہ‎,B,82,,mobile_or_whatsapp,+9665•••••618,mobile in Google Maps,,al-riyadhcurtains.com,unchecked,26,4.8,1,False,False,BNPL unchecked,
+m_a38d9bd6af,B_custom_furniture,riyadh,مفروشات وستائر ومجالس الدرعية,B,82,,mobile_or_whatsapp,+9665•••••699,mobile in Google Maps,,,unchecked,35,4.3,1,False,False,BNPL unchecked,
+m_a3c436251f,B_custom_furniture,jeddah,غزاله للأثاث (Ghazala sofa),,,,mobile_or_whatsapp,+9665•••••017,mobile in Google Maps,,,unchecked,67,4,1,False,False,,B: no segment signal in name or category
+m_a46f071849,A_aesthetic_clinics,riyadh,عيادة دكتورة إيمان ابراهيم لطب الاسنان,B,81,,mobile_or_whatsapp_and_name,+9665•••••015,mobile in Google Maps,,,unchecked,134,4.5,1,True,False,medical: Risk review; BNPL unchecked,
+m_a4cf766783,B_custom_furniture,jeddah,تفصل وتنجيدجميع أنواع الستائروالكنب,B,70,,mobile_or_whatsapp,+9665•••••507,mobile in Google Maps,,,unchecked,1,1,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_a4f3c5fb49,B_custom_furniture,riyadh,تفصيل كنب ستائر ومجالس العرض,B,76,,mobile_or_whatsapp,+9665•••••613,mobile in Google Maps,,,unchecked,3,5,1,False,False,BNPL unchecked,
+m_a50b8c49bf,B_custom_furniture,jeddah,الحريبي للستائر فرع 2,B,76,,mobile_or_whatsapp,+9665•••••218,mobile in Google Maps,,,unchecked,2,5,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_a560d03d5f,C_salla_zid_d2c,,عبايات سوداء,,,,mobile_or_whatsapp,,number on the merchant website (not stored),,,not_detected,0,,0,False,False,,segment rejected: bnpl_saturation
+m_a60510dd8a,C_salla_zid_d2c,,عطور رجاليه,,,,mobile_or_whatsapp,,number on the merchant website (not stored),,,not_detected,0,,0,False,False,,segment rejected: bnpl_saturation
+m_a6d530aaa1,B_custom_furniture,riyadh,Darb Al Saadah Furniture,,,,mobile_or_whatsapp,+9665•••••966,mobile in Google Maps,,,unchecked,29,4.4,1,False,False,,B: no segment signal in name or category
+m_a720464c51,B_custom_furniture,riyadh,تفصيل ستائر العويس تفصيل كنب العويس تنجيد كنب العويس,B,82,,mobile_or_whatsapp,+9665•••••850,mobile in Google Maps,custommade_sofas_in_alawais_cu,,unchecked,18,4.9,1,False,False,BNPL unchecked,
+m_a73ffab6a1,A_aesthetic_clinics,jeddah,Diamond Eternity medical specialist compound,,,,mobile_or_whatsapp,+9665•••••108,mobile in Google Maps,,,unchecked,144,3.7,1,False,False,,A: no segment signal in name or category
+m_a74005ab13,A_aesthetic_clinics,jeddah,pioneer care clinic - مجمع عناية الرواد,,,,mobile_or_whatsapp,+9665•••••621,mobile in Google Maps,pioneercarepcc,,unchecked,605,4.5,1,False,False,,A: no segment signal in name or category
+m_a76b5c9756,B_custom_furniture,riyadh,تيكستورا هوم للستائر والديكورات,,,,mobile_or_whatsapp,+9665•••••865,mobile in Google Maps,,texturahome.sa,tabby,112,4.9,1,False,False,,already Tabby merchant
+m_a7757dfe2b,B_custom_furniture,riyadh,تفصيل ستار ومجالس,B,82,,mobile_or_whatsapp,+9665•••••776,mobile in Google Maps,,,unchecked,35,4.9,1,False,False,BNPL unchecked,
+m_a793a751cf,A_aesthetic_clinics,riyadh,Levantalo clinics,,,,instagram,+9661•••••229,Instagram,levantaloclinic,,unchecked,759,4.5,1,False,False,,A: no segment signal in name or category
+m_a7e156fd72,A_aesthetic_clinics,riyadh,مركز كيان الرياض الطبي,B,79,,mobile_or_whatsapp,,number on the merchant website (not stored),kayan_clinic,kayanclinic.sa,generic_installment,1890,4.4,1,False,True,medical: Risk review,
+m_a802386dad,B_custom_furniture,riyadh,ستائر المجلس,B,82,,mobile_or_whatsapp,+9665•••••568,mobile in Google Maps,,curtainsmajlis.com,unchecked,18,4.8,1,False,False,BNPL unchecked,
+m_a815e2af05,B_custom_furniture,jeddah,الرواد للأعمال الخشبية,,,,mobile_or_whatsapp,+9665•••••957,mobile in Google Maps,,alruaad.com,unchecked,8,4.6,1,False,False,,B: no segment signal in name or category
+m_a877f867e4,A_aesthetic_clinics,riyadh,Almuhaidb Medical Complex,A,86,,mobile_or_whatsapp,+9665•••••957,mobile in Google Maps,almuhaidibdental,almuhaidibclinics.com,not_detected,483,4.1,1,False,True,medical: Risk review,
+m_a887d84be0,B_custom_furniture,riyadh,مؤسسة الزهراني لتفصيل الستائر,B,76,,mobile_or_whatsapp,+9665•••••103,mobile in Google Maps,,,unchecked,2,5,1,False,False,BNPL unchecked,
+m_a8994c1b25,A_aesthetic_clinics,jeddah,عيادات الصفاء الرائدة Safaa Pioneer Clinic,A,83,,mobile_or_whatsapp,+9665•••••778,mobile in Google Maps,,safaapioneer.com,not_detected,436,4,1,False,True,medical: Risk review,
+m_a94845df1d,C_salla_zid_d2c,,SU line,,,,mobile_or_whatsapp,,number on the merchant website (not stored),,,not_detected,0,,0,False,False,,segment rejected: bnpl_saturation
+m_a9a2116548,B_custom_furniture,riyadh,Alomar Furniture,,,,none,,,,alomar.com.sa,unchecked,2877,3.8,1,False,False,,B: no segment signal in name or category
+m_aa0e58d715,A_aesthetic_clinics,riyadh,بريفيا دنت privea dent,A,86,,mobile_or_whatsapp,+9665•••••450,mobile in Google Maps,priveadent,priveadent.sa,not_detected,176,4.9,1,False,True,medical: Risk review,
+m_aa13f23e8b,A_aesthetic_clinics,riyadh,FEDAD Specialist Center For Dentistry,A,83,,mobile_or_whatsapp,,number on the merchant website (not stored),fedadclinics,fedadclinics.net,not_detected,428,4.2,1,False,True,medical: Risk review,
+m_aa1c600349,A_aesthetic_clinics,riyadh,عيادات مزدانة فرع الصحافة || MOZDANH CLINIC AS SAHAFAH BRANCH,,,,none,,,,dev.mozdanhclinic.net,unchecked,2716,4,1,False,False,,A: no segment signal in name or category; A: hospital or enterprise group
+m_aa48b6c462,A_aesthetic_clinics,jeddah,⁠Ayna clinic- آينا كلينك,A,83,,mobile_or_whatsapp,+9665•••••300,mobile in Google Maps,aynaclinics,aynaclinics.com,not_detected,144,4.9,1,False,True,medical: Risk review,
+m_aad40569b7,B_custom_furniture,jeddah,معرض نورا لتنجيد وتفصيل الاثاث,B,73,,mobile_or_whatsapp,+9665•••••607,mobile in Google Maps,,,unchecked,5,3,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_ab390ac212,A_aesthetic_clinics,riyadh,مجمع عيادات دنت الطبي,B,70,,none,,,,dent-sa.com,unchecked,4155,4.3,1,False,False,medical: Risk review; BNPL unchecked,
+m_ab5188a3b1,B_custom_furniture,jeddah,روعة الاثاث,,,,mobile_or_whatsapp,+9665•••••215,mobile in Google Maps,,,unchecked,36,3.7,1,False,False,,B: no segment signal in name or category
+m_abc8190b2c,A_aesthetic_clinics,riyadh,يشفين كلينك,,,,other_phone,+9661•••••935,landline in Google Maps,,immcksa.com,unchecked,434,3.9,1,False,False,,A: no segment signal in name or category
+m_ac45b7de93,A_aesthetic_clinics,riyadh,مجمع عيادات أسرار التجميل الطبي,B,79,,other_phone,+9661•••••826,landline in Google Maps,,asrarclinic.sa,not_detected,771,4.4,1,False,True,medical: Risk review,
+m_ac603186ba,B_custom_furniture,jeddah,مركز الستائر للديكور,B,79,,mobile_or_whatsapp,+9665•••••950,mobile in Google Maps,,,unchecked,14,4,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_acda4bc349,A_aesthetic_clinics,jeddah,عيادات أسنان اللؤلؤ,B,79,,mobile_or_whatsapp,+9665•••••664,mobile in Google Maps,,pearlteeth.sa,unchecked,415,4.6,1,False,False,medical: Risk review; BNPL unchecked,
+m_ad1364f736,B_custom_furniture,jeddah,ديكور مكه تفصيل كنب وستائر,B,70,,mobile_or_whatsapp,+9665•••••573,mobile in Google Maps,,,unchecked,2,3,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_ad275036ea,B_custom_furniture,jeddah,عالم الجلود الراقيه,,,,other_phone,+9661•••••745,landline in Google Maps,,,unchecked,104,4.5,1,False,False,,B: no segment signal in name or category
+m_ad323f7c95,A_aesthetic_clinics,riyadh,عيادات د.مساعد الزلال فرع البديعة,,,,none,,,,drazallal.com,unchecked,2034,4.3,1,False,False,,A: no segment signal in name or category
+m_ad45e790be,B_custom_furniture,riyadh,تركيب ستائر تفصيل ستائر,B,73,,mobile_or_whatsapp,+9665•••••621,mobile in Google Maps,,,unchecked,11,3.2,1,False,False,BNPL unchecked,
+m_ad7b0350b1,A_aesthetic_clinics,jeddah,د. آلاء هاني عارف استشارية أمراض الجلدية والتجميل,B,81,,mobile_or_whatsapp_and_name,+9665•••••567,mobile in Google Maps,dr.alaa_aref,,unchecked,107,4.4,1,True,False,medical: Risk review; BNPL unchecked,
+m_adc89b7e5c,C_salla_zid_d2c,,متجر باء,,,,mobile_or_whatsapp,,number on the merchant website (not stored),,,not_detected,0,,0,False,False,,segment rejected: bnpl_saturation
+m_adf3c13811,B_custom_furniture,jeddah,بن عون للمفروشات - فرع مركز الشاطئ,,,,mobile_or_whatsapp,+9665•••••497,mobile in Google Maps,,binown-sa.com,unchecked,154,4.1,1,False,False,,B: no segment signal in name or category
+m_ae2efe7650,B_custom_furniture,jeddah,مفروشات الريتاج,,,,mobile_or_whatsapp,+9665•••••882,mobile in Google Maps,,mattress-store-3304.business.site,unchecked,22,4.3,1,False,False,,B: no segment signal in name or category
+m_ae326ecdc2,A_aesthetic_clinics,jeddah,عيادات سابا,,,,instagram,,Instagram,sabamedicalsa,sabamedical.com,unchecked,8114,4.7,2,False,False,,A: no segment signal in name or category
+m_ae90953d20,A_aesthetic_clinics,riyadh,Radiance Beauty Clinic عيادات ريديانس للتجميل,B,79,,other_phone,+9661•••••277,landline in Google Maps,,radiance.sa,not_detected,1080,4.6,1,False,False,medical: Risk review,
+m_aef6c789fc,A_aesthetic_clinics,riyadh,عيادات نوبل لطب الأسنان,B,79,,mobile_or_whatsapp,+9665•••••101,mobile in Google Maps,nobleclinic.sa,,unchecked,307,4.4,1,False,False,medical: Risk review; BNPL unchecked,
+m_af2497a484,B_custom_furniture,riyadh,محل سعد الشمري تفصيل ستائر و مجالس,A,89,,mobile_or_whatsapp,+9665•••••672,mobile in Google Maps,,curtainsupplier.xyz,not_detected,40,4.6,1,False,True,reserve: tied at the Top-list cutoff score,
+m_af99a637fd,C_salla_zid_d2c,,اليافعي للعود,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_b007cc5621,B_custom_furniture,jeddah,الفص الفضي للاثاث,,,,mobile_or_whatsapp,+9665•••••331,mobile in Google Maps,,,unchecked,22,3.6,1,False,False,,B: no segment signal in name or category
+m_b00a0a77fb,B_custom_furniture,jeddah,تنجيد كنب ومجالس,A,89,,mobile_or_whatsapp,+9665•••••762,mobile in Google Maps,,69c316a1b4f01.site123.me,not_detected,16,4.8,1,False,True,B Jeddah: source relevance 0.40; reserve: tied at the Top-list cutoff score,
+m_b0f293749a,B_custom_furniture,riyadh,تفصیل ستائر ويفي و مجالس,B,76,,mobile_or_whatsapp,+9665•••••055,mobile in Google Maps,,,unchecked,4,5,1,False,False,BNPL unchecked,
+m_b1029e747c,B_custom_furniture,jeddah,مفروشات الساهر,,,,mobile_or_whatsapp,+9665•••••030,mobile in Google Maps,,,unchecked,37,3.8,1,False,False,,B: no segment signal in name or category
+m_b1a41c2421,B_custom_furniture,jeddah,مفروشات مجموعة العالمى معرض مودرن هوم للاثاث جدة,,,,mobile_or_whatsapp,+9665•••••019,mobile in Google Maps,,globalgroup.com.sa,unchecked,296,3.3,2,False,False,,B: no segment signal in name or category
+m_b24c10a419,B_custom_furniture,jeddah,ستائر الخليج,A,85,,mobile_or_whatsapp,+9665•••••180,mobile in Google Maps,,,unchecked,188,4.8,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_b28c64b226,B_custom_furniture,riyadh,A تفصيل ستائر مجالس كنب,A,89,,mobile_or_whatsapp,+9665•••••578,mobile in Google Maps,,bestcurtainsinstallationriyadh.com,not_detected,21,5,1,False,True,reserve: tied at the Top-list cutoff score,
+m_b2a0be8638,B_custom_furniture,riyadh,تفصيل ستاير مجلس تنجديد كنب,B,76,,mobile_or_whatsapp,+9665•••••836,mobile in Google Maps,,,unchecked,2,5,1,False,False,BNPL unchecked,
+m_b34a95fed1,A_aesthetic_clinics,jeddah,عيادات رويال الطبية,,,,instagram,,Instagram,meswakofficial,almeswak.com,unchecked,428,3.4,1,False,False,,A: no segment signal in name or category
+m_b3c75e0f94,B_custom_furniture,riyadh,مفروشات محمد تفصيل ستائر كنب ومجالس,B,76,,mobile_or_whatsapp,+9665•••••061,mobile in Google Maps,,,unchecked,1,5,1,False,False,BNPL unchecked,
+m_b49fcca82c,B_custom_furniture,jeddah,مفروشات الفخامة,,,,mobile_or_whatsapp,+9665•••••911,mobile in Google Maps,,,unchecked,25,3.7,1,False,False,,B: no segment signal in name or category
+m_b4d6d21954,B_custom_furniture,jeddah,ستائر النهضه,A,85,,mobile_or_whatsapp,+9665•••••769,mobile in Google Maps,,,unchecked,70,4.8,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_b53876d03e,B_custom_furniture,jeddah,منسوجة الجزيرة للأقمشة والستائر,B,79,,mobile_or_whatsapp,+9665•••••610,mobile in Google Maps,,aljazeeracoonline.com,unchecked,228,3.8,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_b5d207c839,A_aesthetic_clinics,jeddah,Oriel Clinics | عيادات أوريل للتجميل والجلدية,,,,mobile_or_whatsapp,,number on the merchant website (not stored),orieldc,orielclinics.com,tabby,827,4.6,1,False,False,,already Tabby merchant
+m_b69795d95f,C_salla_zid_d2c,,عبايات ليفا,,,,mobile_or_whatsapp,,number on the merchant website (not stored),,,not_detected,0,,0,False,False,,segment rejected: bnpl_saturation
+m_b701f00931,A_aesthetic_clinics,riyadh,عيادات ريمين للجلدية والتجميل والليزر - فرع قرطبة,B,72,,other_phone,+9661•••••228,landline in Google Maps,,derma-remain.com,unchecked,730,4.5,1,False,False,medical: Risk review; BNPL unchecked,
+m_b7029abc76,B_custom_furniture,jeddah,ستائر شمس,B,73,,mobile_or_whatsapp,+9665•••••061,mobile in Google Maps,,,unchecked,11,3.3,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_b7c1042b7a,B_custom_furniture,riyadh,المميز ستين للمفروشات والستائر,B,79,,mobile_or_whatsapp,+9665•••••396,mobile in Google Maps,,,unchecked,45,3.6,1,False,False,BNPL unchecked,
+m_b7d2f98b20,B_custom_furniture,jeddah,شمعة المنزل فرع حي السامر,,,,mobile_or_whatsapp,+9665•••••256,mobile in Google Maps,,shamaatalmanzil.com,unchecked,218,3.4,1,False,False,,B: no segment signal in name or category
+m_b819c6793e,A_aesthetic_clinics,riyadh,ديرما لايت Derma Light,C,61,,none,,,,dermaclinics.sa,unchecked,429,4.1,1,False,False,medical: Risk review; BNPL unchecked,
+m_b821973c66,B_custom_furniture,riyadh,تفصيل ستائر و مجلس,B,79,,mobile_or_whatsapp,+9665•••••801,mobile in Google Maps,,,unchecked,10,5,1,False,False,BNPL unchecked,
+m_b8601f9fd3,A_aesthetic_clinics,jeddah,Clay Clinic - عيادة كلاي,,,,mobile_or_whatsapp,+9665•••••712,mobile in Google Maps,clayclinics,clay-clinic.com,unchecked,910,4.5,1,False,False,,A: no segment signal in name or category
+m_b90f833652,A_aesthetic_clinics,riyadh,مجمع جود أسنان جلدية الطبية,,,,mobile_or_whatsapp,,number on the merchant website (not stored),jodclinics,jodclinic.sa,tabby,2322,4.4,1,False,False,,already Tabby merchant
+m_b9b0c35fe9,B_custom_furniture,riyadh,ستائر ويڤي وستائر قماش أمريكى,A,85,,mobile_or_whatsapp,+9665•••••137,mobile in Google Maps,,,unchecked,51,4.5,1,False,False,BNPL unchecked,
+m_b9d989575d,B_custom_furniture,riyadh,مفروشات تفصيل ستائر كنب تنجيد,A,85,,mobile_or_whatsapp,+9665•••••205,mobile in Google Maps,,,unchecked,48,4.8,1,False,False,BNPL unchecked,
+m_bb10695e1d,A_aesthetic_clinics,jeddah,Dr. Hanan Yaseen دكتوره زراعه الاسنان,B,81,,mobile_or_whatsapp_and_name,+9665•••••234,mobile in Google Maps,,,unchecked,32,4.9,1,True,False,medical: Risk review; BNPL unchecked,
+m_bc4846be79,C_salla_zid_d2c,,اكبر متجر عطور وتجميل اصلي باسعار الجمله,,,,none,,,,,unchecked,0,,0,False,False,,C: wholesale
+m_bda95c221d,A_aesthetic_clinics,riyadh,عيادات ريفا - Riva Clinic,,,,other_phone,+9661•••••666,landline in Google Maps,,,unchecked,871,4.3,1,False,False,,A: no segment signal in name or category
+m_bde76afc49,B_custom_furniture,riyadh,تفصيل ستائر مجالس تنجيد كنب,A,86,,mobile_or_whatsapp,+9665•••••085,mobile in Google Maps,,customsofariyadh.com,not_detected,9,5,1,False,True,,
+m_be4e0db37e,A_aesthetic_clinics,jeddah,عيادات الحركه | Haraka clinics,B,79,,mobile_or_whatsapp,+9665•••••012,mobile in Google Maps,,,unchecked,174,4.9,1,False,False,medical: Risk review; BNPL unchecked,
+m_be712a580c,B_custom_furniture,riyadh,® NERVEN tech | أنظمة نيرڤن العالمية,B,70,,none,,,,nerventech.com,unchecked,144,4.9,1,False,False,BNPL unchecked,
+m_be71539b52,A_aesthetic_clinics,riyadh,CARE MEDICAL CENTER,B,75,,other_phone,+9661•••••666,landline in Google Maps,,,unchecked,1570,4.3,1,False,False,medical: Risk review; BNPL unchecked,
+m_be9c582165,A_aesthetic_clinics,riyadh,Designer's clinic,,,,mobile_or_whatsapp,+9665•••••000,mobile in Google Maps,ddclinic_sa,ddclinic.sa,tabby,1283,4.6,1,False,False,,already Tabby merchant
+m_bec034ef93,B_custom_furniture,riyadh,Al nur Furniture sofa curtain النور تفصيل كنب تفصيل ستائر,B,79,,mobile_or_whatsapp,+9665•••••674,mobile in Google Maps,,,unchecked,6,5,1,False,False,BNPL unchecked,
+m_bfc76afc48,A_aesthetic_clinics,jeddah,مجمع محترفو العناية الطبية 2 (أسنان - جلدية - ليزر -تجميل ),B,76,,mobile_or_whatsapp,+9665•••••173,mobile in Google Maps,,,unchecked,18,4.6,1,False,False,medical: Risk review; BNPL unchecked,
+m_c0462271dc,A_aesthetic_clinics,riyadh,عيادات ريانه الطبي جلدية - اسنان اطفال - تجميل نسائي - ليزر,B,82,,mobile_or_whatsapp,+9665•••••555,mobile in Google Maps,googleworkspace,forms.gle,unchecked,1415,4.1,1,False,False,medical: Risk review; BNPL unchecked,
+m_c0c57a3672,A_aesthetic_clinics,riyadh,عيادات ارمني,,,,mobile_or_whatsapp,+9665•••••335,mobile in Google Maps,,,unchecked,445,4.1,1,False,False,,A: no segment signal in name or category
+m_c1b4b3da44,A_aesthetic_clinics,jeddah,عيادات الصفوة البلاتينية - فرع الصفا,A,84,,instagram,,Instagram,alsafwapclinics,safwapclinics.com,not_detected,843,4.6,1,False,True,medical: Risk review,
+m_c1dc6c7c30,B_custom_furniture,riyadh,دار الستائر تفصيل وتنجيد كنب وتركيب,B,76,,mobile_or_whatsapp,+9665•••••092,mobile in Google Maps,,,unchecked,1,5,1,False,False,BNPL unchecked,
+m_c1e1f0b0f4,B_custom_furniture,jeddah,Alrayes Textile,,,,other_phone,+9661•••••335,landline in Google Maps,,,unchecked,37,4.1,1,False,False,,B: no segment signal in name or category
+m_c284286a78,A_aesthetic_clinics,jeddah,عيادة الابتسامة الأولى لطب الجلدية - الاسنان,B,79,,mobile_or_whatsapp,+9665•••••383,mobile in Google Maps,,,unchecked,221,4.9,1,False,False,medical: Risk review; BNPL unchecked,
+m_c286ceccac,B_custom_furniture,riyadh,تفصيل ستائر و مجالس,B,82,,mobile_or_whatsapp,+9665•••••820,mobile in Google Maps,,riyadhcurtainhouse.com,unchecked,17,4.8,1,False,False,BNPL unchecked,
+m_c288882894,C_salla_zid_d2c,,LateenStore ستور للعبايات تسوقي احدث موديلات العبايات,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_c2dcd265f6,A_aesthetic_clinics,riyadh,مجمع ركن الكسائي الطبي ( النرجس ) K|E|S|A|Y,,,,none,,,,kesay.sa,unchecked,3661,4.4,1,False,False,,A: no segment signal in name or category
+m_c4217e9514,A_aesthetic_clinics,jeddah,Roots Dental Clinics 2 Almurjan,A,85,,mobile_or_whatsapp,+9665•••••666,mobile in Google Maps,,roots-beauty-clinics.com,unchecked,1441,4.7,1,False,False,medical: Risk review; BNPL unchecked,
+m_c4a59107a0,B_custom_furniture,riyadh,جزيرة للستائر وحلول النوافذ,B,82,,mobile_or_whatsapp,+9665•••••209,mobile in Google Maps,,jaziragroup.com,unchecked,19,4.6,1,False,False,BNPL unchecked,
+m_c4c3e26c9a,A_aesthetic_clinics,riyadh,LaHair® Clinic | لاهير كلينيك,B,77,,instagram,+9661•••••120,Instagram,lahairclinics,lahair.com.sa,unchecked,1153,4.1,1,False,False,medical: Risk review; BNPL unchecked,
+m_c50629780b,A_aesthetic_clinics,riyadh,مجمع عيادات بي وايت الطبي,B,76,,mobile_or_whatsapp,+9665•••••088,mobile in Google Maps,,,unchecked,9,5,1,False,False,medical: Risk review; BNPL unchecked,
+m_c58d8e03b4,B_custom_furniture,jeddah,بيت المنسوجات للأقمشة,,,,mobile_or_whatsapp,+9665•••••828,mobile in Google Maps,,,unchecked,39,4.5,1,False,False,,B: no segment signal in name or category
+m_c682801c60,B_custom_furniture,jeddah,وثير الأثاث,,,,mobile_or_whatsapp,+9665•••••995,mobile in Google Maps,,,unchecked,209,4.3,1,False,False,,B: no segment signal in name or category
+m_c6932e6229,A_aesthetic_clinics,riyadh,عيادات جمانة - فرع السويدي 3 Jomana Clincs - Al-Suwaidi Branch,,,,mobile_or_whatsapp,+9665•••••200,mobile in Google Maps,,,unchecked,373,4.3,1,False,False,,A: no segment signal in name or category
+m_c6b6723ff7,A_aesthetic_clinics,jeddah,عيادات روزالطبيه,,,,mobile_or_whatsapp,+9665•••••111,mobile in Google Maps,rosemedicalclinics,rosemedicalclinics.com,tabby,2801,4.7,1,False,False,,already Tabby merchant
+m_c81eda1cee,A_aesthetic_clinics,riyadh,"Dr. Bassem Abukanon, Cosmetic Dentistry Expert",B,81,,mobile_or_whatsapp_and_name,+9665•••••277,mobile in Google Maps,asnanok,about.me,unchecked,158,4.9,1,True,False,medical: Risk review; BNPL unchecked,
+m_c843e8c938,A_aesthetic_clinics,riyadh,عيادة د بلال الدالي ابتسامة هوليودية تركيبات اسنان وعلاج خراجات الاسنان,A,88,,mobile_or_whatsapp_and_name,+9665•••••605,mobile in Google Maps,,drbelalaldali.com,not_detected,75,4.7,1,True,True,medical: Risk review,
+m_c8ffe4aa52,A_aesthetic_clinics,riyadh,Royal Clinics,,,,none,,,,royalclinicsksa.com,unchecked,713,4.1,1,False,False,,A: no segment signal in name or category
+m_c90a6f4671,B_custom_furniture,riyadh,مفروشات سلطانه ستائر وتنجيد,A,85,,mobile_or_whatsapp,+9665•••••963,mobile in Google Maps,,,unchecked,61,4.7,1,False,False,BNPL unchecked,
+m_c916209164,B_custom_furniture,riyadh,تفصيل ستاير مجالس مفروشات الشمري,B,82,,mobile_or_whatsapp,+9665•••••317,mobile in Google Maps,raja.furniture.785,,unchecked,13,5,1,False,False,BNPL unchecked,
+m_c9273c676b,A_aesthetic_clinics,jeddah,مجمع جويل المميز الطبي في الروضة | Joele Special Medical Center in RAWDAH,,,,mobile_or_whatsapp,,number on the merchant website (not stored),joeleclinics,joeleclinics.com,tabby,2256,4.8,1,False,False,,already Tabby merchant
+m_c9d4d45f87,A_aesthetic_clinics,riyadh,Taiba Dental Clinics,A,89,,mobile_or_whatsapp,+9665•••••057,mobile in Google Maps,taiba_dental_clinics,taiba-clinics.com,not_detected,410,4.5,2,False,True,medical: Risk review; reserve: tied at the Top-list cutoff score,
+m_c9d789f29b,B_custom_furniture,jeddah,العربي للستائر والديكور,B,79,,mobile_or_whatsapp,+9665•••••278,mobile in Google Maps,,,unchecked,7,5,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_ca22bc7b7d,A_aesthetic_clinics,riyadh,عيادات بيورا || Bura Clinics,B,77,,instagram,+9661•••••550,Instagram,buraclinic1,,unchecked,714,4.4,1,False,False,medical: Risk review; BNPL unchecked,
+m_ca4737c615,B_custom_furniture,riyadh,تفصيل ستائرمجالس و كنب,B,70,,mobile_or_whatsapp,+9665•••••661,mobile in Google Maps,,webbisma.github.io,unchecked,4,3.8,1,False,False,BNPL unchecked,
+m_ca62837b91,B_custom_furniture,riyadh,تفصيل ستائر ومجالس تفصيل كنب أمريكي کلاسیکی ستاىر رول عصوف نجد للتجارة ٢,B,82,,mobile_or_whatsapp,+9665•••••833,mobile in Google Maps,,,unchecked,14,4.7,1,False,False,BNPL unchecked,
+m_ca892b616c,B_custom_furniture,jeddah,متجر طاولات,,,,none,,,,,unchecked,0,,1,False,False,,B: no segment signal in name or category
+m_caffe8f786,B_custom_furniture,riyadh,تفصيل ستائر و مجالس,B,76,,mobile_or_whatsapp,+9665•••••925,mobile in Google Maps,,riyadh-curtain-store.com,unchecked,4,5,1,False,False,BNPL unchecked,
+m_cb1130cb7b,B_custom_furniture,jeddah,زهرة أبها للمفروشات والستائر ومستلزماتها,B,79,,mobile_or_whatsapp,+9665•••••269,mobile in Google Maps,,,unchecked,9,4.3,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_cb2ca73969,B_custom_furniture,jeddah,سوق حراج جدة,,,,none,,,,,unchecked,1170,4,1,False,False,,B: no segment signal in name or category
+m_cb2ceb7bbc,A_aesthetic_clinics,riyadh,عيادات ريانه دكتور ابراهيم الشاعر لطب الاسنان,B,81,,mobile_or_whatsapp_and_name,+9665•••••522,mobile in Google Maps,ibrahimalshaaer2,,unchecked,18,4.6,1,True,False,medical: Risk review; BNPL unchecked,
+m_cb5abb7bc8,B_custom_furniture,jeddah,مفروشات بشرى للستائر,B,76,,mobile_or_whatsapp,+9665•••••340,mobile in Google Maps,,,unchecked,13,3.1,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_cb7d8819d1,B_custom_furniture,jeddah,Derwaza market,,,,mobile_or_whatsapp,+9665•••••899,mobile in Google Maps,,,unchecked,3076,3.8,1,False,False,,B: no segment signal in name or category
+m_cbb8bb328d,B_custom_furniture,riyadh,تفصيل ستائر. وتنجيد كنب,B,76,,mobile_or_whatsapp,+9665•••••689,mobile in Google Maps,my_my7040,,unchecked,5,4.2,1,False,False,BNPL unchecked,
+m_cbf33ab025,B_custom_furniture,jeddah,عالم الديكور والستائر,C,61,,none,,,,,unchecked,33,3.8,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_cc03d461ab,B_custom_furniture,jeddah,نيو ستايل للديكور New Style Decoration,B,76,,mobile_or_whatsapp,+9665•••••727,mobile in Google Maps,,,unchecked,12,4.1,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_cc91ff9dc2,A_aesthetic_clinics,jeddah,دكتور علي باجنيد,B,81,,mobile_or_whatsapp_and_name,+9665•••••690,mobile in Google Maps,,,unchecked,49,4.8,1,True,False,medical: Risk review; BNPL unchecked,
+m_cd0796292a,A_aesthetic_clinics,jeddah,عيادات دنتيرما الطبية,,,,mobile_or_whatsapp,+9665•••••099,mobile in Google Maps,dentermaclinics,dentermasa.com,unchecked,471,4.5,1,False,False,,A: no segment signal in name or category
+m_cd73422a1f,B_custom_furniture,riyadh,تفصيل كنب تفصيل ستائر,B,79,,mobile_or_whatsapp,+9665•••••578,mobile in Google Maps,,,unchecked,6,4.8,1,False,False,BNPL unchecked,
+m_cde7dc5d31,B_custom_furniture,jeddah,جديد x جديد,B,76,,mobile_or_whatsapp,+9665•••••994,mobile in Google Maps,,,unchecked,1,5,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_ce75eaaf80,A_aesthetic_clinics,jeddah,Vitally Clinic,B,79,,mobile_or_whatsapp,+9665•••••468,mobile in Google Maps,,,unchecked,895,4.2,1,False,False,medical: Risk review; BNPL unchecked,
+m_ce8917c0ea,B_custom_furniture,riyadh,تفصيل ستائر ومجالس تنجيد كنب,B,79,,mobile_or_whatsapp,+9665•••••872,mobile in Google Maps,,,unchecked,12,4.9,1,False,False,BNPL unchecked,
+m_cf607e5690,B_custom_furniture,riyadh,محل ستائر حراج بن قاسم,B,79,,mobile_or_whatsapp,+9665•••••611,mobile in Google Maps,,,unchecked,10,4.9,1,False,False,BNPL unchecked,
+m_cf74aa5522,A_aesthetic_clinics,jeddah,Shar Dental Polyclinic,B,79,,mobile_or_whatsapp,+9665•••••997,mobile in Google Maps,,,unchecked,440,4.6,1,False,False,medical: Risk review; BNPL unchecked,
+m_cfa2029dd7,B_custom_furniture,jeddah,مفروشات قصر الخليج,B,82,,mobile_or_whatsapp,+9665•••••380,mobile in Google Maps,qasr.alkhalij,,unchecked,13,4.8,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_d093ec8892,A_aesthetic_clinics,jeddah,عيادات القمر لالونا,A,83,,mobile_or_whatsapp,,number on the merchant website (not stored),lalunaclinic,lalunaclinic.com,not_detected,391,4.1,1,False,True,medical: Risk review,
+m_d0b5bbf966,B_custom_furniture,riyadh,تفصيل كنب,A,86,,mobile_or_whatsapp,+9665•••••347,mobile in Google Maps,,styleshine.shop,not_detected,9,5,1,False,True,,
+m_d0ec020592,B_custom_furniture,jeddah,Furnabic – تفصيل وتنجيد الكنب,B,82,,mobile_or_whatsapp,+9665•••••506,mobile in Google Maps,,,unchecked,18,5,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_d13eceed22,C_salla_zid_d2c,,متجر عبايات الأميرة Alamirah,,,,mobile_or_whatsapp,,number on the merchant website (not stored),,,tabby,0,,0,False,False,,segment rejected: bnpl_saturation
+m_d1ec4f9e5c,B_custom_furniture,jeddah,جود الستين للستائر,B,82,,mobile_or_whatsapp,+9665•••••527,mobile in Google Maps,,,unchecked,18,4.5,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_d1ed6868e3,B_custom_furniture,jeddah,الشروق للستائر,B,79,,mobile_or_whatsapp,+9665•••••214,mobile in Google Maps,,,unchecked,10,4.4,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_d23c667b19,A_aesthetic_clinics,jeddah,BioLife Clinics | عيادات بايولايف,,,,mobile_or_whatsapp,,number on the merchant website (not stored),biolife.clinic,biolifeclinic.sa,tabby,2043,4.5,1,False,False,,already Tabby merchant
+m_d24ef9a959,A_aesthetic_clinics,riyadh,Smile Dental Clinic - سمايل لطب وتجميل الاسنان,,,,instagram,,Instagram,cleopatra_dental,smileclinic.sa,tabby,420,4.6,1,False,False,,already Tabby merchant
+m_d29fb25f10,A_aesthetic_clinics,riyadh,Al Farabi Dental Clinics Exit 6,,,,instagram,+9661•••••500,Instagram,farabiclinics,farabiclinics.com,unchecked,1214,4,1,False,False,,A: hospital or enterprise group
+m_d2ad58d337,B_custom_furniture,jeddah,بيت الستارة,,,,mobile_or_whatsapp,+9665•••••466,mobile in Google Maps,house.alstara,,unchecked,36,4.6,1,False,False,,B: no segment signal in name or category
+m_d2da8c8b0d,A_aesthetic_clinics,jeddah,مجمع الطاؤوس الطبي,,,,other_phone,+9661•••••222,landline in Google Maps,,,unchecked,570,4.2,1,False,False,,A: no segment signal in name or category; A: hospital or enterprise group
+m_d2dcc67db4,C_salla_zid_d2c,,عبايات رونزا,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_d2ea135460,B_custom_furniture,jeddah,نواره للمفروشات,,,,mobile_or_whatsapp,+9665•••••823,mobile in Google Maps,,,unchecked,5,5,1,False,False,,B: no segment signal in name or category
+m_d31489373a,A_aesthetic_clinics,jeddah,أزيار لقطع غيار السيارات ( ليزر سابقا ),B,73,,mobile_or_whatsapp,+9665•••••020,mobile in Google Maps,,,unchecked,40,4.1,1,False,False,medical: Risk review; BNPL unchecked,
+m_d328868187,B_custom_furniture,riyadh,تفصيل ستاير و تنجيد مجالس,B,76,,mobile_or_whatsapp,+9665•••••721,mobile in Google Maps,,,unchecked,1,5,1,False,False,BNPL unchecked,
+m_d38c2c8341,B_custom_furniture,riyadh,تفسيل ستا ىر و مجا لس,,,,mobile_or_whatsapp,+9665•••••100,mobile in Google Maps,,,unchecked,32,4.7,1,False,False,,B: no segment signal in name or category
+m_d3d5aaf9ad,B_custom_furniture,riyadh,Sofa upholstery decor تنجيد وتفصيل كنب ستائر,A,88,,mobile_or_whatsapp,+9665•••••010,mobile in Google Maps,,sofacurtain433.com,unchecked,73,4.9,2,False,False,BNPL unchecked,
+m_d3da25d3ee,B_custom_furniture,riyadh,محل العنزي للستائر والمجالس,B,79,,mobile_or_whatsapp,+9665•••••049,mobile in Google Maps,,,unchecked,13,4.1,1,False,False,BNPL unchecked,
+m_d40adaa1f0,A_aesthetic_clinics,jeddah,Dr.jokhadar,B,75,,mobile_or_whatsapp_and_name,+9665•••••800,mobile in Google Maps,,,unchecked,1,1,1,True,False,medical: Risk review; BNPL unchecked,
+m_d433aa3a2b,B_custom_furniture,jeddah,اللمسةالمحترفه لزينة وستائر السيارات,B,82,,mobile_or_whatsapp,+9665•••••020,mobile in Google Maps,,,unchecked,42,4.2,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_d4389b5d7c,C_salla_zid_d2c,,متجر فنجان عود,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_d53381dc1f,B_custom_furniture,riyadh,تفصيل ستاير و مجالس,B,76,,mobile_or_whatsapp,+9665•••••238,mobile in Google Maps,,,unchecked,4,5,1,False,False,BNPL unchecked,
+m_d688f6c7ae,A_aesthetic_clinics,jeddah,Beauty Star Clinics | عيادات نجمة الجمال,B,74,,instagram,,Instagram,beautystar.ksa,beautystar.com.sa,unchecked,413,4.8,1,False,False,medical: Risk review; BNPL unchecked,
+m_d6b70c6e55,B_custom_furniture,jeddah,CityW,,,,none,,,,cityw.com.sa,unchecked,3683,4.1,2,False,False,,B: no segment signal in name or category
+m_d708dfdf4b,B_custom_furniture,jeddah,Abyat,,,,none,,,,abyat.com,unchecked,12100,4,1,False,False,,B: no segment signal in name or category
+m_d7976e9a6b,A_aesthetic_clinics,riyadh,Medical Glamor 2,B,81,,instagram,,Instagram,medicalglamorh,medicalglamor.com,not_detected,824,4.1,1,False,True,medical: Risk review,
+m_d79baa7f06,C_salla_zid_d2c,,البخور الذكي ioud,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_d7d4941a78,B_custom_furniture,jeddah,شركة منازل الربيع للديكورات الدور الثالث,,,,mobile_or_whatsapp,+9665•••••604,mobile in Google Maps,,spring01.com,unchecked,21,4.5,1,False,False,,B: no segment signal in name or category
+m_d85c993739,A_aesthetic_clinics,riyadh,مركز وي كير الفرسان الطبي Al Fursan We Care Medical Center,,,,mobile_or_whatsapp,+9665•••••953,mobile in Google Maps,,,unchecked,773,4.5,1,False,False,,A: no segment signal in name or category
+m_d86fad2910,A_aesthetic_clinics,riyadh,عيادات ميسان الشفا | جراحة تجميل - ليزر وتجميل - طب وتجميل الأسنان,B,82,,mobile_or_whatsapp,+9665•••••013,mobile in Google Maps,,,unchecked,1335,4.1,1,False,False,medical: Risk review; BNPL unchecked,
+m_d87abb19c5,B_custom_furniture,riyadh,Rayan Curtains and Roller Blinds Riyadh | شركة ستائر الريان الرياض,A,85,,mobile_or_whatsapp,+9665•••••331,mobile in Google Maps,,rayan-curtains.com,unchecked,124,4.4,1,False,False,BNPL unchecked,
+m_d9063a442f,B_custom_furniture,riyadh,تفصیل ستائر مجالس تنجید کنب,A,85,,mobile_or_whatsapp,+9665•••••262,mobile in Google Maps,,,unchecked,120,4.8,1,False,False,BNPL unchecked,
+m_d94bc6b782,B_custom_furniture,riyadh,محل ستائر وكنب قريب,B,73,,mobile_or_whatsapp,+9665•••••558,mobile in Google Maps,,,unchecked,5,3.4,1,False,False,BNPL unchecked,
+m_d9517c8d29,B_custom_furniture,jeddah,الحريبي للستائر,B,79,,mobile_or_whatsapp,+9665•••••271,mobile in Google Maps,,,unchecked,15,4.2,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_d9c3d1c1d9,B_custom_furniture,riyadh,ستائر ويفي وتفصيل كنب وتنجيد,B,76,,mobile_or_whatsapp,+9665•••••835,mobile in Google Maps,,,unchecked,6,4.2,1,False,False,BNPL unchecked,
+m_d9cf5a06aa,B_custom_furniture,riyadh,تفصيل ستائر و مجالس,B,77,,mobile_or_whatsapp,+9665•••••158,mobile in Google Maps,,majlisatelier.com,not_detected,0,,1,False,True,,
+m_da08670252,A_aesthetic_clinics,riyadh,Mastery clinics - عيادات ماستري,B,82,,mobile_or_whatsapp,+9665•••••161,mobile in Google Maps,,masteryclinics.com,unchecked,554,4.8,1,False,False,medical: Risk review; BNPL unchecked,
+m_da55cd17af,A_aesthetic_clinics,riyadh,عيادات جوفا | Juva Clinics,B,73,,mobile_or_whatsapp,,number on the merchant website (not stored),juvaclinicssa,juva.com.sa,competitor_only,151,4.7,1,False,True,medical: Risk review,
+m_db0f90edbc,A_aesthetic_clinics,riyadh,Lines Clinics عيادات لاينز - الصحافة,B,80,,instagram,,Instagram,linesclinics,linesclinics.com,unchecked,2047,4.2,2,False,False,medical: Risk review; BNPL unchecked,
+m_db6b520343,B_custom_furniture,riyadh,محل تنجيد و تفصيل كنب و ستائر,A,85,,mobile_or_whatsapp,+9665•••••945,mobile in Google Maps,,sofastoreriyadh.com,unchecked,153,4.9,1,False,False,BNPL unchecked,
+m_dba0a10c37,A_aesthetic_clinics,jeddah,العيادات الطبية الرائدة Pioneer medical clinics,,,,mobile_or_whatsapp,+9665•••••999,mobile in Google Maps,,pmcc.sa,unchecked,33,4.9,1,False,False,,A: no segment signal in name or category
+m_dbaeb7649f,B_custom_furniture,riyadh,تفصيل ستائر تفصيل كنب تنجيد كنب و مجالس,B,82,,mobile_or_whatsapp,+9665•••••481,mobile in Google Maps,,rajadecor.com,unchecked,14,4.6,1,False,False,BNPL unchecked,
+m_dbc79551d4,B_custom_furniture,jeddah,كنب مركز انس للستائر مفروشات,A,85,,mobile_or_whatsapp,+9665•••••974,mobile in Google Maps,,,unchecked,75,4.6,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_dc37ee9403,A_aesthetic_clinics,riyadh,Gama Dental Clinic,B,67,,other_phone,+9661•••••929,landline in Google Maps,,gamadentalclinic.com,not_detected,88,3.5,1,False,True,medical: Risk review,
+m_dc5d4c496f,A_aesthetic_clinics,riyadh,تقويم اسنان - انفزلاين التقويم الشفاف د. براء مصطفى,B,81,,mobile_or_whatsapp_and_name,+9665•••••181,mobile in Google Maps,,webteb.com,unchecked,125,4.9,1,True,False,medical: Risk review; BNPL unchecked,
+m_dc789728dd,A_aesthetic_clinics,riyadh,عيادات دنتكس لطب الأسنان,A,84,,instagram,,Instagram,dentexclinic,dentex.sa,not_detected,710,4.6,1,False,True,medical: Risk review,
+m_dc829f2b5d,B_custom_furniture,jeddah,درة فينيسيا لأقمشة الستائر،جدة,B,76,,mobile_or_whatsapp,+9665•••••732,mobile in Google Maps,,,unchecked,28,3.9,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_dcf75a0fd5,B_custom_furniture,jeddah,شركة ستارتي ذوق للستائر,B,79,,mobile_or_whatsapp,+9665•••••084,mobile in Google Maps,,,unchecked,12,4.8,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_de2012191b,C_salla_zid_d2c,,بوتيك ثروة للعطور | عطور نيش فاخرة تُعبّر عن التميز ...,,,,mobile_or_whatsapp,,number on the merchant website (not stored),,,competitor_only,0,,0,False,False,,segment rejected: bnpl_saturation
+m_de482e2483,A_aesthetic_clinics,riyadh,عيادات لايف ويز Life Way's,B,82,,mobile_or_whatsapp,+9665•••••703,mobile in Google Maps,lifeways.sa,,unchecked,851,4.9,1,False,False,medical: Risk review; BNPL unchecked,
+m_de9f592db2,B_custom_furniture,riyadh,مؤسسة عصوف نجد للتجارة للمفروشات والستائر,B,79,,mobile_or_whatsapp,+9665•••••173,mobile in Google Maps,,,unchecked,6,4.3,1,False,False,BNPL unchecked,
+m_df111fd502,B_custom_furniture,jeddah,الشموع للديكور تفصيل وتنجيد كنب وستائر,A,85,,mobile_or_whatsapp,+9665•••••269,mobile in Google Maps,,,unchecked,92,4.6,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_df411437f5,B_custom_furniture,jeddah,المتميز للستائر,B,70,,mobile_or_whatsapp,+9665•••••840,mobile in Google Maps,,,unchecked,0,,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_df7b9a523d,B_custom_furniture,jeddah,Small furniture,,,,none,,,,,unchecked,11,3.8,1,False,False,,B: no segment signal in name or category
+m_e05d6af970,A_aesthetic_clinics,riyadh,Bright Dental Clinics برايت لطب الأسنان,A,83,,mobile_or_whatsapp,+9665•••••660,mobile in Google Maps,bright_dent,brightdent.net,not_detected,390,4.2,1,False,True,medical: Risk review,
+m_e0dd6cfe0a,A_aesthetic_clinics,riyadh,Dora Clinic,,,,instagram,,Instagram,doraclinicksa,doraclinic.sa,unchecked,3770,4.5,2,False,False,,A: no segment signal in name or category
+m_e10aa3ffac,B_custom_furniture,jeddah,شركة رمال المحيط للتجارة,,,,mobile_or_whatsapp,+9665•••••346,mobile in Google Maps,,,unchecked,51,4.4,1,False,False,,B: no segment signal in name or category
+m_e133db959b,B_custom_furniture,riyadh,Curtains & More كارتنز اند مور,A,85,,mobile_or_whatsapp,+9665•••••510,mobile in Google Maps,,curtainsnmore.com,unchecked,144,4.9,1,False,False,BNPL unchecked,
+m_e166428587,B_custom_furniture,jeddah,ت,,,,none,,,,,unchecked,5,5,1,False,False,,B: no segment signal in name or category
+m_e18786274d,A_aesthetic_clinics,jeddah|riyadh,Stars smile Clinic,,,,mobile_or_whatsapp,+9661•••••888,number on the merchant website (not stored),starssmiledc,starssmile.com,tabby,10126,3.6,3,False,False,,already Tabby merchant
+m_e1895e3aae,B_custom_furniture,riyadh,بيت الزين ستائر كنب المجالس,B,82,,mobile_or_whatsapp,+9665•••••263,mobile in Google Maps,,baytalzain-sa.com,unchecked,20,4.8,1,False,False,BNPL unchecked,
+m_e247c81479,A_aesthetic_clinics,jeddah,Bagedo Medical Clinics عيادات باقدو الطبية,,,,mobile_or_whatsapp,+9665•••••333,mobile in Google Maps,bagedoclinics,,unchecked,557,4.4,1,False,False,,A: no segment signal in name or category
+m_e2861f28b4,B_custom_furniture,riyadh,تفصيل ستائر مجالس,A,88,,mobile_or_whatsapp_and_name,+9665•••••984,mobile in Google Maps,,curtainsalriyadh.com,not_detected,4,5,1,True,True,,
+m_e2945cf254,A_aesthetic_clinics,riyadh,كوزمو دكتور,B,77,,none,,,,cosmodoctor.com.sa,not_detected,7620,4,4,False,False,medical: Risk review,
+m_e2ac554a78,A_aesthetic_clinics,riyadh,عيادات ماسك | أسنان جلدية ليزر | Masc Clinic,A,83,,mobile_or_whatsapp,+9665•••••972,mobile in Google Maps,mascclinic.sa,mascclinic.sa,not_detected,70,4.8,1,False,True,medical: Risk review,
+m_e2ef7c559c,A_aesthetic_clinics,riyadh,Elegaci Clinic | عيادات إليجسي,,,,instagram,,Instagram,elegaci_clinic,,unchecked,1263,4.5,1,False,False,,A: no segment signal in name or category
+m_e36cd1431b,A_aesthetic_clinics,riyadh,الدكتورة غيداء البارقي عيادة الجلدية و التجميل,B,81,,mobile_or_whatsapp_and_name,+9661•••••133,mobile in Google Maps,,,unchecked,2,5,1,True,False,medical: Risk review; BNPL unchecked,
+m_e48912be8f,C_salla_zid_d2c,,Khawlah's World,,,,mobile_or_whatsapp,,number on the merchant website (not stored),,,not_detected,0,,0,False,False,,segment rejected: bnpl_saturation
+m_e49044b594,A_aesthetic_clinics,jeddah,عيادات آلبا الابتسامة الطبية - فرع الربوة,B,67,,none,,,,,unchecked,1058,4.3,1,False,False,medical: Risk review; BNPL unchecked,
+m_e4c18b10d5,A_aesthetic_clinics,riyadh,عيادات ايفوريا,B,79,,mobile_or_whatsapp,+9665•••••603,mobile in Google Maps,ephoriaclinics,ephoriaclinics.com,generic_installment,1151,4.5,1,False,True,medical: Risk review,
+m_e52a63a0c7,A_aesthetic_clinics,riyadh,ريولا كلينك Riola Clinic,,,,none,,,,,unchecked,821,4.8,1,False,False,,A: no segment signal in name or category
+m_e6380dafaf,B_custom_furniture,jeddah,دار الستائر,B,76,,mobile_or_whatsapp,+9665•••••384,mobile in Google Maps,,,unchecked,8,4.1,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_e6712c78e9,B_custom_furniture,riyadh,تفصيل ستائر و مجالس,A,85,,mobile_or_whatsapp,+9665•••••274,mobile in Google Maps,,,unchecked,79,4.9,1,False,False,BNPL unchecked,
+m_e6870dbf89,B_custom_furniture,jeddah,النجمة لأقمشة المفروشات,A,85,,mobile_or_whatsapp,+9665•••••457,mobile in Google Maps,,starcotextile.com,unchecked,69,4.3,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_e6cafde9b8,A_aesthetic_clinics,jeddah,د. برهان زياد ملاح,B,81,,mobile_or_whatsapp_and_name,+9665•••••342,mobile in Google Maps,,,unchecked,4,5,1,True,False,medical: Risk review; BNPL unchecked,
+m_e717464abc,B_custom_furniture,riyadh,تفصيل ستائر,B,76,,mobile_or_whatsapp,+9665•••••004,mobile in Google Maps,,,unchecked,4,5,1,False,False,BNPL unchecked,
+m_e72da0669c,A_aesthetic_clinics,riyadh,مجمع الجاذبيه الطبي,A,83,,mobile_or_whatsapp,+9665•••••567,mobile in Google Maps,allure_center,allure.com.sa,not_detected,510,3.9,1,False,True,medical: Risk review,
+m_e72da59641,B_custom_furniture,riyadh,تفصيل ستائر تركيب ستائر ويفي الستائر قص تفصيل ستائر ومجالس,A,85,,mobile_or_whatsapp,+9665•••••324,mobile in Google Maps,,curtainmonastore.shop,unchecked,35,4.7,2,False,False,BNPL unchecked,
+m_e735117d20,A_aesthetic_clinics,riyadh,عيادات د. إيمان العبرة,,,,instagram,+9661•••••164,Instagram,dremanalabra,,unchecked,312,4.4,1,False,False,,A: no segment signal in name or category
+m_e7764de6d9,A_aesthetic_clinics,riyadh,مجمع لين الشرق الطبي الدائري الغربي -اسنان - ليزر- جلدية,B,69,,other_phone,+9661•••••232,landline in Google Maps,,leen-alsharq.com,unchecked,1108,4.2,1,False,False,medical: Risk review; BNPL unchecked,
+m_e7a22dfdce,B_custom_furniture,riyadh,ستائر وتفصيل المجالس – الرياض,B,79,,mobile_or_whatsapp,+9665•••••798,mobile in Google Maps,,naturemod.com,unchecked,7,4.6,1,False,False,BNPL unchecked,
+m_e7abd5b256,B_custom_furniture,riyadh,مؤسسة داليه احمد الاسمريHOME FURNITUREتفصل كنب تفصيل ستائر تفصيل مجلس,B,70,,mobile_or_whatsapp,+9665•••••840,mobile in Google Maps,,,unchecked,0,,1,False,False,BNPL unchecked,
+m_e7d57cfa1d,A_aesthetic_clinics,riyadh,دكتوره مروة حسين - عيادة جلدية وتجميل وعلاج بالليزر,B,78,,mobile_or_whatsapp_and_name,+9665•••••448,mobile in Google Maps,dr.marwa_hussain,marwahussain.com,unchecked,94,4.1,1,True,False,medical: Risk review; BNPL unchecked,
+m_e7d684b95a,B_custom_furniture,jeddah,الخزائن المبدعة,,,,mobile_or_whatsapp,+9665•••••645,mobile in Google Maps,,,unchecked,37,4.2,1,False,False,,B: no segment signal in name or category
+m_e7e0cdb0d7,A_aesthetic_clinics,jeddah,‏LaDenta center - The house of dental expertise,A,86,,mobile_or_whatsapp,+9665•••••646,mobile in Google Maps,,ladentaclinic.com,not_detected,248,4.5,1,False,True,medical: Risk review,
+m_e8008625dc,A_aesthetic_clinics,jeddah,Lujain Dental Clinic,A,86,,mobile_or_whatsapp,+9665•••••100,mobile in Google Maps,lujaindc,lujaindc.com,not_detected,215,4.4,1,False,True,medical: Risk review,
+m_e82cda67d6,B_custom_furniture,jeddah,جاد للديكور,,,,mobile_or_whatsapp,+9665•••••563,mobile in Google Maps,,,unchecked,11,3.7,1,False,False,,B: no segment signal in name or category
+m_e97030c45c,B_custom_furniture,riyadh,ستائر و المجالس,B,82,,mobile_or_whatsapp,+9665•••••049,mobile in Google Maps,,,unchecked,21,5,1,False,False,BNPL unchecked,
+m_ea6c0bfb07,A_aesthetic_clinics,jeddah,Karma Beauty Clinic I مركز كرما الجمال الطبي,B,76,,mobile_or_whatsapp,+9665•••••159,mobile in Google Maps,_karma_clinic,,unchecked,648,3.7,1,False,False,medical: Risk review; BNPL unchecked,
+m_ea7f1589dc,A_aesthetic_clinics,jeddah,Tam Dental King Rd. Tower | تام دنتال برج الشاشة,,,,mobile_or_whatsapp,,number on the merchant website (not stored),tam_dental,tamdental.sa,tabby,71,4.5,1,False,False,,already Tabby merchant
+m_ea9ce72049,C_salla_zid_d2c,,عطر القيصر - 100 مل - مسك للعطور,,,,none,,,,,unchecked,0,,0,False,False,,C: outside KSA signal
+m_ead76aa9aa,B_custom_furniture,riyadh,تفصيل ستائر مجالس,B,82,,mobile_or_whatsapp,+9665•••••447,mobile in Google Maps,,,unchecked,21,5,1,False,False,BNPL unchecked,
+m_eb226aff78,C_salla_zid_d2c,,متجر تركيبة العود,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_eb68a5e783,B_custom_furniture,riyadh,Curtains model 2024تفصيل ستائر تنجيد و تلبيس محل,B,79,,mobile_or_whatsapp,+9665•••••406,mobile in Google Maps,,,unchecked,8,4.8,1,False,False,BNPL unchecked,
+m_eb7a489c75,A_aesthetic_clinics,riyadh,Dermati Clinics | عيادات ديرماتي,B,74,,instagram,,Instagram,dermati.sa,dermati.sa,unchecked,384,4.8,1,False,False,medical: Risk review; BNPL unchecked,
+m_eba6fbe674,B_custom_furniture,riyadh,تفصيل ستايروكنب مفروشات بحرالبيان 1,B,82,,mobile_or_whatsapp,+9665•••••130,mobile in Google Maps,,,unchecked,19,5,1,False,False,BNPL unchecked,
+m_ebafd0aaba,B_custom_furniture,riyadh,موسسه أفكارالقريه تفصيل ستائر مجالس و تنجيد,B,73,,mobile_or_whatsapp,+9665•••••604,mobile in Google Maps,,,unchecked,7,3.9,1,False,False,BNPL unchecked,
+m_ebdb324ca2,A_aesthetic_clinics,jeddah,Seven Stars Clinic,B,79,,mobile_or_whatsapp,+9665•••••104,mobile in Google Maps,7starsclinics,7starsclinic.com,competitor_only,766,4.5,1,False,True,medical: Risk review,
+m_ec6e9313e6,B_custom_furniture,riyadh,مؤسسة لمسات ديباج لتنجيد الأثاث,B,79,,mobile_or_whatsapp,+9665•••••256,mobile in Google Maps,,,unchecked,10,5,1,False,False,BNPL unchecked,
+m_ecbe8f5db4,A_aesthetic_clinics,jeddah,Velour Skin فيلور سكين,B,76,,mobile_or_whatsapp,+9665•••••211,mobile in Google Maps,,,unchecked,91,4.7,1,False,False,medical: Risk review; BNPL unchecked,
+m_ed1ca45a57,A_aesthetic_clinics,jeddah,مجمع مايا جدة الطبي,,,,mobile_or_whatsapp,+9665•••••652,mobile in Google Maps,,,unchecked,1075,4.1,1,False,False,,A: no segment signal in name or category
+m_ed867de06e,C_salla_zid_d2c,,عطور نسائية | دار الأميرات | Dar Alamirat,,,,none,,,,,unchecked,0,,0,False,False,,segment rejected: bnpl_saturation
+m_ed9612317e,B_custom_furniture,jeddah,الستاره لتفصيل الستائر والكنب,B,73,,mobile_or_whatsapp,+9665•••••413,mobile in Google Maps,,,unchecked,10,3.7,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_edc8959e77,A_aesthetic_clinics,riyadh,Cosmodent Dental Consultant Clinics,B,79,,other_phone,+9661•••••803,landline in Google Maps,,cosmodent.sa,not_detected,897,4.3,1,False,True,medical: Risk review,
+m_edd7760b40,B_custom_furniture,riyadh,تفصيل ستائرو مجالس,B,70,,mobile_or_whatsapp,+9665•••••609,mobile in Google Maps,,,unchecked,0,,1,False,False,BNPL unchecked,
+m_eeb20621fa,B_custom_furniture,jeddah,مفروشات الصفا,,,,none,,,,,unchecked,33,3.7,1,False,False,,B: no segment signal in name or category
+m_eed4f1018b,B_custom_furniture,riyadh,تفصیل ستائر و مجالس بالریاض,B,82,,mobile_or_whatsapp,+9665•••••842,mobile in Google Maps,,baytulstayrinteriors.com,unchecked,27,5,1,False,False,BNPL unchecked,
+m_ef8c6bf73a,A_aesthetic_clinics,jeddah,BellaDerm Cilinc,B,82,,mobile_or_whatsapp,+9665•••••489,mobile in Google Maps,,belladerm-c.com,unchecked,6277,3.9,4,False,False,medical: Risk review; BNPL unchecked,
+m_f025118b8a,A_aesthetic_clinics,riyadh,Rance Clinic,,,,other_phone,+9661•••••111,landline in Google Maps,,,unchecked,748,4.1,1,False,False,,A: no segment signal in name or category
+m_f0b5b78479,A_aesthetic_clinics,riyadh,Kadina Center,,,,other_phone,+9661•••••444,landline in Google Maps,,kadinacenter.com,unchecked,1168,4,1,False,False,,A: no segment signal in name or category
+m_f0df65212c,B_custom_furniture,jeddah,تلبيسات كنب وسجاد,,,,mobile_or_whatsapp,+9665•••••260,mobile in Google Maps,,,unchecked,27,4,1,False,False,,B: no segment signal in name or category
+m_f0ec82affa,A_aesthetic_clinics,jeddah,مركز الدكتور ممدوح عشي الطبي |dr.Mamdooh Ashy a medical Center,,,,instagram,,Instagram,mamdooh.ashy,mamdoohashy.com,unchecked,1123,4,1,False,False,,A: no segment signal in name or category
+m_f122f8b888,A_aesthetic_clinics,jeddah,LOFT DENTAL CLINIC,B,79,,mobile_or_whatsapp,+9665•••••040,mobile in Google Maps,loftcliniccomplex,,unchecked,200,4.7,1,False,False,medical: Risk review; BNPL unchecked,
+m_f1807ca638,A_aesthetic_clinics,jeddah,Derma Vitalis ديرما فيتالس,B,82,,mobile_or_whatsapp,+9665•••••831,mobile in Google Maps,dermvitalis,drezmerli.com,unchecked,458,4.4,2,False,False,medical: Risk review; BNPL unchecked,
+m_f1b3f4fc73,B_custom_furniture,riyadh,تفصيل ستائر شركة مرقاب,A,85,,mobile_or_whatsapp,+9665•••••183,mobile in Google Maps,,aljizifurniture.com,unchecked,42,4.8,1,False,False,BNPL unchecked,
+m_f1d7e5c7ad,B_custom_furniture,riyadh,تفصیل للستائر والمجالس وتنجيد الكنب حماد العتيبي,B,79,,mobile_or_whatsapp,+9665•••••729,mobile in Google Maps,,curtainmakerinriyadh.com,unchecked,11,5,1,False,False,BNPL unchecked,
+m_f1e0094d25,B_custom_furniture,jeddah,الاناقة للديكور تفصيل ستائر وتنجيد كنب,B,82,,mobile_or_whatsapp,+9665•••••356,mobile in Google Maps,,,unchecked,34,4.9,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_f38534c3c5,B_custom_furniture,riyadh,تفصيل ستائر و مجالس,A,89,,mobile_or_whatsapp,+9665•••••973,mobile in Google Maps,,aryaanfurniture.com,not_detected,23,4.7,1,False,True,reserve: tied at the Top-list cutoff score,
+m_f3b31ce2f3,A_aesthetic_clinics,jeddah,Asnani Plus Dental Clinics,A,85,,mobile_or_whatsapp,+9665•••••727,mobile in Google Maps,,,unchecked,1144,4.6,1,False,False,medical: Risk review; BNPL unchecked,
+m_f4a8887553,B_custom_furniture,jeddah,شركة الشوق الأنيق للأثاث,,,,mobile_or_whatsapp,+9665•••••872,mobile in Google Maps,shooq.fur,,unchecked,850,4.7,1,False,False,,B: no segment signal in name or category
+m_f4c95baab7,B_custom_furniture,jeddah,ستائر وكنب الزهراء,B,82,,mobile_or_whatsapp,+9665•••••676,mobile in Google Maps,,,unchecked,15,5,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_f4d8065ca4,A_aesthetic_clinics,jeddah,عيادات ضي القمر,,,,mobile_or_whatsapp,+9665•••••627,mobile in Google Maps,,,unchecked,395,3.9,1,False,False,,A: no segment signal in name or category
+m_f4da34ae93,A_aesthetic_clinics,jeddah,JC Clinic,,,,other_phone,+9661•••••222,landline in Google Maps,,,unchecked,522,4,1,False,False,,A: no segment signal in name or category
+m_f6a0ffef4c,B_custom_furniture,riyadh,تفصيل ستائر و مجالس,B,82,,mobile_or_whatsapp,+9665•••••877,mobile in Google Maps,,,unchecked,23,5,1,False,False,BNPL unchecked,
+m_f77c9edd84,A_aesthetic_clinics,jeddah,Al Jamal Wa Al Rafahia Clinic | مجمع الجمال والرفاهية الطبي,,,,other_phone,+9661•••••566,landline in Google Maps,,,unchecked,641,4.6,1,False,False,,A: no segment signal in name or category
+m_f7a40f2857,A_aesthetic_clinics,riyadh,مركز سجام لطب الأسنان,B,82,,other_phone,+9661•••••777,landline in Google Maps,,sijam-mc.com,not_detected,2084,4.3,1,False,True,medical: Risk review,
+m_f82836ab8c,A_aesthetic_clinics,jeddah,Hair and Skin Care Center,C,60,,other_phone,+9661•••••230,landline in Google Maps,,,unchecked,43,3.9,1,False,False,medical: Risk review; BNPL unchecked,
+m_f85b6d417f,B_custom_furniture,riyadh,تفصیل ستائر والتنجید الاثاث,B,79,,mobile_or_whatsapp,+9665•••••740,mobile in Google Maps,,,unchecked,12,5,1,False,False,BNPL unchecked,
+m_f88851a4d3,A_aesthetic_clinics,jeddah,Pio So Clinics,A,83,,mobile_or_whatsapp,,number on the merchant website (not stored),piosoclinics,piosoclinics.com,not_detected,76,4.6,1,False,True,medical: Risk review,
+m_f90ec5bd1e,A_aesthetic_clinics,riyadh,Butopia Clinic بيوتوبيا كلينك,C,64,,none,,,,,unchecked,415,4.4,1,False,False,medical: Risk review; BNPL unchecked,
+m_f9884771c5,A_aesthetic_clinics,jeddah,4D Medical Clinics,,,,mobile_or_whatsapp,+9665•••••474,mobile in Google Maps,4d.clinics,4dclinics.com,unchecked,200,4.6,1,False,False,,A: no segment signal in name or category
+m_f9cdf7513d,A_aesthetic_clinics,jeddah,مجمع توهج الطبي المتخصص | Glow Specialized Medical Complex,,,,mobile_or_whatsapp,+9665•••••022,mobile in Google Maps,,,unchecked,1898,4.1,1,False,False,,A: no segment signal in name or category
+m_f9d07da259,A_aesthetic_clinics,riyadh,Wajan Medical Clinics,,,,mobile_or_whatsapp,+9665•••••653,mobile in Google Maps,wajan.clinic,wajan-clinic.com,unchecked,534,4.1,1,False,False,,A: no segment signal in name or category
+m_f9e07544b5,B_custom_furniture,jeddah|riyadh,Zerabi Furniture,,,,none,,,,zerabi.com.sa,unchecked,967,3.7,2,False,False,,"B: no segment signal in name or category; B: multi-city company, not a local workshop"
+m_f9e77d8bed,B_custom_furniture,riyadh,تفصيل ستاير و مجالس,A,85,,mobile_or_whatsapp,+9665•••••863,mobile in Google Maps,,sofacurtainmajlis.com,unchecked,48,4.8,1,False,False,BNPL unchecked,
+m_fa16d7e0d7,B_custom_furniture,riyadh,افكار القرية للستائر والكنب والاثاث,C,64,,none,,,,,unchecked,12,4.3,1,False,False,BNPL unchecked,
+m_faa042ce24,A_aesthetic_clinics,riyadh,Safad Dental Center 2,B,81,,instagram,,Instagram,safad.centers,safadcenters.com,not_detected,1019,4.2,1,False,True,medical: Risk review,
+m_faf293e8fc,A_aesthetic_clinics,riyadh,ايرت | EIRT جلدية - تجميل - ليزر - بشره,B,79,,mobile_or_whatsapp,+9665•••••557,mobile in Google Maps,eirt.ca,,unchecked,205,4.7,1,False,False,medical: Risk review; BNPL unchecked,
+m_faf7e0ca62,A_aesthetic_clinics,riyadh,Dr Shahla Najib Noureddine,B,75,,mobile_or_whatsapp_and_name,+9665•••••287,mobile in Google Maps,,,unchecked,19,3.2,1,True,False,medical: Risk review; BNPL unchecked,
+m_fb21ef3ad3,A_aesthetic_clinics,jeddah,عيادات بيڤرلي | Beverly Clinics,,,,none,,,,beverlyclinics.saudigermanhealth.com,unchecked,1073,3.8,1,False,False,,A: no segment signal in name or category
+m_fb2279144c,B_custom_furniture,riyadh,‏تفصيل ستائر ومجالس منى,B,76,,mobile_or_whatsapp,+9665•••••280,mobile in Google Maps,,luxuryfurniturehouses.store,unchecked,4,5,1,False,False,BNPL unchecked,
+m_fbc1ab5292,B_custom_furniture,jeddah,الكروان للستائر والديكور,B,76,,mobile_or_whatsapp,+9665•••••055,mobile in Google Maps,,,unchecked,1,5,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_fbc4731d04,A_aesthetic_clinics,riyadh,مجمع ديم الرياض الطبي,B,73,,mobile_or_whatsapp,+9665•••••446,mobile in Google Maps,deemalriyad,,unchecked,178,3.8,1,False,False,medical: Risk review; BNPL unchecked,
+m_fbc8f91238,A_aesthetic_clinics,riyadh,Aesthetic skin clinic,B,66,,other_phone,+9661•••••071,landline in Google Maps,,,unchecked,610,3.4,1,False,False,medical: Risk review; BNPL unchecked,
+m_fc0f2f57f3,A_aesthetic_clinics,riyadh,Confident Clinic – عيادات كونفيدنت,A,86,,mobile_or_whatsapp,,number on the merchant website (not stored),,confident.sa,not_detected,354,4.8,1,False,True,medical: Risk review,
+m_fc504c3f57,A_aesthetic_clinics,jeddah,مجمع وجهاء الطبي VIP MEDICAL CLINIC,,,,mobile_or_whatsapp,+9665•••••617,mobile in Google Maps,,,unchecked,610,4.5,1,False,False,,A: no segment signal in name or category
+m_fc826ac1b2,A_aesthetic_clinics,riyadh,نخبة ألماس - فرع الحمراء | Almas Elite - Alhamra Branch,A,88,,mobile_or_whatsapp_and_name,+9661•••••888,number on the merchant website (not stored),almaselitesa,almaselite.com,not_detected,799,3.6,1,True,True,medical: Risk review,
+m_fcd2d29502,B_custom_furniture,jeddah,سلفر الجمال اقمشة ستائر ومفروشات,B,82,,mobile_or_whatsapp,+9665•••••000,mobile in Google Maps,,,unchecked,18,4.4,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_fcde40efc7,B_custom_furniture,jeddah,Miro Furniture,,,,none,,,,miro-sa.com,unchecked,381,4.6,1,False,False,,B: no segment signal in name or category
+m_fd323d3614,A_aesthetic_clinics,riyadh,مركز ليلك التخصصي - اسنان - جلدية - ليزر,B,74,,instagram,+9661•••••336,Instagram,lilacspecialist,,unchecked,433,4.5,1,False,False,medical: Risk review; BNPL unchecked,
+m_fd9546e093,A_aesthetic_clinics,riyadh,Lamer Clinics,C,64,,none,,,,lamerclinics.com,unchecked,658,4.1,1,False,False,medical: Risk review; BNPL unchecked,
+m_fdd0e2b7c7,B_custom_furniture,riyadh,تفصيل ستائر و مجالس,B,76,,mobile_or_whatsapp,+9665•••••910,mobile in Google Maps,,,unchecked,3,5,1,False,False,BNPL unchecked,
+m_fe078dcee0,B_custom_furniture,riyadh,تفصیل ستائر و مجالس,A,85,,mobile_or_whatsapp,+9665•••••953,mobile in Google Maps,,,unchecked,72,4.9,1,False,False,BNPL unchecked,
+m_fe0e5b6074,A_aesthetic_clinics,jeddah,Masa Clinic عيادات الماسة,,,,mobile_or_whatsapp,+9665•••••947,mobile in Google Maps,,masaclinic.sa,unchecked,101,4.1,1,False,False,,A: no segment signal in name or category
+m_fe2dccb9d4,B_custom_furniture,jeddah,محل طاولات,,,,none,,,,,unchecked,14,3.4,1,False,False,,B: no segment signal in name or category
+m_fe53c9604d,A_aesthetic_clinics,riyadh,عيادات سافي لطب وتجميل الاسنان - Savvy Dental Clinics,B,67,,none,,,,,unchecked,841,4.3,1,False,False,medical: Risk review; BNPL unchecked,
+m_feeeddeeda,C_salla_zid_d2c,,عباية إيمان بقماش انترنت | عبايات سادة وأنيقة,,,,mobile_or_whatsapp,,number on the merchant website (not stored),,,not_detected,0,,0,False,False,,segment rejected: bnpl_saturation
+m_fefa495241,B_custom_furniture,jeddah,قصر الراحة للأثاث,B,82,,mobile_or_whatsapp,+9665•••••089,mobile in Google Maps,,qasr-alraha.com,unchecked,38,5,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_ff31ae3e67,B_custom_furniture,riyadh,العنود تفصيل ستائر و مجالس وكنب,A,85,,mobile_or_whatsapp,+9665•••••968,mobile in Google Maps,,,unchecked,44,5,1,False,False,BNPL unchecked,
+m_ff3db6fc0c,A_aesthetic_clinics,jeddah,Solar Clinics,,,,mobile_or_whatsapp,+9665•••••791,mobile in Google Maps,solar_clinics,solar.med.sa,unchecked,1076,4.5,1,False,False,,A: no segment signal in name or category
+m_ff899ee63b,B_custom_furniture,jeddah,مفروشات الصفاء,,,,mobile_or_whatsapp,+9665•••••366,mobile in Google Maps,,,unchecked,9,3.2,1,False,False,,B: no segment signal in name or category
+m_ff8ca3ef5e,B_custom_furniture,riyadh,تفصيل ستائر ومجالس و كنب,A,85,,mobile_or_whatsapp,+9665•••••054,mobile in Google Maps,,,unchecked,63,4.9,1,False,False,BNPL unchecked,
+m_ffb8667dcc,B_custom_furniture,jeddah,ستائر المنير ابحر,B,82,,mobile_or_whatsapp,+9665•••••712,mobile in Google Maps,,,unchecked,22,4.6,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
+m_ffca4c5a5d,B_custom_furniture,riyadh,تفصيل ستائر و مجالس,B,76,,mobile_or_whatsapp,+9665•••••917,mobile in Google Maps,,,unchecked,2,5,1,False,False,BNPL unchecked,
+m_fff74f627a,B_custom_furniture,jeddah,أحلام التركية أقمشة ستائر و مفروشات,B,76,,mobile_or_whatsapp,+9665•••••974,mobile in Google Maps,,,unchecked,4,4.8,1,False,False,B Jeddah: source relevance 0.40; BNPL unchecked,
